@@ -41,6 +41,8 @@ namespace Ppt.DataMigration.Services
 
         public object GetTownsFromSql(string townName)
         {
+            if (townName == null) return DBNull.Value;
+
             if (_towns == null)
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Town", SQLConnection);
@@ -55,7 +57,7 @@ namespace Ppt.DataMigration.Services
             }
 
             var result = _towns.Select("Name = '{0}'".Formatted(townName));
-            if(result.Length == 0) return null;
+            if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"]; 
         }
 
@@ -63,6 +65,8 @@ namespace Ppt.DataMigration.Services
 
         public object GetCountryFromSql(string country)
         {
+            if (country == null) return DBNull.Value;
+
             if (_countrys == null)
             {
 
@@ -77,8 +81,8 @@ namespace Ppt.DataMigration.Services
                 _countrys = sqlCountry.Tables["Country"];
             }
 
-             var result = _towns.Select("Name = '{0}'".Formatted(country));
-            if(result.Length == 0) return null;
+             var result = _countrys.Select("Name = '{0}'".Formatted(country));
+             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"]; 
 
         }
@@ -87,7 +91,9 @@ namespace Ppt.DataMigration.Services
 
         public object GetPrisonSexFromSql(string prisonSex)
         {
-            if (_countrys == null)
+            if (prisonSex == null) return DBNull.Value;
+
+            if (_prisonSex == null)
             {
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PrisonSex", SQLConnection);
@@ -101,8 +107,8 @@ namespace Ppt.DataMigration.Services
                 _prisonSex = sqlCountry.Tables["PrisonSex"];
             }
 
-            var result = _towns.Select("Name = '{0}'".Formatted(prisonSex));
-            if(result.Length == 0) return null;
+            var result = _prisonSex.Select("Name = '{0}'".Formatted(prisonSex));
+            if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"]; 
 
         }
