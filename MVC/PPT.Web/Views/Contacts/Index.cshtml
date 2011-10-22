@@ -1,0 +1,345 @@
+﻿@model IEnumerable<PPT.Web.Data.Contact>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Surname
+        </th>
+        <th>
+            Forename
+        </th>
+        <th>
+            Title1
+        </th>
+        <th>
+            Position
+        </th>
+        <th>
+            MailName
+        </th>
+        <th>
+            Salutation
+        </th>
+        <th>
+            Type
+        </th>
+        <th>
+            EmailAddress
+        </th>
+        <th>
+            Source
+        </th>
+        <th>
+            DOB
+        </th>
+        <th>
+            MailCode1
+        </th>
+        <th>
+            Lost
+        </th>
+        <th>
+            Deceased
+        </th>
+        <th>
+            ArchivePrisonName
+        </th>
+        <th>
+            PNumber
+        </th>
+        <th>
+            Cell
+        </th>
+        <th>
+            Prevpris
+        </th>
+        <th>
+            Address1
+        </th>
+        <th>
+            Address2
+        </th>
+        <th>
+            Address3
+        </th>
+        <th>
+            Town1
+        </th>
+        <th>
+            County
+        </th>
+        <th>
+            Country1
+        </th>
+        <th>
+            Postcode
+        </th>
+        <th>
+            Tel
+        </th>
+        <th>
+            Fax
+        </th>
+        <th>
+            C_Date
+        </th>
+        <th>
+            A_Date
+        </th>
+        <th>
+            AmendTime
+        </th>
+        <th>
+            Memo
+        </th>
+        <th>
+            Type1
+        </th>
+        <th>
+            ArchivePrevPris1
+        </th>
+        <th>
+            XmasList
+        </th>
+        <th>
+            XmasParty
+        </th>
+        <th>
+            Wing
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            AnnualReport
+        </th>
+        <th>
+            Convenaters
+        </th>
+        <th>
+            AnnualReviewOld
+        </th>
+        <th>
+            NoFundRaisingLetter
+        </th>
+        <th>
+            NLCopiesRequired
+        </th>
+        <th>
+            NoNewsLetter
+        </th>
+        <th>
+            DontSendEmail
+        </th>
+        <th>
+            FrEvent
+        </th>
+        <th>
+            GiftAidSetup
+        </th>
+        <th>
+            GiftAidStartDate
+        </th>
+        <th>
+            GiftAidFormSent
+        </th>
+        <th>
+            GiftAidFromSentDate
+        </th>
+        <th>
+            GiftAidNotApplicable
+        </th>
+        <th>
+            BWY_Number
+        </th>
+        <th>
+            Prison1
+        </th>
+        <th>
+            PersonType1
+        </th>
+        <th>
+            PreviousPrison
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Forename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MailName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salutation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MailCode1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deceased)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArchivePrisonName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cell)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prevpris)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Town1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.County)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Postcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.A_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AmendTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArchivePrevPris1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.XmasList)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.XmasParty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnnualReport)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Convenaters)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnnualReviewOld)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoFundRaisingLetter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NLCopiesRequired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoNewsLetter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DontSendEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrEvent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftAidSetup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftAidStartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftAidFormSent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftAidFromSentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftAidNotApplicable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BWY_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prison1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonType1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreviousPrison)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
