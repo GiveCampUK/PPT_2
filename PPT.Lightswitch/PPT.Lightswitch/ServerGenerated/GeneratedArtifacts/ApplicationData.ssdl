@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="ContactsSet" EntityType="ApplicationDataStore.Contacts" store:Type="Tables" Schema="dbo" Table="ContactsSet" />
+    <EntitySet Name="ContactTypesSet" EntityType="ApplicationDataStore.ContactTypes" store:Type="Tables" Schema="dbo" Table="ContactTypesSet" />
+    <EntitySet Name="CountriesSet" EntityType="ApplicationDataStore.Countries" store:Type="Tables" Schema="dbo" Table="CountriesSet" />
+    <EntitySet Name="Prisoners" EntityType="ApplicationDataStore.Prisoner" store:Type="Tables" Schema="dbo" Table="Prisoners" />
+    <AssociationSet Name="Contacts_ContactTypes" Association="ApplicationDataStore.Contacts_ContactTypes">
+      <End Role="ContactTypes" EntitySet="ContactTypesSet" />
+      <End Role="Contacts" EntitySet="ContactsSet" />
+    </AssociationSet>
+    <AssociationSet Name="Contacts_Countries" Association="ApplicationDataStore.Contacts_Countries">
+      <End Role="Countries" EntitySet="CountriesSet" />
+      <End Role="Contacts" EntitySet="ContactsSet" />
+    </AssociationSet>
+    <AssociationSet Name="Prisoner_Contacts" Association="ApplicationDataStore.Prisoner_Contacts">
+      <End Role="Contacts" EntitySet="ContactsSet" />
+      <End Role="Prisoner" EntitySet="Prisoners" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Line1" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Line2" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Line3" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Town" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="County" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Postcode" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="PhoneNumbers" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Contacts_ContactTypes" Type="int" Nullable="false" />
+    <Property Name="Contacts_Countries" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Prisoner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="SomeData" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <Association Name="Contacts_ContactTypes">
+    <End Role="ContactTypes" Type="ApplicationDataStore.ContactTypes" Multiplicity="1" />
+    <End Role="Contacts" Type="ApplicationDataStore.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Contacts_ContactTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contacts_Countries">
+    <End Role="Countries" Type="ApplicationDataStore.Countries" Multiplicity="1" />
+    <End Role="Contacts" Type="ApplicationDataStore.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Contacts_Countries" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Prisoner_Contacts">
+    <End Role="Contacts" Type="ApplicationDataStore.Contacts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Prisoner" Type="ApplicationDataStore.Prisoner" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prisoner">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

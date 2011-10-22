@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="ApplicationDataObjectContext" StorageEntityContainer="ApplicationDataStore">
+    <EntitySetMapping Name="ContactsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationData.Contacts)">
+        <MappingFragment StoreEntitySet="ContactsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Contacts_ContactTypes" ColumnName="Contacts_ContactTypes" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Line3" ColumnName="Line3" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="Contacts_Countries" ColumnName="Contacts_Countries" />
+          <ScalarProperty Name="PhoneNumbers" ColumnName="PhoneNumbers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactTypesSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationData.ContactTypes)">
+        <MappingFragment StoreEntitySet="ContactTypesSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CountriesSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationData.Countries)">
+        <MappingFragment StoreEntitySet="CountriesSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prisoners">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationData.Prisoner)">
+        <MappingFragment StoreEntitySet="Prisoners">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SomeData" ColumnName="SomeData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

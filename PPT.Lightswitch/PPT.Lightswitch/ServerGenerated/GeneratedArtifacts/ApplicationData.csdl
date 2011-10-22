@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="ApplicationData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <Association Name="Contacts_ContactTypes">
+    <End Role="ContactTypes" Type="ApplicationData.ContactTypes" Multiplicity="1" />
+    <End Role="Contacts" Type="ApplicationData.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Contacts_ContactTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Contacts_Countries">
+    <End Role="Countries" Type="ApplicationData.Countries" Multiplicity="1" />
+    <End Role="Contacts" Type="ApplicationData.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Contacts_Countries" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Prisoner_Contacts">
+    <End Role="Contacts" Type="ApplicationData.Contacts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Prisoner" Type="ApplicationData.Prisoner" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prisoner">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Line1" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Line2" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Line3" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="County" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="PhoneNumbers" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Contacts_ContactTypes" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Contacts_Countries" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="PersonType" Relationship="ApplicationData.Contacts_ContactTypes" ToRole="ContactTypes" FromRole="Contacts" />
+    <NavigationProperty Name="Country" Relationship="ApplicationData.Contacts_Countries" ToRole="Countries" FromRole="Contacts" />
+    <NavigationProperty Name="Prisoner" Relationship="ApplicationData.Prisoner_Contacts" ToRole="Prisoner" FromRole="Contacts" />
+  </EntityType>
+  <EntityType Name="ContactTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="ContactsCollection" Relationship="ApplicationData.Contacts_ContactTypes" ToRole="Contacts" FromRole="ContactTypes" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="ContactsCollection" Relationship="ApplicationData.Contacts_Countries" ToRole="Contacts" FromRole="Countries" />
+  </EntityType>
+  <EntityType Name="Prisoner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="SomeData" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="ContactId" Relationship="ApplicationData.Prisoner_Contacts" ToRole="Contacts" FromRole="Prisoner" />
+  </EntityType>
+  <EntityContainer Name="ApplicationDataObjectContext">
+    <EntitySet Name="ContactsSet" EntityType="ApplicationData.Contacts" />
+    <EntitySet Name="ContactTypesSet" EntityType="ApplicationData.ContactTypes" />
+    <EntitySet Name="CountriesSet" EntityType="ApplicationData.Countries" />
+    <EntitySet Name="Prisoners" EntityType="ApplicationData.Prisoner" />
+    <AssociationSet Name="Contacts_ContactTypes" Association="ApplicationData.Contacts_ContactTypes">
+      <End Role="ContactTypes" EntitySet="ContactTypesSet" />
+      <End Role="Contacts" EntitySet="ContactsSet" />
+    </AssociationSet>
+    <AssociationSet Name="Contacts_Countries" Association="ApplicationData.Contacts_Countries">
+      <End Role="Countries" EntitySet="CountriesSet" />
+      <End Role="Contacts" EntitySet="ContactsSet" />
+    </AssociationSet>
+    <AssociationSet Name="Prisoner_Contacts" Association="ApplicationData.Prisoner_Contacts">
+      <End Role="Contacts" EntitySet="ContactsSet" />
+      <End Role="Prisoner" EntitySet="Prisoners" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
