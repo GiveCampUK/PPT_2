@@ -16,19 +16,9 @@ _ReSharper.*
 
 Web/source/ppt.web/App_Data/TEMP/*
 *.LDF
+*.mdf
 
-PPT.Lightswitch/PPT.Lightswitch/Bin/Debug
-PPT.Lightswitch/PPT.Lightswitch/Bin/Release
-PPT.Lightswitch/PPT.Lightswitch/Client/Bin
-PPT.Lightswitch/PPT.Lightswitch/Client/obj
-PPT.Lightswitch/PPT.Lightswitch/ClientGenerated/Bin
-PPT.Lightswitch/PPT.Lightswitch/ClientGenerated/obj
-PPT.Lightswitch/PPT.Lightswitch/Server/Bin
-PPT.Lightswitch/PPT.Lightswitch/Server/obj
-PPT.Lightswitch/PPT.Lightswitch/ServerGenerated/Bin
-PPT.Lightswitch/PPT.Lightswitch/ServerGenerated/obj
-
-PPT.Lightswitch/PPT.Lightswitch/Common/Bin/Application.Common.dll
-PPT.Lightswitch/PPT.Lightswitch/Common/Bin/Application.Common.pdb
-PPT.Lightswitch/PPT.Lightswitch/Server/Common/bin/Application.Common.dll
-PPT.Lightswitch/PPT.Lightswitch/ServerGenerated/Common/bin/Application.Common.dll
+[Bb]in/
+[Oo]bj/
+!PPT.Lightswitch/PPT.Lightswitch/Bin/Data
+PPT.Lightswitch/PPT.Lightswitch/Bin/Data/Temp
