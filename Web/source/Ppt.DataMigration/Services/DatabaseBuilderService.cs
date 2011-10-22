@@ -18,6 +18,15 @@ namespace Ppt.DataMigration.Services
             {
                 sqlConn.Open();
 
+                // DROP the DB
+                using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Ppt.DataMigration.Scripts.dbo.PPT.Create.sql"))
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    string result = reader.ReadToEnd();
+                    this.RunBuildScript(sqlConn, result);
+                } // End Using
+
+                // Create the Tables
                 string[] resourceFileNames = this.GetDBScriptFileNames();
 
                 for (int i = 0; i < resourceFileNames.Count(); i++)
@@ -39,10 +48,13 @@ namespace Ppt.DataMigration.Services
 
         private void RunScript(SqlConnection connection, string sql)
         {
+            sql = String.Format("USE [{0}]\n", connection.Database) + sql;
+
             Regex regex = new Regex("^GO", RegexOptions.IgnoreCase | RegexOptions.Multiline);
             string[] lines = regex.Split(sql);
 
             SqlTransaction transaction = connection.BeginTransaction();
+
             using (SqlCommand cmd = connection.CreateCommand())
             {
                 cmd.Connection = connection;
@@ -69,6 +81,40 @@ namespace Ppt.DataMigration.Services
             } // End Using
 
             transaction.Commit();
+        } // RunScript()
+
+        private void RunBuildScript(SqlConnection connection, string sql)
+        {
+            sql = sql.Replace("#DATABASE_NAME#", connection.Database);
+
+            // This switches context back to the PPT DB after the Drop and re-Create
+            sql = sql + String.Format("USE [{0}]\r\nGO\r\n", connection.Database);
+
+            Regex regex = new Regex("^GO", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+            string[] lines = regex.Split(sql);
+
+            using (SqlCommand cmd = connection.CreateCommand())
+            {
+                cmd.Connection = connection;
+
+                foreach (string line in lines)
+                {
+                    if (line.Length > 0)
+                    {
+                        cmd.CommandText = line;
+                        cmd.CommandType = CommandType.Text;
+
+                        try
+                        {
+                            cmd.ExecuteNonQuery();
+                        } // End Try
+                        catch (SqlException)
+                        {
+                            throw;
+                        } // End Catch
+                    } // End If
+                } // End Foreach
+            } // End Using
         } // RunScript()
 
         private string[] GetDBScriptFileNames()
