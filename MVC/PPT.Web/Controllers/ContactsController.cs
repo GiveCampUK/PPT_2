@@ -5,21 +5,25 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PPT.Web.Code;
 using PPT.Web.Data;
 
 namespace PPT.Web.Controllers
 { 
     public class ContactsController : Controller
     {
-        private PPTEntities db = new PPTEntities();
+        private readonly ContactApplicationService _contactsService;
+        private readonly PPTEntities db = new PPTEntities();
 
-        //
-        // GET: /Contacts/
-
-        public ViewResult Index()
+        public ContactsController()
         {
-            var contacts = db.Contacts.Include("Country1").Include("MailCode1").Include("PersonType1").Include("Prison1").Include("Title1").Include("Town1").Include("Corresp");
-            return View(contacts.ToList());
+            _contactsService = new ContactApplicationService();
+        }
+
+        public ViewResult Index(int pageNumber = 1, int pageSize = 25)
+        {
+            var pageOfContacts = _contactsService.RetrievePageOfContacts(pageNumber, pageSize);
+            return View(pageOfContacts);
         }
 
         //
