@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Castle.Core.Logging;
+using System.Data.SqlClient;
+using System.Data.OleDb;
 
 namespace Ppt.DataMigration.Services
 {
@@ -25,9 +27,11 @@ namespace Ppt.DataMigration.Services
         /// <summary>
         /// I am not sure please update.
         /// </summary>
-        public object SourceTable { get; set; }
-        public string TargetDatabase { get; set; }
-        public string ConnectionString { get; set; }
+        public OleDbConnection AccessConnection { get; set; }
+        
+        public SqlConnection SQLConnection { get; set; }
+
+
 
         public abstract void MigrateTable();
        
