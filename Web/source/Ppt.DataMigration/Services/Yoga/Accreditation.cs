@@ -38,6 +38,10 @@ namespace Ppt.DataMigration.Services.Yoga
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["Id"];
+                        newRow["TeacherId"] = reader["Teacher Id"];
+                        newRow["Accreditation"] = reader["Accreditation"];
+                        newRow["Date"] = reader["Date"];
+                        newRow["Notes"] = reader["Notes"];
                         dt.Rows.Add(newRow);
                     }
                 }
