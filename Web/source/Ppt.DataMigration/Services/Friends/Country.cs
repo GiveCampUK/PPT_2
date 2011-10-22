@@ -32,7 +32,10 @@ namespace Ppt.DataMigration.Services.Friends
 
                 //get current records in SQL
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM COUNTRY", SQLConnection);
-               
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+    SqlCommandBuilder(sqlAdapter);
+
                 DataSet sqlCountry = new DataSet("Country");
                 sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "COUNTRY");
                 sqlAdapter.Fill(sqlCountry);
@@ -52,7 +55,7 @@ namespace Ppt.DataMigration.Services.Friends
                     }
                 }
                 reader.Close();
-                dt.AcceptChanges();
+                sqlAdapter.Update(dt);
             }
             catch (Exception ex)
             {

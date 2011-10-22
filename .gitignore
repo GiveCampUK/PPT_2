@@ -19,7 +19,5 @@ Web/source/ppt.web/App_Data/TEMP/*
 
 [Bb]in/
 [Oo]bj/
-!PPT.Lightswitch/PPT.Lightswitch/Bin/
-PPT.Lightswitch/PPT.Lightswitch/Bin/Debug
-PPT.Lightswitch/PPT.Lightswitch/Bin/Release
+!PPT.Lightswitch/PPT.Lightswitch/Bin/Data
 PPT.Lightswitch/PPT.Lightswitch/Bin/Data/Temp
