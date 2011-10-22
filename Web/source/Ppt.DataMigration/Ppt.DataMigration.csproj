@@ -108,10 +108,26 @@
     <Compile Include="Services\AbstractTableMigrationService.cs" />
     <Compile Include="Services\DatabaseBuilderService.cs" />
     <Compile Include="Services\ExtensionMethods.cs" />
+    <Compile Include="Services\Friends\Contact.cs" />
+    <Compile Include="Services\Friends\Corresp.cs" />
     <Compile Include="Services\Friends\Country.cs" />
+    <Compile Include="Services\Friends\Destination.cs" />
+    <Compile Include="Services\Friends\Gifts.cs" />
+    <Compile Include="Services\Friends\LookupLetterWriters.cs" />
+    <Compile Include="Services\Friends\LookupPurpose.cs" />
+    <Compile Include="Services\Friends\LookupType.cs" />
+    <Compile Include="Services\Friends\Lookup_Gtype.cs" />
+    <Compile Include="Services\Friends\MailCode.cs" />
+    <Compile Include="Services\Friends\MigrationService.cs" />
+    <Compile Include="Services\Friends\PostTown.cs" />
+    <Compile Include="Services\Friends\Response.cs" />
+    <Compile Include="Services\Friends\SentOut.cs" />
+    <Compile Include="Services\Friends\TitlePris.cs" />
+    <Compile Include="Services\Friends\Type.cs" />
+    <Compile Include="Services\Friends\Writers.cs" />
     <Compile Include="Services\Global.cs" />
     <Compile Include="Services\IDatabaseBuilderService.cs" />
-    <Compile Include="Services\IDatabaseMigrationService.cs" />
+    <Compile Include="Services\AbstractMigrationService.cs" />
     <Compile Include="Services\Prisoner\Contact.cs" />
     <Compile Include="Services\Prisoner\Corresp.cs" />
     <Compile Include="Services\Prisoner\Lookup_Country.cs" />
@@ -123,6 +139,12 @@
     <Compile Include="Services\Prisoner\Lookup_Response.cs" />
     <Compile Include="Services\Prisoner\Lookup_Type.cs" />
     <Compile Include="Services\Prisoner\MigrationService.cs" />
+    <Compile Include="Services\Yoga\Accreditation.cs" />
+    <Compile Include="Services\Yoga\Classes.cs" />
+    <Compile Include="Services\Yoga\History.cs" />
+    <Compile Include="Services\Yoga\MigrationService.cs" />
+    <Compile Include="Services\Yoga\WorkshopPrisons.cs" />
+    <Compile Include="Services\Yoga\WorkshopTeachers.cs" />
     <EmbeddedResource Include="ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,9 +194,7 @@
     <EmbeddedResource Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Yoga\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

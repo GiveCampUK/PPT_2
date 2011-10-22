@@ -6,7 +6,7 @@ using System.Data.OleDb;
 using Castle.Core.Logging;
 using System.Data.SqlClient;
 
-namespace Ppt.DataMigration.Services.Prisoner
+namespace Ppt.DataMigration.Services.Yoga
 {
     public class MigrationService : AbstractMigrationService
     {
@@ -16,21 +16,15 @@ namespace Ppt.DataMigration.Services.Prisoner
 
         public override void Migrate()
         {
-            RunImporter(new Lookup_PostTown());
+            RunImporter(new Accreditation());
             
-            RunImporter(new Lookup_Country());
+            RunImporter(new Classes());
 
-            RunImporter(new Lookup_Destination());
+            RunImporter(new History());
 
-            RunImporter(new Lookup_InstitutionType());
+            RunImporter(new WorkshopPrisons());
 
-            RunImporter(new Lookup_Response());
-
-            RunImporter(new Lookup_Type());
-
-            RunImporter(new Lookup_Prisons());
-
-            RunImporter(new Lookup_Letter_Writers());
+            RunImporter(new WorkshopTeachers());
             
         }
 
