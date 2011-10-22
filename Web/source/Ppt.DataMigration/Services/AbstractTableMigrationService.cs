@@ -6,6 +6,7 @@ using System.Text;
 using Castle.Core.Logging;
 using System.Data.SqlClient;
 using System.Data.OleDb;
+using System.Data;
 
 namespace Ppt.DataMigration.Services
 {
@@ -66,5 +67,31 @@ namespace Ppt.DataMigration.Services
         {
             return dts.Tables[NewTableName];
         }
+        DataTable _prisonSex = null;
+
+        public object GetPrisonSexFromSql(string prisonSex)
+        {
+            if (prisonSex == null) return DBNull.Value;
+
+            if (_prisonSex == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PrisonSex", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlCountry = new DataSet("PrisonSex");
+                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "PrisonSex");
+                sqlAdapter.Fill(sqlCountry);
+                _prisonSex = sqlCountry.Tables["PrisonSex"];
+            }
+
+            var result = _prisonSex.Select("Name = '{0}'".Formatted(prisonSex));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"]; 
+
+        }
+
     }
 }
