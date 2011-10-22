@@ -30,6 +30,9 @@ namespace Ppt.DataMigration.Services.Prisoner
 
                 //get current records in SQL
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Town", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
                
                 DataSet sqlCountry = new DataSet("Town");
                 sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Town");
@@ -39,17 +42,17 @@ namespace Ppt.DataMigration.Services.Prisoner
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    var results = dt.Select("Name = '{0}'".Formatted(reader["Town"]));
+                    var results = dt.Select("Name = '{0}'".Formatted(reader["POSTTOWN"].ToString().Replace("'", "''")));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Name"] = reader["Town"];
+                        newRow["Name"] = reader["POSTTOWN"];
                         dt.Rows.Add(newRow);
                     }
                 }
 
                 reader.Close();
-                dt.AcceptChanges();
+                sqlAdapter.Update(dt);
             }
             catch (Exception ex)
             {

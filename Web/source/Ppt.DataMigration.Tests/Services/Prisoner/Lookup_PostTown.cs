@@ -8,7 +8,7 @@ using System.Data.OleDb;
 using Ppt.DataMigration.Services.Friends;
 using Ppt.DataMigration.Services.Prisoner;
 
-namespace Ppt.DataMigration.Tests.Services.Prisoners
+namespace Ppt.DataMigration.Tests.Services.Prisoner
 {
     [TestFixture]
     public class Lookup_PostTownFixture
@@ -21,7 +21,7 @@ namespace Ppt.DataMigration.Tests.Services.Prisoners
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
-            _oleConnection = new OleDbConnection(Global.AccessConn);
+            _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
             _town = new Lookup_PostTown();
             _town.SQLConnection = _sqlConnection;
             _town.AccessConnection = _oleConnection;
