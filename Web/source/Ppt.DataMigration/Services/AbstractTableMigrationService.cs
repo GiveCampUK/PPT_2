@@ -144,6 +144,52 @@ namespace Ppt.DataMigration.Services
 
         }
 
+        private DataTable _title = null;
+        public object GetTitleFromSql(string title)
+        {
+            if (title == null) return DBNull.Value;
 
+            if (_title == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Titles", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlCountry = new DataSet("Titles");
+                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Titles");
+                sqlAdapter.Fill(sqlCountry);
+                _prisonSex = sqlCountry.Tables["Titles"];
+            }
+
+            var result = _prisonSex.Select("Name = '{0}'".Formatted(title));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        private DataTable _mailCode = null;
+        public object GetMailCodeFromSql(string mailCode)
+        {
+            if (mailCode == null) return DBNull.Value;
+
+            if (_mailCode == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM MailCode", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlCountry = new DataSet("MailCode");
+                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "MailCode");
+                sqlAdapter.Fill(sqlCountry);
+                _prisonSex = sqlCountry.Tables["MailCode"];
+            }
+
+            var result = _prisonSex.Select("Name = '{0}'".Formatted(mailCode));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }
