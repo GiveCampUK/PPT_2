@@ -10,11 +10,10 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Writers : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Writers()
         {
-            AccessTableName = "Writers";
+            this.AccessTableName = "Accreditation";
+            this.NewTableName = "Accreditation";
         }
 
         public override void MigrateTable()

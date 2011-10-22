@@ -10,16 +10,52 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Gifts : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Gifts()
         {
-            AccessTableName = "DESTINATION";
+            AccessTableName = "Gifts";
+            NewTableName = "Gifts";
         }
 
         public override void MigrateTable()
         {
-            
+            string currentIdentifier = string.Empty;
+
+            try
+            {
+                SQLConnection.Open();
+                AccessConnection.Open();
+
+                //Get Access Data
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
+
+                var reader = oleCmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    currentIdentifier = reader["REFNO"].ToString();
+
+                    var results = dt.Select("Id = '{0}'".Formatted(reader["REFNO"]));
+                    if (results.Length == 0)
+                    {
+                        var newRow = dt.NewRow();
+                        newRow["Id"] = reader["REFNO"];
+                        dt.Rows.Add(newRow);
+                    }
+                }
+                reader.Close();
+                adapter.Update(dt);
+            }
+            catch (Exception ex)
+            {
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
+            }
+            finally
+            {
+                AccessConnection.Close();
+                SQLConnection.Close();//should we open and close for each database?
+            }
         }
     }
 }
