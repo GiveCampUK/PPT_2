@@ -32,3 +32,4 @@ PPT.Lightswitch/PPT.Lightswitch/Common/Bin/Application.Common.dll
 PPT.Lightswitch/PPT.Lightswitch/Common/Bin/Application.Common.pdb
 PPT.Lightswitch/PPT.Lightswitch/Server/Common/bin/Application.Common.dll
 PPT.Lightswitch/PPT.Lightswitch/ServerGenerated/Common/bin/Application.Common.dll
+Web/source/Ppt.DataMigration.Tests/bin/*
