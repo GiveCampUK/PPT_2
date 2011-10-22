@@ -170,7 +170,7 @@ namespace Ppt.DataMigration.Mvp
             try
             {
 
-                connection.ConnectionString = "Server={0};Database={1};User ID={2};Password={3};Trusted_Connection=False;".Formatted(
+                connection.ConnectionString = "Server={0};User ID={2};Password={3};Trusted_Connection=False;".Formatted(
                     _view.SqlServerName, _view.SqlServerDatabase, _view.SqlServerUsername, _view.SqlServerPassword);
             }
             catch (Exception ex)
@@ -187,7 +187,7 @@ namespace Ppt.DataMigration.Mvp
             try
             {
                 DatabaseBuilderService dbBuilder = new DatabaseBuilderService();
-                dbBuilder.Build(connection);
+                dbBuilder.Build(connection, _view.SqlServerDatabase);
             }
             catch (Exception ex)
             {
