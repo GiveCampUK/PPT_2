@@ -34,7 +34,7 @@ namespace Ppt.DataMigration.Services.Friends
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM COUNTRY", SQLConnection);
 
                 SqlCommandBuilder oOrderDetailsCmdBuilder = new
-    SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder(sqlAdapter);
 
                 DataSet sqlCountry = new DataSet("Country");
                 sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "COUNTRY");

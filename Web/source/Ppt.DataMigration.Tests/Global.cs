@@ -14,11 +14,19 @@ namespace Ppt.DataMigration.Tests
                 return @"Server=.\sqlexpress;Database=PPT;User ID=ppt;Password=password;Trusted_Connection=False;";
             }
         }
-        public static string AccessConn
+        public static string AccessConnFriends
         {
             get
             {
-                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Projects\PPT\Client Documents and MDBs\PPT Friends (no data)_Phoenix.mdb";
+                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\PPT\Client Documents and MDBs\PPT Friends (no data)_Phoenix.mdb";
+            }
+        }
+
+        public static string AccessConnPrisoners
+        {
+            get
+            {
+                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\PPT\Client Documents and MDBs\PPT Prisoners, structure only.mdb";
             }
         }
     }
