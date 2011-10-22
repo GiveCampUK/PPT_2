@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="PPTData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <Association Name="FK_Accreditation_Contacts">
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="0..1" />
+    <End Role="Accreditation" Type="PPTData.Accreditation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accreditation">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_Contacts">
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="0..1" />
+    <End Role="Classes" Type="PPTData.c_Class" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Classes_Prison">
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="0..1" />
+    <End Role="Classes" Type="PPTData.c_Class" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prison">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Classes">
+        <PropertyRef Name="PrisonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Country">
+    <End Role="Country" Type="PPTData.Country" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Country" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_MailCode">
+    <End Role="MailCode" Type="PPTData.MailCode" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MailCode">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="MailCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_PersonType">
+    <End Role="PersonType" Type="PPTData.PersonType" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="PersonType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Prison">
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prison">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Prison" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Titles">
+    <End Role="Titles" Type="PPTData.Title" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Title" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_Town">
+    <End Role="Town" Type="PPTData.Town" Multiplicity="0..1" />
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Town">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Town" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Corresp_Contacts">
+    <End Role="ResponseType" Type="PPTData.ResponseType" Multiplicity="0..1" />
+    <End Role="Corresp" Type="PPTData.Corresp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ResponseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Corresp">
+        <PropertyRef Name="Response" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Corresp_Corresp">
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="1" />
+    <End Role="Corresp" Type="PPTData.Corresp" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Corresp">
+        <PropertyRef Name="Corref" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gifts_GiftType">
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="0..1" />
+    <End Role="Gifts" Type="PPTData.Gift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gifts">
+        <PropertyRef Name="Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prison_Country">
+    <End Role="Country" Type="PPTData.Country" Multiplicity="0..1" />
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prison">
+        <PropertyRef Name="Country" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prison_LocationType">
+    <End Role="LocationType" Type="PPTData.LocationType" Multiplicity="1" />
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LocationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prison">
+        <PropertyRef Name="Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prison_NLAddressOrderType">
+    <End Role="NLAddressOrderType" Type="PPTData.NLAddressOrderType" Multiplicity="1" />
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NLAddressOrderType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prison">
+        <PropertyRef Name="NlAddressOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prison_PrisonSex">
+    <End Role="PrisonSex" Type="PPTData.PrisonSex" Multiplicity="1" />
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PrisonSex">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Prison">
+        <PropertyRef Name="Sex" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkshopPrisons_Prison">
+    <End Role="Prison" Type="PPTData.Prison" Multiplicity="0..1" />
+    <End Role="WorkshopPrisons" Type="PPTData.WorkshopPrison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Prison">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WorkshopPrisons">
+        <PropertyRef Name="PrisonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkshopTeachers_Contacts">
+    <End Role="Contacts" Type="PPTData.Contact" Multiplicity="0..1" />
+    <End Role="WorkshopTeachers" Type="PPTData.WorkshopTeacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="WorkshopTeachers">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Accreditation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Accreditation1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Notes" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="TeacherId" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contact" Relationship="PPTData.FK_Accreditation_Contacts" ToRole="Contacts" FromRole="Accreditation" />
+  </EntityType>
+  <EntityType Name="c_Class">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ClassDetails" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Notes" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="ClassMakeup" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ClassGender" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="DoNotCount" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="DateClassStarted" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="DateClassStopped" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="DrugClass" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="TeacherId" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="PrisonId" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contact" Relationship="PPTData.FK_Classes_Contacts" ToRole="Contacts" FromRole="Classes" />
+    <NavigationProperty Name="Prison" Relationship="PPTData.FK_Classes_Prison" ToRole="Prison" FromRole="Classes" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Surname" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Forename" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Position" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="MailName" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Salutation" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Type" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="EmailAddress" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Source" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="DOB" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Lost" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="Deceased" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="ArchivePrisonName" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="PNumber" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Cell" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Prevpris" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address2" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address3" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="County" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Tel" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Fax" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="C_Date" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="A_Date" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="AmendTime" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Memo" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Type1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ArchivePrevPris1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="XmasList" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="XmasParty" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="Wing" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Status" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="AnnualReport" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="Convenaters" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="AnnualReviewOld" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="NoFundRaisingLetter" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="NLCopiesRequired" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="NoNewsLetter" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="DontSendEmail" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="FrEvent" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="GiftAidSetup" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="GiftAidStartDate" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="GiftAidFormSent" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="GiftAidFromSentDate" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="GiftAidNotApplicable" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="BWY_Number" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="PreviousPrison" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Country" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="MailCode" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="PersonType" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Prison" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Title" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Town" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Accreditations" Relationship="PPTData.FK_Accreditation_Contacts" ToRole="Accreditation" FromRole="Contacts" />
+    <NavigationProperty Name="Classes" Relationship="PPTData.FK_Classes_Contacts" ToRole="Classes" FromRole="Contacts" />
+    <NavigationProperty Name="Country1" Relationship="PPTData.FK_Contacts_Country" ToRole="Country" FromRole="Contacts" />
+    <NavigationProperty Name="MailCode1" Relationship="PPTData.FK_Contacts_MailCode" ToRole="MailCode" FromRole="Contacts" />
+    <NavigationProperty Name="PersonType1" Relationship="PPTData.FK_Contacts_PersonType" ToRole="PersonType" FromRole="Contacts" />
+    <NavigationProperty Name="Prison1" Relationship="PPTData.FK_Contacts_Prison" ToRole="Prison" FromRole="Contacts" />
+    <NavigationProperty Name="Title1" Relationship="PPTData.FK_Contacts_Titles" ToRole="Titles" FromRole="Contacts" />
+    <NavigationProperty Name="Town1" Relationship="PPTData.FK_Contacts_Town" ToRole="Town" FromRole="Contacts" />
+    <NavigationProperty Name="Corresp" Relationship="PPTData.FK_Corresp_Corresp" ToRole="Corresp" FromRole="Contacts" />
+    <NavigationProperty Name="Gifts" Relationship="PPTData.FK_Gifts_GiftType" ToRole="Gifts" FromRole="Contacts" />
+    <NavigationProperty Name="WorkshopTeachers" Relationship="PPTData.FK_WorkshopTeachers_Contacts" ToRole="WorkshopTeachers" FromRole="Contacts" />
+  </EntityType>
+  <EntityType Name="Corresp">
+    <Key>
+      <PropertyRef Name="Corref" />
+    </Key>
+    <Property Name="Corref" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="OldCorref" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Number" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Refno" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Date1" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="Type" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Filing" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Destination" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Correspondant" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Response" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="ResponseType" Relationship="PPTData.FK_Corresp_Contacts" ToRole="ResponseType" FromRole="Corresp" />
+    <NavigationProperty Name="Contact" Relationship="PPTData.FK_Corresp_Corresp" ToRole="Contacts" FromRole="Corresp" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_Country" ToRole="Contacts" FromRole="Country" />
+    <NavigationProperty Name="Prisons" Relationship="PPTData.FK_Prison_Country" ToRole="Prison" FromRole="Country" />
+  </EntityType>
+  <EntityType Name="Destination">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Gift">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="GiftType" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Amount" Type="Double" ConcurrencyMode="None" />
+    <Property Name="Source" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Purpose" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Contact" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contact1" Relationship="PPTData.FK_Gifts_GiftType" ToRole="Contacts" FromRole="Gifts" />
+  </EntityType>
+  <EntityType Name="GiftType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ShortCode" Type="String" MaxLength="15" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="TeacherId" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="History1" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+  </EntityType>
+  <EntityType Name="InstitutionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="true" ConcurrencyMode="Fixed" />
+    <Property Name="ShortCode" Type="String" MaxLength="10" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="LetterWriter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ShortCode" Type="String" MaxLength="15" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="LocationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Prisons" Relationship="PPTData.FK_Prison_LocationType" ToRole="Prison" FromRole="LocationType" />
+  </EntityType>
+  <EntityType Name="MailCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Code1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_MailCode" ToRole="Contacts" FromRole="MailCode" />
+  </EntityType>
+  <EntityType Name="NLAddressOrderType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Prisons" Relationship="PPTData.FK_Prison_NLAddressOrderType" ToRole="Prison" FromRole="NLAddressOrderType" />
+  </EntityType>
+  <EntityType Name="PersonType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ShortCode" Type="String" MaxLength="10" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_PersonType" ToRole="Contacts" FromRole="PersonType" />
+  </EntityType>
+  <EntityType Name="Prison">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="MailName" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address1" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address2" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address3" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Town" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="County" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="MalePrisonersHeld" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="FemalePrisonersHeld" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="JuvenilePrisonersHeld" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="YoungOffendersHeld" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="AdultPrisonersHeld" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="Cat" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Ptype" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="VolunteersNotes" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Notes" Type="String" MaxLength="Max" Unicode="false" ConcurrencyMode="None" />
+    <Property Name="Governor" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Telephone" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Tag" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="InclInNLAddressList" Type="Boolean" ConcurrencyMode="Fixed" />
+    <Property Name="DesignationNewsletter" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ContactForNewsletter" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ContactPosition" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ContactPhone" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ContactFax" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Country" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Location" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="NlAddressOrder" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Sex" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Classes" Relationship="PPTData.FK_Classes_Prison" ToRole="Classes" FromRole="Prison" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_Prison" ToRole="Contacts" FromRole="Prison" />
+    <NavigationProperty Name="Country1" Relationship="PPTData.FK_Prison_Country" ToRole="Country" FromRole="Prison" />
+    <NavigationProperty Name="LocationType" Relationship="PPTData.FK_Prison_LocationType" ToRole="LocationType" FromRole="Prison" />
+    <NavigationProperty Name="NLAddressOrderType" Relationship="PPTData.FK_Prison_NLAddressOrderType" ToRole="NLAddressOrderType" FromRole="Prison" />
+    <NavigationProperty Name="PrisonSex" Relationship="PPTData.FK_Prison_PrisonSex" ToRole="PrisonSex" FromRole="Prison" />
+    <NavigationProperty Name="WorkshopPrisons" Relationship="PPTData.FK_WorkshopPrisons_Prison" ToRole="WorkshopPrisons" FromRole="Prison" />
+  </EntityType>
+  <EntityType Name="PrisonSex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Prisons" Relationship="PPTData.FK_Prison_PrisonSex" ToRole="Prison" FromRole="PrisonSex" />
+  </EntityType>
+  <EntityType Name="PurposeType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="ShortCode" Type="String" MaxLength="10" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="ResponseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Response" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Cost" Type="Double" ConcurrencyMode="None" />
+    <Property Name="Destination" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postage" Type="Double" ConcurrencyMode="None" />
+    <Property Name="Stationary" Type="Double" ConcurrencyMode="None" />
+    <NavigationProperty Name="Corresps" Relationship="PPTData.FK_Corresp_Contacts" ToRole="Corresp" FromRole="ResponseType" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" ConcurrencyMode="Fixed" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="version" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_Titles" ToRole="Contacts" FromRole="Titles" />
+  </EntityType>
+  <EntityType Name="Town">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contacts" Relationship="PPTData.FK_Contacts_Town" ToRole="Contacts" FromRole="Town" />
+  </EntityType>
+  <EntityType Name="WorkshopPrison">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Workshop" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Notes" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="PrisonId" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Prison" Relationship="PPTData.FK_WorkshopPrisons_Prison" ToRole="Prison" FromRole="WorkshopPrisons" />
+  </EntityType>
+  <EntityType Name="WorkshopTeacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Workshop" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="c_Date" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Notes" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="TeacherId" Type="Int32" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Contact" Relationship="PPTData.FK_WorkshopTeachers_Contacts" ToRole="Contacts" FromRole="WorkshopTeachers" />
+  </EntityType>
+  <EntityContainer Name="PPTDataObjectContext">
+    <EntitySet Name="Accreditations" EntityType="PPTData.Accreditation" />
+    <EntitySet Name="Classes" EntityType="PPTData.c_Class" />
+    <EntitySet Name="Contacts" EntityType="PPTData.Contact" />
+    <EntitySet Name="Corresps" EntityType="PPTData.Corresp" />
+    <EntitySet Name="Countries" EntityType="PPTData.Country" />
+    <EntitySet Name="Destinations" EntityType="PPTData.Destination" />
+    <EntitySet Name="Gifts" EntityType="PPTData.Gift" />
+    <EntitySet Name="GiftTypes" EntityType="PPTData.GiftType" />
+    <EntitySet Name="Histories" EntityType="PPTData.History" />
+    <EntitySet Name="InstitutionTypes" EntityType="PPTData.InstitutionType" />
+    <EntitySet Name="LetterWriters" EntityType="PPTData.LetterWriter" />
+    <EntitySet Name="LocationTypes" EntityType="PPTData.LocationType" />
+    <EntitySet Name="MailCodes" EntityType="PPTData.MailCode" />
+    <EntitySet Name="NLAddressOrderTypes" EntityType="PPTData.NLAddressOrderType" />
+    <EntitySet Name="PersonTypes" EntityType="PPTData.PersonType" />
+    <EntitySet Name="Prisons" EntityType="PPTData.Prison" />
+    <EntitySet Name="PrisonSexes" EntityType="PPTData.PrisonSex" />
+    <EntitySet Name="PurposeTypes" EntityType="PPTData.PurposeType" />
+    <EntitySet Name="ResponseTypes" EntityType="PPTData.ResponseType" />
+    <EntitySet Name="sysdiagrams" EntityType="PPTData.sysdiagram" />
+    <EntitySet Name="Titles" EntityType="PPTData.Title" />
+    <EntitySet Name="Towns" EntityType="PPTData.Town" />
+    <EntitySet Name="WorkshopPrisons" EntityType="PPTData.WorkshopPrison" />
+    <EntitySet Name="WorkshopTeachers" EntityType="PPTData.WorkshopTeacher" />
+    <AssociationSet Name="FK_Accreditation_Contacts" Association="PPTData.FK_Accreditation_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Accreditation" EntitySet="Accreditations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_Contacts" Association="PPTData.FK_Classes_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Classes_Prison" Association="PPTData.FK_Classes_Prison">
+      <End Role="Prison" EntitySet="Prisons" />
+      <End Role="Classes" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Country" Association="PPTData.FK_Contacts_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_MailCode" Association="PPTData.FK_Contacts_MailCode">
+      <End Role="MailCode" EntitySet="MailCodes" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_PersonType" Association="PPTData.FK_Contacts_PersonType">
+      <End Role="PersonType" EntitySet="PersonTypes" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Prison" Association="PPTData.FK_Contacts_Prison">
+      <End Role="Prison" EntitySet="Prisons" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Titles" Association="PPTData.FK_Contacts_Titles">
+      <End Role="Titles" EntitySet="Titles" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_Town" Association="PPTData.FK_Contacts_Town">
+      <End Role="Town" EntitySet="Towns" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Corresp_Contacts" Association="PPTData.FK_Corresp_Contacts">
+      <End Role="ResponseType" EntitySet="ResponseTypes" />
+      <End Role="Corresp" EntitySet="Corresps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Corresp_Corresp" Association="PPTData.FK_Corresp_Corresp">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Corresp" EntitySet="Corresps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gifts_GiftType" Association="PPTData.FK_Gifts_GiftType">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Gifts" EntitySet="Gifts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prison_Country" Association="PPTData.FK_Prison_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Prison" EntitySet="Prisons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prison_LocationType" Association="PPTData.FK_Prison_LocationType">
+      <End Role="LocationType" EntitySet="LocationTypes" />
+      <End Role="Prison" EntitySet="Prisons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prison_NLAddressOrderType" Association="PPTData.FK_Prison_NLAddressOrderType">
+      <End Role="NLAddressOrderType" EntitySet="NLAddressOrderTypes" />
+      <End Role="Prison" EntitySet="Prisons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prison_PrisonSex" Association="PPTData.FK_Prison_PrisonSex">
+      <End Role="PrisonSex" EntitySet="PrisonSexes" />
+      <End Role="Prison" EntitySet="Prisons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkshopPrisons_Prison" Association="PPTData.FK_WorkshopPrisons_Prison">
+      <End Role="Prison" EntitySet="Prisons" />
+      <End Role="WorkshopPrisons" EntitySet="WorkshopPrisons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkshopTeachers_Contacts" Association="PPTData.FK_WorkshopTeachers_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="WorkshopTeachers" EntitySet="WorkshopTeachers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

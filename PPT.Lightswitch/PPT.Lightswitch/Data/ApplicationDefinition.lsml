@@ -27,6 +27,11 @@
           <ShowScreenMethod TargetScreen="PrisonersByLastName" />
         </ApplicationMethod.Attributes>
       </ApplicationMethod>
+      <ApplicationMethod Name="ShowClasses">
+        <ApplicationMethod.Attributes>
+          <ShowScreenMethod TargetScreen="Classes" />
+        </ApplicationMethod.Attributes>
+      </ApplicationMethod>
     </Application.Methods>
     <Application.Attributes>
       <AutomaticDisplayName Expression="(\p{Ll})(\p{Lu})|_+"
@@ -40,6 +45,8 @@
         </ApplicationNavigationGroup.Attributes>
         <ApplicationNavigationLink Command="!module/Commands[ScreenCommandShowContactList]"
                                    Name="ContactList" />
+        <ApplicationNavigationLink Command="!module/Commands[ScreenCommandShowClasses]"
+                                   Name="Classes" />
       </ApplicationNavigationGroup>
       <ApplicationNavigationGroup Name="group">
         <ApplicationNavigationGroup.Attributes>
@@ -75,6 +82,8 @@
                         Target="!module/Methods[ShowCountryList]" />
     <ApplicationCommand Name="ScreenCommandShowPrisonersByLastName"
                         Target="!module/Methods[ShowPrisonersByLastName]" />
+    <ApplicationCommand Name="ScreenCommandShowClasses"
+                        Target="!module/Methods[ShowClasses]" />
   </Application>
 
   <EntityContainerGroup Name="DataWorkspace">
@@ -88,8 +97,8 @@
     </EntityContainerGroupProperty>
     <EntityContainerGroupProperty EntityContainer="ApplicationData"
                                   Name="ApplicationData" />
-    <EntityContainerGroupProperty EntityContainer="PPTData"
-                                  Name="PPTData" />
+    <EntityContainerGroupProperty EntityContainer="PPT_2Data"
+                                  Name="PPT_2Data" />
   </EntityContainerGroup><EntityContainer Name="ApplicationData"
                    IsIntrinsic="True">
 
@@ -3813,7 +3822,7 @@
                     Multiplicity="Many"
                     Name="WorkshopTeachers" />
   </Association>
-<EntityContainer Name="PPTData"
+<EntityContainer Name="PPT_2Data"
                    IsIntrinsic="False">
 
     <EntitySet CanDelete="True"
@@ -5999,8 +6008,8 @@
 
   
   <DataService DataProvider="EntityFrameworkDataProvider"
-               EntityContainer="PPTData"
-               Name="PPTDataDataService">
+               EntityContainer="PPT_2Data"
+               Name="PPT_2DataDataService">
     <DataService.ConnectionProperties>
       <ConnectionProperty Name="DataProviderName"
                           Value="91510608-8809-4020-8897-fba057e22d54" />
@@ -6009,7 +6018,7 @@
       <ConnectionProperty Name="ProviderInvariantName"
                           Value="System.Data.SqlClient" />
       <ConnectionProperty Name="ConnectionStringGuid"
-                          Value="b56aa1ab-231c-432a-a52e-bd43cf5478e8" />
+                          Value="85911be6-eee4-41a8-ab6c-5e36cffac2a6" />
       <ConnectionProperty Name="ProviderManifestToken"
                           Value="2008" />
     </DataService.ConnectionProperties>
@@ -6964,12 +6973,12 @@
     <AssociationSetMapping AssociationSet="FK_Accreditation_Contacts">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Accreditation_Contacts" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Accreditation_Contacts]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Accreditation_Contacts]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Accreditation_Contacts]/Members[Accreditation]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Accreditation_Contacts]/Members[Accreditation]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="TeacherId" />
           </SsdlAssociationSetEnd.Attributes>
@@ -6979,12 +6988,12 @@
     <AssociationSetMapping AssociationSet="FK_Classes_Contacts">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Classes_Contacts" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Classes_Contacts]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Classes_Contacts]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Classes_Contacts]/Members[Classes]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Classes_Contacts]/Members[Classes]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="TeacherId" />
           </SsdlAssociationSetEnd.Attributes>
@@ -6994,12 +7003,12 @@
     <AssociationSetMapping AssociationSet="FK_Classes_Prison">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Classes_Prison" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Classes_Prison]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Classes_Prison]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Classes_Prison]/Members[Classes]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Classes_Prison]/Members[Classes]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="PrisonId" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7009,12 +7018,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_Country">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_Country" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Country]/Members[Country]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Country]/Members[Country]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Country]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Country]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Country" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7024,12 +7033,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_MailCode">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_MailCode" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_MailCode]/Members[MailCode]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_MailCode]/Members[MailCode]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_MailCode]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_MailCode]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="MailCode" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7039,12 +7048,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_PersonType">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_PersonType" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_PersonType]/Members[PersonType]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_PersonType]/Members[PersonType]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_PersonType]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_PersonType]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="PersonType" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7054,12 +7063,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_Prison">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_Prison" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Prison]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Prison]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Prison]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Prison]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Prison" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7069,12 +7078,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_Titles">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_Titles" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Titles]/Members[Titles]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Titles]/Members[Titles]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Titles]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Titles]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Title" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7084,12 +7093,12 @@
     <AssociationSetMapping AssociationSet="FK_Contacts_Town">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Contacts_Town" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Town]/Members[Town]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Town]/Members[Town]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Contacts_Town]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Contacts_Town]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Town" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7099,12 +7108,12 @@
     <AssociationSetMapping AssociationSet="FK_Corresp_Contacts">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Corresp_Contacts" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Corresp_Contacts]/Members[ResponseType]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Corresp_Contacts]/Members[ResponseType]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Corresp_Contacts]/Members[Corresp]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Corresp_Contacts]/Members[Corresp]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Response" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7114,12 +7123,12 @@
     <AssociationSetMapping AssociationSet="FK_Corresp_Corresp">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Corresp_Corresp" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Corresp_Corresp]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Corresp_Corresp]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Corresp_Corresp]/Members[Corresp]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Corresp_Corresp]/Members[Corresp]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Corref" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7129,12 +7138,12 @@
     <AssociationSetMapping AssociationSet="FK_Gifts_GiftType">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Gifts_GiftType" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Gifts_GiftType]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Gifts_GiftType]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Gifts_GiftType]/Members[Gifts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Gifts_GiftType]/Members[Gifts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Contact" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7144,12 +7153,12 @@
     <AssociationSetMapping AssociationSet="FK_Prison_Country">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Prison_Country" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_Country]/Members[Country]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_Country]/Members[Country]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_Country]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_Country]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Country" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7159,12 +7168,12 @@
     <AssociationSetMapping AssociationSet="FK_Prison_LocationType">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Prison_LocationType" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_LocationType]/Members[LocationType]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_LocationType]/Members[LocationType]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_LocationType]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_LocationType]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Location" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7174,12 +7183,12 @@
     <AssociationSetMapping AssociationSet="FK_Prison_NLAddressOrderType">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Prison_NLAddressOrderType" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_NLAddressOrderType]/Members[NLAddressOrderType]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_NLAddressOrderType]/Members[NLAddressOrderType]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_NLAddressOrderType]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_NLAddressOrderType]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="NlAddressOrder" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7189,12 +7198,12 @@
     <AssociationSetMapping AssociationSet="FK_Prison_PrisonSex">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_Prison_PrisonSex" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_PrisonSex]/Members[PrisonSex]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_PrisonSex]/Members[PrisonSex]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_Prison_PrisonSex]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_Prison_PrisonSex]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Sex" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7204,12 +7213,12 @@
     <AssociationSetMapping AssociationSet="FK_WorkshopPrisons_Prison">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_WorkshopPrisons_Prison" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_WorkshopPrisons_Prison]/Members[Prison]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_WorkshopPrisons_Prison]/Members[Prison]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_WorkshopPrisons_Prison]/Members[WorkshopPrisons]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_WorkshopPrisons_Prison]/Members[WorkshopPrisons]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="PrisonId" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7219,12 +7228,12 @@
     <AssociationSetMapping AssociationSet="FK_WorkshopTeachers_Contacts">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet Name="FK_WorkshopTeachers_Contacts" />
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_WorkshopTeachers_Contacts]/Members[Contacts]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_WorkshopTeachers_Contacts]/Members[Contacts]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd End="PPTData/Members[FK_WorkshopTeachers_Contacts]/Members[WorkshopTeachers]">
+        <SsdlAssociationSetEnd End="PPT_2Data/Members[FK_WorkshopTeachers_Contacts]/Members[WorkshopTeachers]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef Name="TeacherId" />
           </SsdlAssociationSetEnd.Attributes>
@@ -7232,6 +7241,817 @@
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
   </DataService>
+
+  <Screen Name="Classes">
+    <Screen.Attributes>
+      <SaveChangesTo DataService="PPT_2DataDataService" />
+    </Screen.Attributes>
+    <Screen.Methods>
+      <ScreenMethod Name="Save">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Save.png" />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+      <ScreenMethod Name="Refresh">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Refresh.png" />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+      <ScreenMethod Name="Close">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+    </Screen.Methods>
+    <Screen.Properties>
+      <ScreenCollectionProperty Name="Classes1"
+                                PageSize="45"
+                                PropertyType="CollectionView$c_Class">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition Name="Classes1Query"
+                                 ReturnType="c_Class*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression Member="PPT_2Data/Members[Classes_All]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression Target="Classes/Properties[Classes1]/Query" />
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+    </Screen.Properties>
+    <Screen.RootContentItem>
+      <ContentItem Kind="Screen"
+                   Name="RootContentItem">
+        <ContentItem.CommandItems>
+          <ContentItem Kind="Command"
+                       Name="Save">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression Target="Classes/Methods[Save]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
+          <ContentItem Kind="Command"
+                       Name="Refresh">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression Target="Classes/Methods[Refresh]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
+        </ContentItem.CommandItems>
+        <ContentItem Kind="Group"
+                     Name="ScreenLayout"
+                     View="Microsoft.LightSwitch:ColumnsLayout">
+          <ContentItem Kind="Group"
+                       Name="ListColumn">
+            <ContentItem.PropertySources>
+              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Double"
+                                        Value="2" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
+            <ContentItem DataType="CollectionView$c_Class"
+                         Kind="Collection"
+                         Name="c_ClassList"
+                         View="Microsoft.LightSwitch:List">
+              <ContentItem.CommandItems>
+                <ContentItem Kind="Command"
+                             Name="Classes1_AddAndEditNew">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="AddAndEditNew" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem Kind="Command"
+                             Name="Classes1_EditSelected">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="EditSelected" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem Kind="Command"
+                             Name="Classes1_DeleteSelected">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="DeleteSelected" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem.CommandItems>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression Member="Classes/Properties[Classes1]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource Property=":RootControl/Properties[AttachedLabelPosition]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Collapsed" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Stretch" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+              <ContentItem DataType="c_Class"
+                           Kind="Details"
+                           Name="RowTemplate">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression />
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType=":Int32"
+                             Kind="Value"
+                             Name="Id">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Id]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassDetails">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassDetails]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="Notes">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Notes]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassMakeup">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassGender">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassGender]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":Boolean?"
+                             Kind="Value"
+                             Name="DoNotCount">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DoNotCount]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="DateClassStarted">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="DateClassStopped">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":Boolean?"
+                             Kind="Value"
+                             Name="DrugClass">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DrugClass]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType="Contact"
+                             Kind="Details"
+                             Name="Contact">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Contact]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem DataType="Contact"
+                               Kind="Details"
+                               Name="RowTemplate1">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                </ContentItem>
+                <ContentItem DataType="Prison"
+                             Kind="Details"
+                             Name="Prison">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Prison]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem DataType="Prison"
+                               Kind="Details"
+                               Name="RowTemplate2">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                </ContentItem>
+              </ContentItem>
+            </ContentItem>
+          </ContentItem>
+          <ContentItem Kind="Group"
+                       Name="DetailsColumn">
+            <ContentItem.PropertySources>
+              <ControlPropertySource Property=":ScrollableControl/Properties[IsVerticalScrollBarEnabled]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Boolean"
+                                        Value="True" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Double"
+                                        Value="3" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
+            <ContentItem DataType="c_Class"
+                         Kind="Details"
+                         Name="c_ClassDetails">
+              <ContentItem.Attributes>
+                <DisplayName Value="c Class Details" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression Member="Classes/Properties[Classes1]" />
+                    <MemberExpression Member="SelectedItem" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Top" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+              <ContentItem DataType=":Int32"
+                           Kind="Value"
+                           Name="Id1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Id]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassDetails1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassDetails]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="Notes1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Notes]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassMakeup1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassGender1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassGender]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":Boolean?"
+                           Kind="Value"
+                           Name="DoNotCount1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DoNotCount]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="DateClassStarted1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="DateClassStopped1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":Boolean?"
+                           Kind="Value"
+                           Name="DrugClass1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DrugClass]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType="Contact"
+                           Kind="Details"
+                           Name="Contact1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Contact]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType="Contact"
+                             Kind="Details"
+                             Name="RowTemplate3">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression />
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem>
+              <ContentItem DataType="Prison"
+                           Kind="Details"
+                           Name="Prison1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Prison]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType="Prison"
+                             Kind="Details"
+                             Name="RowTemplate4">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression />
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem>
+            </ContentItem>
+          </ContentItem>
+        </ContentItem>
+      </ContentItem>
+    </Screen.RootContentItem>
+  </Screen>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+ 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+  
 
 
 

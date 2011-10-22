@@ -903,7 +903,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Accreditation
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Accreditation :
@@ -1111,7 +1111,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region c_Class
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class c_Class :
@@ -1502,7 +1502,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Contact
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Contact :
@@ -3209,7 +3209,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Corresp
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Corresp :
@@ -3579,7 +3579,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Country
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Country :
@@ -3735,7 +3735,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Destination
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Destination :
@@ -3823,7 +3823,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Gift
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Gift :
@@ -4073,7 +4073,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region GiftType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class GiftType :
@@ -4182,7 +4182,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region History
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class History :
@@ -4312,7 +4312,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region InstitutionType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class InstitutionType :
@@ -4421,7 +4421,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region LetterWriter
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class LetterWriter :
@@ -4530,7 +4530,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region LocationType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class LocationType :
@@ -4652,7 +4652,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region MailCode
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class MailCode :
@@ -4795,7 +4795,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region NLAddressOrderType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class NLAddressOrderType :
@@ -4917,7 +4917,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region PersonType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class PersonType :
@@ -5060,7 +5060,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Prison
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Prison :
@@ -6087,7 +6087,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region PrisonSex
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class PrisonSex :
@@ -6209,7 +6209,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region PurposeType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class PurposeType :
@@ -6318,7 +6318,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region ResponseType
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class ResponseType :
@@ -6524,7 +6524,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region sysdiagram
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class sysdiagram :
@@ -6675,7 +6675,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Title
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Title :
@@ -6797,7 +6797,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Town
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class Town :
@@ -6919,7 +6919,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region WorkshopPrison
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class WorkshopPrison :
@@ -7127,7 +7127,7 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region WorkshopTeacher
-    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPT_2Data.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class WorkshopTeacher :
@@ -7516,14 +7516,14 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
-    #region PPTData
+    #region PPT_2Data
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public class PPTData
+    public class PPT_2Data
         : global::Microsoft.LightSwitch.ClientGenerated.Implementation.DomainContext
     {
-        public PPTData(global::Microsoft.LightSwitch.IDataService dataService)
-            : base(dataService, global::Microsoft.LightSwitch.ClientGenerated.Implementation.DomainContext.CreateWcfDomainClient<IPPTDataContract>(new global::System.Uri("LightSwitchApplication-Implementation-PPTDataDomainService.svc", global::System.UriKind.Relative)))
+        public PPT_2Data(global::Microsoft.LightSwitch.IDataService dataService)
+            : base(dataService, global::Microsoft.LightSwitch.ClientGenerated.Implementation.DomainContext.CreateWcfDomainClient<IPPT_2DataContract>(new global::System.Uri("LightSwitchApplication-Implementation-PPT_2DataDomainService.svc", global::System.UriKind.Relative)))
         {
         }
     
@@ -7697,12 +7697,12 @@ namespace LightSwitchApplication.Implementation
         }
         protected override global::System.ServiceModel.DomainServices.Client.EntityContainer CreateEntityContainer()
         {
-            return new PPTDataEntityContainer();
+            return new PPT_2DataEntityContainer();
         }
     
-        internal sealed class PPTDataEntityContainer : global::System.ServiceModel.DomainServices.Client.EntityContainer
+        internal sealed class PPT_2DataEntityContainer : global::System.ServiceModel.DomainServices.Client.EntityContainer
         {
-            public PPTDataEntityContainer()
+            public PPT_2DataEntityContainer()
             {
                 this.CreateEntitySet<global::LightSwitchApplication.Implementation.Accreditation>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
                 this.CreateEntitySet<global::LightSwitchApplication.Implementation.c_Class>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
@@ -7734,454 +7734,454 @@ namespace LightSwitchApplication.Implementation
         #region Service Contract Interface
     
         [global::System.ServiceModel.ServiceContract]
-        public interface IPPTDataContract
+        public interface IPPT_2DataContract
         {
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Accreditations_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginAccreditations_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Accreditations_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginAccreditations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Accreditations_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Accreditations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginAccreditations_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Classes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Classes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Classes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginClasses_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Classes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Classes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Classes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginClasses_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Classes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Classes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Classes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginClasses_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Contacts_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginContacts_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Contacts_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginContacts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Contacts_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Contacts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginContacts_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Corresps_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCorresps_Single(string frameworkOperators, global::System.Nullable<int> Corref, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Corresps_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCorresps_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Corref, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Corresps_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Corresps_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCorresps_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Countries_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Countries_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Countries_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCountries_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Countries_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Countries_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Countries_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCountries_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Countries_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Countries_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Countries_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginCountries_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Destinations_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginDestinations_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Destinations_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginDestinations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Destinations_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Destinations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginDestinations_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Gifts_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGifts_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Gifts_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGifts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Gifts_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Gifts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGifts_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGiftTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGiftTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/GiftTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginGiftTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Histories_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Histories_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Histories_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginHistories_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Histories_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Histories_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Histories_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginHistories_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Histories_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Histories_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Histories_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginHistories_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginInstitutionTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginInstitutionTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/InstitutionTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginInstitutionTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLetterWriters_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLetterWriters_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LetterWriters_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLetterWriters_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLocationTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLocationTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/LocationTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginLocationTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/MailCodes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginMailCodes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/MailCodes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginMailCodes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/MailCodes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/MailCodes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginMailCodes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginNLAddressOrderTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginNLAddressOrderTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/NLAddressOrderTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginNLAddressOrderTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPersonTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPersonTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PersonTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPersonTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Prisons_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Prisons_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Prisons_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Prisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisons_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisonSexes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisonSexes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PrisonSexes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPrisonSexes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPurposeTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPurposeTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/PurposeTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginPurposeTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginResponseTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginResponseTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/ResponseTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginResponseTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult Beginsysdiagrams_Single(string frameworkOperators, global::System.Nullable<int> diagram_id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult Beginsysdiagrams_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> diagram_id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/sysdiagrams_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult Beginsysdiagrams_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Titles_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Titles_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Titles_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTitles_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Titles_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Titles_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Titles_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTitles_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Titles_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Titles_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Titles_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTitles_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Towns_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Towns_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Towns_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTowns_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Towns_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Towns_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Towns_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTowns_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/Towns_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/Towns_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/Towns_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginTowns_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopPrisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopPrisons_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_Single", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_SingleResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopTeachers_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_Single(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefaultResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_SingleOrDefault", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_SingleOrDefaultResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopTeachers_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_SingleOrDefault(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_AllResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_All", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_AllResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/WorkshopTeachers_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginWorkshopTeachers_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_All(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/SubmitChanges", ReplyAction = "http://tempuri.org/PPTDataDomainService/SubmitChangesResponse"),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/SubmitChangesDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/SubmitChanges", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/SubmitChangesResponse"),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/SubmitChangesDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult BeginSubmitChanges(global::System.Collections.Generic.IEnumerable<global::System.ServiceModel.DomainServices.Client.ChangeSetEntry> changeSet, global::System.AsyncCallback callback, global::System.Object asyncState);
             global::System.Collections.Generic.IEnumerable<global::System.ServiceModel.DomainServices.Client.ChangeSetEntry> EndSubmitChanges(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformation", ReplyAction = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformationResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/__GetEntitySetCanInformation", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/__GetEntitySetCanInformationResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/__GetEntitySetCanInformationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult Begin__GetEntitySetCanInformation(string entitySetName, global::System.AsyncCallback callback, global::System.Object asyncState);
             int End__GetEntitySetCanInformation(global::System.IAsyncResult result);
             
-            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperation", ReplyAction = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperationResponse"),
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPT_2DataDomainService/__CanExecuteOperation", ReplyAction = "http://tempuri.org/PPT_2DataDomainService/__CanExecuteOperationResponse"),
              global::System.ServiceModel.Web.WebGet(),
-             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPT_2DataDomainService/__CanExecuteOperationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
             global::System.IAsyncResult Begin__CanExecuteOperation(string operationName, global::System.AsyncCallback callback, global::System.Object asyncState);
             bool End__CanExecuteOperation(global::System.IAsyncResult result);
             
@@ -8307,9 +8307,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.ApplicationData();
             }
-            if (dataServiceType == typeof(global::LightSwitchApplication.PPTData))
+            if (dataServiceType == typeof(global::LightSwitchApplication.PPT_2Data))
             {
-                return new global::LightSwitchApplication.PPTData();
+                return new global::LightSwitchApplication.PPT_2Data();
             }
             return base.CreateDataService(dataServiceType);
         }
@@ -8320,9 +8320,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.ApplicationData(dataService);
             }
-            if (typeof(TDataService) == typeof(global::LightSwitchApplication.PPTData))
+            if (typeof(TDataService) == typeof(global::LightSwitchApplication.PPT_2Data))
             {
-                return new global::LightSwitchApplication.Implementation.PPTData(dataService);
+                return new global::LightSwitchApplication.Implementation.PPT_2Data(dataService);
             }
             return base.CreateDataServiceImplementation(dataService);
         }

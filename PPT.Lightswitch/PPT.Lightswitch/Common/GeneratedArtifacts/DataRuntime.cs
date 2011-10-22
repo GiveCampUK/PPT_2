@@ -43,15 +43,15 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Gets the PPTData datasource.  This provides members to query and update data in the data source.
+        /// Gets the PPT_2Data datasource.  This provides members to query and update data in the data source.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::LightSwitchApplication.PPTData PPTData
+        public global::LightSwitchApplication.PPT_2Data PPT_2Data
         {
             get
             {
-                return global::LightSwitchApplication.DataWorkspace.DetailsClass.GetValue(this, global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.PPTData);
+                return global::LightSwitchApplication.DataWorkspace.DetailsClass.GetValue(this, global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.PPT_2Data);
             }
         }
         
@@ -102,11 +102,11 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData> PPTData
+                public global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data> PPT_2Data
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.PPTData) as global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData>;
+                        return base.GetItem(global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.PPT_2Data) as global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data>;
                     }
                 }
                 
@@ -129,13 +129,13 @@ namespace LightSwitchApplication
                 }
                  
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData>.Entry
-                    PPTData = new global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData>.Entry(
-                        "PPTData",
-                        global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties._PPTData_Stub);
-                private static void _PPTData_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DataWorkspace.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData>.Data> c, global::LightSwitchApplication.DataWorkspace.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data>.Entry
+                    PPT_2Data = new global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data>.Entry(
+                        "PPT_2Data",
+                        global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties._PPT_2Data_Stub);
+                private static void _PPT_2Data_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DataWorkspace.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data>.Data> c, global::LightSwitchApplication.DataWorkspace.DetailsClass d, object sf)
                 {
-                    c(d, ref d._PPTData, sf);
+                    c(d, ref d._PPT_2Data, sf);
                 }
                  
             }
@@ -144,7 +144,7 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.ApplicationData>.Data _ApplicationData;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPTData>.Data _PPTData;
+            private global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.PPT_2Data>.Data _PPT_2Data;
             
         }
     
@@ -685,15 +685,15 @@ namespace LightSwitchApplication
     }
     
     /// <summary>
-    /// Provides members to query and update data in the PPTData datasource.
+    /// Provides members to query and update data in the PPT_2Data datasource.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public class PPTData : global::Microsoft.LightSwitch.Framework.Base.DataService<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass>
+    public class PPT_2Data : global::Microsoft.LightSwitch.Framework.Base.DataService<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass>
     {
         #region Constructors
     
-        public PPTData() : base()
+        public PPT_2Data() : base()
         {
         }
     
@@ -710,7 +710,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Accreditations);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Accreditations);
             }
         }
         
@@ -723,7 +723,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Classes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Classes);
             }
         }
         
@@ -736,7 +736,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Contacts);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Contacts);
             }
         }
         
@@ -749,7 +749,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Corresps);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Corresps);
             }
         }
         
@@ -762,7 +762,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Countries);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Countries);
             }
         }
         
@@ -775,7 +775,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Destinations);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Destinations);
             }
         }
         
@@ -788,7 +788,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Gifts);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Gifts);
             }
         }
         
@@ -801,7 +801,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.GiftTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.GiftTypes);
             }
         }
         
@@ -814,7 +814,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Histories);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Histories);
             }
         }
         
@@ -827,7 +827,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.InstitutionTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.InstitutionTypes);
             }
         }
         
@@ -840,7 +840,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.LetterWriters);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.LetterWriters);
             }
         }
         
@@ -853,7 +853,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.LocationTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.LocationTypes);
             }
         }
         
@@ -866,7 +866,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.MailCodes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.MailCodes);
             }
         }
         
@@ -879,7 +879,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.NLAddressOrderTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.NLAddressOrderTypes);
             }
         }
         
@@ -892,7 +892,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PersonTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PersonTypes);
             }
         }
         
@@ -905,7 +905,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Prisons);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Prisons);
             }
         }
         
@@ -918,7 +918,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PrisonSexes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PrisonSexes);
             }
         }
         
@@ -931,7 +931,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PurposeTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PurposeTypes);
             }
         }
         
@@ -944,7 +944,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.ResponseTypes);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.ResponseTypes);
             }
         }
         
@@ -957,7 +957,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.sysdiagrams);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.sysdiagrams);
             }
         }
         
@@ -970,7 +970,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Titles);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Titles);
             }
         }
         
@@ -983,7 +983,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Towns);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Towns);
             }
         }
         
@@ -996,7 +996,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.WorkshopPrisons);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.WorkshopPrisons);
             }
         }
         
@@ -1009,7 +1009,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.PPTData.DetailsClass.GetValue(this, global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.WorkshopTeachers);
+                return global::LightSwitchApplication.PPT_2Data.DetailsClass.GetValue(this, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.WorkshopTeachers);
             }
         }
         
@@ -1553,20 +1553,20 @@ namespace LightSwitchApplication
         [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceDetails<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PPTData.DetailsClass.PropertySet, global::LightSwitchApplication.PPTData.DetailsClass.MethodSet>
+        public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceDetails<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySet, global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSet>
         {
     
             static DetailsClass()
             {
-                var initializeMethodEntry = global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Accreditations_Single;
-                var initializePropertyEntry = global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Accreditations;
+                var initializeMethodEntry = global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Accreditations_Single;
+                var initializePropertyEntry = global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Accreditations;
             }
     
             public DetailsClass() : base()
             {
             }
     
-            public new global::LightSwitchApplication.PPTData.DetailsClass.MethodSet Methods
+            public new global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSet Methods
             {
                 get
                 {
@@ -1574,7 +1574,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.PPTData.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -1586,394 +1586,394 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class MethodSet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceMethodSet<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass>
+            public sealed class MethodSet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceMethodSet<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass>
             {
     
                 public MethodSet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Accreditations_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Accreditations_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Accreditations_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Accreditations_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class> Classes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class> Classes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Classes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Classes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class> Classes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class> Classes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Classes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Classes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact> Contacts_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact> Contacts_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Contacts_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Contacts_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact> Contacts_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact> Contacts_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Contacts_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Contacts_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp> Corresps_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp> Corresps_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Corresps_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Corresps_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp> Corresps_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp> Corresps_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Corresps_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Corresps_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country> Countries_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country> Countries_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Countries_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Countries_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country> Countries_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country> Countries_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Countries_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Countries_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination> Destinations_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination> Destinations_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Destinations_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Destinations_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination> Destinations_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination> Destinations_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Destinations_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Destinations_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift> Gifts_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift> Gifts_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Gifts_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Gifts_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift> Gifts_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift> Gifts_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Gifts_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Gifts_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.GiftTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.GiftTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.GiftTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.GiftTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History> Histories_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History> Histories_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Histories_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Histories_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History> Histories_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History> Histories_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Histories_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Histories_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.InstitutionTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.InstitutionTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.InstitutionTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.InstitutionTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.LetterWriters_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.LetterWriters_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.LetterWriters_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.LetterWriters_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.LocationTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.LocationTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.LocationTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.LocationTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.MailCodes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.MailCodes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.MailCodes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.MailCodes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.NLAddressOrderTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.NLAddressOrderTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.NLAddressOrderTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.NLAddressOrderTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PersonTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PersonTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PersonTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PersonTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison> Prisons_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison> Prisons_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Prisons_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Prisons_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison> Prisons_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison> Prisons_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Prisons_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Prisons_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PrisonSexes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PrisonSexes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PrisonSexes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PrisonSexes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PurposeTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PurposeTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.PurposeTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.PurposeTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.ResponseTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.ResponseTypes_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.ResponseTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.ResponseTypes_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.sysdiagrams_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.sysdiagrams_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.sysdiagrams_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.sysdiagrams_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title> Titles_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title> Titles_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Titles_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Titles_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title> Titles_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title> Titles_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Titles_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Titles_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town> Towns_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town> Towns_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Towns_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Towns_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town> Towns_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town> Towns_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.Towns_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.Towns_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.WorkshopPrisons_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.WorkshopPrisons_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.WorkshopPrisons_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.WorkshopPrisons_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers_Single
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers_Single
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.WorkshopTeachers_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.WorkshopTeachers_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers_SingleOrDefault
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers_SingleOrDefault
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties.WorkshopTeachers_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties.WorkshopTeachers_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
                     }
                 }
                 
@@ -1983,202 +1983,202 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServicePropertySet<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServicePropertySet<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation> Accreditations
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Accreditations) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Accreditations) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class> Classes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class> Classes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Classes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Classes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact> Contacts
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact> Contacts
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Contacts) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Contacts) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp> Corresps
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp> Corresps
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Corresps) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Corresps) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country> Countries
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country> Countries
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Countries) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Countries) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination> Destinations
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination> Destinations
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Destinations) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Destinations) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift> Gifts
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift> Gifts
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Gifts) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Gifts) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType> GiftTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.GiftTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.GiftTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History> Histories
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History> Histories
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Histories) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Histories) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType> InstitutionTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.InstitutionTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.InstitutionTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter> LetterWriters
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.LetterWriters) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.LetterWriters) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType> LocationTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.LocationTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.LocationTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode> MailCodes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.MailCodes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.MailCodes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType> NLAddressOrderTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.NLAddressOrderTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.NLAddressOrderTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType> PersonTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PersonTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PersonTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison> Prisons
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison> Prisons
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Prisons) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Prisons) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex> PrisonSexes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PrisonSexes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PrisonSexes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType> PurposeTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.PurposeTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.PurposeTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType> ResponseTypes
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.ResponseTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.ResponseTypes) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram> sysdiagrams
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.sysdiagrams) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.sysdiagrams) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title> Titles
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title> Titles
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Titles) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Titles) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town> Towns
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town> Towns
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.Towns) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.Towns) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison> WorkshopPrisons
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.WorkshopPrisons) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.WorkshopPrisons) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher> WorkshopTeachers
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties.WorkshopTeachers) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
+                        return base.GetItem(global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties.WorkshopTeachers) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>;
                     }
                 }
                 
@@ -2191,481 +2191,481 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
-                    Accreditations_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
+                    Accreditations_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
                         "Accreditations_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Accreditations_Single_Stub);
-                private static void _Accreditations_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Accreditations_Single_Stub);
+                private static void _Accreditations_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Accreditations_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
-                    Accreditations_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
+                    Accreditations_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
                         "Accreditations_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Accreditations_SingleOrDefault_Stub);
-                private static void _Accreditations_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Accreditations_SingleOrDefault_Stub);
+                private static void _Accreditations_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Accreditations_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
-                    Classes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
+                    Classes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
                         "Classes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Classes_Single_Stub);
-                private static void _Classes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Classes_Single_Stub);
+                private static void _Classes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Classes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
-                    Classes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
+                    Classes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
                         "Classes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Classes_SingleOrDefault_Stub);
-                private static void _Classes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Classes_SingleOrDefault_Stub);
+                private static void _Classes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Classes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry
-                    Contacts_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry
+                    Contacts_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
                         "Contacts_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Contacts_Single_Stub);
-                private static void _Contacts_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Contacts_Single_Stub);
+                private static void _Contacts_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Contacts_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry
-                    Contacts_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry
+                    Contacts_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
                         "Contacts_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Contacts_SingleOrDefault_Stub);
-                private static void _Contacts_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Contacts_SingleOrDefault_Stub);
+                private static void _Contacts_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Contacts_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
-                    Corresps_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
+                    Corresps_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
                         "Corresps_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Corresps_Single_Stub);
-                private static void _Corresps_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Corresps_Single_Stub);
+                private static void _Corresps_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Corresps_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
-                    Corresps_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
+                    Corresps_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
                         "Corresps_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Corresps_SingleOrDefault_Stub);
-                private static void _Corresps_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Corresps_SingleOrDefault_Stub);
+                private static void _Corresps_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Corresps_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry
-                    Countries_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry
+                    Countries_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry(
                         "Countries_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Countries_Single_Stub);
-                private static void _Countries_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Countries_Single_Stub);
+                private static void _Countries_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Countries_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry
-                    Countries_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry
+                    Countries_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry(
                         "Countries_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Countries_SingleOrDefault_Stub);
-                private static void _Countries_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Countries_SingleOrDefault_Stub);
+                private static void _Countries_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Countries_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry
-                    Destinations_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry
+                    Destinations_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
                         "Destinations_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Destinations_Single_Stub);
-                private static void _Destinations_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Destinations_Single_Stub);
+                private static void _Destinations_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Destinations_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry
-                    Destinations_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry
+                    Destinations_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
                         "Destinations_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Destinations_SingleOrDefault_Stub);
-                private static void _Destinations_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Destinations_SingleOrDefault_Stub);
+                private static void _Destinations_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Destinations_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry
-                    Gifts_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry
+                    Gifts_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
                         "Gifts_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Gifts_Single_Stub);
-                private static void _Gifts_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Gifts_Single_Stub);
+                private static void _Gifts_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Gifts_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry
-                    Gifts_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry
+                    Gifts_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
                         "Gifts_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Gifts_SingleOrDefault_Stub);
-                private static void _Gifts_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Gifts_SingleOrDefault_Stub);
+                private static void _Gifts_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Gifts_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
-                    GiftTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
+                    GiftTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
                         "GiftTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._GiftTypes_Single_Stub);
-                private static void _GiftTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._GiftTypes_Single_Stub);
+                private static void _GiftTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._GiftTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
-                    GiftTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
+                    GiftTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
                         "GiftTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._GiftTypes_SingleOrDefault_Stub);
-                private static void _GiftTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._GiftTypes_SingleOrDefault_Stub);
+                private static void _GiftTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._GiftTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry
-                    Histories_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry
+                    Histories_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry(
                         "Histories_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Histories_Single_Stub);
-                private static void _Histories_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Histories_Single_Stub);
+                private static void _Histories_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Histories_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry
-                    Histories_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry
+                    Histories_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry(
                         "Histories_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Histories_SingleOrDefault_Stub);
-                private static void _Histories_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Histories_SingleOrDefault_Stub);
+                private static void _Histories_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Histories_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
-                    InstitutionTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
+                    InstitutionTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
                         "InstitutionTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._InstitutionTypes_Single_Stub);
-                private static void _InstitutionTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._InstitutionTypes_Single_Stub);
+                private static void _InstitutionTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._InstitutionTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
-                    InstitutionTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
+                    InstitutionTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
                         "InstitutionTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._InstitutionTypes_SingleOrDefault_Stub);
-                private static void _InstitutionTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._InstitutionTypes_SingleOrDefault_Stub);
+                private static void _InstitutionTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._InstitutionTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
-                    LetterWriters_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
+                    LetterWriters_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
                         "LetterWriters_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._LetterWriters_Single_Stub);
-                private static void _LetterWriters_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._LetterWriters_Single_Stub);
+                private static void _LetterWriters_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LetterWriters_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
-                    LetterWriters_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
+                    LetterWriters_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
                         "LetterWriters_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._LetterWriters_SingleOrDefault_Stub);
-                private static void _LetterWriters_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._LetterWriters_SingleOrDefault_Stub);
+                private static void _LetterWriters_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LetterWriters_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
-                    LocationTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
+                    LocationTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
                         "LocationTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._LocationTypes_Single_Stub);
-                private static void _LocationTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._LocationTypes_Single_Stub);
+                private static void _LocationTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LocationTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
-                    LocationTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
+                    LocationTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
                         "LocationTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._LocationTypes_SingleOrDefault_Stub);
-                private static void _LocationTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._LocationTypes_SingleOrDefault_Stub);
+                private static void _LocationTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LocationTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
-                    MailCodes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
+                    MailCodes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
                         "MailCodes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._MailCodes_Single_Stub);
-                private static void _MailCodes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._MailCodes_Single_Stub);
+                private static void _MailCodes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._MailCodes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
-                    MailCodes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
+                    MailCodes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
                         "MailCodes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._MailCodes_SingleOrDefault_Stub);
-                private static void _MailCodes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._MailCodes_SingleOrDefault_Stub);
+                private static void _MailCodes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._MailCodes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
-                    NLAddressOrderTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
+                    NLAddressOrderTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
                         "NLAddressOrderTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._NLAddressOrderTypes_Single_Stub);
-                private static void _NLAddressOrderTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._NLAddressOrderTypes_Single_Stub);
+                private static void _NLAddressOrderTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._NLAddressOrderTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
-                    NLAddressOrderTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
+                    NLAddressOrderTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
                         "NLAddressOrderTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._NLAddressOrderTypes_SingleOrDefault_Stub);
-                private static void _NLAddressOrderTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._NLAddressOrderTypes_SingleOrDefault_Stub);
+                private static void _NLAddressOrderTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._NLAddressOrderTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
-                    PersonTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
+                    PersonTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
                         "PersonTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PersonTypes_Single_Stub);
-                private static void _PersonTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PersonTypes_Single_Stub);
+                private static void _PersonTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PersonTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
-                    PersonTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
+                    PersonTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
                         "PersonTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PersonTypes_SingleOrDefault_Stub);
-                private static void _PersonTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PersonTypes_SingleOrDefault_Stub);
+                private static void _PersonTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PersonTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry
-                    Prisons_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry
+                    Prisons_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
                         "Prisons_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Prisons_Single_Stub);
-                private static void _Prisons_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Prisons_Single_Stub);
+                private static void _Prisons_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Prisons_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry
-                    Prisons_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry
+                    Prisons_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
                         "Prisons_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Prisons_SingleOrDefault_Stub);
-                private static void _Prisons_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Prisons_SingleOrDefault_Stub);
+                private static void _Prisons_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Prisons_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
-                    PrisonSexes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
+                    PrisonSexes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
                         "PrisonSexes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PrisonSexes_Single_Stub);
-                private static void _PrisonSexes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PrisonSexes_Single_Stub);
+                private static void _PrisonSexes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PrisonSexes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
-                    PrisonSexes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
+                    PrisonSexes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
                         "PrisonSexes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PrisonSexes_SingleOrDefault_Stub);
-                private static void _PrisonSexes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PrisonSexes_SingleOrDefault_Stub);
+                private static void _PrisonSexes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PrisonSexes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
-                    PurposeTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
+                    PurposeTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
                         "PurposeTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PurposeTypes_Single_Stub);
-                private static void _PurposeTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PurposeTypes_Single_Stub);
+                private static void _PurposeTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PurposeTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
-                    PurposeTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
+                    PurposeTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
                         "PurposeTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._PurposeTypes_SingleOrDefault_Stub);
-                private static void _PurposeTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._PurposeTypes_SingleOrDefault_Stub);
+                private static void _PurposeTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PurposeTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
-                    ResponseTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
+                    ResponseTypes_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
                         "ResponseTypes_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._ResponseTypes_Single_Stub);
-                private static void _ResponseTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._ResponseTypes_Single_Stub);
+                private static void _ResponseTypes_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._ResponseTypes_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
-                    ResponseTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
+                    ResponseTypes_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
                         "ResponseTypes_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._ResponseTypes_SingleOrDefault_Stub);
-                private static void _ResponseTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._ResponseTypes_SingleOrDefault_Stub);
+                private static void _ResponseTypes_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._ResponseTypes_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
-                    sysdiagrams_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
+                    sysdiagrams_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
                         "sysdiagrams_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._sysdiagrams_Single_Stub);
-                private static void _sysdiagrams_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._sysdiagrams_Single_Stub);
+                private static void _sysdiagrams_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._sysdiagrams_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
-                    sysdiagrams_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
+                    sysdiagrams_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
                         "sysdiagrams_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._sysdiagrams_SingleOrDefault_Stub);
-                private static void _sysdiagrams_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._sysdiagrams_SingleOrDefault_Stub);
+                private static void _sysdiagrams_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._sysdiagrams_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry
-                    Titles_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry
+                    Titles_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry(
                         "Titles_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Titles_Single_Stub);
-                private static void _Titles_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Titles_Single_Stub);
+                private static void _Titles_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Titles_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry
-                    Titles_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry
+                    Titles_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry(
                         "Titles_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Titles_SingleOrDefault_Stub);
-                private static void _Titles_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Titles_SingleOrDefault_Stub);
+                private static void _Titles_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Titles_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry
-                    Towns_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry
+                    Towns_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry(
                         "Towns_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Towns_Single_Stub);
-                private static void _Towns_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Towns_Single_Stub);
+                private static void _Towns_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Towns_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry
-                    Towns_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry
+                    Towns_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry(
                         "Towns_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._Towns_SingleOrDefault_Stub);
-                private static void _Towns_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._Towns_SingleOrDefault_Stub);
+                private static void _Towns_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Towns_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
-                    WorkshopPrisons_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
+                    WorkshopPrisons_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
                         "WorkshopPrisons_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._WorkshopPrisons_Single_Stub);
-                private static void _WorkshopPrisons_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._WorkshopPrisons_Single_Stub);
+                private static void _WorkshopPrisons_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopPrisons_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
-                    WorkshopPrisons_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
+                    WorkshopPrisons_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
                         "WorkshopPrisons_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._WorkshopPrisons_SingleOrDefault_Stub);
-                private static void _WorkshopPrisons_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._WorkshopPrisons_SingleOrDefault_Stub);
+                private static void _WorkshopPrisons_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopPrisons_SingleOrDefault, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
-                    WorkshopTeachers_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
+                    WorkshopTeachers_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
                         "WorkshopTeachers_Single",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._WorkshopTeachers_Single_Stub);
-                private static void _WorkshopTeachers_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._WorkshopTeachers_Single_Stub);
+                private static void _WorkshopTeachers_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopTeachers_Single, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
-                    WorkshopTeachers_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
+                    WorkshopTeachers_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
                         "WorkshopTeachers_SingleOrDefault",
-                        global::LightSwitchApplication.PPTData.DetailsClass.MethodSetProperties._WorkshopTeachers_SingleOrDefault_Stub);
-                private static void _WorkshopTeachers_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.MethodSetProperties._WorkshopTeachers_SingleOrDefault_Stub);
+                private static void _WorkshopTeachers_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopTeachers_SingleOrDefault, sf);
                 }
@@ -2679,241 +2679,241 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
-                    Accreditations = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry
+                    Accreditations = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Entry(
                         "Accreditations",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Accreditations_Stub);
-                private static void _Accreditations_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Accreditations_Stub);
+                private static void _Accreditations_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Accreditations, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
-                    Classes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry
+                    Classes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Entry(
                         "Classes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Classes_Stub);
-                private static void _Classes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Classes_Stub);
+                private static void _Classes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Classes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry
-                    Contacts = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry
+                    Contacts = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Entry(
                         "Contacts",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Contacts_Stub);
-                private static void _Contacts_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Contacts_Stub);
+                private static void _Contacts_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Contacts, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
-                    Corresps = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry
+                    Corresps = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Entry(
                         "Corresps",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Corresps_Stub);
-                private static void _Corresps_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Corresps_Stub);
+                private static void _Corresps_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Corresps, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry
-                    Countries = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry
+                    Countries = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Entry(
                         "Countries",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Countries_Stub);
-                private static void _Countries_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Countries_Stub);
+                private static void _Countries_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Countries, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry
-                    Destinations = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry
+                    Destinations = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Entry(
                         "Destinations",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Destinations_Stub);
-                private static void _Destinations_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Destinations_Stub);
+                private static void _Destinations_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Destinations, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry
-                    Gifts = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry
+                    Gifts = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Entry(
                         "Gifts",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Gifts_Stub);
-                private static void _Gifts_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Gifts_Stub);
+                private static void _Gifts_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Gifts, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
-                    GiftTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry
+                    GiftTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Entry(
                         "GiftTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._GiftTypes_Stub);
-                private static void _GiftTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._GiftTypes_Stub);
+                private static void _GiftTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._GiftTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry
-                    Histories = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry
+                    Histories = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Entry(
                         "Histories",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Histories_Stub);
-                private static void _Histories_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Histories_Stub);
+                private static void _Histories_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Histories, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
-                    InstitutionTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry
+                    InstitutionTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Entry(
                         "InstitutionTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._InstitutionTypes_Stub);
-                private static void _InstitutionTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._InstitutionTypes_Stub);
+                private static void _InstitutionTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._InstitutionTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
-                    LetterWriters = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry
+                    LetterWriters = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Entry(
                         "LetterWriters",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._LetterWriters_Stub);
-                private static void _LetterWriters_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._LetterWriters_Stub);
+                private static void _LetterWriters_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LetterWriters, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
-                    LocationTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry
+                    LocationTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Entry(
                         "LocationTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._LocationTypes_Stub);
-                private static void _LocationTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._LocationTypes_Stub);
+                private static void _LocationTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._LocationTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
-                    MailCodes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry
+                    MailCodes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Entry(
                         "MailCodes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._MailCodes_Stub);
-                private static void _MailCodes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._MailCodes_Stub);
+                private static void _MailCodes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._MailCodes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
-                    NLAddressOrderTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry
+                    NLAddressOrderTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Entry(
                         "NLAddressOrderTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._NLAddressOrderTypes_Stub);
-                private static void _NLAddressOrderTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._NLAddressOrderTypes_Stub);
+                private static void _NLAddressOrderTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._NLAddressOrderTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
-                    PersonTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry
+                    PersonTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Entry(
                         "PersonTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._PersonTypes_Stub);
-                private static void _PersonTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._PersonTypes_Stub);
+                private static void _PersonTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PersonTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry
-                    Prisons = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry
+                    Prisons = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Entry(
                         "Prisons",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Prisons_Stub);
-                private static void _Prisons_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Prisons_Stub);
+                private static void _Prisons_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Prisons, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
-                    PrisonSexes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry
+                    PrisonSexes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Entry(
                         "PrisonSexes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._PrisonSexes_Stub);
-                private static void _PrisonSexes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._PrisonSexes_Stub);
+                private static void _PrisonSexes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PrisonSexes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
-                    PurposeTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry
+                    PurposeTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Entry(
                         "PurposeTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._PurposeTypes_Stub);
-                private static void _PurposeTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._PurposeTypes_Stub);
+                private static void _PurposeTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._PurposeTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
-                    ResponseTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry
+                    ResponseTypes = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Entry(
                         "ResponseTypes",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._ResponseTypes_Stub);
-                private static void _ResponseTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._ResponseTypes_Stub);
+                private static void _ResponseTypes_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._ResponseTypes, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
-                    sysdiagrams = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry
+                    sysdiagrams = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Entry(
                         "sysdiagrams",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._sysdiagrams_Stub);
-                private static void _sysdiagrams_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._sysdiagrams_Stub);
+                private static void _sysdiagrams_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._sysdiagrams, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry
-                    Titles = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry
+                    Titles = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Entry(
                         "Titles",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Titles_Stub);
-                private static void _Titles_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Titles_Stub);
+                private static void _Titles_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Titles, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry
-                    Towns = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry
+                    Towns = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Entry(
                         "Towns",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._Towns_Stub);
-                private static void _Towns_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._Towns_Stub);
+                private static void _Towns_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._Towns, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
-                    WorkshopPrisons = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry
+                    WorkshopPrisons = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Entry(
                         "WorkshopPrisons",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._WorkshopPrisons_Stub);
-                private static void _WorkshopPrisons_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._WorkshopPrisons_Stub);
+                private static void _WorkshopPrisons_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopPrisons, sf);
                 }
      
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
-                    WorkshopTeachers = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry
+                    WorkshopTeachers = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Entry(
                         "WorkshopTeachers",
-                        global::LightSwitchApplication.PPTData.DetailsClass.PropertySetProperties._WorkshopTeachers_Stub);
-                private static void _WorkshopTeachers_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPTData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPTData.DetailsClass d, object sf)
+                        global::LightSwitchApplication.PPT_2Data.DetailsClass.PropertySetProperties._WorkshopTeachers_Stub);
+                private static void _WorkshopTeachers_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PPT_2Data.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data> c, global::LightSwitchApplication.PPT_2Data.DetailsClass d, object sf)
                 {
                     c(d, ref d._WorkshopTeachers, sf);
                 }
@@ -2921,220 +2921,220 @@ namespace LightSwitchApplication
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data _Histories;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data _Histories;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers;
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Accreditation>.Data _Accreditations_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.c_Class>.Data _Classes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Contact>.Data _Contacts_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Corresp>.Data _Corresps_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Destination>.Data _Destinations_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Gift>.Data _Gifts_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.GiftType>.Data _GiftTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data _Histories_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data _Histories_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.History>.Data _Histories_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.History>.Data _Histories_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.InstitutionType>.Data _InstitutionTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LetterWriter>.Data _LetterWriters_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.LocationType>.Data _LocationTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.MailCode>.Data _MailCodes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.NLAddressOrderType>.Data _NLAddressOrderTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PersonType>.Data _PersonTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Prison>.Data _Prisons_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PrisonSex>.Data _PrisonSexes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.PurposeType>.Data _PurposeTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.ResponseType>.Data _ResponseTypes_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.sysdiagram>.Data _sysdiagrams_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Title>.Data _Titles_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.Town>.Data _Towns_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopPrison>.Data _WorkshopPrisons_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers_Single;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers_Single;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPTData, global::LightSwitchApplication.PPTData.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers_SingleOrDefault;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.PPT_2Data, global::LightSwitchApplication.PPT_2Data.DetailsClass, global::LightSwitchApplication.WorkshopTeacher>.Data _WorkshopTeachers_SingleOrDefault;
             
         }
     

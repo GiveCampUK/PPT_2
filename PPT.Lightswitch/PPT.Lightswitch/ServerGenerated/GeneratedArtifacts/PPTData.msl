@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="PPTDataObjectContext" StorageEntityContainer="PPTDataStore">
+    <EntitySetMapping Name="Accreditations">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Accreditation)">
+        <MappingFragment StoreEntitySet="Accreditation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Accreditation1" ColumnName="Accreditation" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.c_Class)">
+        <MappingFragment StoreEntitySet="Classes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClassDetails" ColumnName="ClassDetails" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="ClassMakeup" ColumnName="ClassMakeup" />
+          <ScalarProperty Name="ClassGender" ColumnName="ClassGender" />
+          <ScalarProperty Name="DoNotCount" ColumnName="DoNotCount" />
+          <ScalarProperty Name="DateClassStarted" ColumnName="DateClassStarted" />
+          <ScalarProperty Name="DateClassStopped" ColumnName="DateClassStopped" />
+          <ScalarProperty Name="DrugClass" ColumnName="DrugClass" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="PrisonId" ColumnName="PrisonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Contact)">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Forename" ColumnName="Forename" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="MailName" ColumnName="MailName" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Lost" ColumnName="Lost" />
+          <ScalarProperty Name="Deceased" ColumnName="Deceased" />
+          <ScalarProperty Name="ArchivePrisonName" ColumnName="ArchivePrisonName" />
+          <ScalarProperty Name="PNumber" ColumnName="PNumber" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Prevpris" ColumnName="Prevpris" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="C_Date" ColumnName="C_Date" />
+          <ScalarProperty Name="A_Date" ColumnName="A_Date" />
+          <ScalarProperty Name="AmendTime" ColumnName="AmendTime" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="Type1" ColumnName="Type1" />
+          <ScalarProperty Name="ArchivePrevPris1" ColumnName="ArchivePrevPris1" />
+          <ScalarProperty Name="XmasList" ColumnName="XmasList" />
+          <ScalarProperty Name="XmasParty" ColumnName="XmasParty" />
+          <ScalarProperty Name="Wing" ColumnName="Wing" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AnnualReport" ColumnName="AnnualReport" />
+          <ScalarProperty Name="Convenaters" ColumnName="Convenaters" />
+          <ScalarProperty Name="AnnualReviewOld" ColumnName="AnnualReviewOld" />
+          <ScalarProperty Name="NoFundRaisingLetter" ColumnName="NoFundRaisingLetter" />
+          <ScalarProperty Name="NLCopiesRequired" ColumnName="NLCopiesRequired" />
+          <ScalarProperty Name="NoNewsLetter" ColumnName="NoNewsLetter" />
+          <ScalarProperty Name="DontSendEmail" ColumnName="DontSendEmail" />
+          <ScalarProperty Name="FrEvent" ColumnName="FrEvent" />
+          <ScalarProperty Name="GiftAidSetup" ColumnName="GiftAidSetup" />
+          <ScalarProperty Name="GiftAidStartDate" ColumnName="GiftAidStartDate" />
+          <ScalarProperty Name="GiftAidFormSent" ColumnName="GiftAidFormSent" />
+          <ScalarProperty Name="GiftAidFromSentDate" ColumnName="GiftAidFromSentDate" />
+          <ScalarProperty Name="GiftAidNotApplicable" ColumnName="GiftAidNotApplicable" />
+          <ScalarProperty Name="BWY_Number" ColumnName="BWY_Number" />
+          <ScalarProperty Name="PreviousPrison" ColumnName="PreviousPrison" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="MailCode" ColumnName="MailCode" />
+          <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+          <ScalarProperty Name="Prison" ColumnName="Prison" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Corresps">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Corresp)">
+        <MappingFragment StoreEntitySet="Corresp">
+          <ScalarProperty Name="Corref" ColumnName="Corref" />
+          <ScalarProperty Name="OldCorref" ColumnName="OldCorref" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Refno" ColumnName="Refno" />
+          <ScalarProperty Name="Date1" ColumnName="Date1" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Filing" ColumnName="Filing" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Correspondant" ColumnName="Correspondant" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Country)">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Destinations">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Destination)">
+        <MappingFragment StoreEntitySet="Destination">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gifts">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Gift)">
+        <MappingFragment StoreEntitySet="Gifts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="GiftType" ColumnName="GiftType" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiftTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.GiftType)">
+        <MappingFragment StoreEntitySet="GiftType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Histories">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.History)">
+        <MappingFragment StoreEntitySet="History">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="History1" ColumnName="History" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstitutionTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.InstitutionType)">
+        <MappingFragment StoreEntitySet="InstitutionType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LetterWriters">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.LetterWriter)">
+        <MappingFragment StoreEntitySet="LetterWriters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.LocationType)">
+        <MappingFragment StoreEntitySet="LocationType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailCodes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.MailCode)">
+        <MappingFragment StoreEntitySet="MailCode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code1" ColumnName="Code1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NLAddressOrderTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.NLAddressOrderType)">
+        <MappingFragment StoreEntitySet="NLAddressOrderType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.PersonType)">
+        <MappingFragment StoreEntitySet="PersonType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prisons">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Prison)">
+        <MappingFragment StoreEntitySet="Prison">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MailName" ColumnName="MailName" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="MalePrisonersHeld" ColumnName="MalePrisonersHeld" />
+          <ScalarProperty Name="FemalePrisonersHeld" ColumnName="FemalePrisonersHeld" />
+          <ScalarProperty Name="JuvenilePrisonersHeld" ColumnName="JuvenilePrisonersHeld" />
+          <ScalarProperty Name="YoungOffendersHeld" ColumnName="YoungOffendersHeld" />
+          <ScalarProperty Name="AdultPrisonersHeld" ColumnName="AdultPrisonersHeld" />
+          <ScalarProperty Name="Cat" ColumnName="Cat" />
+          <ScalarProperty Name="Ptype" ColumnName="Ptype" />
+          <ScalarProperty Name="VolunteersNotes" ColumnName="VolunteersNotes" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Governor" ColumnName="Governor" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="InclInNLAddressList" ColumnName="InclInNLAddressList" />
+          <ScalarProperty Name="DesignationNewsletter" ColumnName="DesignationNewsletter" />
+          <ScalarProperty Name="ContactForNewsletter" ColumnName="ContactForNewsletter" />
+          <ScalarProperty Name="ContactPosition" ColumnName="ContactPosition" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactFax" ColumnName="ContactFax" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="NlAddressOrder" ColumnName="NlAddressOrder" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrisonSexes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.PrisonSex)">
+        <MappingFragment StoreEntitySet="PrisonSex">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurposeTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.PurposeType)">
+        <MappingFragment StoreEntitySet="PurposeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResponseTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.ResponseType)">
+        <MappingFragment StoreEntitySet="ResponseType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Postage" ColumnName="Postage" />
+          <ScalarProperty Name="Stationary" ColumnName="Stationary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titles">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Title)">
+        <MappingFragment StoreEntitySet="Titles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towns">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.Town)">
+        <MappingFragment StoreEntitySet="Town">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkshopPrisons">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.WorkshopPrison)">
+        <MappingFragment StoreEntitySet="WorkshopPrisons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workshop" ColumnName="Workshop" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="PrisonId" ColumnName="PrisonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkshopTeachers">
+      <EntityTypeMapping TypeName="IsTypeOf(PPTData.WorkshopTeacher)">
+        <MappingFragment StoreEntitySet="WorkshopTeachers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workshop" ColumnName="Workshop" />
+          <ScalarProperty Name="c_Date" ColumnName="Date" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

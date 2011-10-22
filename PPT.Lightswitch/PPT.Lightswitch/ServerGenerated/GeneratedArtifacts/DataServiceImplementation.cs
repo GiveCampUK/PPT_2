@@ -414,11 +414,11 @@ namespace LightSwitchApplication.Implementation
     [global::System.ServiceModel.DomainServices.Hosting.EnableClientAccess()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public class PPTDataDomainService
-        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.DomainService<global::PPTData.Implementation.PPTDataObjectContext>
+    public class PPT_2DataDomainService
+        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.DomainService<global::PPT_2Data.Implementation.PPT_2DataObjectContext>
     {
     
-        public PPTDataDomainService() : base()
+        public PPT_2DataDomainService() : base()
         {
         }
     
@@ -426,7 +426,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Accreditation
     
-        public void InsertAccreditation(global::PPTData.Implementation.Accreditation entity)
+        public void InsertAccreditation(global::PPT_2Data.Implementation.Accreditation entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -438,12 +438,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateAccreditation(global::PPTData.Implementation.Accreditation currentEntity)
+        public void UpdateAccreditation(global::PPT_2Data.Implementation.Accreditation currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Accreditations, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteAccreditation(global::PPTData.Implementation.Accreditation entity)
+        public void DeleteAccreditation(global::PPT_2Data.Implementation.Accreditation entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -456,7 +456,7 @@ namespace LightSwitchApplication.Implementation
     
     #region c_Class
     
-        public void Insertc_Class(global::PPTData.Implementation.c_Class entity)
+        public void Insertc_Class(global::PPT_2Data.Implementation.c_Class entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -468,12 +468,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void Updatec_Class(global::PPTData.Implementation.c_Class currentEntity)
+        public void Updatec_Class(global::PPT_2Data.Implementation.c_Class currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Classes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void Deletec_Class(global::PPTData.Implementation.c_Class entity)
+        public void Deletec_Class(global::PPT_2Data.Implementation.c_Class entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -486,7 +486,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Contact
     
-        public void InsertContact(global::PPTData.Implementation.Contact entity)
+        public void InsertContact(global::PPT_2Data.Implementation.Contact entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -498,12 +498,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateContact(global::PPTData.Implementation.Contact currentEntity)
+        public void UpdateContact(global::PPT_2Data.Implementation.Contact currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Contacts, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteContact(global::PPTData.Implementation.Contact entity)
+        public void DeleteContact(global::PPT_2Data.Implementation.Contact entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -516,7 +516,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Corresp
     
-        public void InsertCorresp(global::PPTData.Implementation.Corresp entity)
+        public void InsertCorresp(global::PPT_2Data.Implementation.Corresp entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -528,12 +528,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateCorresp(global::PPTData.Implementation.Corresp currentEntity)
+        public void UpdateCorresp(global::PPT_2Data.Implementation.Corresp currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Corresps, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteCorresp(global::PPTData.Implementation.Corresp entity)
+        public void DeleteCorresp(global::PPT_2Data.Implementation.Corresp entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -546,7 +546,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Country
     
-        public void InsertCountry(global::PPTData.Implementation.Country entity)
+        public void InsertCountry(global::PPT_2Data.Implementation.Country entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -558,12 +558,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateCountry(global::PPTData.Implementation.Country currentEntity)
+        public void UpdateCountry(global::PPT_2Data.Implementation.Country currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Countries, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteCountry(global::PPTData.Implementation.Country entity)
+        public void DeleteCountry(global::PPT_2Data.Implementation.Country entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -576,7 +576,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Destination
     
-        public void InsertDestination(global::PPTData.Implementation.Destination entity)
+        public void InsertDestination(global::PPT_2Data.Implementation.Destination entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -588,12 +588,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateDestination(global::PPTData.Implementation.Destination currentEntity)
+        public void UpdateDestination(global::PPT_2Data.Implementation.Destination currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Destinations, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteDestination(global::PPTData.Implementation.Destination entity)
+        public void DeleteDestination(global::PPT_2Data.Implementation.Destination entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -606,7 +606,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Gift
     
-        public void InsertGift(global::PPTData.Implementation.Gift entity)
+        public void InsertGift(global::PPT_2Data.Implementation.Gift entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -618,12 +618,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateGift(global::PPTData.Implementation.Gift currentEntity)
+        public void UpdateGift(global::PPT_2Data.Implementation.Gift currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Gifts, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteGift(global::PPTData.Implementation.Gift entity)
+        public void DeleteGift(global::PPT_2Data.Implementation.Gift entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -636,7 +636,7 @@ namespace LightSwitchApplication.Implementation
     
     #region GiftType
     
-        public void InsertGiftType(global::PPTData.Implementation.GiftType entity)
+        public void InsertGiftType(global::PPT_2Data.Implementation.GiftType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -648,12 +648,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateGiftType(global::PPTData.Implementation.GiftType currentEntity)
+        public void UpdateGiftType(global::PPT_2Data.Implementation.GiftType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.GiftTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteGiftType(global::PPTData.Implementation.GiftType entity)
+        public void DeleteGiftType(global::PPT_2Data.Implementation.GiftType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -666,7 +666,7 @@ namespace LightSwitchApplication.Implementation
     
     #region History
     
-        public void InsertHistory(global::PPTData.Implementation.History entity)
+        public void InsertHistory(global::PPT_2Data.Implementation.History entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -678,12 +678,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateHistory(global::PPTData.Implementation.History currentEntity)
+        public void UpdateHistory(global::PPT_2Data.Implementation.History currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Histories, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteHistory(global::PPTData.Implementation.History entity)
+        public void DeleteHistory(global::PPT_2Data.Implementation.History entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -696,7 +696,7 @@ namespace LightSwitchApplication.Implementation
     
     #region InstitutionType
     
-        public void InsertInstitutionType(global::PPTData.Implementation.InstitutionType entity)
+        public void InsertInstitutionType(global::PPT_2Data.Implementation.InstitutionType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -708,12 +708,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateInstitutionType(global::PPTData.Implementation.InstitutionType currentEntity)
+        public void UpdateInstitutionType(global::PPT_2Data.Implementation.InstitutionType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.InstitutionTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteInstitutionType(global::PPTData.Implementation.InstitutionType entity)
+        public void DeleteInstitutionType(global::PPT_2Data.Implementation.InstitutionType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -726,7 +726,7 @@ namespace LightSwitchApplication.Implementation
     
     #region LetterWriter
     
-        public void InsertLetterWriter(global::PPTData.Implementation.LetterWriter entity)
+        public void InsertLetterWriter(global::PPT_2Data.Implementation.LetterWriter entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -738,12 +738,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateLetterWriter(global::PPTData.Implementation.LetterWriter currentEntity)
+        public void UpdateLetterWriter(global::PPT_2Data.Implementation.LetterWriter currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.LetterWriters, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteLetterWriter(global::PPTData.Implementation.LetterWriter entity)
+        public void DeleteLetterWriter(global::PPT_2Data.Implementation.LetterWriter entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -756,7 +756,7 @@ namespace LightSwitchApplication.Implementation
     
     #region LocationType
     
-        public void InsertLocationType(global::PPTData.Implementation.LocationType entity)
+        public void InsertLocationType(global::PPT_2Data.Implementation.LocationType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -768,12 +768,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateLocationType(global::PPTData.Implementation.LocationType currentEntity)
+        public void UpdateLocationType(global::PPT_2Data.Implementation.LocationType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.LocationTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteLocationType(global::PPTData.Implementation.LocationType entity)
+        public void DeleteLocationType(global::PPT_2Data.Implementation.LocationType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -786,7 +786,7 @@ namespace LightSwitchApplication.Implementation
     
     #region MailCode
     
-        public void InsertMailCode(global::PPTData.Implementation.MailCode entity)
+        public void InsertMailCode(global::PPT_2Data.Implementation.MailCode entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -798,12 +798,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateMailCode(global::PPTData.Implementation.MailCode currentEntity)
+        public void UpdateMailCode(global::PPT_2Data.Implementation.MailCode currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.MailCodes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteMailCode(global::PPTData.Implementation.MailCode entity)
+        public void DeleteMailCode(global::PPT_2Data.Implementation.MailCode entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -816,7 +816,7 @@ namespace LightSwitchApplication.Implementation
     
     #region NLAddressOrderType
     
-        public void InsertNLAddressOrderType(global::PPTData.Implementation.NLAddressOrderType entity)
+        public void InsertNLAddressOrderType(global::PPT_2Data.Implementation.NLAddressOrderType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -828,12 +828,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateNLAddressOrderType(global::PPTData.Implementation.NLAddressOrderType currentEntity)
+        public void UpdateNLAddressOrderType(global::PPT_2Data.Implementation.NLAddressOrderType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.NLAddressOrderTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteNLAddressOrderType(global::PPTData.Implementation.NLAddressOrderType entity)
+        public void DeleteNLAddressOrderType(global::PPT_2Data.Implementation.NLAddressOrderType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -846,7 +846,7 @@ namespace LightSwitchApplication.Implementation
     
     #region PersonType
     
-        public void InsertPersonType(global::PPTData.Implementation.PersonType entity)
+        public void InsertPersonType(global::PPT_2Data.Implementation.PersonType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -858,12 +858,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdatePersonType(global::PPTData.Implementation.PersonType currentEntity)
+        public void UpdatePersonType(global::PPT_2Data.Implementation.PersonType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.PersonTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeletePersonType(global::PPTData.Implementation.PersonType entity)
+        public void DeletePersonType(global::PPT_2Data.Implementation.PersonType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -876,7 +876,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Prison
     
-        public void InsertPrison(global::PPTData.Implementation.Prison entity)
+        public void InsertPrison(global::PPT_2Data.Implementation.Prison entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -888,12 +888,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdatePrison(global::PPTData.Implementation.Prison currentEntity)
+        public void UpdatePrison(global::PPT_2Data.Implementation.Prison currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Prisons, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeletePrison(global::PPTData.Implementation.Prison entity)
+        public void DeletePrison(global::PPT_2Data.Implementation.Prison entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -906,7 +906,7 @@ namespace LightSwitchApplication.Implementation
     
     #region PrisonSex
     
-        public void InsertPrisonSex(global::PPTData.Implementation.PrisonSex entity)
+        public void InsertPrisonSex(global::PPT_2Data.Implementation.PrisonSex entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -918,12 +918,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdatePrisonSex(global::PPTData.Implementation.PrisonSex currentEntity)
+        public void UpdatePrisonSex(global::PPT_2Data.Implementation.PrisonSex currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.PrisonSexes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeletePrisonSex(global::PPTData.Implementation.PrisonSex entity)
+        public void DeletePrisonSex(global::PPT_2Data.Implementation.PrisonSex entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -936,7 +936,7 @@ namespace LightSwitchApplication.Implementation
     
     #region PurposeType
     
-        public void InsertPurposeType(global::PPTData.Implementation.PurposeType entity)
+        public void InsertPurposeType(global::PPT_2Data.Implementation.PurposeType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -948,12 +948,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdatePurposeType(global::PPTData.Implementation.PurposeType currentEntity)
+        public void UpdatePurposeType(global::PPT_2Data.Implementation.PurposeType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.PurposeTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeletePurposeType(global::PPTData.Implementation.PurposeType entity)
+        public void DeletePurposeType(global::PPT_2Data.Implementation.PurposeType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -966,7 +966,7 @@ namespace LightSwitchApplication.Implementation
     
     #region ResponseType
     
-        public void InsertResponseType(global::PPTData.Implementation.ResponseType entity)
+        public void InsertResponseType(global::PPT_2Data.Implementation.ResponseType entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -978,12 +978,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateResponseType(global::PPTData.Implementation.ResponseType currentEntity)
+        public void UpdateResponseType(global::PPT_2Data.Implementation.ResponseType currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.ResponseTypes, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteResponseType(global::PPTData.Implementation.ResponseType entity)
+        public void DeleteResponseType(global::PPT_2Data.Implementation.ResponseType entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -996,7 +996,7 @@ namespace LightSwitchApplication.Implementation
     
     #region sysdiagram
     
-        public void Insertsysdiagram(global::PPTData.Implementation.sysdiagram entity)
+        public void Insertsysdiagram(global::PPT_2Data.Implementation.sysdiagram entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -1008,12 +1008,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void Updatesysdiagram(global::PPTData.Implementation.sysdiagram currentEntity)
+        public void Updatesysdiagram(global::PPT_2Data.Implementation.sysdiagram currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.sysdiagrams, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void Deletesysdiagram(global::PPTData.Implementation.sysdiagram entity)
+        public void Deletesysdiagram(global::PPT_2Data.Implementation.sysdiagram entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -1026,7 +1026,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Title
     
-        public void InsertTitle(global::PPTData.Implementation.Title entity)
+        public void InsertTitle(global::PPT_2Data.Implementation.Title entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -1038,12 +1038,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateTitle(global::PPTData.Implementation.Title currentEntity)
+        public void UpdateTitle(global::PPT_2Data.Implementation.Title currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Titles, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteTitle(global::PPTData.Implementation.Title entity)
+        public void DeleteTitle(global::PPT_2Data.Implementation.Title entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -1056,7 +1056,7 @@ namespace LightSwitchApplication.Implementation
     
     #region Town
     
-        public void InsertTown(global::PPTData.Implementation.Town entity)
+        public void InsertTown(global::PPT_2Data.Implementation.Town entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -1068,12 +1068,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateTown(global::PPTData.Implementation.Town currentEntity)
+        public void UpdateTown(global::PPT_2Data.Implementation.Town currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.Towns, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteTown(global::PPTData.Implementation.Town entity)
+        public void DeleteTown(global::PPT_2Data.Implementation.Town entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -1086,7 +1086,7 @@ namespace LightSwitchApplication.Implementation
     
     #region WorkshopPrison
     
-        public void InsertWorkshopPrison(global::PPTData.Implementation.WorkshopPrison entity)
+        public void InsertWorkshopPrison(global::PPT_2Data.Implementation.WorkshopPrison entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -1098,12 +1098,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateWorkshopPrison(global::PPTData.Implementation.WorkshopPrison currentEntity)
+        public void UpdateWorkshopPrison(global::PPT_2Data.Implementation.WorkshopPrison currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.WorkshopPrisons, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteWorkshopPrison(global::PPTData.Implementation.WorkshopPrison entity)
+        public void DeleteWorkshopPrison(global::PPT_2Data.Implementation.WorkshopPrison entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -1116,7 +1116,7 @@ namespace LightSwitchApplication.Implementation
     
     #region WorkshopTeacher
     
-        public void InsertWorkshopTeacher(global::PPTData.Implementation.WorkshopTeacher entity)
+        public void InsertWorkshopTeacher(global::PPT_2Data.Implementation.WorkshopTeacher entity)
         {
             if (entity.EntityState != global::System.Data.EntityState.Detached)
             {
@@ -1128,12 +1128,12 @@ namespace LightSwitchApplication.Implementation
             }
         }
     
-        public void UpdateWorkshopTeacher(global::PPTData.Implementation.WorkshopTeacher currentEntity)
+        public void UpdateWorkshopTeacher(global::PPT_2Data.Implementation.WorkshopTeacher currentEntity)
         {
             global::System.ServiceModel.DomainServices.EntityFramework.ObjectContextExtensions.AttachAsModified(this.ObjectContext.WorkshopTeachers, currentEntity, this.ChangeSet.GetOriginal(currentEntity));
         }
     
-        public void DeleteWorkshopTeacher(global::PPTData.Implementation.WorkshopTeacher entity)
+        public void DeleteWorkshopTeacher(global::PPT_2Data.Implementation.WorkshopTeacher entity)
         {
             if (entity.EntityState == global::System.Data.EntityState.Detached)
             {
@@ -1145,364 +1145,364 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     #region Queries
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Accreditation>("Accreditations_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Accreditation>("Accreditations_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Accreditation>("Accreditations_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Accreditation>("Accreditations_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Accreditation>("Accreditations_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Accreditation>("Accreditations_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.c_Class>("Classes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.c_Class>("Classes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.c_Class>("Classes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.c_Class>("Classes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.c_Class>("Classes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.c_Class>("Classes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Contact>("Contacts_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Contact>("Contacts_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Contact>("Contacts_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Contact>("Contacts_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Contact>("Contacts_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Contact>("Contacts_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_Single(string frameworkOperators, global::System.Nullable<int> Corref)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_Single(string frameworkOperators, global::System.Nullable<int> Corref)
         {
-            return this.GetQuery<global::PPTData.Implementation.Corresp>("Corresps_Single", frameworkOperators, Corref);
+            return this.GetQuery<global::PPT_2Data.Implementation.Corresp>("Corresps_Single", frameworkOperators, Corref);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Corref)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Corref)
         {
-            return this.GetQuery<global::PPTData.Implementation.Corresp>("Corresps_SingleOrDefault", frameworkOperators, Corref);
+            return this.GetQuery<global::PPT_2Data.Implementation.Corresp>("Corresps_SingleOrDefault", frameworkOperators, Corref);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Corresp>("Corresps_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Corresp>("Corresps_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Country>("Countries_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Country>("Countries_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Country>("Countries_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Country>("Countries_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Country>("Countries_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Country>("Countries_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Destination>("Destinations_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Destination>("Destinations_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Destination>("Destinations_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Destination>("Destinations_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Destination>("Destinations_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Destination>("Destinations_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Gift>("Gifts_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Gift>("Gifts_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Gift>("Gifts_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Gift>("Gifts_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Gift>("Gifts_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Gift>("Gifts_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.GiftType>("GiftTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.GiftType>("GiftTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.GiftType>("GiftTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.GiftType>("GiftTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.GiftType>("GiftTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.GiftType>("GiftTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.History>("Histories_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.History>("Histories_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.History>("Histories_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.History>("Histories_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.History>("Histories_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.History>("Histories_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.InstitutionType>("InstitutionTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.InstitutionType>("InstitutionTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.InstitutionType>("InstitutionTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.InstitutionType>("InstitutionTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.InstitutionType>("InstitutionTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.InstitutionType>("InstitutionTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.LetterWriter>("LetterWriters_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.LetterWriter>("LetterWriters_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.LetterWriter>("LetterWriters_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.LetterWriter>("LetterWriters_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.LetterWriter>("LetterWriters_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.LetterWriter>("LetterWriters_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.LocationType>("LocationTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.LocationType>("LocationTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.LocationType>("LocationTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.LocationType>("LocationTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.LocationType>("LocationTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.LocationType>("LocationTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.MailCode>("MailCodes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.MailCode>("MailCodes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.MailCode>("MailCodes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.MailCode>("MailCodes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.MailCode>("MailCodes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.MailCode>("MailCodes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.NLAddressOrderType>("NLAddressOrderTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("NLAddressOrderTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.NLAddressOrderType>("NLAddressOrderTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("NLAddressOrderTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PersonType>("PersonTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PersonType>("PersonTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PersonType>("PersonTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PersonType>("PersonTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.PersonType>("PersonTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.PersonType>("PersonTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Prison>("Prisons_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Prison>("Prisons_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Prison>("Prisons_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Prison>("Prisons_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Prison>("Prisons_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Prison>("Prisons_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PrisonSex>("PrisonSexes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PrisonSex>("PrisonSexes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PrisonSex>("PrisonSexes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PrisonSex>("PrisonSexes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.PrisonSex>("PrisonSexes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.PrisonSex>("PrisonSexes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PurposeType>("PurposeTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PurposeType>("PurposeTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.PurposeType>("PurposeTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.PurposeType>("PurposeTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.PurposeType>("PurposeTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.PurposeType>("PurposeTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.ResponseType>("ResponseTypes_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.ResponseType>("ResponseTypes_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.ResponseType>("ResponseTypes_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.ResponseType>("ResponseTypes_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.ResponseType>("ResponseTypes_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.ResponseType>("ResponseTypes_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_Single(string frameworkOperators, global::System.Nullable<int> diagram_id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_Single(string frameworkOperators, global::System.Nullable<int> diagram_id)
         {
-            return this.GetQuery<global::PPTData.Implementation.sysdiagram>("sysdiagrams_Single", frameworkOperators, diagram_id);
+            return this.GetQuery<global::PPT_2Data.Implementation.sysdiagram>("sysdiagrams_Single", frameworkOperators, diagram_id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> diagram_id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> diagram_id)
         {
-            return this.GetQuery<global::PPTData.Implementation.sysdiagram>("sysdiagrams_SingleOrDefault", frameworkOperators, diagram_id);
+            return this.GetQuery<global::PPT_2Data.Implementation.sysdiagram>("sysdiagrams_SingleOrDefault", frameworkOperators, diagram_id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.sysdiagram>("sysdiagrams_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.sysdiagram>("sysdiagrams_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Title>("Titles_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Title>("Titles_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Title>("Titles_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Title>("Titles_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Title>("Titles_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Title>("Titles_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Town>("Towns_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Town>("Towns_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.Town>("Towns_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.Town>("Towns_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.Town>("Towns_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.Town>("Towns_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopPrison>("WorkshopPrisons_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopPrison>("WorkshopPrisons_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopPrison>("WorkshopPrisons_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopPrison>("WorkshopPrisons_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopPrison>("WorkshopPrisons_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopPrison>("WorkshopPrisons_All", frameworkOperators);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_Single(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_Single(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopTeacher>("WorkshopTeachers_Single", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("WorkshopTeachers_Single", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopTeacher>("WorkshopTeachers_SingleOrDefault", frameworkOperators, Id);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("WorkshopTeachers_SingleOrDefault", frameworkOperators, Id);
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_All(string frameworkOperators)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_All(string frameworkOperators)
         {
-            return this.GetQuery<global::PPTData.Implementation.WorkshopTeacher>("WorkshopTeachers_All", frameworkOperators);
+            return this.GetQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("WorkshopTeachers_All", frameworkOperators);
         }
     
     #endregion
@@ -1523,618 +1523,618 @@ namespace LightSwitchApplication.Implementation
     
         protected override global::Microsoft.LightSwitch.IDataService CreateDataService()
         {
-            return new global::LightSwitchApplication.DataWorkspace().PPTData;
+            return new global::LightSwitchApplication.DataWorkspace().PPT_2Data;
         }
     
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public class PPTDataServiceImplementation
-        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.DataServiceImplementation<global::PPTData.Implementation.PPTDataObjectContext>
+    public class PPT_2DataServiceImplementation
+        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.DataServiceImplementation<global::PPT_2Data.Implementation.PPT_2DataObjectContext>
     {
-        public PPTDataServiceImplementation(global::Microsoft.LightSwitch.IDataService dataService) : base(dataService)
+        public PPT_2DataServiceImplementation(global::Microsoft.LightSwitch.IDataService dataService) : base(dataService)
         {
         }
     
     #region Queries
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Accreditation>("Accreditations_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Accreditation>("Accreditations_All"),
                 (a) => (Id.HasValue && (a.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Accreditation>("Accreditations_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Accreditation>("Accreditations_All"),
                 (a) => (Id.HasValue && (a.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> Accreditations_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> Accreditations_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Accreditation> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Accreditation>("[Accreditations]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Accreditation> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Accreditation>("[Accreditations]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.c_Class>("Classes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.c_Class>("Classes_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.c_Class>("Classes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.c_Class>("Classes_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> Classes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> Classes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.c_Class> query;
-            query = base.CreateQuery<global::PPTData.Implementation.c_Class>("[Classes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.c_Class> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.c_Class>("[Classes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Contact>("Contacts_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Contact>("Contacts_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Contact>("Contacts_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Contact>("Contacts_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> Contacts_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> Contacts_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Contact> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Contact>("[Contacts]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Contact> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Contact>("[Contacts]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_Single(global::System.Nullable<int> Corref)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_Single(global::System.Nullable<int> Corref)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Corresp>("Corresps_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Corresp>("Corresps_All"),
                 (c) => (Corref.HasValue && (c.Corref == Corref)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_SingleOrDefault(global::System.Nullable<int> Corref)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_SingleOrDefault(global::System.Nullable<int> Corref)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Corresp>("Corresps_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Corresp>("Corresps_All"),
                 (c) => (Corref.HasValue && (c.Corref == Corref)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> Corresps_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> Corresps_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Corresp> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Corresp>("[Corresps]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Corresp> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Corresp>("[Corresps]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Country> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Country>("Countries_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Country>("Countries_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Country> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Country>("Countries_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Country>("Countries_All"),
                 (c) => (Id.HasValue && (c.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Country> Countries_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> Countries_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Country> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Country>("[Countries]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Country> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Country>("[Countries]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Destination>("Destinations_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Destination>("Destinations_All"),
                 (d) => (Id.HasValue && (d.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Destination>("Destinations_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Destination>("Destinations_All"),
                 (d) => (Id.HasValue && (d.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> Destinations_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> Destinations_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Destination> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Destination>("[Destinations]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Destination> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Destination>("[Destinations]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Gift>("Gifts_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Gift>("Gifts_All"),
                 (g) => (Id.HasValue && (g.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Gift>("Gifts_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Gift>("Gifts_All"),
                 (g) => (Id.HasValue && (g.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> Gifts_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> Gifts_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Gift> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Gift>("[Gifts]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Gift> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Gift>("[Gifts]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.GiftType>("GiftTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.GiftType>("GiftTypes_All"),
                 (g) => (Id.HasValue && (g.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.GiftType>("GiftTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.GiftType>("GiftTypes_All"),
                 (g) => (Id.HasValue && (g.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> GiftTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> GiftTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.GiftType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.GiftType>("[GiftTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.GiftType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.GiftType>("[GiftTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.History> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.History>("Histories_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.History>("Histories_All"),
                 (h) => (Id.HasValue && (h.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.History> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.History>("Histories_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.History>("Histories_All"),
                 (h) => (Id.HasValue && (h.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.History> Histories_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> Histories_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.History> query;
-            query = base.CreateQuery<global::PPTData.Implementation.History>("[Histories]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.History> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.History>("[Histories]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.InstitutionType>("InstitutionTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.InstitutionType>("InstitutionTypes_All"),
                 (i) => (Id.HasValue && (i.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.InstitutionType>("InstitutionTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.InstitutionType>("InstitutionTypes_All"),
                 (i) => (Id.HasValue && (i.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> InstitutionTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> InstitutionTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.InstitutionType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.InstitutionType>("[InstitutionTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.InstitutionType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.InstitutionType>("[InstitutionTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.LetterWriter>("LetterWriters_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.LetterWriter>("LetterWriters_All"),
                 (l) => (Id.HasValue && (l.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.LetterWriter>("LetterWriters_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.LetterWriter>("LetterWriters_All"),
                 (l) => (Id.HasValue && (l.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> LetterWriters_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> LetterWriters_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LetterWriter> query;
-            query = base.CreateQuery<global::PPTData.Implementation.LetterWriter>("[LetterWriters]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LetterWriter> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.LetterWriter>("[LetterWriters]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.LocationType>("LocationTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.LocationType>("LocationTypes_All"),
                 (l) => (Id.HasValue && (l.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.LocationType>("LocationTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.LocationType>("LocationTypes_All"),
                 (l) => (Id.HasValue && (l.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> LocationTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> LocationTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.LocationType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.LocationType>("[LocationTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.LocationType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.LocationType>("[LocationTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.MailCode>("MailCodes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.MailCode>("MailCodes_All"),
                 (m) => (Id.HasValue && (m.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.MailCode>("MailCodes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.MailCode>("MailCodes_All"),
                 (m) => (Id.HasValue && (m.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> MailCodes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> MailCodes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.MailCode> query;
-            query = base.CreateQuery<global::PPTData.Implementation.MailCode>("[MailCodes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.MailCode> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.MailCode>("[MailCodes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All"),
                 (n) => (Id.HasValue && (n.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("NLAddressOrderTypes_All"),
                 (n) => (Id.HasValue && (n.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> NLAddressOrderTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> NLAddressOrderTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.NLAddressOrderType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.NLAddressOrderType>("[NLAddressOrderTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.NLAddressOrderType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.NLAddressOrderType>("[NLAddressOrderTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PersonType>("PersonTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PersonType>("PersonTypes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PersonType>("PersonTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PersonType>("PersonTypes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> PersonTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> PersonTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PersonType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.PersonType>("[PersonTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PersonType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.PersonType>("[PersonTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Prison>("Prisons_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Prison>("Prisons_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Prison>("Prisons_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Prison>("Prisons_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> Prisons_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> Prisons_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Prison> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Prison>("[Prisons]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Prison> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Prison>("[Prisons]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PrisonSex>("PrisonSexes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PrisonSex>("PrisonSexes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PrisonSex>("PrisonSexes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PrisonSex>("PrisonSexes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> PrisonSexes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> PrisonSexes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PrisonSex> query;
-            query = base.CreateQuery<global::PPTData.Implementation.PrisonSex>("[PrisonSexes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PrisonSex> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.PrisonSex>("[PrisonSexes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PurposeType>("PurposeTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PurposeType>("PurposeTypes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.PurposeType>("PurposeTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.PurposeType>("PurposeTypes_All"),
                 (p) => (Id.HasValue && (p.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> PurposeTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> PurposeTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.PurposeType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.PurposeType>("[PurposeTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.PurposeType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.PurposeType>("[PurposeTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.ResponseType>("ResponseTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.ResponseType>("ResponseTypes_All"),
                 (r) => (Id.HasValue && (r.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.ResponseType>("ResponseTypes_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.ResponseType>("ResponseTypes_All"),
                 (r) => (Id.HasValue && (r.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> ResponseTypes_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> ResponseTypes_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.ResponseType> query;
-            query = base.CreateQuery<global::PPTData.Implementation.ResponseType>("[ResponseTypes]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.ResponseType> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.ResponseType>("[ResponseTypes]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_Single(global::System.Nullable<int> diagram_id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_Single(global::System.Nullable<int> diagram_id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.sysdiagram>("sysdiagrams_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.sysdiagram>("sysdiagrams_All"),
                 (s) => (diagram_id.HasValue && (s.diagram_id == diagram_id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_SingleOrDefault(global::System.Nullable<int> diagram_id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_SingleOrDefault(global::System.Nullable<int> diagram_id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.sysdiagram>("sysdiagrams_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.sysdiagram>("sysdiagrams_All"),
                 (s) => (diagram_id.HasValue && (s.diagram_id == diagram_id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> sysdiagrams_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> sysdiagrams_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.sysdiagram> query;
-            query = base.CreateQuery<global::PPTData.Implementation.sysdiagram>("[sysdiagrams]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.sysdiagram> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.sysdiagram>("[sysdiagrams]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Title> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Title>("Titles_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Title>("Titles_All"),
                 (t) => (Id.HasValue && (t.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Title> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Title>("Titles_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Title>("Titles_All"),
                 (t) => (Id.HasValue && (t.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Title> Titles_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> Titles_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Title> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Title>("[Titles]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Title> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Title>("[Titles]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Town> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Town>("Towns_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Town>("Towns_All"),
                 (t) => (Id.HasValue && (t.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Town> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.Town>("Towns_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.Town>("Towns_All"),
                 (t) => (Id.HasValue && (t.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.Town> Towns_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> Towns_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.Town> query;
-            query = base.CreateQuery<global::PPTData.Implementation.Town>("[Towns]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.Town> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.Town>("[Towns]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.WorkshopPrison>("WorkshopPrisons_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.WorkshopPrison>("WorkshopPrisons_All"),
                 (w) => (Id.HasValue && (w.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.WorkshopPrison>("WorkshopPrisons_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.WorkshopPrison>("WorkshopPrisons_All"),
                 (w) => (Id.HasValue && (w.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> WorkshopPrisons_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> WorkshopPrisons_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopPrison> query;
-            query = base.CreateQuery<global::PPTData.Implementation.WorkshopPrison>("[WorkshopPrisons]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopPrison> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.WorkshopPrison>("[WorkshopPrisons]").AsQueryable();
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_Single(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_Single(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.WorkshopTeacher>("WorkshopTeachers_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("WorkshopTeachers_All"),
                 (w) => (Id.HasValue && (w.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_SingleOrDefault(global::System.Nullable<int> Id)
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_SingleOrDefault(global::System.Nullable<int> Id)
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> query;
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> query;
             query = global::System.Linq.Queryable.Where(
-                this.GetQuery<global::PPTData.Implementation.WorkshopTeacher>("WorkshopTeachers_All"),
+                this.GetQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("WorkshopTeachers_All"),
                 (w) => (Id.HasValue && (w.Id == Id)));
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> WorkshopTeachers_All()
+        public global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> WorkshopTeachers_All()
         {
-            global::System.Linq.IQueryable<global::PPTData.Implementation.WorkshopTeacher> query;
-            query = base.CreateQuery<global::PPTData.Implementation.WorkshopTeacher>("[WorkshopTeachers]").AsQueryable();
+            global::System.Linq.IQueryable<global::PPT_2Data.Implementation.WorkshopTeacher> query;
+            query = base.CreateQuery<global::PPT_2Data.Implementation.WorkshopTeacher>("[WorkshopTeachers]").AsQueryable();
             return query;
         }
     
@@ -2143,111 +2143,111 @@ namespace LightSwitchApplication.Implementation
     #region Protected Methods
         protected override object CreateObject(global::System.Type type)
         {
-            if (type == typeof(global::PPTData.Implementation.Accreditation))
+            if (type == typeof(global::PPT_2Data.Implementation.Accreditation))
             {
-                return new global::PPTData.Implementation.Accreditation();
+                return new global::PPT_2Data.Implementation.Accreditation();
             }
-            if (type == typeof(global::PPTData.Implementation.c_Class))
+            if (type == typeof(global::PPT_2Data.Implementation.c_Class))
             {
-                return new global::PPTData.Implementation.c_Class();
+                return new global::PPT_2Data.Implementation.c_Class();
             }
-            if (type == typeof(global::PPTData.Implementation.Contact))
+            if (type == typeof(global::PPT_2Data.Implementation.Contact))
             {
-                return new global::PPTData.Implementation.Contact();
+                return new global::PPT_2Data.Implementation.Contact();
             }
-            if (type == typeof(global::PPTData.Implementation.Corresp))
+            if (type == typeof(global::PPT_2Data.Implementation.Corresp))
             {
-                return new global::PPTData.Implementation.Corresp();
+                return new global::PPT_2Data.Implementation.Corresp();
             }
-            if (type == typeof(global::PPTData.Implementation.Country))
+            if (type == typeof(global::PPT_2Data.Implementation.Country))
             {
-                return new global::PPTData.Implementation.Country();
+                return new global::PPT_2Data.Implementation.Country();
             }
-            if (type == typeof(global::PPTData.Implementation.Destination))
+            if (type == typeof(global::PPT_2Data.Implementation.Destination))
             {
-                return new global::PPTData.Implementation.Destination();
+                return new global::PPT_2Data.Implementation.Destination();
             }
-            if (type == typeof(global::PPTData.Implementation.Gift))
+            if (type == typeof(global::PPT_2Data.Implementation.Gift))
             {
-                return new global::PPTData.Implementation.Gift();
+                return new global::PPT_2Data.Implementation.Gift();
             }
-            if (type == typeof(global::PPTData.Implementation.GiftType))
+            if (type == typeof(global::PPT_2Data.Implementation.GiftType))
             {
-                return new global::PPTData.Implementation.GiftType();
+                return new global::PPT_2Data.Implementation.GiftType();
             }
-            if (type == typeof(global::PPTData.Implementation.History))
+            if (type == typeof(global::PPT_2Data.Implementation.History))
             {
-                return new global::PPTData.Implementation.History();
+                return new global::PPT_2Data.Implementation.History();
             }
-            if (type == typeof(global::PPTData.Implementation.InstitutionType))
+            if (type == typeof(global::PPT_2Data.Implementation.InstitutionType))
             {
-                return new global::PPTData.Implementation.InstitutionType();
+                return new global::PPT_2Data.Implementation.InstitutionType();
             }
-            if (type == typeof(global::PPTData.Implementation.LetterWriter))
+            if (type == typeof(global::PPT_2Data.Implementation.LetterWriter))
             {
-                return new global::PPTData.Implementation.LetterWriter();
+                return new global::PPT_2Data.Implementation.LetterWriter();
             }
-            if (type == typeof(global::PPTData.Implementation.LocationType))
+            if (type == typeof(global::PPT_2Data.Implementation.LocationType))
             {
-                return new global::PPTData.Implementation.LocationType();
+                return new global::PPT_2Data.Implementation.LocationType();
             }
-            if (type == typeof(global::PPTData.Implementation.MailCode))
+            if (type == typeof(global::PPT_2Data.Implementation.MailCode))
             {
-                return new global::PPTData.Implementation.MailCode();
+                return new global::PPT_2Data.Implementation.MailCode();
             }
-            if (type == typeof(global::PPTData.Implementation.NLAddressOrderType))
+            if (type == typeof(global::PPT_2Data.Implementation.NLAddressOrderType))
             {
-                return new global::PPTData.Implementation.NLAddressOrderType();
+                return new global::PPT_2Data.Implementation.NLAddressOrderType();
             }
-            if (type == typeof(global::PPTData.Implementation.PersonType))
+            if (type == typeof(global::PPT_2Data.Implementation.PersonType))
             {
-                return new global::PPTData.Implementation.PersonType();
+                return new global::PPT_2Data.Implementation.PersonType();
             }
-            if (type == typeof(global::PPTData.Implementation.Prison))
+            if (type == typeof(global::PPT_2Data.Implementation.Prison))
             {
-                return new global::PPTData.Implementation.Prison();
+                return new global::PPT_2Data.Implementation.Prison();
             }
-            if (type == typeof(global::PPTData.Implementation.PrisonSex))
+            if (type == typeof(global::PPT_2Data.Implementation.PrisonSex))
             {
-                return new global::PPTData.Implementation.PrisonSex();
+                return new global::PPT_2Data.Implementation.PrisonSex();
             }
-            if (type == typeof(global::PPTData.Implementation.PurposeType))
+            if (type == typeof(global::PPT_2Data.Implementation.PurposeType))
             {
-                return new global::PPTData.Implementation.PurposeType();
+                return new global::PPT_2Data.Implementation.PurposeType();
             }
-            if (type == typeof(global::PPTData.Implementation.ResponseType))
+            if (type == typeof(global::PPT_2Data.Implementation.ResponseType))
             {
-                return new global::PPTData.Implementation.ResponseType();
+                return new global::PPT_2Data.Implementation.ResponseType();
             }
-            if (type == typeof(global::PPTData.Implementation.sysdiagram))
+            if (type == typeof(global::PPT_2Data.Implementation.sysdiagram))
             {
-                return new global::PPTData.Implementation.sysdiagram();
+                return new global::PPT_2Data.Implementation.sysdiagram();
             }
-            if (type == typeof(global::PPTData.Implementation.Title))
+            if (type == typeof(global::PPT_2Data.Implementation.Title))
             {
-                return new global::PPTData.Implementation.Title();
+                return new global::PPT_2Data.Implementation.Title();
             }
-            if (type == typeof(global::PPTData.Implementation.Town))
+            if (type == typeof(global::PPT_2Data.Implementation.Town))
             {
-                return new global::PPTData.Implementation.Town();
+                return new global::PPT_2Data.Implementation.Town();
             }
-            if (type == typeof(global::PPTData.Implementation.WorkshopPrison))
+            if (type == typeof(global::PPT_2Data.Implementation.WorkshopPrison))
             {
-                return new global::PPTData.Implementation.WorkshopPrison();
+                return new global::PPT_2Data.Implementation.WorkshopPrison();
             }
-            if (type == typeof(global::PPTData.Implementation.WorkshopTeacher))
+            if (type == typeof(global::PPT_2Data.Implementation.WorkshopTeacher))
             {
-                return new global::PPTData.Implementation.WorkshopTeacher();
+                return new global::PPT_2Data.Implementation.WorkshopTeacher();
             }
     
             return base.CreateObject(type);
         }
     
-        protected override global::PPTData.Implementation.PPTDataObjectContext CreateObjectContext()
+        protected override global::PPT_2Data.Implementation.PPT_2DataObjectContext CreateObjectContext()
         {
-            return new global::PPTData.Implementation.PPTDataObjectContext(base.GetEntityConnectionString(
-                "PPTData", 
-                "res://*/PPTData.csdl|res://*/PPTData.ssdl|res://*/PPTData.msl",
+            return new global::PPT_2Data.Implementation.PPT_2DataObjectContext(base.GetEntityConnectionString(
+                "PPT_2Data", 
+                "res://*/PPT_2Data.csdl|res://*/PPT_2Data.ssdl|res://*/PPT_2Data.msl",
                 "System.Data.SqlClient"));
         }
     
@@ -2255,99 +2255,99 @@ namespace LightSwitchApplication.Implementation
         {
             if (typeof(T) == typeof(global::LightSwitchApplication.Accreditation))
             {
-                return new global::PPTData.Implementation.Accreditation();
+                return new global::PPT_2Data.Implementation.Accreditation();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.c_Class))
             {
-                return new global::PPTData.Implementation.c_Class();
+                return new global::PPT_2Data.Implementation.c_Class();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Contact))
             {
-                return new global::PPTData.Implementation.Contact();
+                return new global::PPT_2Data.Implementation.Contact();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Corresp))
             {
-                return new global::PPTData.Implementation.Corresp();
+                return new global::PPT_2Data.Implementation.Corresp();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Country))
             {
-                return new global::PPTData.Implementation.Country();
+                return new global::PPT_2Data.Implementation.Country();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Destination))
             {
-                return new global::PPTData.Implementation.Destination();
+                return new global::PPT_2Data.Implementation.Destination();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Gift))
             {
-                return new global::PPTData.Implementation.Gift();
+                return new global::PPT_2Data.Implementation.Gift();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.GiftType))
             {
-                return new global::PPTData.Implementation.GiftType();
+                return new global::PPT_2Data.Implementation.GiftType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.History))
             {
-                return new global::PPTData.Implementation.History();
+                return new global::PPT_2Data.Implementation.History();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.InstitutionType))
             {
-                return new global::PPTData.Implementation.InstitutionType();
+                return new global::PPT_2Data.Implementation.InstitutionType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.LetterWriter))
             {
-                return new global::PPTData.Implementation.LetterWriter();
+                return new global::PPT_2Data.Implementation.LetterWriter();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.LocationType))
             {
-                return new global::PPTData.Implementation.LocationType();
+                return new global::PPT_2Data.Implementation.LocationType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.MailCode))
             {
-                return new global::PPTData.Implementation.MailCode();
+                return new global::PPT_2Data.Implementation.MailCode();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.NLAddressOrderType))
             {
-                return new global::PPTData.Implementation.NLAddressOrderType();
+                return new global::PPT_2Data.Implementation.NLAddressOrderType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.PersonType))
             {
-                return new global::PPTData.Implementation.PersonType();
+                return new global::PPT_2Data.Implementation.PersonType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Prison))
             {
-                return new global::PPTData.Implementation.Prison();
+                return new global::PPT_2Data.Implementation.Prison();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.PrisonSex))
             {
-                return new global::PPTData.Implementation.PrisonSex();
+                return new global::PPT_2Data.Implementation.PrisonSex();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.PurposeType))
             {
-                return new global::PPTData.Implementation.PurposeType();
+                return new global::PPT_2Data.Implementation.PurposeType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.ResponseType))
             {
-                return new global::PPTData.Implementation.ResponseType();
+                return new global::PPT_2Data.Implementation.ResponseType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.sysdiagram))
             {
-                return new global::PPTData.Implementation.sysdiagram();
+                return new global::PPT_2Data.Implementation.sysdiagram();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Title))
             {
-                return new global::PPTData.Implementation.Title();
+                return new global::PPT_2Data.Implementation.Title();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Town))
             {
-                return new global::PPTData.Implementation.Town();
+                return new global::PPT_2Data.Implementation.Town();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.WorkshopPrison))
             {
-                return new global::PPTData.Implementation.WorkshopPrison();
+                return new global::PPT_2Data.Implementation.WorkshopPrison();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.WorkshopTeacher))
             {
-                return new global::PPTData.Implementation.WorkshopTeacher();
+                return new global::PPT_2Data.Implementation.WorkshopTeacher();
             }
             return null;
         }
@@ -2371,9 +2371,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.ApplicationDataService();
             }
-            if (dataServiceType == typeof(global::LightSwitchApplication.PPTData))
+            if (dataServiceType == typeof(global::LightSwitchApplication.PPT_2Data))
             {
-                return new global::LightSwitchApplication.PPTDataService();
+                return new global::LightSwitchApplication.PPT_2DataService();
             }
             return base.CreateDataService(dataServiceType);
         }
@@ -2384,9 +2384,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.ApplicationDataServiceImplementation(dataService);
             }
-            if (typeof(TDataService) == typeof(global::LightSwitchApplication.PPTData))
+            if (typeof(TDataService) == typeof(global::LightSwitchApplication.PPT_2Data))
             {
-                return new global::LightSwitchApplication.Implementation.PPTDataServiceImplementation(dataService);
+                return new global::LightSwitchApplication.Implementation.PPT_2DataServiceImplementation(dataService);
             }
             return base.CreateDataServiceImplementation(dataService);
         }
@@ -2420,99 +2420,99 @@ namespace LightSwitchApplication.Implementation
             }
             if (typeof(global::LightSwitchApplication.Accreditation) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Accreditation);
+                return typeof(global::PPT_2Data.Implementation.Accreditation);
             }
             if (typeof(global::LightSwitchApplication.c_Class) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.c_Class);
+                return typeof(global::PPT_2Data.Implementation.c_Class);
             }
             if (typeof(global::LightSwitchApplication.Contact) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Contact);
+                return typeof(global::PPT_2Data.Implementation.Contact);
             }
             if (typeof(global::LightSwitchApplication.Corresp) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Corresp);
+                return typeof(global::PPT_2Data.Implementation.Corresp);
             }
             if (typeof(global::LightSwitchApplication.Country) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Country);
+                return typeof(global::PPT_2Data.Implementation.Country);
             }
             if (typeof(global::LightSwitchApplication.Destination) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Destination);
+                return typeof(global::PPT_2Data.Implementation.Destination);
             }
             if (typeof(global::LightSwitchApplication.Gift) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Gift);
+                return typeof(global::PPT_2Data.Implementation.Gift);
             }
             if (typeof(global::LightSwitchApplication.GiftType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.GiftType);
+                return typeof(global::PPT_2Data.Implementation.GiftType);
             }
             if (typeof(global::LightSwitchApplication.History) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.History);
+                return typeof(global::PPT_2Data.Implementation.History);
             }
             if (typeof(global::LightSwitchApplication.InstitutionType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.InstitutionType);
+                return typeof(global::PPT_2Data.Implementation.InstitutionType);
             }
             if (typeof(global::LightSwitchApplication.LetterWriter) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.LetterWriter);
+                return typeof(global::PPT_2Data.Implementation.LetterWriter);
             }
             if (typeof(global::LightSwitchApplication.LocationType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.LocationType);
+                return typeof(global::PPT_2Data.Implementation.LocationType);
             }
             if (typeof(global::LightSwitchApplication.MailCode) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.MailCode);
+                return typeof(global::PPT_2Data.Implementation.MailCode);
             }
             if (typeof(global::LightSwitchApplication.NLAddressOrderType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.NLAddressOrderType);
+                return typeof(global::PPT_2Data.Implementation.NLAddressOrderType);
             }
             if (typeof(global::LightSwitchApplication.PersonType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.PersonType);
+                return typeof(global::PPT_2Data.Implementation.PersonType);
             }
             if (typeof(global::LightSwitchApplication.Prison) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Prison);
+                return typeof(global::PPT_2Data.Implementation.Prison);
             }
             if (typeof(global::LightSwitchApplication.PrisonSex) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.PrisonSex);
+                return typeof(global::PPT_2Data.Implementation.PrisonSex);
             }
             if (typeof(global::LightSwitchApplication.PurposeType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.PurposeType);
+                return typeof(global::PPT_2Data.Implementation.PurposeType);
             }
             if (typeof(global::LightSwitchApplication.ResponseType) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.ResponseType);
+                return typeof(global::PPT_2Data.Implementation.ResponseType);
             }
             if (typeof(global::LightSwitchApplication.sysdiagram) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.sysdiagram);
+                return typeof(global::PPT_2Data.Implementation.sysdiagram);
             }
             if (typeof(global::LightSwitchApplication.Title) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Title);
+                return typeof(global::PPT_2Data.Implementation.Title);
             }
             if (typeof(global::LightSwitchApplication.Town) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.Town);
+                return typeof(global::PPT_2Data.Implementation.Town);
             }
             if (typeof(global::LightSwitchApplication.WorkshopPrison) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.WorkshopPrison);
+                return typeof(global::PPT_2Data.Implementation.WorkshopPrison);
             }
             if (typeof(global::LightSwitchApplication.WorkshopTeacher) == definitionType)
             {
-                return typeof(global::PPTData.Implementation.WorkshopTeacher);
+                return typeof(global::PPT_2Data.Implementation.WorkshopTeacher);
             }
             return null;
         }
@@ -2782,12 +2782,12 @@ namespace ApplicationData.Implementation
     
 }
 
-namespace PPTData.Implementation
+namespace PPT_2Data.Implementation
 {
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.Accreditation.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.Accreditation.Metadata))]
     public partial class Accreditation :
         global::LightSwitchApplication.Accreditation.DetailsClass.IImplementation
     {
@@ -2800,7 +2800,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Contact = (global::PPTData.Implementation.Contact)value;
+                this.Contact = (global::PPT_2Data.Implementation.Contact)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Contact");
@@ -2845,14 +2845,14 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Contact Contact { get; set; }
+            public global::PPT_2Data.Implementation.Contact Contact { get; set; }
         
         }
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.c_Class.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.c_Class.Metadata))]
     public partial class c_Class :
         global::LightSwitchApplication.c_Class.DetailsClass.IImplementation
     {
@@ -2865,7 +2865,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Contact = (global::PPTData.Implementation.Contact)value;
+                this.Contact = (global::PPT_2Data.Implementation.Contact)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Contact");
@@ -2889,7 +2889,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Prison = (global::PPTData.Implementation.Prison)value;
+                this.Prison = (global::PPT_2Data.Implementation.Prison)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Prison");
@@ -2934,17 +2934,17 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Contact Contact { get; set; }
+            public global::PPT_2Data.Implementation.Contact Contact { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Prison Prison { get; set; }
+            public global::PPT_2Data.Implementation.Prison Prison { get; set; }
         
         }
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.Contact.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.Contact.Metadata))]
     public partial class Contact :
         global::LightSwitchApplication.Contact.DetailsClass.IImplementation
     {
@@ -2973,7 +2973,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Country1 = (global::PPTData.Implementation.Country)value;
+                this.Country1 = (global::PPT_2Data.Implementation.Country)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Country1");
@@ -2997,7 +2997,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.MailCode1 = (global::PPTData.Implementation.MailCode)value;
+                this.MailCode1 = (global::PPT_2Data.Implementation.MailCode)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("MailCode1");
@@ -3021,7 +3021,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.PersonType1 = (global::PPTData.Implementation.PersonType)value;
+                this.PersonType1 = (global::PPT_2Data.Implementation.PersonType)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("PersonType1");
@@ -3045,7 +3045,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Prison1 = (global::PPTData.Implementation.Prison)value;
+                this.Prison1 = (global::PPT_2Data.Implementation.Prison)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Prison1");
@@ -3069,7 +3069,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Title1 = (global::PPTData.Implementation.Title)value;
+                this.Title1 = (global::PPT_2Data.Implementation.Title)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Title1");
@@ -3093,7 +3093,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Town1 = (global::PPTData.Implementation.Town)value;
+                this.Town1 = (global::PPT_2Data.Implementation.Town)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Town1");
@@ -3117,7 +3117,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Corresp = (global::PPTData.Implementation.Corresp)value;
+                this.Corresp = (global::PPT_2Data.Implementation.Corresp)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Corresp");
@@ -3170,32 +3170,32 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Country Country1 { get; set; }
+            public global::PPT_2Data.Implementation.Country Country1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.MailCode MailCode1 { get; set; }
+            public global::PPT_2Data.Implementation.MailCode MailCode1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.PersonType PersonType1 { get; set; }
+            public global::PPT_2Data.Implementation.PersonType PersonType1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Prison Prison1 { get; set; }
+            public global::PPT_2Data.Implementation.Prison Prison1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Title Title1 { get; set; }
+            public global::PPT_2Data.Implementation.Title Title1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Town Town1 { get; set; }
+            public global::PPT_2Data.Implementation.Town Town1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Corresp Corresp { get; set; }
+            public global::PPT_2Data.Implementation.Corresp Corresp { get; set; }
         
         }
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.Corresp.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.Corresp.Metadata))]
     public partial class Corresp :
         global::LightSwitchApplication.Corresp.DetailsClass.IImplementation
     {
@@ -3208,7 +3208,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.ResponseType = (global::PPTData.Implementation.ResponseType)value;
+                this.ResponseType = (global::PPT_2Data.Implementation.ResponseType)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("ResponseType");
@@ -3232,7 +3232,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Contact = (global::PPTData.Implementation.Contact)value;
+                this.Contact = (global::PPT_2Data.Implementation.Contact)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Contact");
@@ -3277,10 +3277,10 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.ResponseType ResponseType { get; set; }
+            public global::PPT_2Data.Implementation.ResponseType ResponseType { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Contact Contact { get; set; }
+            public global::PPT_2Data.Implementation.Contact Contact { get; set; }
         
         }
     }
@@ -3369,7 +3369,7 @@ namespace PPTData.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.Gift.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.Gift.Metadata))]
     public partial class Gift :
         global::LightSwitchApplication.Gift.DetailsClass.IImplementation
     {
@@ -3382,7 +3382,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Contact1 = (global::PPTData.Implementation.Contact)value;
+                this.Contact1 = (global::PPT_2Data.Implementation.Contact)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Contact1");
@@ -3427,7 +3427,7 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Contact Contact1 { get; set; }
+            public global::PPT_2Data.Implementation.Contact Contact1 { get; set; }
         
         }
     }
@@ -3730,7 +3730,7 @@ namespace PPTData.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.Prison.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.Prison.Metadata))]
     public partial class Prison :
         global::LightSwitchApplication.Prison.DetailsClass.IImplementation
     {
@@ -3759,7 +3759,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Country1 = (global::PPTData.Implementation.Country)value;
+                this.Country1 = (global::PPT_2Data.Implementation.Country)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Country1");
@@ -3783,7 +3783,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.LocationType = (global::PPTData.Implementation.LocationType)value;
+                this.LocationType = (global::PPT_2Data.Implementation.LocationType)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("LocationType");
@@ -3807,7 +3807,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.NLAddressOrderType = (global::PPTData.Implementation.NLAddressOrderType)value;
+                this.NLAddressOrderType = (global::PPT_2Data.Implementation.NLAddressOrderType)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("NLAddressOrderType");
@@ -3831,7 +3831,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.PrisonSex = (global::PPTData.Implementation.PrisonSex)value;
+                this.PrisonSex = (global::PPT_2Data.Implementation.PrisonSex)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("PrisonSex");
@@ -3884,16 +3884,16 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Country Country1 { get; set; }
+            public global::PPT_2Data.Implementation.Country Country1 { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.LocationType LocationType { get; set; }
+            public global::PPT_2Data.Implementation.LocationType LocationType { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.NLAddressOrderType NLAddressOrderType { get; set; }
+            public global::PPT_2Data.Implementation.NLAddressOrderType NLAddressOrderType { get; set; }
         
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.PrisonSex PrisonSex { get; set; }
+            public global::PPT_2Data.Implementation.PrisonSex PrisonSex { get; set; }
         
         }
     }
@@ -4130,7 +4130,7 @@ namespace PPTData.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.WorkshopPrison.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.WorkshopPrison.Metadata))]
     public partial class WorkshopPrison :
         global::LightSwitchApplication.WorkshopPrison.DetailsClass.IImplementation
     {
@@ -4143,7 +4143,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Prison = (global::PPTData.Implementation.Prison)value;
+                this.Prison = (global::PPT_2Data.Implementation.Prison)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Prison");
@@ -4188,14 +4188,14 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Prison Prison { get; set; }
+            public global::PPT_2Data.Implementation.Prison Prison { get; set; }
         
         }
     }
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPTData.Implementation.WorkshopTeacher.Metadata))]
+    [global::System.ComponentModel.DataAnnotations.MetadataType(typeof(global::PPT_2Data.Implementation.WorkshopTeacher.Metadata))]
     public partial class WorkshopTeacher :
         global::LightSwitchApplication.WorkshopTeacher.DetailsClass.IImplementation
     {
@@ -4208,7 +4208,7 @@ namespace PPTData.Implementation
             }
             set
             {
-                this.Contact = (global::PPTData.Implementation.Contact)value;
+                this.Contact = (global::PPT_2Data.Implementation.Contact)value;
                 if (this.__host != null)
                 {
                     this.__host.RaisePropertyChanged("Contact");
@@ -4253,7 +4253,7 @@ namespace PPTData.Implementation
         internal class Metadata
         {
             [global::System.ServiceModel.DomainServices.Server.Include]
-            public global::PPTData.Implementation.Contact Contact { get; set; }
+            public global::PPT_2Data.Implementation.Contact Contact { get; set; }
         
         }
     }
