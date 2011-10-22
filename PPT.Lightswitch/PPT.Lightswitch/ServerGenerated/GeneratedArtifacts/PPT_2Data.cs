@@ -50,12 +50,6 @@ namespace PPT_2Data.Implementation
     {
         #region Constructors
 
-        private static string FixConnectionString(string src)
-        {
-            string result = src.Replace("|MyDBPath|", System.Environment.CurrentDirectory.Replace("Bin\\Debug", "Bin\\Data"));
-            return result; 
-        }
-
         /// <summary>
         /// Initializes a new PPT_2DataObjectContext object using the connection string found in the 'PPT_2DataObjectContext' section of the application configuration file.
         /// </summary>
@@ -67,7 +61,7 @@ namespace PPT_2Data.Implementation
         /// <summary>
         /// Initialize a new PPT_2DataObjectContext object.
         /// </summary>
-        public PPT_2DataObjectContext(string connectionString) : base(FixConnectionString(connectionString), "PPT_2DataObjectContext")
+        public PPT_2DataObjectContext(string connectionString) : base(connectionString, "PPT_2DataObjectContext")
         {
             OnContextCreated();
         }
