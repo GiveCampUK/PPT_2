@@ -103,7 +103,7 @@ namespace Ppt.DataMigration
                     _progressBar.ShowDialog();
                     break;
                 case HomeActions.HideProgressBar:
-                    _progressBar.Hide();
+                        _progressBar.Hide();
                     break;
                 default:
                     MessageBox.Show("HomeAction not handled");
