@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Global.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Prisoners\Lookup_PostTown.cs" />
     <Compile Include="Services\Friends\CountryFixture.cs" />
   </ItemGroup>
   <ItemGroup>

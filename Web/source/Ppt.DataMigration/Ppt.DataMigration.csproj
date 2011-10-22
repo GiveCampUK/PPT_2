@@ -110,6 +110,7 @@
     <Compile Include="Services\Friends\Country.cs" />
     <Compile Include="Services\IDatabaseBuilderService.cs" />
     <Compile Include="Services\IDatabaseMigrationService.cs" />
+    <Compile Include="Services\Prisoner\AccessConnection.cs" />
     <Compile Include="Services\Prisoner\Contact.cs" />
     <Compile Include="Services\Prisoner\Corresp.cs" />
     <Compile Include="Services\Prisoner\Lookup_Country.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Services\Prisoner\Lookup_Prisons.cs" />
     <Compile Include="Services\Prisoner\Lookup_Response.cs" />
     <Compile Include="Services\Prisoner\Lookup_Type.cs" />
+    <Compile Include="Services\Prisoner\SQLConnection.cs" />
     <EmbeddedResource Include="ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
