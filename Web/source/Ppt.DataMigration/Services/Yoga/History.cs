@@ -14,6 +14,8 @@ namespace Ppt.DataMigration.Services.Yoga
         }
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
@@ -28,6 +30,8 @@ namespace Ppt.DataMigration.Services.Yoga
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    currentIdentifier = reader["id"].ToString();
+
                     var results = dt.Select("ID = '{0}'".Formatted(reader["Id"]));
                     if (results.Length == 0)
                     {
@@ -41,7 +45,7 @@ namespace Ppt.DataMigration.Services.Yoga
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {
