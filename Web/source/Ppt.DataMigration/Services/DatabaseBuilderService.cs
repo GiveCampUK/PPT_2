@@ -14,17 +14,27 @@ namespace Ppt.DataMigration.Services
     {
         public void Build(SqlConnection sqlConn)
         {
-            string[] resourceFileNames = this.GetDBScriptFileNames();
-
-            for (int i = 0; i < resourceFileNames.Count(); i++)
+            try
             {
-                using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceFileNames[i]))
-                using (StreamReader reader = new StreamReader(stream))
+                sqlConn.Open();
+
+                string[] resourceFileNames = this.GetDBScriptFileNames();
+
+                for (int i = 0; i < resourceFileNames.Count(); i++)
                 {
-                    string result = reader.ReadToEnd();
-                    this.RunScript(sqlConn, result);
-                } // End Using
-            } // End For
+                    using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceFileNames[i]))
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        string result = reader.ReadToEnd();
+                        this.RunScript(sqlConn, result);
+                    } // End Using
+                } // End For
+
+            }
+            finally
+            {
+                sqlConn.Close();
+            }
         } // Build()
 
         private void RunScript(SqlConnection connection, string sql)
