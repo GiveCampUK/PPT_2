@@ -1,68 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\ppt\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" total="5" errors="3" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-10-22" time="21:30:26">
-  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5446" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="AST-LAPTOP1" user="kxm" user-domain="EDU2000" />
+<test-results name="C:\PPT\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-10-22" time="19:44:06">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5446" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="AST-LAPTOP3" user="jpd" user-domain="EDU2000" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\ppt\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" executed="True" result="Failure" success="False" time="2.683" asserts="0">
+  <test-suite type="Assembly" name="C:\PPT\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" executed="True" result="Success" success="True" time="5.054" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Ppt" executed="True" result="Failure" success="False" time="2.676" asserts="0">
+      <test-suite type="Namespace" name="Ppt" executed="True" result="Success" success="True" time="5.049" asserts="0">
         <results>
-          <test-suite type="Namespace" name="DataMigration" executed="True" result="Failure" success="False" time="2.676" asserts="0">
+          <test-suite type="Namespace" name="DataMigration" executed="True" result="Success" success="True" time="5.049" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="2.676" asserts="0">
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="5.049" asserts="0">
                 <results>
-                  <test-suite type="Namespace" name="Services" executed="True" result="Failure" success="False" time="2.676" asserts="0">
+                  <test-suite type="Namespace" name="Services" executed="True" result="Success" success="True" time="5.048" asserts="0">
                     <results>
-                      <test-suite type="Namespace" name="Friends" executed="True" result="Failure" success="False" time="2.579" asserts="0">
+                      <test-suite type="Namespace" name="Prisoner" executed="True" result="Success" success="True" time="5.048" asserts="0">
                         <results>
-                          <test-suite type="TestFixture" name="CountryFixture" executed="True" result="Success" success="True" time="1.699" asserts="0">
+                          <test-suite type="TestFixture" name="Lookup_PostTownFixture" executed="True" result="Success" success="True" time="5.046" asserts="0">
                             <results>
-                              <test-case name="Ppt.DataMigration.Tests.Services.Friends.CountryFixture.Migrate" executed="True" result="Success" success="True" time="1.687" asserts="0" />
-                            </results>
-                          </test-suite>
-                          <test-suite type="TestFixture" name="Lookup_CountryFixture" executed="True" result="Success" success="True" time="0.509" asserts="0">
-                            <results>
-                              <test-case name="Ppt.DataMigration.Tests.Services.Friends.Lookup_CountryFixture.Migrate" executed="True" result="Success" success="True" time="0.508" asserts="0" />
-                            </results>
-                          </test-suite>
-                          <test-suite type="TestFixture" name="Lookup_DestinationFixture" executed="True" result="Failure" success="False" time="0.192" asserts="0">
-                            <results>
-                              <test-case name="Ppt.DataMigration.Tests.Services.Friends.Lookup_DestinationFixture.Migrate" executed="True" result="Error" success="False" time="0.191" asserts="0">
-                                <failure>
-                                  <message><![CDATA[System.Data.OleDb.OleDbException : Syntax error in FROM clause.]]></message>
-                                  <stack-trace><![CDATA[at Ppt.DataMigration.Services.Prisoner.Lookup_Destination.MigrateTable() in C:\ppt\Web\source\Ppt.DataMigration\Services\Prisoner\Lookup_Destination.cs:line 54
-at Ppt.DataMigration.Tests.Services.Friends.Lookup_DestinationFixture.Migrate() in C:\ppt\Web\source\Ppt.DataMigration.Tests\Services\Prisoner\Lookup_CountryFixture.cs:line 33
-]]></stack-trace>
-                                </failure>
-                              </test-case>
-                            </results>
-                          </test-suite>
-                          <test-suite type="TestFixture" name="Lookup_PrisonFixture" executed="True" result="Failure" success="False" time="0.104" asserts="0">
-                            <results>
-                              <test-case name="Ppt.DataMigration.Tests.Services.Friends.Lookup_PrisonFixture.Migrate" executed="True" result="Error" success="False" time="0.103" asserts="0">
-                                <failure>
-                                  <message><![CDATA[System.Data.NoNullAllowedException : Column 'Location' does not allow nulls.]]></message>
-                                  <stack-trace><![CDATA[at Ppt.DataMigration.Services.Prisoner.Lookup_Prisons.MigrateTable() in C:\ppt\Web\source\Ppt.DataMigration\Services\Prisoner\Lookup_Prisons.cs:line 104
-at Ppt.DataMigration.Tests.Services.Friends.Lookup_PrisonFixture.Migrate() in C:\ppt\Web\source\Ppt.DataMigration.Tests\Services\Prisoner\Lookup_PrisonFixture.cs:line 33
-]]></stack-trace>
-                                </failure>
-                              </test-case>
-                            </results>
-                          </test-suite>
-                        </results>
-                      </test-suite>
-                      <test-suite type="Namespace" name="Prisoner" executed="True" result="Failure" success="False" time="0.087" asserts="0">
-                        <results>
-                          <test-suite type="TestFixture" name="Lookup_PostTownFixture" executed="True" result="Failure" success="False" time="0.087" asserts="0">
-                            <results>
-                              <test-case name="Ppt.DataMigration.Tests.Services.Prisoner.Lookup_PostTownFixture.Migrate" executed="True" result="Error" success="False" time="0.077" asserts="0">
-                                <failure>
-                                  <message><![CDATA[System.Data.OleDb.OleDbException : Syntax error in FROM clause.]]></message>
-                                  <stack-trace><![CDATA[at Ppt.DataMigration.Services.Prisoner.Lookup_PostTown.MigrateTable() in C:\ppt\Web\source\Ppt.DataMigration\Services\Prisoner\Lookup_PostTown.cs:line 50
-at Ppt.DataMigration.Tests.Services.Prisoner.Lookup_PostTownFixture.Migrate() in C:\ppt\Web\source\Ppt.DataMigration.Tests\Services\Prisoner\Lookup_PostTownFixture.cs:line 33
-]]></stack-trace>
-                                </failure>
-                              </test-case>
+                              <test-case name="Ppt.DataMigration.Tests.Services.Prisoner.Lookup_PostTownFixture.Migrate" executed="True" result="Success" success="True" time="5.035" asserts="0" />
                             </results>
                           </test-suite>
                         </results>
