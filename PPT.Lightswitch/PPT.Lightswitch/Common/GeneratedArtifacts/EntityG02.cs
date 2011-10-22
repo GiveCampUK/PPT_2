@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-    public sealed partial class ContactTypes : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>
+    public sealed partial class Countries : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Initializes a new instance of the ContactTypes entity.
+        /// Initializes a new instance of the Countries entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public ContactTypes()
+        public Countries()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public ContactTypes(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.ContactTypes> entitySet)
+        public Countries(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Countries> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.ContactTypes.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.Countries.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ContactTypes_Created();
+        partial void Countries_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ContactTypes_AllowSaveWithErrors(ref bool result);
+        partial void Countries_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -87,11 +87,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.ContactTypes.DetailsClass.GetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Id);
+                return global::LightSwitchApplication.Countries.DetailsClass.GetValue(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Id);
             }
             set
             {
-                global::LightSwitchApplication.ContactTypes.DetailsClass.SetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Id, value);
+                global::LightSwitchApplication.Countries.DetailsClass.SetValue(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Id, value);
             }
         }
         
@@ -111,11 +111,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.ContactTypes.DetailsClass.GetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Name);
+                return global::LightSwitchApplication.Countries.DetailsClass.GetValue(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Name);
             }
             set
             {
-                global::LightSwitchApplication.ContactTypes.DetailsClass.SetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Name, value);
+                global::LightSwitchApplication.Countries.DetailsClass.SetValue(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Name, value);
             }
         }
         
@@ -131,35 +131,11 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string Code
-        {
-            get
-            {
-                return global::LightSwitchApplication.ContactTypes.DetailsClass.GetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Code);
-            }
-            set
-            {
-                global::LightSwitchApplication.ContactTypes.DetailsClass.SetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Code, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Code_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Code_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Code_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.Contacts> ContactsCollection
         {
             get
             {
-                return global::LightSwitchApplication.ContactTypes.DetailsClass.GetValue(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.ContactsCollection);
+                return global::LightSwitchApplication.Countries.DetailsClass.GetValue(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.ContactsCollection);
             }
         }
         
@@ -169,7 +145,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.ContactTypes.DetailsClass.GetQuery(this, global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.ContactsCollection);
+                return global::LightSwitchApplication.Countries.DetailsClass.GetQuery(this, global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.ContactsCollection);
             }
         }
 
@@ -182,37 +158,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.ContactTypes,
-                global::LightSwitchApplication.ContactTypes.DetailsClass,
-                global::LightSwitchApplication.ContactTypes.DetailsClass.IImplementation,
-                global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>>
+                global::LightSwitchApplication.Countries,
+                global::LightSwitchApplication.Countries.DetailsClass,
+                global::LightSwitchApplication.Countries.DetailsClass.IImplementation,
+                global::LightSwitchApplication.Countries.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Id;
+                var initializeEntry = global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Id;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>.Entry
-                __ContactTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>.Entry(
-                    global::LightSwitchApplication.ContactTypes.DetailsClass.__ContactTypes_CreateNew,
-                    global::LightSwitchApplication.ContactTypes.DetailsClass.__ContactTypes_Created,
-                    global::LightSwitchApplication.ContactTypes.DetailsClass.__ContactTypes_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.ContactTypes __ContactTypes_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.ContactTypes> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>.Entry
+                __CountriesEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>.Entry(
+                    global::LightSwitchApplication.Countries.DetailsClass.__Countries_CreateNew,
+                    global::LightSwitchApplication.Countries.DetailsClass.__Countries_Created,
+                    global::LightSwitchApplication.Countries.DetailsClass.__Countries_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.Countries __Countries_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Countries> es)
             {
-                return new global::LightSwitchApplication.ContactTypes(es);
+                return new global::LightSwitchApplication.Countries(es);
             }
-            private static void __ContactTypes_Created(global::LightSwitchApplication.ContactTypes e)
+            private static void __Countries_Created(global::LightSwitchApplication.Countries e)
             {
-                e.ContactTypes_Created();
+                e.Countries_Created();
             }
-            private static bool __ContactTypes_AllowSaveWithErrors(global::LightSwitchApplication.ContactTypes e)
+            private static bool __Countries_AllowSaveWithErrors(global::LightSwitchApplication.Countries e)
             {
                 bool result = false;
-                e.ContactTypes_AllowSaveWithErrors(ref result);
+                e.Countries_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -220,7 +196,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass> Commands
             {
                 get
                 {
@@ -228,7 +204,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass> Methods
             {
                 get
                 {
@@ -236,7 +212,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.Countries.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -248,42 +224,34 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int> Id
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int> Id
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string> Name
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string> Name
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string> Code
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts> ContactsCollection
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.Code) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>;
-                    }
-                }
-                
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts> ContactsCollection
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.ContactsCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts>;
+                        return base.GetItem(global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.ContactsCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts>;
                     }
                 }
                 
@@ -295,7 +263,6 @@ namespace LightSwitchApplication
             {
                 new int Id { get; set; }
                 new string Name { get; set; }
-                new string Code { get; set; }
                 new global::System.Collections.IEnumerable ContactsCollection { get; }
             }
             #pragma warning restore 109
@@ -307,132 +274,95 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int>.Entry
-                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int>.Entry
+                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int>.Entry(
                         "Id",
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_Stub,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_Validate,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Id_OnValueChanged);
-                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ContactTypes.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int>.Data> c, global::LightSwitchApplication.ContactTypes.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_Stub,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_Validate,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Id_OnValueChanged);
+                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Countries.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int>.Data> c, global::LightSwitchApplication.Countries.DetailsClass d, object sf)
                 {
                     c(d, ref d._Id, sf);
                 }
-                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.ContactTypes e)
+                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.Countries e)
                 {
                     bool result = false;
                     e.Id_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Id_Validate(global::LightSwitchApplication.ContactTypes e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Id_Validate(global::LightSwitchApplication.Countries e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Id_Validate(r);
                 }
-                private static int _Id_GetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d)
+                private static int _Id_GetImplementationValue(global::LightSwitchApplication.Countries.DetailsClass d)
                 {
                     return d.ImplementationEntity.Id;
                 }
-                private static void _Id_SetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d, int v)
+                private static void _Id_SetImplementationValue(global::LightSwitchApplication.Countries.DetailsClass d, int v)
                 {
                     d.ImplementationEntity.Id = v;
                 }
-                private static void _Id_OnValueChanged(global::LightSwitchApplication.ContactTypes e)
+                private static void _Id_OnValueChanged(global::LightSwitchApplication.Countries e)
                 {
                     e.Id_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Entry
-                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string>.Entry
+                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string>.Entry(
                         "Name",
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_Stub,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_ComputeIsReadOnly,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_Validate,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_GetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_SetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Name_OnValueChanged);
-                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ContactTypes.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Data> c, global::LightSwitchApplication.ContactTypes.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_Stub,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_Validate,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_GetImplementationValue,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_SetImplementationValue,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._Name_OnValueChanged);
+                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Countries.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string>.Data> c, global::LightSwitchApplication.Countries.DetailsClass d, object sf)
                 {
                     c(d, ref d._Name, sf);
                 }
-                private static bool _Name_ComputeIsReadOnly(global::LightSwitchApplication.ContactTypes e)
+                private static bool _Name_ComputeIsReadOnly(global::LightSwitchApplication.Countries e)
                 {
                     bool result = false;
                     e.Name_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Name_Validate(global::LightSwitchApplication.ContactTypes e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Name_Validate(global::LightSwitchApplication.Countries e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Name_Validate(r);
                 }
-                private static string _Name_GetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d)
+                private static string _Name_GetImplementationValue(global::LightSwitchApplication.Countries.DetailsClass d)
                 {
                     return d.ImplementationEntity.Name;
                 }
-                private static void _Name_SetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d, string v)
+                private static void _Name_SetImplementationValue(global::LightSwitchApplication.Countries.DetailsClass d, string v)
                 {
                     d.ImplementationEntity.Name = v;
                 }
-                private static void _Name_OnValueChanged(global::LightSwitchApplication.ContactTypes e)
+                private static void _Name_OnValueChanged(global::LightSwitchApplication.Countries e)
                 {
                     e.Name_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Entry
-                    Code = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Entry(
-                        "Code",
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_Stub,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_ComputeIsReadOnly,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_Validate,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_GetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_SetImplementationValue,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._Code_OnValueChanged);
-                private static void _Code_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ContactTypes.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Data> c, global::LightSwitchApplication.ContactTypes.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Code, sf);
-                }
-                private static bool _Code_ComputeIsReadOnly(global::LightSwitchApplication.ContactTypes e)
-                {
-                    bool result = false;
-                    e.Code_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _Code_Validate(global::LightSwitchApplication.ContactTypes e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Code_Validate(r);
-                }
-                private static string _Code_GetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d)
-                {
-                    return d.ImplementationEntity.Code;
-                }
-                private static void _Code_SetImplementationValue(global::LightSwitchApplication.ContactTypes.DetailsClass d, string v)
-                {
-                    d.ImplementationEntity.Code = v;
-                }
-                private static void _Code_OnValueChanged(global::LightSwitchApplication.ContactTypes e)
-                {
-                    e.Code_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts>.Entry
-                    ContactsCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts>.Entry
+                    ContactsCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts>.Entry(
                         "ContactsCollection",
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._ContactsCollection_Stub,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._ContactsCollection_GetReferencedEntities,
-                        global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties._ContactsCollection_GetEntityCollection);
-                private static void _ContactsCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ContactTypes.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts>.Data> c, global::LightSwitchApplication.ContactTypes.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._ContactsCollection_Stub,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._ContactsCollection_GetReferencedEntities,
+                        global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties._ContactsCollection_GetEntityCollection);
+                private static void _ContactsCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Countries.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts>.Data> c, global::LightSwitchApplication.Countries.DetailsClass d, object sf)
                 {
                     c(d, ref d._ContactsCollection, sf);
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contacts> _ContactsCollection_GetReferencedEntities(global::LightSwitchApplication.ContactTypes.DetailsClass d)
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contacts> _ContactsCollection_GetReferencedEntities(global::LightSwitchApplication.Countries.DetailsClass d)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.Contacts, global::LightSwitchApplication.Contacts.DetailsClass>(global::LightSwitchApplication.ContactTypes.DetailsClass.PropertySetProperties.ContactsCollection, ref d._ContactsCollection);
+                    return d.GetReferencedEntities<global::LightSwitchApplication.Contacts, global::LightSwitchApplication.Contacts.DetailsClass>(global::LightSwitchApplication.Countries.DetailsClass.PropertySetProperties.ContactsCollection, ref d._ContactsCollection);
                 }
-                private static global::System.Collections.IEnumerable _ContactsCollection_GetEntityCollection(global::LightSwitchApplication.ContactTypes.DetailsClass d)
+                private static global::System.Collections.IEnumerable _ContactsCollection_GetEntityCollection(global::LightSwitchApplication.Countries.DetailsClass d)
                 {
                     return d.ImplementationEntity.ContactsCollection;
                 }
@@ -440,16 +370,411 @@ namespace LightSwitchApplication
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, int>.Data _Id;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, int>.Data _Id;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Data _Name;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, string>.Data _Name;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, string>.Data _Code;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Countries, global::LightSwitchApplication.Countries.DetailsClass, global::LightSwitchApplication.Contacts>.Data _ContactsCollection;
+            
+        }
+    
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Modeled Description Available
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    public sealed partial class Prisoner : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>
+    {
+        #region Constructors
+    
+        /// <summary>
+        /// Initializes a new instance of the Prisoner entity.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Prisoner()
+            : this(null)
+        {
+        }
+    
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Prisoner(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Prisoner> entitySet)
+            : base(entitySet)
+        {
+            global::LightSwitchApplication.Prisoner.DetailsClass.Initialize(this);
+        }
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisoner_Created();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisoner_AllowSaveWithErrors(ref bool result);
+    
+        #endregion
+    
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::Microsoft.LightSwitch.IApplication<global::LightSwitchApplication.DataWorkspace> Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)this.Details.EntitySet.Details.DataService.Details.DataWorkspace;
+            }
+        }
+        
+        #endregion
+    
+        #region Public Properties
+    
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int Id
+        {
+            get
+            {
+                return global::LightSwitchApplication.Prisoner.DetailsClass.GetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.Id);
+            }
+            set
+            {
+                global::LightSwitchApplication.Prisoner.DetailsClass.SetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.Id, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Id_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Id_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Id_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string SomeData
+        {
+            get
+            {
+                return global::LightSwitchApplication.Prisoner.DetailsClass.GetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.SomeData);
+            }
+            set
+            {
+                global::LightSwitchApplication.Prisoner.DetailsClass.SetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.SomeData, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SomeData_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SomeData_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SomeData_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.Contacts ContactId
+        {
+            get
+            {
+                return global::LightSwitchApplication.Prisoner.DetailsClass.GetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId);
+            }
+            set
+            {
+                global::LightSwitchApplication.Prisoner.DetailsClass.SetValue(this, global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ContactId_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ContactId_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ContactId_Changed();
+
+        #endregion
+    
+        #region Details Class
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
+                global::LightSwitchApplication.Prisoner,
+                global::LightSwitchApplication.Prisoner.DetailsClass,
+                global::LightSwitchApplication.Prisoner.DetailsClass.IImplementation,
+                global::LightSwitchApplication.Prisoner.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>>
+        {
+    
+            static DetailsClass()
+            {
+                var initializeEntry = global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.Id;
+            }
+    
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>.Entry
+                __PrisonerEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>.Entry(
+                    global::LightSwitchApplication.Prisoner.DetailsClass.__Prisoner_CreateNew,
+                    global::LightSwitchApplication.Prisoner.DetailsClass.__Prisoner_Created,
+                    global::LightSwitchApplication.Prisoner.DetailsClass.__Prisoner_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.Prisoner __Prisoner_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Prisoner> es)
+            {
+                return new global::LightSwitchApplication.Prisoner(es);
+            }
+            private static void __Prisoner_Created(global::LightSwitchApplication.Prisoner e)
+            {
+                e.Prisoner_Created();
+            }
+            private static bool __Prisoner_AllowSaveWithErrors(global::LightSwitchApplication.Prisoner e)
+            {
+                bool result = false;
+                e.Prisoner_AllowSaveWithErrors(ref result);
+                return result;
+            }
+    
+            public DetailsClass() : base()
+            {
+            }
+    
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass> Commands
+            {
+                get
+                {
+                    return base.Commands;
+                }
+            }
+    
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass> Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+    
+            public new global::LightSwitchApplication.Prisoner.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass>
+            {
+    
+                public PropertySet() : base()
+                {
+                }
+    
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int> Id
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string> SomeData
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.SomeData) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts> ContactId
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts>;
+                    }
+                }
+                
+            }
+    
+            #pragma warning disable 109
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+            public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
+            {
+                new int Id { get; set; }
+                new string SomeData { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation ContactId { get; set; }
+            }
+            #pragma warning restore 109
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal class PropertySetProperties
+            {
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int>.Entry
+                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int>.Entry(
+                        "Id",
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_Stub,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_Validate,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._Id_OnValueChanged);
+                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Prisoner.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int>.Data> c, global::LightSwitchApplication.Prisoner.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Id, sf);
+                }
+                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.Prisoner e)
+                {
+                    bool result = false;
+                    e.Id_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _Id_Validate(global::LightSwitchApplication.Prisoner e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Id_Validate(r);
+                }
+                private static int _Id_GetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d)
+                {
+                    return d.ImplementationEntity.Id;
+                }
+                private static void _Id_SetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d, int v)
+                {
+                    d.ImplementationEntity.Id = v;
+                }
+                private static void _Id_OnValueChanged(global::LightSwitchApplication.Prisoner e)
+                {
+                    e.Id_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string>.Entry
+                    SomeData = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string>.Entry(
+                        "SomeData",
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_Stub,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_Validate,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_GetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_SetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._SomeData_OnValueChanged);
+                private static void _SomeData_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Prisoner.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string>.Data> c, global::LightSwitchApplication.Prisoner.DetailsClass d, object sf)
+                {
+                    c(d, ref d._SomeData, sf);
+                }
+                private static bool _SomeData_ComputeIsReadOnly(global::LightSwitchApplication.Prisoner e)
+                {
+                    bool result = false;
+                    e.SomeData_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _SomeData_Validate(global::LightSwitchApplication.Prisoner e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.SomeData_Validate(r);
+                }
+                private static string _SomeData_GetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d)
+                {
+                    return d.ImplementationEntity.SomeData;
+                }
+                private static void _SomeData_SetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.SomeData = v;
+                }
+                private static void _SomeData_OnValueChanged(global::LightSwitchApplication.Prisoner e)
+                {
+                    e.SomeData_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts>.Entry
+                    ContactId = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts>.Entry(
+                        "ContactId",
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_Stub,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_Validate,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_GetCoreImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_GetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_SetImplementationValue,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_Refresh,
+                        global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties._ContactId_OnValueChanged);
+                private static void _ContactId_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Prisoner.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts>.Data> c, global::LightSwitchApplication.Prisoner.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ContactId, sf);
+                }
+                private static bool _ContactId_ComputeIsReadOnly(global::LightSwitchApplication.Prisoner e)
+                {
+                    bool result = false;
+                    e.ContactId_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _ContactId_Validate(global::LightSwitchApplication.Prisoner e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.ContactId_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _ContactId_GetCoreImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d)
+                {
+                    return d.ImplementationEntity.ContactId;
+                }
+                private static global::LightSwitchApplication.Contacts _ContactId_GetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.Contacts, global::LightSwitchApplication.Contacts.DetailsClass>(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId, ref d._ContactId);
+                }
+                private static void _ContactId_SetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass d, global::LightSwitchApplication.Contacts v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId, ref d._ContactId, (i, ev) => i.ContactId = ev, v);
+                }
+                private static void _ContactId_Refresh(global::LightSwitchApplication.Prisoner.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.Prisoner.DetailsClass.PropertySetProperties.ContactId, ref d._ContactId);
+                }
+                private static void _ContactId_OnValueChanged(global::LightSwitchApplication.Prisoner e)
+                {
+                    e.ContactId_Changed();
+                }
+    
+            }
+    
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, int>.Data _Id;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ContactTypes, global::LightSwitchApplication.ContactTypes.DetailsClass, global::LightSwitchApplication.Contacts>.Data _ContactsCollection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, string>.Data _SomeData;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.Prisoner, global::LightSwitchApplication.Prisoner.DetailsClass, global::LightSwitchApplication.Contacts>.Data _ContactId;
             
         }
     

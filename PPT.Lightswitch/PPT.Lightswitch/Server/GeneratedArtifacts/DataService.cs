@@ -1144,5 +1144,5852 @@ namespace LightSwitchApplication
         #endregion
     }
     
+    /// <summary>
+    /// Provides members to query and update data in the PPTData datasource.
+    /// </summary>
+    public sealed partial class PPTDataService
+        : global::LightSwitchApplication.PPTData
+    {
+        #region Constructors
+    
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public PPTDataService() : base()
+        {
+        }
+    
+        #endregion
+    
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)this.Details.DataWorkspace;
+            }
+        }
+        
+        #endregion
+    
+        #region Server Interceptions Points
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Inserting(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Inserted(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Updating(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Updated(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Deleting(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Deleted(global::LightSwitchApplication.Accreditation entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Validate(global::LightSwitchApplication.Accreditation entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Validate(global::LightSwitchApplication.c_Class entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Inserting(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Inserted(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Updating(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Updated(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Deleting(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Deleted(global::LightSwitchApplication.Contact entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Validate(global::LightSwitchApplication.Contact entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Inserting(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Inserted(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Updating(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Updated(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Deleting(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Deleted(global::LightSwitchApplication.Corresp entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Validate(global::LightSwitchApplication.Corresp entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Inserting(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Inserted(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Updating(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Updated(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Deleting(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Deleted(global::LightSwitchApplication.Country entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Validate(global::LightSwitchApplication.Country entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Inserting(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Inserted(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Updating(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Updated(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Deleting(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Deleted(global::LightSwitchApplication.Destination entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Validate(global::LightSwitchApplication.Destination entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Inserting(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Inserted(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Updating(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Updated(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Deleting(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Deleted(global::LightSwitchApplication.Gift entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Validate(global::LightSwitchApplication.Gift entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Inserting(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Inserted(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Updating(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Updated(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Deleting(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Deleted(global::LightSwitchApplication.GiftType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Validate(global::LightSwitchApplication.GiftType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Validate(global::LightSwitchApplication.History entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Inserting(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Inserted(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Updating(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Updated(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Deleting(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Deleted(global::LightSwitchApplication.InstitutionType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Validate(global::LightSwitchApplication.InstitutionType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Inserting(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Inserted(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Updating(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Updated(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Deleting(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Deleted(global::LightSwitchApplication.LetterWriter entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Validate(global::LightSwitchApplication.LetterWriter entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Inserting(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Inserted(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Updating(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Updated(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Deleting(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Deleted(global::LightSwitchApplication.LocationType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Validate(global::LightSwitchApplication.LocationType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Inserting(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Inserted(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Updating(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Updated(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Deleting(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Deleted(global::LightSwitchApplication.MailCode entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Validate(global::LightSwitchApplication.MailCode entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Inserting(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Inserted(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Updating(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Updated(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Deleting(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Deleted(global::LightSwitchApplication.NLAddressOrderType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Validate(global::LightSwitchApplication.NLAddressOrderType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Inserting(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Inserted(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Updating(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Updated(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Deleting(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Deleted(global::LightSwitchApplication.PersonType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Validate(global::LightSwitchApplication.PersonType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Inserting(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Inserted(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Updating(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Updated(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Deleting(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Deleted(global::LightSwitchApplication.Prison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Validate(global::LightSwitchApplication.Prison entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Inserting(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Inserted(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Updating(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Updated(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Deleting(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Deleted(global::LightSwitchApplication.PrisonSex entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Validate(global::LightSwitchApplication.PrisonSex entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Inserting(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Inserted(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Updating(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Updated(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Deleting(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Deleted(global::LightSwitchApplication.PurposeType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Validate(global::LightSwitchApplication.PurposeType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Inserting(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Inserted(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Updating(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Updated(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Deleting(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Deleted(global::LightSwitchApplication.ResponseType entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Validate(global::LightSwitchApplication.ResponseType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Inserting(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Inserted(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Updating(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Updated(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Deleting(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Deleted(global::LightSwitchApplication.sysdiagram entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Validate(global::LightSwitchApplication.sysdiagram entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Inserting(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Inserted(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Updating(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Updated(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Deleting(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Deleted(global::LightSwitchApplication.Title entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Validate(global::LightSwitchApplication.Title entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Inserting(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Inserted(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Updating(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Updated(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Deleting(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Deleted(global::LightSwitchApplication.Town entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Validate(global::LightSwitchApplication.Town entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Inserting(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Inserted(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Updating(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Updated(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Deleting(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Deleted(global::LightSwitchApplication.WorkshopPrison entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Validate(global::LightSwitchApplication.WorkshopPrison entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Inserting(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Inserted(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Updating(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Updated(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Deleting(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Deleted(global::LightSwitchApplication.WorkshopTeacher entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Validate(global::LightSwitchApplication.WorkshopTeacher entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_Executed();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Accreditations_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Classes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Contacts_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Single_Executing(global::System.Nullable<int> Corref);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Single_PreprocessQuery(global::System.Nullable<int> Corref, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Single_Executed(global::System.Nullable<int> Corref, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_Single_ExecuteFailed(global::System.Nullable<int> Corref, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_SingleOrDefault_Executing(global::System.Nullable<int> Corref);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Corref, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_SingleOrDefault_Executed(global::System.Nullable<int> Corref, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Corref, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Corresps_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Destinations_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Gifts_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void GiftTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.History> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.History> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.History> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Histories_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void InstitutionTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LetterWriters_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void LocationTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MailCodes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void NLAddressOrderTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PersonTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Prisons_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PrisonSexes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void PurposeTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ResponseTypes_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Single_Executing(global::System.Nullable<int> diagram_id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Single_PreprocessQuery(global::System.Nullable<int> diagram_id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Single_Executed(global::System.Nullable<int> diagram_id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_Single_ExecuteFailed(global::System.Nullable<int> diagram_id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_SingleOrDefault_Executing(global::System.Nullable<int> diagram_id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> diagram_id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_SingleOrDefault_Executed(global::System.Nullable<int> diagram_id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> diagram_id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void sysdiagrams_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Titles_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Towns_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopPrisons_All_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Single_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Single_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Single_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Single_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_Single_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_SingleOrDefault_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_SingleOrDefault_Executing(global::System.Nullable<int> Id);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_SingleOrDefault_PreprocessQuery(global::System.Nullable<int> Id, ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_SingleOrDefault_Executed(global::System.Nullable<int> Id, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_SingleOrDefault_ExecuteFailed(global::System.Nullable<int> Id, global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_All_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_All_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_All_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_All_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkshopTeachers_All_ExecuteFailed(global::System.Exception exception);
+    
+        #endregion
+    
+        #region Details Class
+    
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+        public static new class DetailsClass
+        {
+    
+            static DetailsClass()
+            {
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>
+                __AccreditationsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>(
+                    "Accreditations",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Validate);
+            private static bool __Accreditations_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Accreditations_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Accreditations_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Accreditations_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Accreditations_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Accreditations_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Accreditations_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Accreditations_CanRead(ref result);
+                return result;
+            }
+            private static void __Accreditations_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Inserting(e);
+            }
+            private static void __Accreditations_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Inserted(e);
+            }
+            private static void __Accreditations_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Updating(e);
+            }
+            private static void __Accreditations_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Updated(e);
+            }
+            private static void __Accreditations_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Deleting(e);
+            }
+            private static void __Accreditations_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e)
+            {
+                d.Accreditations_Deleted(e);
+            }
+            private static void __Accreditations_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Accreditation e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Accreditations_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>
+                __ClassesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>(
+                    "Classes",
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_CanRead,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Validate);
+            private static bool __Classes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Classes_CanRead(ref result);
+                return result;
+            }
+            private static void __Classes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.c_Class e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Classes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>
+                __ContactsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>(
+                    "Contacts",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Validate);
+            private static bool __Contacts_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Contacts_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Contacts_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Contacts_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Contacts_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Contacts_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Contacts_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Contacts_CanRead(ref result);
+                return result;
+            }
+            private static void __Contacts_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Inserting(e);
+            }
+            private static void __Contacts_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Inserted(e);
+            }
+            private static void __Contacts_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Updating(e);
+            }
+            private static void __Contacts_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Updated(e);
+            }
+            private static void __Contacts_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Deleting(e);
+            }
+            private static void __Contacts_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e)
+            {
+                d.Contacts_Deleted(e);
+            }
+            private static void __Contacts_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Contact e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Contacts_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>
+                __CorrespsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>(
+                    "Corresps",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Validate);
+            private static bool __Corresps_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Corresps_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Corresps_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Corresps_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Corresps_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Corresps_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Corresps_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Corresps_CanRead(ref result);
+                return result;
+            }
+            private static void __Corresps_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Inserting(e);
+            }
+            private static void __Corresps_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Inserted(e);
+            }
+            private static void __Corresps_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Updating(e);
+            }
+            private static void __Corresps_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Updated(e);
+            }
+            private static void __Corresps_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Deleting(e);
+            }
+            private static void __Corresps_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e)
+            {
+                d.Corresps_Deleted(e);
+            }
+            private static void __Corresps_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Corresp e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Corresps_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>
+                __CountriesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>(
+                    "Countries",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Validate);
+            private static bool __Countries_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Countries_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Countries_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Countries_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Countries_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Countries_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Countries_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Countries_CanRead(ref result);
+                return result;
+            }
+            private static void __Countries_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Inserting(e);
+            }
+            private static void __Countries_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Inserted(e);
+            }
+            private static void __Countries_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Updating(e);
+            }
+            private static void __Countries_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Updated(e);
+            }
+            private static void __Countries_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Deleting(e);
+            }
+            private static void __Countries_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e)
+            {
+                d.Countries_Deleted(e);
+            }
+            private static void __Countries_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Country e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Countries_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>
+                __DestinationsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>(
+                    "Destinations",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Validate);
+            private static bool __Destinations_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Destinations_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Destinations_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Destinations_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Destinations_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Destinations_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Destinations_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Destinations_CanRead(ref result);
+                return result;
+            }
+            private static void __Destinations_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Inserting(e);
+            }
+            private static void __Destinations_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Inserted(e);
+            }
+            private static void __Destinations_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Updating(e);
+            }
+            private static void __Destinations_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Updated(e);
+            }
+            private static void __Destinations_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Deleting(e);
+            }
+            private static void __Destinations_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e)
+            {
+                d.Destinations_Deleted(e);
+            }
+            private static void __Destinations_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Destination e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Destinations_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>
+                __GiftsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>(
+                    "Gifts",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Validate);
+            private static bool __Gifts_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Gifts_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Gifts_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Gifts_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Gifts_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Gifts_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Gifts_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Gifts_CanRead(ref result);
+                return result;
+            }
+            private static void __Gifts_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Inserting(e);
+            }
+            private static void __Gifts_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Inserted(e);
+            }
+            private static void __Gifts_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Updating(e);
+            }
+            private static void __Gifts_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Updated(e);
+            }
+            private static void __Gifts_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Deleting(e);
+            }
+            private static void __Gifts_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e)
+            {
+                d.Gifts_Deleted(e);
+            }
+            private static void __Gifts_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Gift e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Gifts_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>
+                __GiftTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>(
+                    "GiftTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Validate);
+            private static bool __GiftTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.GiftTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __GiftTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.GiftTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __GiftTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.GiftTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __GiftTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.GiftTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __GiftTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Inserting(e);
+            }
+            private static void __GiftTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Inserted(e);
+            }
+            private static void __GiftTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Updating(e);
+            }
+            private static void __GiftTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Updated(e);
+            }
+            private static void __GiftTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Deleting(e);
+            }
+            private static void __GiftTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e)
+            {
+                d.GiftTypes_Deleted(e);
+            }
+            private static void __GiftTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.GiftType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.GiftTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>
+                __HistoriesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>(
+                    "Histories",
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_CanRead,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Validate);
+            private static bool __Histories_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Histories_CanRead(ref result);
+                return result;
+            }
+            private static void __Histories_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.History e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Histories_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>
+                __InstitutionTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>(
+                    "InstitutionTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Validate);
+            private static bool __InstitutionTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.InstitutionTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __InstitutionTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.InstitutionTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __InstitutionTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.InstitutionTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __InstitutionTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.InstitutionTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __InstitutionTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Inserting(e);
+            }
+            private static void __InstitutionTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Inserted(e);
+            }
+            private static void __InstitutionTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Updating(e);
+            }
+            private static void __InstitutionTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Updated(e);
+            }
+            private static void __InstitutionTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Deleting(e);
+            }
+            private static void __InstitutionTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e)
+            {
+                d.InstitutionTypes_Deleted(e);
+            }
+            private static void __InstitutionTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.InstitutionType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.InstitutionTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>
+                __LetterWritersEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>(
+                    "LetterWriters",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Validate);
+            private static bool __LetterWriters_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LetterWriters_CanInsert(ref result);
+                return result;
+            }
+            private static bool __LetterWriters_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LetterWriters_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __LetterWriters_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LetterWriters_CanDelete(ref result);
+                return result;
+            }
+            private static bool __LetterWriters_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LetterWriters_CanRead(ref result);
+                return result;
+            }
+            private static void __LetterWriters_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Inserting(e);
+            }
+            private static void __LetterWriters_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Inserted(e);
+            }
+            private static void __LetterWriters_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Updating(e);
+            }
+            private static void __LetterWriters_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Updated(e);
+            }
+            private static void __LetterWriters_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Deleting(e);
+            }
+            private static void __LetterWriters_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e)
+            {
+                d.LetterWriters_Deleted(e);
+            }
+            private static void __LetterWriters_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LetterWriter e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.LetterWriters_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>
+                __LocationTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>(
+                    "LocationTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Validate);
+            private static bool __LocationTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LocationTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __LocationTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LocationTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __LocationTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LocationTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __LocationTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.LocationTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __LocationTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Inserting(e);
+            }
+            private static void __LocationTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Inserted(e);
+            }
+            private static void __LocationTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Updating(e);
+            }
+            private static void __LocationTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Updated(e);
+            }
+            private static void __LocationTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Deleting(e);
+            }
+            private static void __LocationTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e)
+            {
+                d.LocationTypes_Deleted(e);
+            }
+            private static void __LocationTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.LocationType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.LocationTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>
+                __MailCodesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>(
+                    "MailCodes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Validate);
+            private static bool __MailCodes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.MailCodes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __MailCodes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.MailCodes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __MailCodes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.MailCodes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __MailCodes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.MailCodes_CanRead(ref result);
+                return result;
+            }
+            private static void __MailCodes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Inserting(e);
+            }
+            private static void __MailCodes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Inserted(e);
+            }
+            private static void __MailCodes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Updating(e);
+            }
+            private static void __MailCodes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Updated(e);
+            }
+            private static void __MailCodes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Deleting(e);
+            }
+            private static void __MailCodes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e)
+            {
+                d.MailCodes_Deleted(e);
+            }
+            private static void __MailCodes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.MailCode e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.MailCodes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>
+                __NLAddressOrderTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>(
+                    "NLAddressOrderTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Validate);
+            private static bool __NLAddressOrderTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.NLAddressOrderTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __NLAddressOrderTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.NLAddressOrderTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __NLAddressOrderTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.NLAddressOrderTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __NLAddressOrderTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.NLAddressOrderTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __NLAddressOrderTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Inserting(e);
+            }
+            private static void __NLAddressOrderTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Inserted(e);
+            }
+            private static void __NLAddressOrderTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Updating(e);
+            }
+            private static void __NLAddressOrderTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Updated(e);
+            }
+            private static void __NLAddressOrderTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Deleting(e);
+            }
+            private static void __NLAddressOrderTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e)
+            {
+                d.NLAddressOrderTypes_Deleted(e);
+            }
+            private static void __NLAddressOrderTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.NLAddressOrderType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.NLAddressOrderTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>
+                __PersonTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>(
+                    "PersonTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Validate);
+            private static bool __PersonTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PersonTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __PersonTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PersonTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __PersonTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PersonTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __PersonTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PersonTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __PersonTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Inserting(e);
+            }
+            private static void __PersonTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Inserted(e);
+            }
+            private static void __PersonTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Updating(e);
+            }
+            private static void __PersonTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Updated(e);
+            }
+            private static void __PersonTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Deleting(e);
+            }
+            private static void __PersonTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e)
+            {
+                d.PersonTypes_Deleted(e);
+            }
+            private static void __PersonTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PersonType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.PersonTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>
+                __PrisonsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>(
+                    "Prisons",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Validate);
+            private static bool __Prisons_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Prisons_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Prisons_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Prisons_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Prisons_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Prisons_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Prisons_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Prisons_CanRead(ref result);
+                return result;
+            }
+            private static void __Prisons_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Inserting(e);
+            }
+            private static void __Prisons_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Inserted(e);
+            }
+            private static void __Prisons_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Updating(e);
+            }
+            private static void __Prisons_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Updated(e);
+            }
+            private static void __Prisons_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Deleting(e);
+            }
+            private static void __Prisons_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e)
+            {
+                d.Prisons_Deleted(e);
+            }
+            private static void __Prisons_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Prison e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Prisons_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>
+                __PrisonSexesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>(
+                    "PrisonSexes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Validate);
+            private static bool __PrisonSexes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PrisonSexes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __PrisonSexes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PrisonSexes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __PrisonSexes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PrisonSexes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __PrisonSexes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PrisonSexes_CanRead(ref result);
+                return result;
+            }
+            private static void __PrisonSexes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Inserting(e);
+            }
+            private static void __PrisonSexes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Inserted(e);
+            }
+            private static void __PrisonSexes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Updating(e);
+            }
+            private static void __PrisonSexes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Updated(e);
+            }
+            private static void __PrisonSexes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Deleting(e);
+            }
+            private static void __PrisonSexes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e)
+            {
+                d.PrisonSexes_Deleted(e);
+            }
+            private static void __PrisonSexes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PrisonSex e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.PrisonSexes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>
+                __PurposeTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>(
+                    "PurposeTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Validate);
+            private static bool __PurposeTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PurposeTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __PurposeTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PurposeTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __PurposeTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PurposeTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __PurposeTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.PurposeTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __PurposeTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Inserting(e);
+            }
+            private static void __PurposeTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Inserted(e);
+            }
+            private static void __PurposeTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Updating(e);
+            }
+            private static void __PurposeTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Updated(e);
+            }
+            private static void __PurposeTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Deleting(e);
+            }
+            private static void __PurposeTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e)
+            {
+                d.PurposeTypes_Deleted(e);
+            }
+            private static void __PurposeTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.PurposeType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.PurposeTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>
+                __ResponseTypesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>(
+                    "ResponseTypes",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Validate);
+            private static bool __ResponseTypes_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.ResponseTypes_CanInsert(ref result);
+                return result;
+            }
+            private static bool __ResponseTypes_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.ResponseTypes_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __ResponseTypes_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.ResponseTypes_CanDelete(ref result);
+                return result;
+            }
+            private static bool __ResponseTypes_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.ResponseTypes_CanRead(ref result);
+                return result;
+            }
+            private static void __ResponseTypes_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Inserting(e);
+            }
+            private static void __ResponseTypes_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Inserted(e);
+            }
+            private static void __ResponseTypes_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Updating(e);
+            }
+            private static void __ResponseTypes_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Updated(e);
+            }
+            private static void __ResponseTypes_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Deleting(e);
+            }
+            private static void __ResponseTypes_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e)
+            {
+                d.ResponseTypes_Deleted(e);
+            }
+            private static void __ResponseTypes_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.ResponseType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.ResponseTypes_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>
+                __sysdiagramsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>(
+                    "sysdiagrams",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Validate);
+            private static bool __sysdiagrams_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.sysdiagrams_CanInsert(ref result);
+                return result;
+            }
+            private static bool __sysdiagrams_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.sysdiagrams_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __sysdiagrams_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.sysdiagrams_CanDelete(ref result);
+                return result;
+            }
+            private static bool __sysdiagrams_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.sysdiagrams_CanRead(ref result);
+                return result;
+            }
+            private static void __sysdiagrams_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Inserting(e);
+            }
+            private static void __sysdiagrams_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Inserted(e);
+            }
+            private static void __sysdiagrams_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Updating(e);
+            }
+            private static void __sysdiagrams_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Updated(e);
+            }
+            private static void __sysdiagrams_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Deleting(e);
+            }
+            private static void __sysdiagrams_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e)
+            {
+                d.sysdiagrams_Deleted(e);
+            }
+            private static void __sysdiagrams_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.sysdiagram e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.sysdiagrams_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>
+                __TitlesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>(
+                    "Titles",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Validate);
+            private static bool __Titles_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Titles_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Titles_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Titles_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Titles_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Titles_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Titles_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Titles_CanRead(ref result);
+                return result;
+            }
+            private static void __Titles_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Inserting(e);
+            }
+            private static void __Titles_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Inserted(e);
+            }
+            private static void __Titles_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Updating(e);
+            }
+            private static void __Titles_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Updated(e);
+            }
+            private static void __Titles_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Deleting(e);
+            }
+            private static void __Titles_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e)
+            {
+                d.Titles_Deleted(e);
+            }
+            private static void __Titles_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Title e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Titles_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>
+                __TownsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>(
+                    "Towns",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Validate);
+            private static bool __Towns_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Towns_CanInsert(ref result);
+                return result;
+            }
+            private static bool __Towns_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Towns_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __Towns_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Towns_CanDelete(ref result);
+                return result;
+            }
+            private static bool __Towns_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.Towns_CanRead(ref result);
+                return result;
+            }
+            private static void __Towns_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Inserting(e);
+            }
+            private static void __Towns_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Inserted(e);
+            }
+            private static void __Towns_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Updating(e);
+            }
+            private static void __Towns_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Updated(e);
+            }
+            private static void __Towns_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Deleting(e);
+            }
+            private static void __Towns_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e)
+            {
+                d.Towns_Deleted(e);
+            }
+            private static void __Towns_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.Town e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.Towns_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>
+                __WorkshopPrisonsEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>(
+                    "WorkshopPrisons",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Validate);
+            private static bool __WorkshopPrisons_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopPrisons_CanInsert(ref result);
+                return result;
+            }
+            private static bool __WorkshopPrisons_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopPrisons_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __WorkshopPrisons_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopPrisons_CanDelete(ref result);
+                return result;
+            }
+            private static bool __WorkshopPrisons_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopPrisons_CanRead(ref result);
+                return result;
+            }
+            private static void __WorkshopPrisons_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Inserting(e);
+            }
+            private static void __WorkshopPrisons_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Inserted(e);
+            }
+            private static void __WorkshopPrisons_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Updating(e);
+            }
+            private static void __WorkshopPrisons_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Updated(e);
+            }
+            private static void __WorkshopPrisons_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Deleting(e);
+            }
+            private static void __WorkshopPrisons_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e)
+            {
+                d.WorkshopPrisons_Deleted(e);
+            }
+            private static void __WorkshopPrisons_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopPrison e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.WorkshopPrisons_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>
+                __WorkshopTeachersEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>(
+                    "WorkshopTeachers",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_CanInsert,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_CanUpdate,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_CanDelete,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_CanRead,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Inserting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Inserted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Updating,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Updated,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Deleting,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Deleted,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Validate);
+            private static bool __WorkshopTeachers_CanInsert(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopTeachers_CanInsert(ref result);
+                return result;
+            }
+            private static bool __WorkshopTeachers_CanUpdate(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopTeachers_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __WorkshopTeachers_CanDelete(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopTeachers_CanDelete(ref result);
+                return result;
+            }
+            private static bool __WorkshopTeachers_CanRead(global::LightSwitchApplication.PPTDataService d)
+            {
+                bool result = true;
+                d.WorkshopTeachers_CanRead(ref result);
+                return result;
+            }
+            private static void __WorkshopTeachers_Inserting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Inserting(e);
+            }
+            private static void __WorkshopTeachers_Inserted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Inserted(e);
+            }
+            private static void __WorkshopTeachers_Updating(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Updating(e);
+            }
+            private static void __WorkshopTeachers_Updated(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Updated(e);
+            }
+            private static void __WorkshopTeachers_Deleting(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Deleting(e);
+            }
+            private static void __WorkshopTeachers_Deleted(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e)
+            {
+                d.WorkshopTeachers_Deleted(e);
+            }
+            private static void __WorkshopTeachers_Validate(global::LightSwitchApplication.PPTDataService d, global::LightSwitchApplication.WorkshopTeacher e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.WorkshopTeachers_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.OperationEntry<global::LightSwitchApplication.PPTDataService>
+                __SaveChangesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.OperationEntry<global::LightSwitchApplication.PPTDataService>(
+                    "SaveChanges",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__SaveChanges_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__SaveChanges_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__SaveChanges_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__SaveChanges_Failed);
+            private static bool __SaveChanges_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.SaveChanges_CanExecute(ref r);
+                return r;
+            }
+            private static void __SaveChanges_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.SaveChanges_Executing();
+            }
+            private static void __SaveChanges_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.SaveChanges_Executed();
+            }
+            private static void __SaveChanges_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.SaveChanges_ExecuteFailed(ex);
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>
+                __Accreditations_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>(
+                    "Accreditations_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_Single_PreprocessQuery);
+            private static bool __Accreditations_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Accreditations_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Accreditations_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Accreditations_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation>)args[1]);
+            }
+            private static void __Accreditations_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Accreditations_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Accreditations_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation>)args[1];
+                d.Accreditations_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>
+                __Accreditations_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>(
+                    "Accreditations_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_SingleOrDefault_PreprocessQuery);
+            private static bool __Accreditations_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Accreditations_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Accreditations_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Accreditations_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation>)args[1]);
+            }
+            private static void __Accreditations_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Accreditations_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Accreditations_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation>)args[1];
+                d.Accreditations_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>
+                __Accreditations_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Accreditation>(
+                    "Accreditations_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Accreditations_All_PreprocessQuery);
+            private static bool __Accreditations_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Accreditations_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Accreditations_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_All_Executing();
+            }
+            private static void __Accreditations_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Accreditations_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Accreditation>)args[0]);
+            }
+            private static void __Accreditations_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Accreditations_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Accreditations_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Accreditation>)args[0];
+                d.Accreditations_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>
+                __Classes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>(
+                    "Classes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_Single_PreprocessQuery);
+            private static bool __Classes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Classes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Classes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Classes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class>)args[1]);
+            }
+            private static void __Classes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Classes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Classes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class>)args[1];
+                d.Classes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>
+                __Classes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>(
+                    "Classes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_SingleOrDefault_PreprocessQuery);
+            private static bool __Classes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Classes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Classes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Classes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class>)args[1]);
+            }
+            private static void __Classes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Classes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Classes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class>)args[1];
+                d.Classes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>
+                __Classes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.c_Class>(
+                    "Classes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Classes_All_PreprocessQuery);
+            private static bool __Classes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Classes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Classes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_All_Executing();
+            }
+            private static void __Classes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Classes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.c_Class>)args[0]);
+            }
+            private static void __Classes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Classes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Classes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.c_Class>)args[0];
+                d.Classes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>
+                __Contacts_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>(
+                    "Contacts_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_Single_PreprocessQuery);
+            private static bool __Contacts_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Contacts_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Contacts_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Contacts_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact>)args[1]);
+            }
+            private static void __Contacts_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Contacts_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Contacts_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Contact>)args[1];
+                d.Contacts_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>
+                __Contacts_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>(
+                    "Contacts_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_SingleOrDefault_PreprocessQuery);
+            private static bool __Contacts_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Contacts_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Contacts_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Contacts_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact>)args[1]);
+            }
+            private static void __Contacts_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Contacts_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Contacts_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Contact>)args[1];
+                d.Contacts_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>
+                __Contacts_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Contact>(
+                    "Contacts_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Contacts_All_PreprocessQuery);
+            private static bool __Contacts_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Contacts_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Contacts_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_All_Executing();
+            }
+            private static void __Contacts_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Contacts_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Contact>)args[0]);
+            }
+            private static void __Contacts_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Contacts_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Contacts_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Contact> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Contact>)args[0];
+                d.Contacts_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>
+                __Corresps_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>(
+                    "Corresps_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_Single_PreprocessQuery);
+            private static bool __Corresps_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Corresps_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Corresps_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Corresps_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp>)args[1]);
+            }
+            private static void __Corresps_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Corresps_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Corresps_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp>)args[1];
+                d.Corresps_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>
+                __Corresps_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>(
+                    "Corresps_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_SingleOrDefault_PreprocessQuery);
+            private static bool __Corresps_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Corresps_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Corresps_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Corresps_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp>)args[1]);
+            }
+            private static void __Corresps_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Corresps_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Corresps_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp>)args[1];
+                d.Corresps_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>
+                __Corresps_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Corresp>(
+                    "Corresps_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Corresps_All_PreprocessQuery);
+            private static bool __Corresps_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Corresps_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Corresps_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_All_Executing();
+            }
+            private static void __Corresps_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Corresps_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Corresp>)args[0]);
+            }
+            private static void __Corresps_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Corresps_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Corresps_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Corresp>)args[0];
+                d.Corresps_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>
+                __Countries_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>(
+                    "Countries_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_Single_PreprocessQuery);
+            private static bool __Countries_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Countries_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Countries_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Countries_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country>)args[1]);
+            }
+            private static void __Countries_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Countries_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Countries_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Country>)args[1];
+                d.Countries_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>
+                __Countries_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>(
+                    "Countries_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_SingleOrDefault_PreprocessQuery);
+            private static bool __Countries_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Countries_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Countries_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Countries_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country>)args[1]);
+            }
+            private static void __Countries_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Countries_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Countries_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Country>)args[1];
+                d.Countries_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>
+                __Countries_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Country>(
+                    "Countries_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Countries_All_PreprocessQuery);
+            private static bool __Countries_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Countries_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Countries_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_All_Executing();
+            }
+            private static void __Countries_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Countries_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Country>)args[0]);
+            }
+            private static void __Countries_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Countries_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Countries_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Country> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Country>)args[0];
+                d.Countries_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>
+                __Destinations_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>(
+                    "Destinations_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_Single_PreprocessQuery);
+            private static bool __Destinations_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Destinations_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Destinations_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Destinations_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination>)args[1]);
+            }
+            private static void __Destinations_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Destinations_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Destinations_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Destination>)args[1];
+                d.Destinations_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>
+                __Destinations_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>(
+                    "Destinations_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_SingleOrDefault_PreprocessQuery);
+            private static bool __Destinations_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Destinations_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Destinations_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Destinations_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination>)args[1]);
+            }
+            private static void __Destinations_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Destinations_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Destinations_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Destination>)args[1];
+                d.Destinations_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>
+                __Destinations_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Destination>(
+                    "Destinations_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Destinations_All_PreprocessQuery);
+            private static bool __Destinations_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Destinations_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Destinations_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_All_Executing();
+            }
+            private static void __Destinations_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Destinations_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Destination>)args[0]);
+            }
+            private static void __Destinations_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Destinations_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Destinations_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Destination> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Destination>)args[0];
+                d.Destinations_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>
+                __Gifts_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>(
+                    "Gifts_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_Single_PreprocessQuery);
+            private static bool __Gifts_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Gifts_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Gifts_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Gifts_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift>)args[1]);
+            }
+            private static void __Gifts_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Gifts_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Gifts_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Gift>)args[1];
+                d.Gifts_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>
+                __Gifts_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>(
+                    "Gifts_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_SingleOrDefault_PreprocessQuery);
+            private static bool __Gifts_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Gifts_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Gifts_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Gifts_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift>)args[1]);
+            }
+            private static void __Gifts_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Gifts_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Gifts_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Gift>)args[1];
+                d.Gifts_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>
+                __Gifts_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Gift>(
+                    "Gifts_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Gifts_All_PreprocessQuery);
+            private static bool __Gifts_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Gifts_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Gifts_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_All_Executing();
+            }
+            private static void __Gifts_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Gifts_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Gift>)args[0]);
+            }
+            private static void __Gifts_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Gifts_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Gifts_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Gift> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Gift>)args[0];
+                d.Gifts_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>
+                __GiftTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>(
+                    "GiftTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_Single_PreprocessQuery);
+            private static bool __GiftTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.GiftTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __GiftTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __GiftTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType>)args[1]);
+            }
+            private static void __GiftTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.GiftTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __GiftTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType>)args[1];
+                d.GiftTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>
+                __GiftTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>(
+                    "GiftTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __GiftTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.GiftTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __GiftTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __GiftTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType>)args[1]);
+            }
+            private static void __GiftTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.GiftTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __GiftTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType>)args[1];
+                d.GiftTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>
+                __GiftTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.GiftType>(
+                    "GiftTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__GiftTypes_All_PreprocessQuery);
+            private static bool __GiftTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.GiftTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __GiftTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_All_Executing();
+            }
+            private static void __GiftTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.GiftTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.GiftType>)args[0]);
+            }
+            private static void __GiftTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.GiftTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __GiftTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.GiftType>)args[0];
+                d.GiftTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>
+                __Histories_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>(
+                    "Histories_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_Single_PreprocessQuery);
+            private static bool __Histories_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Histories_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Histories_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Histories_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History>)args[1]);
+            }
+            private static void __Histories_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Histories_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Histories_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.History> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.History>)args[1];
+                d.Histories_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>
+                __Histories_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>(
+                    "Histories_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_SingleOrDefault_PreprocessQuery);
+            private static bool __Histories_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Histories_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Histories_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Histories_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History>)args[1]);
+            }
+            private static void __Histories_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Histories_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Histories_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.History> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.History>)args[1];
+                d.Histories_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>
+                __Histories_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.History>(
+                    "Histories_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Histories_All_PreprocessQuery);
+            private static bool __Histories_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Histories_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Histories_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_All_Executing();
+            }
+            private static void __Histories_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Histories_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.History>)args[0]);
+            }
+            private static void __Histories_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Histories_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Histories_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.History> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.History>)args[0];
+                d.Histories_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>
+                __InstitutionTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>(
+                    "InstitutionTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_Single_PreprocessQuery);
+            private static bool __InstitutionTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.InstitutionTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __InstitutionTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __InstitutionTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType>)args[1]);
+            }
+            private static void __InstitutionTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.InstitutionTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __InstitutionTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType>)args[1];
+                d.InstitutionTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>
+                __InstitutionTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>(
+                    "InstitutionTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __InstitutionTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.InstitutionTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __InstitutionTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __InstitutionTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType>)args[1]);
+            }
+            private static void __InstitutionTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.InstitutionTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __InstitutionTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType>)args[1];
+                d.InstitutionTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>
+                __InstitutionTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.InstitutionType>(
+                    "InstitutionTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__InstitutionTypes_All_PreprocessQuery);
+            private static bool __InstitutionTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.InstitutionTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __InstitutionTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_All_Executing();
+            }
+            private static void __InstitutionTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.InstitutionTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.InstitutionType>)args[0]);
+            }
+            private static void __InstitutionTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.InstitutionTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __InstitutionTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.InstitutionType>)args[0];
+                d.InstitutionTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>
+                __LetterWriters_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>(
+                    "LetterWriters_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_Single_PreprocessQuery);
+            private static bool __LetterWriters_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LetterWriters_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __LetterWriters_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __LetterWriters_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter>)args[1]);
+            }
+            private static void __LetterWriters_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LetterWriters_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __LetterWriters_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter>)args[1];
+                d.LetterWriters_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>
+                __LetterWriters_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>(
+                    "LetterWriters_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_SingleOrDefault_PreprocessQuery);
+            private static bool __LetterWriters_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LetterWriters_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __LetterWriters_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __LetterWriters_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter>)args[1]);
+            }
+            private static void __LetterWriters_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LetterWriters_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __LetterWriters_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter>)args[1];
+                d.LetterWriters_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>
+                __LetterWriters_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LetterWriter>(
+                    "LetterWriters_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LetterWriters_All_PreprocessQuery);
+            private static bool __LetterWriters_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LetterWriters_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __LetterWriters_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_All_Executing();
+            }
+            private static void __LetterWriters_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LetterWriters_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LetterWriter>)args[0]);
+            }
+            private static void __LetterWriters_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LetterWriters_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __LetterWriters_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LetterWriter>)args[0];
+                d.LetterWriters_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>
+                __LocationTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>(
+                    "LocationTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_Single_PreprocessQuery);
+            private static bool __LocationTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LocationTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __LocationTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __LocationTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType>)args[1]);
+            }
+            private static void __LocationTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LocationTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __LocationTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType>)args[1];
+                d.LocationTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>
+                __LocationTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>(
+                    "LocationTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __LocationTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LocationTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __LocationTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __LocationTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType>)args[1]);
+            }
+            private static void __LocationTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LocationTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __LocationTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType>)args[1];
+                d.LocationTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>
+                __LocationTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.LocationType>(
+                    "LocationTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__LocationTypes_All_PreprocessQuery);
+            private static bool __LocationTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.LocationTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __LocationTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_All_Executing();
+            }
+            private static void __LocationTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.LocationTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.LocationType>)args[0]);
+            }
+            private static void __LocationTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.LocationTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __LocationTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.LocationType>)args[0];
+                d.LocationTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>
+                __MailCodes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>(
+                    "MailCodes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_Single_PreprocessQuery);
+            private static bool __MailCodes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.MailCodes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __MailCodes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __MailCodes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode>)args[1]);
+            }
+            private static void __MailCodes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.MailCodes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __MailCodes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode>)args[1];
+                d.MailCodes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>
+                __MailCodes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>(
+                    "MailCodes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_SingleOrDefault_PreprocessQuery);
+            private static bool __MailCodes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.MailCodes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __MailCodes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __MailCodes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode>)args[1]);
+            }
+            private static void __MailCodes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.MailCodes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __MailCodes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode>)args[1];
+                d.MailCodes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>
+                __MailCodes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.MailCode>(
+                    "MailCodes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__MailCodes_All_PreprocessQuery);
+            private static bool __MailCodes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.MailCodes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __MailCodes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_All_Executing();
+            }
+            private static void __MailCodes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.MailCodes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MailCode>)args[0]);
+            }
+            private static void __MailCodes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.MailCodes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __MailCodes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MailCode>)args[0];
+                d.MailCodes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>
+                __NLAddressOrderTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>(
+                    "NLAddressOrderTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_Single_PreprocessQuery);
+            private static bool __NLAddressOrderTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.NLAddressOrderTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __NLAddressOrderTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __NLAddressOrderTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType>)args[1]);
+            }
+            private static void __NLAddressOrderTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.NLAddressOrderTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __NLAddressOrderTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType>)args[1];
+                d.NLAddressOrderTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>
+                __NLAddressOrderTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>(
+                    "NLAddressOrderTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __NLAddressOrderTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.NLAddressOrderTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __NLAddressOrderTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __NLAddressOrderTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType>)args[1]);
+            }
+            private static void __NLAddressOrderTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.NLAddressOrderTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __NLAddressOrderTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType>)args[1];
+                d.NLAddressOrderTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>
+                __NLAddressOrderTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.NLAddressOrderType>(
+                    "NLAddressOrderTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__NLAddressOrderTypes_All_PreprocessQuery);
+            private static bool __NLAddressOrderTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.NLAddressOrderTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __NLAddressOrderTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_All_Executing();
+            }
+            private static void __NLAddressOrderTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.NLAddressOrderTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.NLAddressOrderType>)args[0]);
+            }
+            private static void __NLAddressOrderTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.NLAddressOrderTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __NLAddressOrderTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.NLAddressOrderType>)args[0];
+                d.NLAddressOrderTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>
+                __PersonTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>(
+                    "PersonTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_Single_PreprocessQuery);
+            private static bool __PersonTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PersonTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __PersonTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PersonTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType>)args[1]);
+            }
+            private static void __PersonTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PersonTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PersonTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType>)args[1];
+                d.PersonTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>
+                __PersonTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>(
+                    "PersonTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __PersonTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PersonTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __PersonTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PersonTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType>)args[1]);
+            }
+            private static void __PersonTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PersonTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PersonTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType>)args[1];
+                d.PersonTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>
+                __PersonTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PersonType>(
+                    "PersonTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PersonTypes_All_PreprocessQuery);
+            private static bool __PersonTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PersonTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __PersonTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_All_Executing();
+            }
+            private static void __PersonTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PersonTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PersonType>)args[0]);
+            }
+            private static void __PersonTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PersonTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __PersonTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PersonType>)args[0];
+                d.PersonTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>
+                __Prisons_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>(
+                    "Prisons_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_Single_PreprocessQuery);
+            private static bool __Prisons_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Prisons_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Prisons_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Prisons_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison>)args[1]);
+            }
+            private static void __Prisons_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Prisons_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Prisons_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Prison>)args[1];
+                d.Prisons_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>
+                __Prisons_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>(
+                    "Prisons_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_SingleOrDefault_PreprocessQuery);
+            private static bool __Prisons_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Prisons_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Prisons_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Prisons_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison>)args[1]);
+            }
+            private static void __Prisons_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Prisons_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Prisons_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Prison>)args[1];
+                d.Prisons_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>
+                __Prisons_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Prison>(
+                    "Prisons_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Prisons_All_PreprocessQuery);
+            private static bool __Prisons_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Prisons_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Prisons_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_All_Executing();
+            }
+            private static void __Prisons_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Prisons_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Prison>)args[0]);
+            }
+            private static void __Prisons_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Prisons_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Prisons_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Prison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Prison>)args[0];
+                d.Prisons_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>
+                __PrisonSexes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>(
+                    "PrisonSexes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_Single_PreprocessQuery);
+            private static bool __PrisonSexes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PrisonSexes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __PrisonSexes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PrisonSexes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex>)args[1]);
+            }
+            private static void __PrisonSexes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PrisonSexes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PrisonSexes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex>)args[1];
+                d.PrisonSexes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>
+                __PrisonSexes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>(
+                    "PrisonSexes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_SingleOrDefault_PreprocessQuery);
+            private static bool __PrisonSexes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PrisonSexes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __PrisonSexes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PrisonSexes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex>)args[1]);
+            }
+            private static void __PrisonSexes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PrisonSexes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PrisonSexes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex>)args[1];
+                d.PrisonSexes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>
+                __PrisonSexes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PrisonSex>(
+                    "PrisonSexes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PrisonSexes_All_PreprocessQuery);
+            private static bool __PrisonSexes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PrisonSexes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __PrisonSexes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_All_Executing();
+            }
+            private static void __PrisonSexes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PrisonSexes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PrisonSex>)args[0]);
+            }
+            private static void __PrisonSexes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PrisonSexes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __PrisonSexes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PrisonSex>)args[0];
+                d.PrisonSexes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>
+                __PurposeTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>(
+                    "PurposeTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_Single_PreprocessQuery);
+            private static bool __PurposeTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PurposeTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __PurposeTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PurposeTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType>)args[1]);
+            }
+            private static void __PurposeTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PurposeTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PurposeTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType>)args[1];
+                d.PurposeTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>
+                __PurposeTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>(
+                    "PurposeTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __PurposeTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PurposeTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __PurposeTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __PurposeTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType>)args[1]);
+            }
+            private static void __PurposeTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PurposeTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __PurposeTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType>)args[1];
+                d.PurposeTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>
+                __PurposeTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.PurposeType>(
+                    "PurposeTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__PurposeTypes_All_PreprocessQuery);
+            private static bool __PurposeTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.PurposeTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __PurposeTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_All_Executing();
+            }
+            private static void __PurposeTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.PurposeTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PurposeType>)args[0]);
+            }
+            private static void __PurposeTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.PurposeTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __PurposeTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PurposeType>)args[0];
+                d.PurposeTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>
+                __ResponseTypes_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>(
+                    "ResponseTypes_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_Single_PreprocessQuery);
+            private static bool __ResponseTypes_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.ResponseTypes_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __ResponseTypes_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __ResponseTypes_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType>)args[1]);
+            }
+            private static void __ResponseTypes_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.ResponseTypes_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __ResponseTypes_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType>)args[1];
+                d.ResponseTypes_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>
+                __ResponseTypes_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>(
+                    "ResponseTypes_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_SingleOrDefault_PreprocessQuery);
+            private static bool __ResponseTypes_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.ResponseTypes_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __ResponseTypes_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __ResponseTypes_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType>)args[1]);
+            }
+            private static void __ResponseTypes_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.ResponseTypes_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __ResponseTypes_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType>)args[1];
+                d.ResponseTypes_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>
+                __ResponseTypes_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.ResponseType>(
+                    "ResponseTypes_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__ResponseTypes_All_PreprocessQuery);
+            private static bool __ResponseTypes_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.ResponseTypes_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __ResponseTypes_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_All_Executing();
+            }
+            private static void __ResponseTypes_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.ResponseTypes_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ResponseType>)args[0]);
+            }
+            private static void __ResponseTypes_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.ResponseTypes_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __ResponseTypes_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.ResponseType>)args[0];
+                d.ResponseTypes_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>
+                __sysdiagrams_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>(
+                    "sysdiagrams_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_Single_PreprocessQuery);
+            private static bool __sysdiagrams_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.sysdiagrams_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __sysdiagrams_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __sysdiagrams_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram>)args[1]);
+            }
+            private static void __sysdiagrams_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.sysdiagrams_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __sysdiagrams_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram>)args[1];
+                d.sysdiagrams_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>
+                __sysdiagrams_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>(
+                    "sysdiagrams_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_SingleOrDefault_PreprocessQuery);
+            private static bool __sysdiagrams_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.sysdiagrams_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __sysdiagrams_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __sysdiagrams_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram>)args[1]);
+            }
+            private static void __sysdiagrams_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.sysdiagrams_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __sysdiagrams_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram>)args[1];
+                d.sysdiagrams_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>
+                __sysdiagrams_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.sysdiagram>(
+                    "sysdiagrams_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__sysdiagrams_All_PreprocessQuery);
+            private static bool __sysdiagrams_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.sysdiagrams_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __sysdiagrams_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_All_Executing();
+            }
+            private static void __sysdiagrams_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.sysdiagrams_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.sysdiagram>)args[0]);
+            }
+            private static void __sysdiagrams_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.sysdiagrams_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __sysdiagrams_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.sysdiagram>)args[0];
+                d.sysdiagrams_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>
+                __Titles_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>(
+                    "Titles_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_Single_PreprocessQuery);
+            private static bool __Titles_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Titles_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Titles_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Titles_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title>)args[1]);
+            }
+            private static void __Titles_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Titles_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Titles_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Title>)args[1];
+                d.Titles_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>
+                __Titles_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>(
+                    "Titles_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_SingleOrDefault_PreprocessQuery);
+            private static bool __Titles_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Titles_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Titles_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Titles_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title>)args[1]);
+            }
+            private static void __Titles_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Titles_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Titles_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Title>)args[1];
+                d.Titles_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>
+                __Titles_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Title>(
+                    "Titles_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Titles_All_PreprocessQuery);
+            private static bool __Titles_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Titles_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Titles_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_All_Executing();
+            }
+            private static void __Titles_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Titles_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Title>)args[0]);
+            }
+            private static void __Titles_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Titles_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Titles_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Title> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Title>)args[0];
+                d.Titles_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>
+                __Towns_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>(
+                    "Towns_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_Single_PreprocessQuery);
+            private static bool __Towns_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Towns_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __Towns_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Towns_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town>)args[1]);
+            }
+            private static void __Towns_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Towns_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Towns_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Town>)args[1];
+                d.Towns_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>
+                __Towns_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>(
+                    "Towns_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_SingleOrDefault_PreprocessQuery);
+            private static bool __Towns_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Towns_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __Towns_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __Towns_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town>)args[1]);
+            }
+            private static void __Towns_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Towns_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __Towns_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Town>)args[1];
+                d.Towns_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>
+                __Towns_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.Town>(
+                    "Towns_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__Towns_All_PreprocessQuery);
+            private static bool __Towns_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.Towns_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __Towns_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_All_Executing();
+            }
+            private static void __Towns_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.Towns_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Town>)args[0]);
+            }
+            private static void __Towns_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.Towns_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __Towns_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Town> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Town>)args[0];
+                d.Towns_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>
+                __WorkshopPrisons_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>(
+                    "WorkshopPrisons_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_Single_PreprocessQuery);
+            private static bool __WorkshopPrisons_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopPrisons_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopPrisons_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __WorkshopPrisons_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison>)args[1]);
+            }
+            private static void __WorkshopPrisons_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopPrisons_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopPrisons_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison>)args[1];
+                d.WorkshopPrisons_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>
+                __WorkshopPrisons_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>(
+                    "WorkshopPrisons_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_SingleOrDefault_PreprocessQuery);
+            private static bool __WorkshopPrisons_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopPrisons_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopPrisons_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __WorkshopPrisons_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison>)args[1]);
+            }
+            private static void __WorkshopPrisons_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopPrisons_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopPrisons_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison>)args[1];
+                d.WorkshopPrisons_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>
+                __WorkshopPrisons_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopPrison>(
+                    "WorkshopPrisons_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopPrisons_All_PreprocessQuery);
+            private static bool __WorkshopPrisons_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopPrisons_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopPrisons_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_All_Executing();
+            }
+            private static void __WorkshopPrisons_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopPrisons_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopPrison>)args[0]);
+            }
+            private static void __WorkshopPrisons_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopPrisons_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopPrisons_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopPrison>)args[0];
+                d.WorkshopPrisons_All_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>
+                __WorkshopTeachers_SingleEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>(
+                    "WorkshopTeachers_Single",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Single_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Single_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Single_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Single_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_Single_PreprocessQuery);
+            private static bool __WorkshopTeachers_Single_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopTeachers_Single_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopTeachers_Single_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_Single_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __WorkshopTeachers_Single_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_Single_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher>)args[1]);
+            }
+            private static void __WorkshopTeachers_Single_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopTeachers_Single_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopTeachers_Single_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher>)args[1];
+                d.WorkshopTeachers_Single_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>
+                __WorkshopTeachers_SingleOrDefaultEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>(
+                    "WorkshopTeachers_SingleOrDefault",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_SingleOrDefault_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_SingleOrDefault_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_SingleOrDefault_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_SingleOrDefault_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_SingleOrDefault_PreprocessQuery);
+            private static bool __WorkshopTeachers_SingleOrDefault_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopTeachers_SingleOrDefault_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopTeachers_SingleOrDefault_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_SingleOrDefault_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __WorkshopTeachers_SingleOrDefault_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_SingleOrDefault_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher>)args[1]);
+            }
+            private static void __WorkshopTeachers_SingleOrDefault_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopTeachers_SingleOrDefault_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopTeachers_SingleOrDefault_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher>)args[1];
+                d.WorkshopTeachers_SingleOrDefault_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>
+                __WorkshopTeachers_AllEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.PPTDataService, global::LightSwitchApplication.WorkshopTeacher>(
+                    "WorkshopTeachers_All",
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_All_CanExecute,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_All_Executing,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_All_Executed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_All_Failed,
+                    global::LightSwitchApplication.PPTDataService.DetailsClass.__WorkshopTeachers_All_PreprocessQuery);
+            private static bool __WorkshopTeachers_All_CanExecute(global::LightSwitchApplication.PPTDataService d, bool r)
+            {
+                d.WorkshopTeachers_All_CanExecute(ref r);
+                return r;
+            }
+            private static void __WorkshopTeachers_All_Executing(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_All_Executing();
+            }
+            private static void __WorkshopTeachers_All_Executed(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                d.WorkshopTeachers_All_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.WorkshopTeacher>)args[0]);
+            }
+            private static void __WorkshopTeachers_All_Failed(global::LightSwitchApplication.PPTDataService d, object[] args, global::System.Exception ex)
+            {
+                d.WorkshopTeachers_All_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __WorkshopTeachers_All_PreprocessQuery(global::LightSwitchApplication.PPTDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.WorkshopTeacher>)args[0];
+                d.WorkshopTeachers_All_PreprocessQuery(ref query);
+                return query;
+            }
+    
+        }
+    
+        #endregion
+    }
+    
     #endregion
 }

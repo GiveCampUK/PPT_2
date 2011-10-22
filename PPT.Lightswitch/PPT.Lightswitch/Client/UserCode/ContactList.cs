@@ -18,7 +18,7 @@ namespace LightSwitchApplication
 
         partial void ContactsSet_SelectionChanged()
         {
-            if (ContactsSet.SelectedItem.PersonType != null)
+            if (ContactsSet.SelectedItem != null && ContactsSet.SelectedItem.PersonType != null)
             {
                 switch (ContactsSet.SelectedItem.PersonType.Name)
                 {

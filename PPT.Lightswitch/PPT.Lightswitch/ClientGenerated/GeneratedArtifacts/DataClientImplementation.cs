@@ -902,6 +902,6438 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
+    #region Accreditation
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Accreditation :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Accreditation.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Accreditation1
+        {
+            get
+            {
+                return this._Accreditation1;
+            }
+            set
+            {
+                if (this._Accreditation1 != value)
+                {
+                    this.RaiseDataMemberChanging("Accreditation1");
+                    this.ValidateProperty("Accreditation1", value);
+                    this._Accreditation1 = value;
+                    this.RaiseDataMemberChanged("Accreditation1");
+                }
+            }
+        }
+        private string _Accreditation1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string c_Date
+        {
+            get
+            {
+                return this._c_Date;
+            }
+            set
+            {
+                if (this._c_Date != value)
+                {
+                    this.RaiseDataMemberChanging("c_Date");
+                    this.ValidateProperty("c_Date", value);
+                    this._c_Date = value;
+                    this.RaiseDataMemberChanged("c_Date");
+                }
+            }
+        }
+        private string _c_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Notes
+        {
+            get
+            {
+                return this._Notes;
+            }
+            set
+            {
+                if (this._Notes != value)
+                {
+                    this.RaiseDataMemberChanging("Notes");
+                    this.ValidateProperty("Notes", value);
+                    this._Notes = value;
+                    this.RaiseDataMemberChanged("Notes");
+                }
+            }
+        }
+        private string _Notes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> TeacherId
+        {
+            get
+            {
+                return this._TeacherId;
+            }
+            set
+            {
+                if (this._TeacherId != value)
+                {
+                    this.RaiseDataMemberChanging("TeacherId");
+                    this.ValidateProperty("TeacherId", value);
+                    this._TeacherId = value;
+                    this.RaiseDataMemberChanged("TeacherId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _TeacherId;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Accreditation_Contacts", "TeacherId", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Contact Contact
+        {
+            get
+            {
+                if (this._Contact == null)
+                {
+                    this._Contact = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact>(this, "Contact", this.FilterContact);
+                }
+                return this._Contact.Entity;
+            }
+            set
+            {
+                Contact previous = this.Contact;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Contact", value);
+                    if (previous != null)
+                    {
+                        this._Contact.Entity = null;
+                        previous.Accreditations.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.TeacherId = value.Id;
+                    }
+                    else
+                    {
+                        this.TeacherId = default(global::System.Nullable<int>);
+                    }
+                    this._Contact.Entity = value;
+                    if (value != null)
+                    {
+                        value.Accreditations.Add(this);
+                    }
+                    this.RaisePropertyChanged("Contact");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact> _Contact;
+        private bool FilterContact(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.TeacherId);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Accreditation.DetailsClass.IImplementation.Contact
+        {
+            get
+            {
+                return this.Contact;
+            }
+            set
+            {
+                this.Contact = (global::LightSwitchApplication.Implementation.Contact)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region c_Class
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class c_Class :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.c_Class.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ClassDetails
+        {
+            get
+            {
+                return this._ClassDetails;
+            }
+            set
+            {
+                if (this._ClassDetails != value)
+                {
+                    this.RaiseDataMemberChanging("ClassDetails");
+                    this.ValidateProperty("ClassDetails", value);
+                    this._ClassDetails = value;
+                    this.RaiseDataMemberChanged("ClassDetails");
+                }
+            }
+        }
+        private string _ClassDetails;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Notes
+        {
+            get
+            {
+                return this._Notes;
+            }
+            set
+            {
+                if (this._Notes != value)
+                {
+                    this.RaiseDataMemberChanging("Notes");
+                    this.ValidateProperty("Notes", value);
+                    this._Notes = value;
+                    this.RaiseDataMemberChanged("Notes");
+                }
+            }
+        }
+        private string _Notes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ClassMakeup
+        {
+            get
+            {
+                return this._ClassMakeup;
+            }
+            set
+            {
+                if (this._ClassMakeup != value)
+                {
+                    this.RaiseDataMemberChanging("ClassMakeup");
+                    this.ValidateProperty("ClassMakeup", value);
+                    this._ClassMakeup = value;
+                    this.RaiseDataMemberChanged("ClassMakeup");
+                }
+            }
+        }
+        private string _ClassMakeup;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ClassGender
+        {
+            get
+            {
+                return this._ClassGender;
+            }
+            set
+            {
+                if (this._ClassGender != value)
+                {
+                    this.RaiseDataMemberChanging("ClassGender");
+                    this.ValidateProperty("ClassGender", value);
+                    this._ClassGender = value;
+                    this.RaiseDataMemberChanged("ClassGender");
+                }
+            }
+        }
+        private string _ClassGender;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> DoNotCount
+        {
+            get
+            {
+                return this._DoNotCount;
+            }
+            set
+            {
+                if (this._DoNotCount != value)
+                {
+                    this.RaiseDataMemberChanging("DoNotCount");
+                    this.ValidateProperty("DoNotCount", value);
+                    this._DoNotCount = value;
+                    this.RaiseDataMemberChanged("DoNotCount");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _DoNotCount;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string DateClassStarted
+        {
+            get
+            {
+                return this._DateClassStarted;
+            }
+            set
+            {
+                if (this._DateClassStarted != value)
+                {
+                    this.RaiseDataMemberChanging("DateClassStarted");
+                    this.ValidateProperty("DateClassStarted", value);
+                    this._DateClassStarted = value;
+                    this.RaiseDataMemberChanged("DateClassStarted");
+                }
+            }
+        }
+        private string _DateClassStarted;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string DateClassStopped
+        {
+            get
+            {
+                return this._DateClassStopped;
+            }
+            set
+            {
+                if (this._DateClassStopped != value)
+                {
+                    this.RaiseDataMemberChanging("DateClassStopped");
+                    this.ValidateProperty("DateClassStopped", value);
+                    this._DateClassStopped = value;
+                    this.RaiseDataMemberChanged("DateClassStopped");
+                }
+            }
+        }
+        private string _DateClassStopped;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> DrugClass
+        {
+            get
+            {
+                return this._DrugClass;
+            }
+            set
+            {
+                if (this._DrugClass != value)
+                {
+                    this.RaiseDataMemberChanging("DrugClass");
+                    this.ValidateProperty("DrugClass", value);
+                    this._DrugClass = value;
+                    this.RaiseDataMemberChanged("DrugClass");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _DrugClass;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> TeacherId
+        {
+            get
+            {
+                return this._TeacherId;
+            }
+            set
+            {
+                if (this._TeacherId != value)
+                {
+                    this.RaiseDataMemberChanging("TeacherId");
+                    this.ValidateProperty("TeacherId", value);
+                    this._TeacherId = value;
+                    this.RaiseDataMemberChanged("TeacherId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _TeacherId;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Classes_Contacts", "TeacherId", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Contact Contact
+        {
+            get
+            {
+                if (this._Contact == null)
+                {
+                    this._Contact = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact>(this, "Contact", this.FilterContact);
+                }
+                return this._Contact.Entity;
+            }
+            set
+            {
+                Contact previous = this.Contact;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Contact", value);
+                    if (previous != null)
+                    {
+                        this._Contact.Entity = null;
+                        previous.Classes.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.TeacherId = value.Id;
+                    }
+                    else
+                    {
+                        this.TeacherId = default(global::System.Nullable<int>);
+                    }
+                    this._Contact.Entity = value;
+                    if (value != null)
+                    {
+                        value.Classes.Add(this);
+                    }
+                    this.RaisePropertyChanged("Contact");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact> _Contact;
+        private bool FilterContact(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.TeacherId);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.c_Class.DetailsClass.IImplementation.Contact
+        {
+            get
+            {
+                return this.Contact;
+            }
+            set
+            {
+                this.Contact = (global::LightSwitchApplication.Implementation.Contact)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> PrisonId
+        {
+            get
+            {
+                return this._PrisonId;
+            }
+            set
+            {
+                if (this._PrisonId != value)
+                {
+                    this.RaiseDataMemberChanging("PrisonId");
+                    this.ValidateProperty("PrisonId", value);
+                    this._PrisonId = value;
+                    this.RaiseDataMemberChanged("PrisonId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _PrisonId;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Classes_Prison", "PrisonId", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Prison Prison
+        {
+            get
+            {
+                if (this._Prison == null)
+                {
+                    this._Prison = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison>(this, "Prison", this.FilterPrison);
+                }
+                return this._Prison.Entity;
+            }
+            set
+            {
+                Prison previous = this.Prison;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Prison", value);
+                    if (previous != null)
+                    {
+                        this._Prison.Entity = null;
+                        previous.Classes.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.PrisonId = value.Id;
+                    }
+                    else
+                    {
+                        this.PrisonId = default(global::System.Nullable<int>);
+                    }
+                    this._Prison.Entity = value;
+                    if (value != null)
+                    {
+                        value.Classes.Add(this);
+                    }
+                    this.RaisePropertyChanged("Prison");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison> _Prison;
+        private bool FilterPrison(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.PrisonId);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.c_Class.DetailsClass.IImplementation.Prison
+        {
+            get
+            {
+                return this.Prison;
+            }
+            set
+            {
+                this.Prison = (global::LightSwitchApplication.Implementation.Prison)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Contact
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Contact :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Contact.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Surname
+        {
+            get
+            {
+                return this._Surname;
+            }
+            set
+            {
+                if (this._Surname != value)
+                {
+                    this.RaiseDataMemberChanging("Surname");
+                    this.ValidateProperty("Surname", value);
+                    this._Surname = value;
+                    this.RaiseDataMemberChanged("Surname");
+                }
+            }
+        }
+        private string _Surname;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Forename
+        {
+            get
+            {
+                return this._Forename;
+            }
+            set
+            {
+                if (this._Forename != value)
+                {
+                    this.RaiseDataMemberChanging("Forename");
+                    this.ValidateProperty("Forename", value);
+                    this._Forename = value;
+                    this.RaiseDataMemberChanged("Forename");
+                }
+            }
+        }
+        private string _Forename;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Position
+        {
+            get
+            {
+                return this._Position;
+            }
+            set
+            {
+                if (this._Position != value)
+                {
+                    this.RaiseDataMemberChanging("Position");
+                    this.ValidateProperty("Position", value);
+                    this._Position = value;
+                    this.RaiseDataMemberChanged("Position");
+                }
+            }
+        }
+        private string _Position;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string MailName
+        {
+            get
+            {
+                return this._MailName;
+            }
+            set
+            {
+                if (this._MailName != value)
+                {
+                    this.RaiseDataMemberChanging("MailName");
+                    this.ValidateProperty("MailName", value);
+                    this._MailName = value;
+                    this.RaiseDataMemberChanged("MailName");
+                }
+            }
+        }
+        private string _MailName;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Salutation
+        {
+            get
+            {
+                return this._Salutation;
+            }
+            set
+            {
+                if (this._Salutation != value)
+                {
+                    this.RaiseDataMemberChanging("Salutation");
+                    this.ValidateProperty("Salutation", value);
+                    this._Salutation = value;
+                    this.RaiseDataMemberChanged("Salutation");
+                }
+            }
+        }
+        private string _Salutation;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                if (this._Type != value)
+                {
+                    this.RaiseDataMemberChanging("Type");
+                    this.ValidateProperty("Type", value);
+                    this._Type = value;
+                    this.RaiseDataMemberChanged("Type");
+                }
+            }
+        }
+        private string _Type;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if (this._EmailAddress != value)
+                {
+                    this.RaiseDataMemberChanging("EmailAddress");
+                    this.ValidateProperty("EmailAddress", value);
+                    this._EmailAddress = value;
+                    this.RaiseDataMemberChanged("EmailAddress");
+                }
+            }
+        }
+        private string _EmailAddress;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Source
+        {
+            get
+            {
+                return this._Source;
+            }
+            set
+            {
+                if (this._Source != value)
+                {
+                    this.RaiseDataMemberChanging("Source");
+                    this.ValidateProperty("Source", value);
+                    this._Source = value;
+                    this.RaiseDataMemberChanged("Source");
+                }
+            }
+        }
+        private string _Source;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> DOB
+        {
+            get
+            {
+                return this._DOB;
+            }
+            set
+            {
+                if (this._DOB != value)
+                {
+                    this.RaiseDataMemberChanging("DOB");
+                    this.ValidateProperty("DOB", value);
+                    this._DOB = value;
+                    this.RaiseDataMemberChanged("DOB");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _DOB;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> Lost
+        {
+            get
+            {
+                return this._Lost;
+            }
+            set
+            {
+                if (this._Lost != value)
+                {
+                    this.RaiseDataMemberChanging("Lost");
+                    this.ValidateProperty("Lost", value);
+                    this._Lost = value;
+                    this.RaiseDataMemberChanged("Lost");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _Lost;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> Deceased
+        {
+            get
+            {
+                return this._Deceased;
+            }
+            set
+            {
+                if (this._Deceased != value)
+                {
+                    this.RaiseDataMemberChanging("Deceased");
+                    this.ValidateProperty("Deceased", value);
+                    this._Deceased = value;
+                    this.RaiseDataMemberChanged("Deceased");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _Deceased;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ArchivePrisonName
+        {
+            get
+            {
+                return this._ArchivePrisonName;
+            }
+            set
+            {
+                if (this._ArchivePrisonName != value)
+                {
+                    this.RaiseDataMemberChanging("ArchivePrisonName");
+                    this.ValidateProperty("ArchivePrisonName", value);
+                    this._ArchivePrisonName = value;
+                    this.RaiseDataMemberChanged("ArchivePrisonName");
+                }
+            }
+        }
+        private string _ArchivePrisonName;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string PNumber
+        {
+            get
+            {
+                return this._PNumber;
+            }
+            set
+            {
+                if (this._PNumber != value)
+                {
+                    this.RaiseDataMemberChanging("PNumber");
+                    this.ValidateProperty("PNumber", value);
+                    this._PNumber = value;
+                    this.RaiseDataMemberChanged("PNumber");
+                }
+            }
+        }
+        private string _PNumber;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Cell
+        {
+            get
+            {
+                return this._Cell;
+            }
+            set
+            {
+                if (this._Cell != value)
+                {
+                    this.RaiseDataMemberChanging("Cell");
+                    this.ValidateProperty("Cell", value);
+                    this._Cell = value;
+                    this.RaiseDataMemberChanged("Cell");
+                }
+            }
+        }
+        private string _Cell;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Prevpris
+        {
+            get
+            {
+                return this._Prevpris;
+            }
+            set
+            {
+                if (this._Prevpris != value)
+                {
+                    this.RaiseDataMemberChanging("Prevpris");
+                    this.ValidateProperty("Prevpris", value);
+                    this._Prevpris = value;
+                    this.RaiseDataMemberChanged("Prevpris");
+                }
+            }
+        }
+        private string _Prevpris;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address1
+        {
+            get
+            {
+                return this._Address1;
+            }
+            set
+            {
+                if (this._Address1 != value)
+                {
+                    this.RaiseDataMemberChanging("Address1");
+                    this.ValidateProperty("Address1", value);
+                    this._Address1 = value;
+                    this.RaiseDataMemberChanged("Address1");
+                }
+            }
+        }
+        private string _Address1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address2
+        {
+            get
+            {
+                return this._Address2;
+            }
+            set
+            {
+                if (this._Address2 != value)
+                {
+                    this.RaiseDataMemberChanging("Address2");
+                    this.ValidateProperty("Address2", value);
+                    this._Address2 = value;
+                    this.RaiseDataMemberChanged("Address2");
+                }
+            }
+        }
+        private string _Address2;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address3
+        {
+            get
+            {
+                return this._Address3;
+            }
+            set
+            {
+                if (this._Address3 != value)
+                {
+                    this.RaiseDataMemberChanging("Address3");
+                    this.ValidateProperty("Address3", value);
+                    this._Address3 = value;
+                    this.RaiseDataMemberChanged("Address3");
+                }
+            }
+        }
+        private string _Address3;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string County
+        {
+            get
+            {
+                return this._County;
+            }
+            set
+            {
+                if (this._County != value)
+                {
+                    this.RaiseDataMemberChanging("County");
+                    this.ValidateProperty("County", value);
+                    this._County = value;
+                    this.RaiseDataMemberChanged("County");
+                }
+            }
+        }
+        private string _County;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Postcode
+        {
+            get
+            {
+                return this._Postcode;
+            }
+            set
+            {
+                if (this._Postcode != value)
+                {
+                    this.RaiseDataMemberChanging("Postcode");
+                    this.ValidateProperty("Postcode", value);
+                    this._Postcode = value;
+                    this.RaiseDataMemberChanged("Postcode");
+                }
+            }
+        }
+        private string _Postcode;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Tel
+        {
+            get
+            {
+                return this._Tel;
+            }
+            set
+            {
+                if (this._Tel != value)
+                {
+                    this.RaiseDataMemberChanging("Tel");
+                    this.ValidateProperty("Tel", value);
+                    this._Tel = value;
+                    this.RaiseDataMemberChanged("Tel");
+                }
+            }
+        }
+        private string _Tel;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Fax
+        {
+            get
+            {
+                return this._Fax;
+            }
+            set
+            {
+                if (this._Fax != value)
+                {
+                    this.RaiseDataMemberChanging("Fax");
+                    this.ValidateProperty("Fax", value);
+                    this._Fax = value;
+                    this.RaiseDataMemberChanged("Fax");
+                }
+            }
+        }
+        private string _Fax;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> C_Date
+        {
+            get
+            {
+                return this._C_Date;
+            }
+            set
+            {
+                if (this._C_Date != value)
+                {
+                    this.RaiseDataMemberChanging("C_Date");
+                    this.ValidateProperty("C_Date", value);
+                    this._C_Date = value;
+                    this.RaiseDataMemberChanged("C_Date");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _C_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> A_Date
+        {
+            get
+            {
+                return this._A_Date;
+            }
+            set
+            {
+                if (this._A_Date != value)
+                {
+                    this.RaiseDataMemberChanging("A_Date");
+                    this.ValidateProperty("A_Date", value);
+                    this._A_Date = value;
+                    this.RaiseDataMemberChanged("A_Date");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _A_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> AmendTime
+        {
+            get
+            {
+                return this._AmendTime;
+            }
+            set
+            {
+                if (this._AmendTime != value)
+                {
+                    this.RaiseDataMemberChanging("AmendTime");
+                    this.ValidateProperty("AmendTime", value);
+                    this._AmendTime = value;
+                    this.RaiseDataMemberChanged("AmendTime");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _AmendTime;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Memo
+        {
+            get
+            {
+                return this._Memo;
+            }
+            set
+            {
+                if (this._Memo != value)
+                {
+                    this.RaiseDataMemberChanging("Memo");
+                    this.ValidateProperty("Memo", value);
+                    this._Memo = value;
+                    this.RaiseDataMemberChanged("Memo");
+                }
+            }
+        }
+        private string _Memo;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Type1
+        {
+            get
+            {
+                return this._Type1;
+            }
+            set
+            {
+                if (this._Type1 != value)
+                {
+                    this.RaiseDataMemberChanging("Type1");
+                    this.ValidateProperty("Type1", value);
+                    this._Type1 = value;
+                    this.RaiseDataMemberChanged("Type1");
+                }
+            }
+        }
+        private string _Type1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ArchivePrevPris1
+        {
+            get
+            {
+                return this._ArchivePrevPris1;
+            }
+            set
+            {
+                if (this._ArchivePrevPris1 != value)
+                {
+                    this.RaiseDataMemberChanging("ArchivePrevPris1");
+                    this.ValidateProperty("ArchivePrevPris1", value);
+                    this._ArchivePrevPris1 = value;
+                    this.RaiseDataMemberChanged("ArchivePrevPris1");
+                }
+            }
+        }
+        private string _ArchivePrevPris1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> XmasList
+        {
+            get
+            {
+                return this._XmasList;
+            }
+            set
+            {
+                if (this._XmasList != value)
+                {
+                    this.RaiseDataMemberChanging("XmasList");
+                    this.ValidateProperty("XmasList", value);
+                    this._XmasList = value;
+                    this.RaiseDataMemberChanged("XmasList");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _XmasList;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> XmasParty
+        {
+            get
+            {
+                return this._XmasParty;
+            }
+            set
+            {
+                if (this._XmasParty != value)
+                {
+                    this.RaiseDataMemberChanging("XmasParty");
+                    this.ValidateProperty("XmasParty", value);
+                    this._XmasParty = value;
+                    this.RaiseDataMemberChanged("XmasParty");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _XmasParty;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Wing
+        {
+            get
+            {
+                return this._Wing;
+            }
+            set
+            {
+                if (this._Wing != value)
+                {
+                    this.RaiseDataMemberChanging("Wing");
+                    this.ValidateProperty("Wing", value);
+                    this._Wing = value;
+                    this.RaiseDataMemberChanged("Wing");
+                }
+            }
+        }
+        private string _Wing;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                if (this._Status != value)
+                {
+                    this.RaiseDataMemberChanging("Status");
+                    this.ValidateProperty("Status", value);
+                    this._Status = value;
+                    this.RaiseDataMemberChanged("Status");
+                }
+            }
+        }
+        private string _Status;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> AnnualReport
+        {
+            get
+            {
+                return this._AnnualReport;
+            }
+            set
+            {
+                if (this._AnnualReport != value)
+                {
+                    this.RaiseDataMemberChanging("AnnualReport");
+                    this.ValidateProperty("AnnualReport", value);
+                    this._AnnualReport = value;
+                    this.RaiseDataMemberChanged("AnnualReport");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _AnnualReport;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> Convenaters
+        {
+            get
+            {
+                return this._Convenaters;
+            }
+            set
+            {
+                if (this._Convenaters != value)
+                {
+                    this.RaiseDataMemberChanging("Convenaters");
+                    this.ValidateProperty("Convenaters", value);
+                    this._Convenaters = value;
+                    this.RaiseDataMemberChanged("Convenaters");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _Convenaters;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string AnnualReviewOld
+        {
+            get
+            {
+                return this._AnnualReviewOld;
+            }
+            set
+            {
+                if (this._AnnualReviewOld != value)
+                {
+                    this.RaiseDataMemberChanging("AnnualReviewOld");
+                    this.ValidateProperty("AnnualReviewOld", value);
+                    this._AnnualReviewOld = value;
+                    this.RaiseDataMemberChanged("AnnualReviewOld");
+                }
+            }
+        }
+        private string _AnnualReviewOld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> NoFundRaisingLetter
+        {
+            get
+            {
+                return this._NoFundRaisingLetter;
+            }
+            set
+            {
+                if (this._NoFundRaisingLetter != value)
+                {
+                    this.RaiseDataMemberChanging("NoFundRaisingLetter");
+                    this.ValidateProperty("NoFundRaisingLetter", value);
+                    this._NoFundRaisingLetter = value;
+                    this.RaiseDataMemberChanged("NoFundRaisingLetter");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _NoFundRaisingLetter;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> NLCopiesRequired
+        {
+            get
+            {
+                return this._NLCopiesRequired;
+            }
+            set
+            {
+                if (this._NLCopiesRequired != value)
+                {
+                    this.RaiseDataMemberChanging("NLCopiesRequired");
+                    this.ValidateProperty("NLCopiesRequired", value);
+                    this._NLCopiesRequired = value;
+                    this.RaiseDataMemberChanged("NLCopiesRequired");
+                }
+            }
+        }
+        private global::System.Nullable<int> _NLCopiesRequired;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> NoNewsLetter
+        {
+            get
+            {
+                return this._NoNewsLetter;
+            }
+            set
+            {
+                if (this._NoNewsLetter != value)
+                {
+                    this.RaiseDataMemberChanging("NoNewsLetter");
+                    this.ValidateProperty("NoNewsLetter", value);
+                    this._NoNewsLetter = value;
+                    this.RaiseDataMemberChanged("NoNewsLetter");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _NoNewsLetter;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> DontSendEmail
+        {
+            get
+            {
+                return this._DontSendEmail;
+            }
+            set
+            {
+                if (this._DontSendEmail != value)
+                {
+                    this.RaiseDataMemberChanging("DontSendEmail");
+                    this.ValidateProperty("DontSendEmail", value);
+                    this._DontSendEmail = value;
+                    this.RaiseDataMemberChanged("DontSendEmail");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _DontSendEmail;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> FrEvent
+        {
+            get
+            {
+                return this._FrEvent;
+            }
+            set
+            {
+                if (this._FrEvent != value)
+                {
+                    this.RaiseDataMemberChanging("FrEvent");
+                    this.ValidateProperty("FrEvent", value);
+                    this._FrEvent = value;
+                    this.RaiseDataMemberChanged("FrEvent");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _FrEvent;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> GiftAidSetup
+        {
+            get
+            {
+                return this._GiftAidSetup;
+            }
+            set
+            {
+                if (this._GiftAidSetup != value)
+                {
+                    this.RaiseDataMemberChanging("GiftAidSetup");
+                    this.ValidateProperty("GiftAidSetup", value);
+                    this._GiftAidSetup = value;
+                    this.RaiseDataMemberChanged("GiftAidSetup");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _GiftAidSetup;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> GiftAidStartDate
+        {
+            get
+            {
+                return this._GiftAidStartDate;
+            }
+            set
+            {
+                if (this._GiftAidStartDate != value)
+                {
+                    this.RaiseDataMemberChanging("GiftAidStartDate");
+                    this.ValidateProperty("GiftAidStartDate", value);
+                    this._GiftAidStartDate = value;
+                    this.RaiseDataMemberChanged("GiftAidStartDate");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _GiftAidStartDate;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> GiftAidFormSent
+        {
+            get
+            {
+                return this._GiftAidFormSent;
+            }
+            set
+            {
+                if (this._GiftAidFormSent != value)
+                {
+                    this.RaiseDataMemberChanging("GiftAidFormSent");
+                    this.ValidateProperty("GiftAidFormSent", value);
+                    this._GiftAidFormSent = value;
+                    this.RaiseDataMemberChanged("GiftAidFormSent");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _GiftAidFormSent;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> GiftAidFromSentDate
+        {
+            get
+            {
+                return this._GiftAidFromSentDate;
+            }
+            set
+            {
+                if (this._GiftAidFromSentDate != value)
+                {
+                    this.RaiseDataMemberChanging("GiftAidFromSentDate");
+                    this.ValidateProperty("GiftAidFromSentDate", value);
+                    this._GiftAidFromSentDate = value;
+                    this.RaiseDataMemberChanged("GiftAidFromSentDate");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _GiftAidFromSentDate;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> GiftAidNotApplicable
+        {
+            get
+            {
+                return this._GiftAidNotApplicable;
+            }
+            set
+            {
+                if (this._GiftAidNotApplicable != value)
+                {
+                    this.RaiseDataMemberChanging("GiftAidNotApplicable");
+                    this.ValidateProperty("GiftAidNotApplicable", value);
+                    this._GiftAidNotApplicable = value;
+                    this.RaiseDataMemberChanged("GiftAidNotApplicable");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _GiftAidNotApplicable;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string BWY_Number
+        {
+            get
+            {
+                return this._BWY_Number;
+            }
+            set
+            {
+                if (this._BWY_Number != value)
+                {
+                    this.RaiseDataMemberChanging("BWY_Number");
+                    this.ValidateProperty("BWY_Number", value);
+                    this._BWY_Number = value;
+                    this.RaiseDataMemberChanged("BWY_Number");
+                }
+            }
+        }
+        private string _BWY_Number;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> PreviousPrison
+        {
+            get
+            {
+                return this._PreviousPrison;
+            }
+            set
+            {
+                if (this._PreviousPrison != value)
+                {
+                    this.RaiseDataMemberChanging("PreviousPrison");
+                    this.ValidateProperty("PreviousPrison", value);
+                    this._PreviousPrison = value;
+                    this.RaiseDataMemberChanged("PreviousPrison");
+                }
+            }
+        }
+        private global::System.Nullable<int> _PreviousPrison;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Accreditation_Contacts", "Id", "TeacherId")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Accreditation> Accreditations
+        {
+            get
+            {
+                if (this._Accreditations == null)
+                {
+                    this._Accreditations = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Accreditation>(this, "Accreditations", this.FilterAccreditations, this.AttachAccreditations, this.DetachAccreditations);
+                }
+                return this._Accreditations;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Accreditation> _Accreditations;
+        private void AttachAccreditations(global::LightSwitchApplication.Implementation.Accreditation entity)
+        {
+            entity.Contact = this;
+        }
+        private void DetachAccreditations(global::LightSwitchApplication.Implementation.Accreditation entity)
+        {
+            entity.Contact = null;
+        }
+        private bool FilterAccreditations(global::LightSwitchApplication.Implementation.Accreditation entity)
+        {
+            return global::System.Object.Equals(entity.TeacherId, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Accreditations
+        {
+            get
+            {
+                return this.Accreditations;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Classes_Contacts", "Id", "TeacherId")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<c_Class> Classes
+        {
+            get
+            {
+                if (this._Classes == null)
+                {
+                    this._Classes = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.c_Class>(this, "Classes", this.FilterClasses, this.AttachClasses, this.DetachClasses);
+                }
+                return this._Classes;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.c_Class> _Classes;
+        private void AttachClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            entity.Contact = this;
+        }
+        private void DetachClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            entity.Contact = null;
+        }
+        private bool FilterClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            return global::System.Object.Equals(entity.TeacherId, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Classes
+        {
+            get
+            {
+                return this.Classes;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Country
+        {
+            get
+            {
+                return this._Country;
+            }
+            set
+            {
+                if (this._Country != value)
+                {
+                    this.RaiseDataMemberChanging("Country");
+                    this.ValidateProperty("Country", value);
+                    this._Country = value;
+                    this.RaiseDataMemberChanged("Country");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Country;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Country", "Country", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Country Country1
+        {
+            get
+            {
+                if (this._Country1 == null)
+                {
+                    this._Country1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Country>(this, "Country1", this.FilterCountry1);
+                }
+                return this._Country1.Entity;
+            }
+            set
+            {
+                Country previous = this.Country1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Country1", value);
+                    if (previous != null)
+                    {
+                        this._Country1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Country = value.Id;
+                    }
+                    else
+                    {
+                        this.Country = default(global::System.Nullable<int>);
+                    }
+                    this._Country1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("Country1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Country> _Country1;
+        private bool FilterCountry1(global::LightSwitchApplication.Implementation.Country entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Country);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Country1
+        {
+            get
+            {
+                return this.Country1;
+            }
+            set
+            {
+                this.Country1 = (global::LightSwitchApplication.Implementation.Country)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> MailCode
+        {
+            get
+            {
+                return this._MailCode;
+            }
+            set
+            {
+                if (this._MailCode != value)
+                {
+                    this.RaiseDataMemberChanging("MailCode");
+                    this.ValidateProperty("MailCode", value);
+                    this._MailCode = value;
+                    this.RaiseDataMemberChanged("MailCode");
+                }
+            }
+        }
+        private global::System.Nullable<int> _MailCode;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_MailCode", "MailCode", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.MailCode MailCode1
+        {
+            get
+            {
+                if (this._MailCode1 == null)
+                {
+                    this._MailCode1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.MailCode>(this, "MailCode1", this.FilterMailCode1);
+                }
+                return this._MailCode1.Entity;
+            }
+            set
+            {
+                MailCode previous = this.MailCode1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("MailCode1", value);
+                    if (previous != null)
+                    {
+                        this._MailCode1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.MailCode = value.Id;
+                    }
+                    else
+                    {
+                        this.MailCode = default(global::System.Nullable<int>);
+                    }
+                    this._MailCode1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("MailCode1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.MailCode> _MailCode1;
+        private bool FilterMailCode1(global::LightSwitchApplication.Implementation.MailCode entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.MailCode);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.MailCode1
+        {
+            get
+            {
+                return this.MailCode1;
+            }
+            set
+            {
+                this.MailCode1 = (global::LightSwitchApplication.Implementation.MailCode)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> PersonType
+        {
+            get
+            {
+                return this._PersonType;
+            }
+            set
+            {
+                if (this._PersonType != value)
+                {
+                    this.RaiseDataMemberChanging("PersonType");
+                    this.ValidateProperty("PersonType", value);
+                    this._PersonType = value;
+                    this.RaiseDataMemberChanged("PersonType");
+                }
+            }
+        }
+        private global::System.Nullable<int> _PersonType;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_PersonType", "PersonType", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.PersonType PersonType1
+        {
+            get
+            {
+                if (this._PersonType1 == null)
+                {
+                    this._PersonType1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.PersonType>(this, "PersonType1", this.FilterPersonType1);
+                }
+                return this._PersonType1.Entity;
+            }
+            set
+            {
+                PersonType previous = this.PersonType1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("PersonType1", value);
+                    if (previous != null)
+                    {
+                        this._PersonType1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.PersonType = value.Id;
+                    }
+                    else
+                    {
+                        this.PersonType = default(global::System.Nullable<int>);
+                    }
+                    this._PersonType1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("PersonType1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.PersonType> _PersonType1;
+        private bool FilterPersonType1(global::LightSwitchApplication.Implementation.PersonType entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.PersonType);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.PersonType1
+        {
+            get
+            {
+                return this.PersonType1;
+            }
+            set
+            {
+                this.PersonType1 = (global::LightSwitchApplication.Implementation.PersonType)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Prison
+        {
+            get
+            {
+                return this._Prison;
+            }
+            set
+            {
+                if (this._Prison != value)
+                {
+                    this.RaiseDataMemberChanging("Prison");
+                    this.ValidateProperty("Prison", value);
+                    this._Prison = value;
+                    this.RaiseDataMemberChanged("Prison");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Prison;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Prison", "Prison", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Prison Prison1
+        {
+            get
+            {
+                if (this._Prison1 == null)
+                {
+                    this._Prison1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison>(this, "Prison1", this.FilterPrison1);
+                }
+                return this._Prison1.Entity;
+            }
+            set
+            {
+                Prison previous = this.Prison1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Prison1", value);
+                    if (previous != null)
+                    {
+                        this._Prison1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Prison = value.Id;
+                    }
+                    else
+                    {
+                        this.Prison = default(global::System.Nullable<int>);
+                    }
+                    this._Prison1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("Prison1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison> _Prison1;
+        private bool FilterPrison1(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Prison);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Prison1
+        {
+            get
+            {
+                return this.Prison1;
+            }
+            set
+            {
+                this.Prison1 = (global::LightSwitchApplication.Implementation.Prison)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Title
+        {
+            get
+            {
+                return this._Title;
+            }
+            set
+            {
+                if (this._Title != value)
+                {
+                    this.RaiseDataMemberChanging("Title");
+                    this.ValidateProperty("Title", value);
+                    this._Title = value;
+                    this.RaiseDataMemberChanged("Title");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Title;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Titles", "Title", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Title Title1
+        {
+            get
+            {
+                if (this._Title1 == null)
+                {
+                    this._Title1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Title>(this, "Title1", this.FilterTitle1);
+                }
+                return this._Title1.Entity;
+            }
+            set
+            {
+                Title previous = this.Title1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Title1", value);
+                    if (previous != null)
+                    {
+                        this._Title1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Title = value.Id;
+                    }
+                    else
+                    {
+                        this.Title = default(global::System.Nullable<int>);
+                    }
+                    this._Title1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("Title1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Title> _Title1;
+        private bool FilterTitle1(global::LightSwitchApplication.Implementation.Title entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Title);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Title1
+        {
+            get
+            {
+                return this.Title1;
+            }
+            set
+            {
+                this.Title1 = (global::LightSwitchApplication.Implementation.Title)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Town
+        {
+            get
+            {
+                return this._Town;
+            }
+            set
+            {
+                if (this._Town != value)
+                {
+                    this.RaiseDataMemberChanging("Town");
+                    this.ValidateProperty("Town", value);
+                    this._Town = value;
+                    this.RaiseDataMemberChanged("Town");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Town;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Town", "Town", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Town Town1
+        {
+            get
+            {
+                if (this._Town1 == null)
+                {
+                    this._Town1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Town>(this, "Town1", this.FilterTown1);
+                }
+                return this._Town1.Entity;
+            }
+            set
+            {
+                Town previous = this.Town1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Town1", value);
+                    if (previous != null)
+                    {
+                        this._Town1.Entity = null;
+                        previous.Contacts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Town = value.Id;
+                    }
+                    else
+                    {
+                        this.Town = default(global::System.Nullable<int>);
+                    }
+                    this._Town1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contacts.Add(this);
+                    }
+                    this.RaisePropertyChanged("Town1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Town> _Town1;
+        private bool FilterTown1(global::LightSwitchApplication.Implementation.Town entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Town);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Town1
+        {
+            get
+            {
+                return this.Town1;
+            }
+            set
+            {
+                this.Town1 = (global::LightSwitchApplication.Implementation.Town)value;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Corresp_Corresp", "Id", "Corref", IsForeignKey = false)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Corresp Corresp
+        {
+            get
+            {
+                if (this._Corresp == null)
+                {
+                    this._Corresp = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Corresp>(this, "Corresp", this.FilterCorresp);
+                }
+                return this._Corresp.Entity;
+            }
+            set
+            {
+                Corresp previous = this.Corresp;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Corresp", value);
+                    if (previous != null)
+                    {
+                        this._Corresp.Entity = null;
+                        previous.Contact = null;
+                    }
+                    this._Corresp.Entity = value;
+                    if (value != null)
+                    {
+                        value.Contact = this;
+                    }
+                    this.RaisePropertyChanged("Corresp");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Corresp> _Corresp;
+        private bool FilterCorresp(global::LightSwitchApplication.Implementation.Corresp entity)
+        {
+            return global::System.Object.Equals(entity.Corref, this.Id);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Corresp
+        {
+            get
+            {
+                return this.Corresp;
+            }
+            set
+            {
+                this.Corresp = (global::LightSwitchApplication.Implementation.Corresp)value;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Gifts_GiftType", "Id", "Contact")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Gift> Gifts
+        {
+            get
+            {
+                if (this._Gifts == null)
+                {
+                    this._Gifts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Gift>(this, "Gifts", this.FilterGifts, this.AttachGifts, this.DetachGifts);
+                }
+                return this._Gifts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Gift> _Gifts;
+        private void AttachGifts(global::LightSwitchApplication.Implementation.Gift entity)
+        {
+            entity.Contact1 = this;
+        }
+        private void DetachGifts(global::LightSwitchApplication.Implementation.Gift entity)
+        {
+            entity.Contact1 = null;
+        }
+        private bool FilterGifts(global::LightSwitchApplication.Implementation.Gift entity)
+        {
+            return global::System.Object.Equals(entity.Contact, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Contact.DetailsClass.IImplementation.Gifts
+        {
+            get
+            {
+                return this.Gifts;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_WorkshopTeachers_Contacts", "Id", "TeacherId")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<WorkshopTeacher> WorkshopTeachers
+        {
+            get
+            {
+                if (this._WorkshopTeachers == null)
+                {
+                    this._WorkshopTeachers = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.WorkshopTeacher>(this, "WorkshopTeachers", this.FilterWorkshopTeachers, this.AttachWorkshopTeachers, this.DetachWorkshopTeachers);
+                }
+                return this._WorkshopTeachers;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.WorkshopTeacher> _WorkshopTeachers;
+        private void AttachWorkshopTeachers(global::LightSwitchApplication.Implementation.WorkshopTeacher entity)
+        {
+            entity.Contact = this;
+        }
+        private void DetachWorkshopTeachers(global::LightSwitchApplication.Implementation.WorkshopTeacher entity)
+        {
+            entity.Contact = null;
+        }
+        private bool FilterWorkshopTeachers(global::LightSwitchApplication.Implementation.WorkshopTeacher entity)
+        {
+            return global::System.Object.Equals(entity.TeacherId, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Contact.DetailsClass.IImplementation.WorkshopTeachers
+        {
+            get
+            {
+                return this.WorkshopTeachers;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Corresp
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Corresp :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Corresp.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Corref;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Corref
+        {
+            get
+            {
+                return this._Corref;
+            }
+            set
+            {
+                if (this._Corref != value)
+                {
+                    this.ValidateProperty("Corref", value);
+                    this._Corref = value;
+                    this.RaisePropertyChanged("Corref");
+                }
+            }
+        }
+        private int _Corref;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> OldCorref
+        {
+            get
+            {
+                return this._OldCorref;
+            }
+            set
+            {
+                if (this._OldCorref != value)
+                {
+                    this.RaiseDataMemberChanging("OldCorref");
+                    this.ValidateProperty("OldCorref", value);
+                    this._OldCorref = value;
+                    this.RaiseDataMemberChanged("OldCorref");
+                }
+            }
+        }
+        private global::System.Nullable<int> _OldCorref;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Number
+        {
+            get
+            {
+                return this._Number;
+            }
+            set
+            {
+                if (this._Number != value)
+                {
+                    this.RaiseDataMemberChanging("Number");
+                    this.ValidateProperty("Number", value);
+                    this._Number = value;
+                    this.RaiseDataMemberChanged("Number");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Number;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Refno
+        {
+            get
+            {
+                return this._Refno;
+            }
+            set
+            {
+                if (this._Refno != value)
+                {
+                    this.RaiseDataMemberChanging("Refno");
+                    this.ValidateProperty("Refno", value);
+                    this._Refno = value;
+                    this.RaiseDataMemberChanged("Refno");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Refno;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> Date1
+        {
+            get
+            {
+                return this._Date1;
+            }
+            set
+            {
+                if (this._Date1 != value)
+                {
+                    this.RaiseDataMemberChanging("Date1");
+                    this.ValidateProperty("Date1", value);
+                    this._Date1 = value;
+                    this.RaiseDataMemberChanged("Date1");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _Date1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                if (this._Type != value)
+                {
+                    this.RaiseDataMemberChanging("Type");
+                    this.ValidateProperty("Type", value);
+                    this._Type = value;
+                    this.RaiseDataMemberChanged("Type");
+                }
+            }
+        }
+        private string _Type;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Filing
+        {
+            get
+            {
+                return this._Filing;
+            }
+            set
+            {
+                if (this._Filing != value)
+                {
+                    this.RaiseDataMemberChanging("Filing");
+                    this.ValidateProperty("Filing", value);
+                    this._Filing = value;
+                    this.RaiseDataMemberChanged("Filing");
+                }
+            }
+        }
+        private string _Filing;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Destination
+        {
+            get
+            {
+                return this._Destination;
+            }
+            set
+            {
+                if (this._Destination != value)
+                {
+                    this.RaiseDataMemberChanging("Destination");
+                    this.ValidateProperty("Destination", value);
+                    this._Destination = value;
+                    this.RaiseDataMemberChanged("Destination");
+                }
+            }
+        }
+        private string _Destination;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Correspondant
+        {
+            get
+            {
+                return this._Correspondant;
+            }
+            set
+            {
+                if (this._Correspondant != value)
+                {
+                    this.RaiseDataMemberChanging("Correspondant");
+                    this.ValidateProperty("Correspondant", value);
+                    this._Correspondant = value;
+                    this.RaiseDataMemberChanged("Correspondant");
+                }
+            }
+        }
+        private string _Correspondant;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Response
+        {
+            get
+            {
+                return this._Response;
+            }
+            set
+            {
+                if (this._Response != value)
+                {
+                    this.RaiseDataMemberChanging("Response");
+                    this.ValidateProperty("Response", value);
+                    this._Response = value;
+                    this.RaiseDataMemberChanged("Response");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Response;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Corresp_Contacts", "Response", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.ResponseType ResponseType
+        {
+            get
+            {
+                if (this._ResponseType == null)
+                {
+                    this._ResponseType = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.ResponseType>(this, "ResponseType", this.FilterResponseType);
+                }
+                return this._ResponseType.Entity;
+            }
+            set
+            {
+                ResponseType previous = this.ResponseType;
+                if (previous != value)
+                {
+                    this.ValidateProperty("ResponseType", value);
+                    if (previous != null)
+                    {
+                        this._ResponseType.Entity = null;
+                        previous.Corresps.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Response = value.Id;
+                    }
+                    else
+                    {
+                        this.Response = default(global::System.Nullable<int>);
+                    }
+                    this._ResponseType.Entity = value;
+                    if (value != null)
+                    {
+                        value.Corresps.Add(this);
+                    }
+                    this.RaisePropertyChanged("ResponseType");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.ResponseType> _ResponseType;
+        private bool FilterResponseType(global::LightSwitchApplication.Implementation.ResponseType entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Response);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Corresp.DetailsClass.IImplementation.ResponseType
+        {
+            get
+            {
+                return this.ResponseType;
+            }
+            set
+            {
+                this.ResponseType = (global::LightSwitchApplication.Implementation.ResponseType)value;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Corresp_Corresp", "Corref", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Contact Contact
+        {
+            get
+            {
+                if (this._Contact == null)
+                {
+                    this._Contact = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact>(this, "Contact", this.FilterContact);
+                }
+                return this._Contact.Entity;
+            }
+            set
+            {
+                Contact previous = this.Contact;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Contact", value);
+                    if (previous != null)
+                    {
+                        this._Contact.Entity = null;
+                        previous.Corresp = null;
+                    }
+                    if (value != null)
+                    {
+                        this.Corref = value.Id;
+                    }
+                    else
+                    {
+                        this.Corref = default(int);
+                    }
+                    this._Contact.Entity = value;
+                    if (value != null)
+                    {
+                        value.Corresp = this;
+                    }
+                    this.RaisePropertyChanged("Contact");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact> _Contact;
+        private bool FilterContact(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Corref);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Corresp.DetailsClass.IImplementation.Contact
+        {
+            get
+            {
+                return this.Contact;
+            }
+            set
+            {
+                this.Contact = (global::LightSwitchApplication.Implementation.Contact)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Country
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Country :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Country.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Country", "Id", "Country")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Country1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Country1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Country, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Country.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_Country", "Id", "Country")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Prison> Prisons
+        {
+            get
+            {
+                if (this._Prisons == null)
+                {
+                    this._Prisons = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison>(this, "Prisons", this.FilterPrisons, this.AttachPrisons, this.DetachPrisons);
+                }
+                return this._Prisons;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison> _Prisons;
+        private void AttachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.Country1 = this;
+        }
+        private void DetachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.Country1 = null;
+        }
+        private bool FilterPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Country, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Country.DetailsClass.IImplementation.Prisons
+        {
+            get
+            {
+                return this.Prisons;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Destination
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Destination :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Destination.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Gift
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Gift :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Gift.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> c_Date
+        {
+            get
+            {
+                return this._c_Date;
+            }
+            set
+            {
+                if (this._c_Date != value)
+                {
+                    this.RaiseDataMemberChanging("c_Date");
+                    this.ValidateProperty("c_Date", value);
+                    this._c_Date = value;
+                    this.RaiseDataMemberChanged("c_Date");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _c_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> GiftType
+        {
+            get
+            {
+                return this._GiftType;
+            }
+            set
+            {
+                if (this._GiftType != value)
+                {
+                    this.RaiseDataMemberChanging("GiftType");
+                    this.ValidateProperty("GiftType", value);
+                    this._GiftType = value;
+                    this.RaiseDataMemberChanged("GiftType");
+                }
+            }
+        }
+        private global::System.Nullable<int> _GiftType;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<double> Amount
+        {
+            get
+            {
+                return this._Amount;
+            }
+            set
+            {
+                if (this._Amount != value)
+                {
+                    this.RaiseDataMemberChanging("Amount");
+                    this.ValidateProperty("Amount", value);
+                    this._Amount = value;
+                    this.RaiseDataMemberChanged("Amount");
+                }
+            }
+        }
+        private global::System.Nullable<double> _Amount;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Source
+        {
+            get
+            {
+                return this._Source;
+            }
+            set
+            {
+                if (this._Source != value)
+                {
+                    this.RaiseDataMemberChanging("Source");
+                    this.ValidateProperty("Source", value);
+                    this._Source = value;
+                    this.RaiseDataMemberChanged("Source");
+                }
+            }
+        }
+        private string _Source;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Purpose
+        {
+            get
+            {
+                return this._Purpose;
+            }
+            set
+            {
+                if (this._Purpose != value)
+                {
+                    this.RaiseDataMemberChanging("Purpose");
+                    this.ValidateProperty("Purpose", value);
+                    this._Purpose = value;
+                    this.RaiseDataMemberChanged("Purpose");
+                }
+            }
+        }
+        private string _Purpose;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Contact
+        {
+            get
+            {
+                return this._Contact;
+            }
+            set
+            {
+                if (this._Contact != value)
+                {
+                    this.RaiseDataMemberChanging("Contact");
+                    this.ValidateProperty("Contact", value);
+                    this._Contact = value;
+                    this.RaiseDataMemberChanged("Contact");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Contact;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Gifts_GiftType", "Contact", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Contact Contact1
+        {
+            get
+            {
+                if (this._Contact1 == null)
+                {
+                    this._Contact1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact>(this, "Contact1", this.FilterContact1);
+                }
+                return this._Contact1.Entity;
+            }
+            set
+            {
+                Contact previous = this.Contact1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Contact1", value);
+                    if (previous != null)
+                    {
+                        this._Contact1.Entity = null;
+                        previous.Gifts.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Contact = value.Id;
+                    }
+                    else
+                    {
+                        this.Contact = default(global::System.Nullable<int>);
+                    }
+                    this._Contact1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Gifts.Add(this);
+                    }
+                    this.RaisePropertyChanged("Contact1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact> _Contact1;
+        private bool FilterContact1(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Contact);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Gift.DetailsClass.IImplementation.Contact1
+        {
+            get
+            {
+                return this.Contact1;
+            }
+            set
+            {
+                this.Contact1 = (global::LightSwitchApplication.Implementation.Contact)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region GiftType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class GiftType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.GiftType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ShortCode
+        {
+            get
+            {
+                return this._ShortCode;
+            }
+            set
+            {
+                if (this._ShortCode != value)
+                {
+                    this.RaiseDataMemberChanging("ShortCode");
+                    this.ValidateProperty("ShortCode", value);
+                    this._ShortCode = value;
+                    this.RaiseDataMemberChanged("ShortCode");
+                }
+            }
+        }
+        private string _ShortCode;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region History
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class History :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.History.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> TeacherId
+        {
+            get
+            {
+                return this._TeacherId;
+            }
+            set
+            {
+                if (this._TeacherId != value)
+                {
+                    this.RaiseDataMemberChanging("TeacherId");
+                    this.ValidateProperty("TeacherId", value);
+                    this._TeacherId = value;
+                    this.RaiseDataMemberChanged("TeacherId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _TeacherId;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<global::System.DateTime> c_Date
+        {
+            get
+            {
+                return this._c_Date;
+            }
+            set
+            {
+                if (this._c_Date != value)
+                {
+                    this.RaiseDataMemberChanging("c_Date");
+                    this.ValidateProperty("c_Date", value);
+                    this._c_Date = value;
+                    this.RaiseDataMemberChanged("c_Date");
+                }
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _c_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string History1
+        {
+            get
+            {
+                return this._History1;
+            }
+            set
+            {
+                if (this._History1 != value)
+                {
+                    this.RaiseDataMemberChanging("History1");
+                    this.ValidateProperty("History1", value);
+                    this._History1 = value;
+                    this.RaiseDataMemberChanged("History1");
+                }
+            }
+        }
+        private string _History1;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region InstitutionType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class InstitutionType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.InstitutionType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ShortCode
+        {
+            get
+            {
+                return this._ShortCode;
+            }
+            set
+            {
+                if (this._ShortCode != value)
+                {
+                    this.RaiseDataMemberChanging("ShortCode");
+                    this.ValidateProperty("ShortCode", value);
+                    this._ShortCode = value;
+                    this.RaiseDataMemberChanged("ShortCode");
+                }
+            }
+        }
+        private string _ShortCode;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region LetterWriter
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class LetterWriter :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.LetterWriter.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ShortCode
+        {
+            get
+            {
+                return this._ShortCode;
+            }
+            set
+            {
+                if (this._ShortCode != value)
+                {
+                    this.RaiseDataMemberChanging("ShortCode");
+                    this.ValidateProperty("ShortCode", value);
+                    this._ShortCode = value;
+                    this.RaiseDataMemberChanged("ShortCode");
+                }
+            }
+        }
+        private string _ShortCode;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region LocationType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class LocationType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.LocationType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_LocationType", "Id", "Location")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Prison> Prisons
+        {
+            get
+            {
+                if (this._Prisons == null)
+                {
+                    this._Prisons = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison>(this, "Prisons", this.FilterPrisons, this.AttachPrisons, this.DetachPrisons);
+                }
+                return this._Prisons;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison> _Prisons;
+        private void AttachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.LocationType = this;
+        }
+        private void DetachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.LocationType = null;
+        }
+        private bool FilterPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Location, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.LocationType.DetailsClass.IImplementation.Prisons
+        {
+            get
+            {
+                return this.Prisons;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region MailCode
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class MailCode :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.MailCode.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Code1
+        {
+            get
+            {
+                return this._Code1;
+            }
+            set
+            {
+                if (this._Code1 != value)
+                {
+                    this.RaiseDataMemberChanging("Code1");
+                    this.ValidateProperty("Code1", value);
+                    this._Code1 = value;
+                    this.RaiseDataMemberChanged("Code1");
+                }
+            }
+        }
+        private string _Code1;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_MailCode", "Id", "MailCode")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.MailCode1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.MailCode1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.MailCode, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.MailCode.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region NLAddressOrderType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class NLAddressOrderType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.NLAddressOrderType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_NLAddressOrderType", "Id", "NlAddressOrder")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Prison> Prisons
+        {
+            get
+            {
+                if (this._Prisons == null)
+                {
+                    this._Prisons = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison>(this, "Prisons", this.FilterPrisons, this.AttachPrisons, this.DetachPrisons);
+                }
+                return this._Prisons;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison> _Prisons;
+        private void AttachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.NLAddressOrderType = this;
+        }
+        private void DetachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.NLAddressOrderType = null;
+        }
+        private bool FilterPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.NlAddressOrder, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.NLAddressOrderType.DetailsClass.IImplementation.Prisons
+        {
+            get
+            {
+                return this.Prisons;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region PersonType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class PersonType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.PersonType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ShortCode
+        {
+            get
+            {
+                return this._ShortCode;
+            }
+            set
+            {
+                if (this._ShortCode != value)
+                {
+                    this.RaiseDataMemberChanging("ShortCode");
+                    this.ValidateProperty("ShortCode", value);
+                    this._ShortCode = value;
+                    this.RaiseDataMemberChanged("ShortCode");
+                }
+            }
+        }
+        private string _ShortCode;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_PersonType", "Id", "PersonType")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.PersonType1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.PersonType1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.PersonType, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.PersonType.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Prison
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Prison :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Prison.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string MailName
+        {
+            get
+            {
+                return this._MailName;
+            }
+            set
+            {
+                if (this._MailName != value)
+                {
+                    this.RaiseDataMemberChanging("MailName");
+                    this.ValidateProperty("MailName", value);
+                    this._MailName = value;
+                    this.RaiseDataMemberChanged("MailName");
+                }
+            }
+        }
+        private string _MailName;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address1
+        {
+            get
+            {
+                return this._Address1;
+            }
+            set
+            {
+                if (this._Address1 != value)
+                {
+                    this.RaiseDataMemberChanging("Address1");
+                    this.ValidateProperty("Address1", value);
+                    this._Address1 = value;
+                    this.RaiseDataMemberChanged("Address1");
+                }
+            }
+        }
+        private string _Address1;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address2
+        {
+            get
+            {
+                return this._Address2;
+            }
+            set
+            {
+                if (this._Address2 != value)
+                {
+                    this.RaiseDataMemberChanging("Address2");
+                    this.ValidateProperty("Address2", value);
+                    this._Address2 = value;
+                    this.RaiseDataMemberChanged("Address2");
+                }
+            }
+        }
+        private string _Address2;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Address3
+        {
+            get
+            {
+                return this._Address3;
+            }
+            set
+            {
+                if (this._Address3 != value)
+                {
+                    this.RaiseDataMemberChanging("Address3");
+                    this.ValidateProperty("Address3", value);
+                    this._Address3 = value;
+                    this.RaiseDataMemberChanged("Address3");
+                }
+            }
+        }
+        private string _Address3;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Town
+        {
+            get
+            {
+                return this._Town;
+            }
+            set
+            {
+                if (this._Town != value)
+                {
+                    this.RaiseDataMemberChanging("Town");
+                    this.ValidateProperty("Town", value);
+                    this._Town = value;
+                    this.RaiseDataMemberChanged("Town");
+                }
+            }
+        }
+        private string _Town;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string County
+        {
+            get
+            {
+                return this._County;
+            }
+            set
+            {
+                if (this._County != value)
+                {
+                    this.RaiseDataMemberChanging("County");
+                    this.ValidateProperty("County", value);
+                    this._County = value;
+                    this.RaiseDataMemberChanged("County");
+                }
+            }
+        }
+        private string _County;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Postcode
+        {
+            get
+            {
+                return this._Postcode;
+            }
+            set
+            {
+                if (this._Postcode != value)
+                {
+                    this.RaiseDataMemberChanging("Postcode");
+                    this.ValidateProperty("Postcode", value);
+                    this._Postcode = value;
+                    this.RaiseDataMemberChanged("Postcode");
+                }
+            }
+        }
+        private string _Postcode;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> MalePrisonersHeld
+        {
+            get
+            {
+                return this._MalePrisonersHeld;
+            }
+            set
+            {
+                if (this._MalePrisonersHeld != value)
+                {
+                    this.RaiseDataMemberChanging("MalePrisonersHeld");
+                    this.ValidateProperty("MalePrisonersHeld", value);
+                    this._MalePrisonersHeld = value;
+                    this.RaiseDataMemberChanged("MalePrisonersHeld");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _MalePrisonersHeld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> FemalePrisonersHeld
+        {
+            get
+            {
+                return this._FemalePrisonersHeld;
+            }
+            set
+            {
+                if (this._FemalePrisonersHeld != value)
+                {
+                    this.RaiseDataMemberChanging("FemalePrisonersHeld");
+                    this.ValidateProperty("FemalePrisonersHeld", value);
+                    this._FemalePrisonersHeld = value;
+                    this.RaiseDataMemberChanged("FemalePrisonersHeld");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _FemalePrisonersHeld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> JuvenilePrisonersHeld
+        {
+            get
+            {
+                return this._JuvenilePrisonersHeld;
+            }
+            set
+            {
+                if (this._JuvenilePrisonersHeld != value)
+                {
+                    this.RaiseDataMemberChanging("JuvenilePrisonersHeld");
+                    this.ValidateProperty("JuvenilePrisonersHeld", value);
+                    this._JuvenilePrisonersHeld = value;
+                    this.RaiseDataMemberChanged("JuvenilePrisonersHeld");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _JuvenilePrisonersHeld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> YoungOffendersHeld
+        {
+            get
+            {
+                return this._YoungOffendersHeld;
+            }
+            set
+            {
+                if (this._YoungOffendersHeld != value)
+                {
+                    this.RaiseDataMemberChanging("YoungOffendersHeld");
+                    this.ValidateProperty("YoungOffendersHeld", value);
+                    this._YoungOffendersHeld = value;
+                    this.RaiseDataMemberChanged("YoungOffendersHeld");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _YoungOffendersHeld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> AdultPrisonersHeld
+        {
+            get
+            {
+                return this._AdultPrisonersHeld;
+            }
+            set
+            {
+                if (this._AdultPrisonersHeld != value)
+                {
+                    this.RaiseDataMemberChanging("AdultPrisonersHeld");
+                    this.ValidateProperty("AdultPrisonersHeld", value);
+                    this._AdultPrisonersHeld = value;
+                    this.RaiseDataMemberChanged("AdultPrisonersHeld");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _AdultPrisonersHeld;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Cat
+        {
+            get
+            {
+                return this._Cat;
+            }
+            set
+            {
+                if (this._Cat != value)
+                {
+                    this.RaiseDataMemberChanging("Cat");
+                    this.ValidateProperty("Cat", value);
+                    this._Cat = value;
+                    this.RaiseDataMemberChanged("Cat");
+                }
+            }
+        }
+        private string _Cat;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Ptype
+        {
+            get
+            {
+                return this._Ptype;
+            }
+            set
+            {
+                if (this._Ptype != value)
+                {
+                    this.RaiseDataMemberChanging("Ptype");
+                    this.ValidateProperty("Ptype", value);
+                    this._Ptype = value;
+                    this.RaiseDataMemberChanged("Ptype");
+                }
+            }
+        }
+        private string _Ptype;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string VolunteersNotes
+        {
+            get
+            {
+                return this._VolunteersNotes;
+            }
+            set
+            {
+                if (this._VolunteersNotes != value)
+                {
+                    this.RaiseDataMemberChanging("VolunteersNotes");
+                    this.ValidateProperty("VolunteersNotes", value);
+                    this._VolunteersNotes = value;
+                    this.RaiseDataMemberChanged("VolunteersNotes");
+                }
+            }
+        }
+        private string _VolunteersNotes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Notes
+        {
+            get
+            {
+                return this._Notes;
+            }
+            set
+            {
+                if (this._Notes != value)
+                {
+                    this.RaiseDataMemberChanging("Notes");
+                    this.ValidateProperty("Notes", value);
+                    this._Notes = value;
+                    this.RaiseDataMemberChanged("Notes");
+                }
+            }
+        }
+        private string _Notes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Governor
+        {
+            get
+            {
+                return this._Governor;
+            }
+            set
+            {
+                if (this._Governor != value)
+                {
+                    this.RaiseDataMemberChanging("Governor");
+                    this.ValidateProperty("Governor", value);
+                    this._Governor = value;
+                    this.RaiseDataMemberChanged("Governor");
+                }
+            }
+        }
+        private string _Governor;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Telephone
+        {
+            get
+            {
+                return this._Telephone;
+            }
+            set
+            {
+                if (this._Telephone != value)
+                {
+                    this.RaiseDataMemberChanging("Telephone");
+                    this.ValidateProperty("Telephone", value);
+                    this._Telephone = value;
+                    this.RaiseDataMemberChanged("Telephone");
+                }
+            }
+        }
+        private string _Telephone;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Tag
+        {
+            get
+            {
+                return this._Tag;
+            }
+            set
+            {
+                if (this._Tag != value)
+                {
+                    this.RaiseDataMemberChanging("Tag");
+                    this.ValidateProperty("Tag", value);
+                    this._Tag = value;
+                    this.RaiseDataMemberChanged("Tag");
+                }
+            }
+        }
+        private string _Tag;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<bool> InclInNLAddressList
+        {
+            get
+            {
+                return this._InclInNLAddressList;
+            }
+            set
+            {
+                if (this._InclInNLAddressList != value)
+                {
+                    this.RaiseDataMemberChanging("InclInNLAddressList");
+                    this.ValidateProperty("InclInNLAddressList", value);
+                    this._InclInNLAddressList = value;
+                    this.RaiseDataMemberChanged("InclInNLAddressList");
+                }
+            }
+        }
+        private global::System.Nullable<bool> _InclInNLAddressList;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string DesignationNewsletter
+        {
+            get
+            {
+                return this._DesignationNewsletter;
+            }
+            set
+            {
+                if (this._DesignationNewsletter != value)
+                {
+                    this.RaiseDataMemberChanging("DesignationNewsletter");
+                    this.ValidateProperty("DesignationNewsletter", value);
+                    this._DesignationNewsletter = value;
+                    this.RaiseDataMemberChanged("DesignationNewsletter");
+                }
+            }
+        }
+        private string _DesignationNewsletter;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ContactForNewsletter
+        {
+            get
+            {
+                return this._ContactForNewsletter;
+            }
+            set
+            {
+                if (this._ContactForNewsletter != value)
+                {
+                    this.RaiseDataMemberChanging("ContactForNewsletter");
+                    this.ValidateProperty("ContactForNewsletter", value);
+                    this._ContactForNewsletter = value;
+                    this.RaiseDataMemberChanged("ContactForNewsletter");
+                }
+            }
+        }
+        private string _ContactForNewsletter;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ContactPosition
+        {
+            get
+            {
+                return this._ContactPosition;
+            }
+            set
+            {
+                if (this._ContactPosition != value)
+                {
+                    this.RaiseDataMemberChanging("ContactPosition");
+                    this.ValidateProperty("ContactPosition", value);
+                    this._ContactPosition = value;
+                    this.RaiseDataMemberChanged("ContactPosition");
+                }
+            }
+        }
+        private string _ContactPosition;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ContactPhone
+        {
+            get
+            {
+                return this._ContactPhone;
+            }
+            set
+            {
+                if (this._ContactPhone != value)
+                {
+                    this.RaiseDataMemberChanging("ContactPhone");
+                    this.ValidateProperty("ContactPhone", value);
+                    this._ContactPhone = value;
+                    this.RaiseDataMemberChanged("ContactPhone");
+                }
+            }
+        }
+        private string _ContactPhone;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ContactFax
+        {
+            get
+            {
+                return this._ContactFax;
+            }
+            set
+            {
+                if (this._ContactFax != value)
+                {
+                    this.RaiseDataMemberChanging("ContactFax");
+                    this.ValidateProperty("ContactFax", value);
+                    this._ContactFax = value;
+                    this.RaiseDataMemberChanged("ContactFax");
+                }
+            }
+        }
+        private string _ContactFax;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Classes_Prison", "Id", "PrisonId")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<c_Class> Classes
+        {
+            get
+            {
+                if (this._Classes == null)
+                {
+                    this._Classes = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.c_Class>(this, "Classes", this.FilterClasses, this.AttachClasses, this.DetachClasses);
+                }
+                return this._Classes;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.c_Class> _Classes;
+        private void AttachClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            entity.Prison = this;
+        }
+        private void DetachClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            entity.Prison = null;
+        }
+        private bool FilterClasses(global::LightSwitchApplication.Implementation.c_Class entity)
+        {
+            return global::System.Object.Equals(entity.PrisonId, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Prison.DetailsClass.IImplementation.Classes
+        {
+            get
+            {
+                return this.Classes;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Prison", "Id", "Prison")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Prison1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Prison1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Prison, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Prison.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> Country
+        {
+            get
+            {
+                return this._Country;
+            }
+            set
+            {
+                if (this._Country != value)
+                {
+                    this.RaiseDataMemberChanging("Country");
+                    this.ValidateProperty("Country", value);
+                    this._Country = value;
+                    this.RaiseDataMemberChanged("Country");
+                }
+            }
+        }
+        private global::System.Nullable<int> _Country;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_Country", "Country", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Country Country1
+        {
+            get
+            {
+                if (this._Country1 == null)
+                {
+                    this._Country1 = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Country>(this, "Country1", this.FilterCountry1);
+                }
+                return this._Country1.Entity;
+            }
+            set
+            {
+                Country previous = this.Country1;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Country1", value);
+                    if (previous != null)
+                    {
+                        this._Country1.Entity = null;
+                        previous.Prisons.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Country = value.Id;
+                    }
+                    else
+                    {
+                        this.Country = default(global::System.Nullable<int>);
+                    }
+                    this._Country1.Entity = value;
+                    if (value != null)
+                    {
+                        value.Prisons.Add(this);
+                    }
+                    this.RaisePropertyChanged("Country1");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Country> _Country1;
+        private bool FilterCountry1(global::LightSwitchApplication.Implementation.Country entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Country);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Prison.DetailsClass.IImplementation.Country1
+        {
+            get
+            {
+                return this.Country1;
+            }
+            set
+            {
+                this.Country1 = (global::LightSwitchApplication.Implementation.Country)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Location
+        {
+            get
+            {
+                return this._Location;
+            }
+            set
+            {
+                if (this._Location != value)
+                {
+                    this.RaiseDataMemberChanging("Location");
+                    this.ValidateProperty("Location", value);
+                    this._Location = value;
+                    this.RaiseDataMemberChanged("Location");
+                }
+            }
+        }
+        private int _Location;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_LocationType", "Location", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.LocationType LocationType
+        {
+            get
+            {
+                if (this._LocationType == null)
+                {
+                    this._LocationType = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.LocationType>(this, "LocationType", this.FilterLocationType);
+                }
+                return this._LocationType.Entity;
+            }
+            set
+            {
+                LocationType previous = this.LocationType;
+                if (previous != value)
+                {
+                    this.ValidateProperty("LocationType", value);
+                    if (previous != null)
+                    {
+                        this._LocationType.Entity = null;
+                        previous.Prisons.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Location = value.Id;
+                    }
+                    else
+                    {
+                        this.Location = default(int);
+                    }
+                    this._LocationType.Entity = value;
+                    if (value != null)
+                    {
+                        value.Prisons.Add(this);
+                    }
+                    this.RaisePropertyChanged("LocationType");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.LocationType> _LocationType;
+        private bool FilterLocationType(global::LightSwitchApplication.Implementation.LocationType entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Location);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Prison.DetailsClass.IImplementation.LocationType
+        {
+            get
+            {
+                return this.LocationType;
+            }
+            set
+            {
+                this.LocationType = (global::LightSwitchApplication.Implementation.LocationType)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int NlAddressOrder
+        {
+            get
+            {
+                return this._NlAddressOrder;
+            }
+            set
+            {
+                if (this._NlAddressOrder != value)
+                {
+                    this.RaiseDataMemberChanging("NlAddressOrder");
+                    this.ValidateProperty("NlAddressOrder", value);
+                    this._NlAddressOrder = value;
+                    this.RaiseDataMemberChanged("NlAddressOrder");
+                }
+            }
+        }
+        private int _NlAddressOrder;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_NLAddressOrderType", "NlAddressOrder", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.NLAddressOrderType NLAddressOrderType
+        {
+            get
+            {
+                if (this._NLAddressOrderType == null)
+                {
+                    this._NLAddressOrderType = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.NLAddressOrderType>(this, "NLAddressOrderType", this.FilterNLAddressOrderType);
+                }
+                return this._NLAddressOrderType.Entity;
+            }
+            set
+            {
+                NLAddressOrderType previous = this.NLAddressOrderType;
+                if (previous != value)
+                {
+                    this.ValidateProperty("NLAddressOrderType", value);
+                    if (previous != null)
+                    {
+                        this._NLAddressOrderType.Entity = null;
+                        previous.Prisons.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.NlAddressOrder = value.Id;
+                    }
+                    else
+                    {
+                        this.NlAddressOrder = default(int);
+                    }
+                    this._NLAddressOrderType.Entity = value;
+                    if (value != null)
+                    {
+                        value.Prisons.Add(this);
+                    }
+                    this.RaisePropertyChanged("NLAddressOrderType");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.NLAddressOrderType> _NLAddressOrderType;
+        private bool FilterNLAddressOrderType(global::LightSwitchApplication.Implementation.NLAddressOrderType entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.NlAddressOrder);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Prison.DetailsClass.IImplementation.NLAddressOrderType
+        {
+            get
+            {
+                return this.NLAddressOrderType;
+            }
+            set
+            {
+                this.NLAddressOrderType = (global::LightSwitchApplication.Implementation.NLAddressOrderType)value;
+            }
+        }
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Sex
+        {
+            get
+            {
+                return this._Sex;
+            }
+            set
+            {
+                if (this._Sex != value)
+                {
+                    this.RaiseDataMemberChanging("Sex");
+                    this.ValidateProperty("Sex", value);
+                    this._Sex = value;
+                    this.RaiseDataMemberChanged("Sex");
+                }
+            }
+        }
+        private int _Sex;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_PrisonSex", "Sex", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.PrisonSex PrisonSex
+        {
+            get
+            {
+                if (this._PrisonSex == null)
+                {
+                    this._PrisonSex = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.PrisonSex>(this, "PrisonSex", this.FilterPrisonSex);
+                }
+                return this._PrisonSex.Entity;
+            }
+            set
+            {
+                PrisonSex previous = this.PrisonSex;
+                if (previous != value)
+                {
+                    this.ValidateProperty("PrisonSex", value);
+                    if (previous != null)
+                    {
+                        this._PrisonSex.Entity = null;
+                        previous.Prisons.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.Sex = value.Id;
+                    }
+                    else
+                    {
+                        this.Sex = default(int);
+                    }
+                    this._PrisonSex.Entity = value;
+                    if (value != null)
+                    {
+                        value.Prisons.Add(this);
+                    }
+                    this.RaisePropertyChanged("PrisonSex");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.PrisonSex> _PrisonSex;
+        private bool FilterPrisonSex(global::LightSwitchApplication.Implementation.PrisonSex entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.Sex);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Prison.DetailsClass.IImplementation.PrisonSex
+        {
+            get
+            {
+                return this.PrisonSex;
+            }
+            set
+            {
+                this.PrisonSex = (global::LightSwitchApplication.Implementation.PrisonSex)value;
+            }
+        }
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_WorkshopPrisons_Prison", "Id", "PrisonId")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<WorkshopPrison> WorkshopPrisons
+        {
+            get
+            {
+                if (this._WorkshopPrisons == null)
+                {
+                    this._WorkshopPrisons = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.WorkshopPrison>(this, "WorkshopPrisons", this.FilterWorkshopPrisons, this.AttachWorkshopPrisons, this.DetachWorkshopPrisons);
+                }
+                return this._WorkshopPrisons;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.WorkshopPrison> _WorkshopPrisons;
+        private void AttachWorkshopPrisons(global::LightSwitchApplication.Implementation.WorkshopPrison entity)
+        {
+            entity.Prison = this;
+        }
+        private void DetachWorkshopPrisons(global::LightSwitchApplication.Implementation.WorkshopPrison entity)
+        {
+            entity.Prison = null;
+        }
+        private bool FilterWorkshopPrisons(global::LightSwitchApplication.Implementation.WorkshopPrison entity)
+        {
+            return global::System.Object.Equals(entity.PrisonId, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Prison.DetailsClass.IImplementation.WorkshopPrisons
+        {
+            get
+            {
+                return this.WorkshopPrisons;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region PrisonSex
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class PrisonSex :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.PrisonSex.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Prison_PrisonSex", "Id", "Sex")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Prison> Prisons
+        {
+            get
+            {
+                if (this._Prisons == null)
+                {
+                    this._Prisons = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison>(this, "Prisons", this.FilterPrisons, this.AttachPrisons, this.DetachPrisons);
+                }
+                return this._Prisons;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Prison> _Prisons;
+        private void AttachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.PrisonSex = this;
+        }
+        private void DetachPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            entity.PrisonSex = null;
+        }
+        private bool FilterPrisons(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Sex, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.PrisonSex.DetailsClass.IImplementation.Prisons
+        {
+            get
+            {
+                return this.Prisons;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region PurposeType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class PurposeType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.PurposeType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string ShortCode
+        {
+            get
+            {
+                return this._ShortCode;
+            }
+            set
+            {
+                if (this._ShortCode != value)
+                {
+                    this.RaiseDataMemberChanging("ShortCode");
+                    this.ValidateProperty("ShortCode", value);
+                    this._ShortCode = value;
+                    this.RaiseDataMemberChanged("ShortCode");
+                }
+            }
+        }
+        private string _ShortCode;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region ResponseType
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class ResponseType :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.ResponseType.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Response
+        {
+            get
+            {
+                return this._Response;
+            }
+            set
+            {
+                if (this._Response != value)
+                {
+                    this.RaiseDataMemberChanging("Response");
+                    this.ValidateProperty("Response", value);
+                    this._Response = value;
+                    this.RaiseDataMemberChanged("Response");
+                }
+            }
+        }
+        private string _Response;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<double> Cost
+        {
+            get
+            {
+                return this._Cost;
+            }
+            set
+            {
+                if (this._Cost != value)
+                {
+                    this.RaiseDataMemberChanging("Cost");
+                    this.ValidateProperty("Cost", value);
+                    this._Cost = value;
+                    this.RaiseDataMemberChanged("Cost");
+                }
+            }
+        }
+        private global::System.Nullable<double> _Cost;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Destination
+        {
+            get
+            {
+                return this._Destination;
+            }
+            set
+            {
+                if (this._Destination != value)
+                {
+                    this.RaiseDataMemberChanging("Destination");
+                    this.ValidateProperty("Destination", value);
+                    this._Destination = value;
+                    this.RaiseDataMemberChanged("Destination");
+                }
+            }
+        }
+        private string _Destination;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<double> Postage
+        {
+            get
+            {
+                return this._Postage;
+            }
+            set
+            {
+                if (this._Postage != value)
+                {
+                    this.RaiseDataMemberChanging("Postage");
+                    this.ValidateProperty("Postage", value);
+                    this._Postage = value;
+                    this.RaiseDataMemberChanged("Postage");
+                }
+            }
+        }
+        private global::System.Nullable<double> _Postage;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<double> Stationary
+        {
+            get
+            {
+                return this._Stationary;
+            }
+            set
+            {
+                if (this._Stationary != value)
+                {
+                    this.RaiseDataMemberChanging("Stationary");
+                    this.ValidateProperty("Stationary", value);
+                    this._Stationary = value;
+                    this.RaiseDataMemberChanged("Stationary");
+                }
+            }
+        }
+        private global::System.Nullable<double> _Stationary;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Corresp_Contacts", "Id", "Response")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Corresp> Corresps
+        {
+            get
+            {
+                if (this._Corresps == null)
+                {
+                    this._Corresps = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Corresp>(this, "Corresps", this.FilterCorresps, this.AttachCorresps, this.DetachCorresps);
+                }
+                return this._Corresps;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Corresp> _Corresps;
+        private void AttachCorresps(global::LightSwitchApplication.Implementation.Corresp entity)
+        {
+            entity.ResponseType = this;
+        }
+        private void DetachCorresps(global::LightSwitchApplication.Implementation.Corresp entity)
+        {
+            entity.ResponseType = null;
+        }
+        private bool FilterCorresps(global::LightSwitchApplication.Implementation.Corresp entity)
+        {
+            return global::System.Object.Equals(entity.Response, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.ResponseType.DetailsClass.IImplementation.Corresps
+        {
+            get
+            {
+                return this.Corresps;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region sysdiagram
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class sysdiagram :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.sysdiagram.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._diagram_id;
+        }
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string name
+        {
+            get
+            {
+                return this._name;
+            }
+            set
+            {
+                if (this._name != value)
+                {
+                    this.RaiseDataMemberChanging("name");
+                    this.ValidateProperty("name", value);
+                    this._name = value;
+                    this.RaiseDataMemberChanged("name");
+                }
+            }
+        }
+        private string _name;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int principal_id
+        {
+            get
+            {
+                return this._principal_id;
+            }
+            set
+            {
+                if (this._principal_id != value)
+                {
+                    this.RaiseDataMemberChanging("principal_id");
+                    this.ValidateProperty("principal_id", value);
+                    this._principal_id = value;
+                    this.RaiseDataMemberChanged("principal_id");
+                }
+            }
+        }
+        private int _principal_id;
+        
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int diagram_id
+        {
+            get
+            {
+                return this._diagram_id;
+            }
+            set
+            {
+                if (this._diagram_id != value)
+                {
+                    this.ValidateProperty("diagram_id", value);
+                    this._diagram_id = value;
+                    this.RaisePropertyChanged("diagram_id");
+                }
+            }
+        }
+        private int _diagram_id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> version
+        {
+            get
+            {
+                return this._version;
+            }
+            set
+            {
+                if (this._version != value)
+                {
+                    this.RaiseDataMemberChanging("version");
+                    this.ValidateProperty("version", value);
+                    this._version = value;
+                    this.RaiseDataMemberChanged("version");
+                }
+            }
+        }
+        private global::System.Nullable<int> _version;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public byte[] definition
+        {
+            get
+            {
+                return this._definition;
+            }
+            set
+            {
+                if (this._definition != value)
+                {
+                    this.RaiseDataMemberChanging("definition");
+                    this.ValidateProperty("definition", value);
+                    this._definition = value;
+                    this.RaiseDataMemberChanged("definition");
+                }
+            }
+        }
+        private byte[] _definition;
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Title
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Title :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Title.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Titles", "Id", "Title")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Title1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Title1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Title, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Title.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region Town
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class Town :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.Town.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                if (this._Name != value)
+                {
+                    this.RaiseDataMemberChanging("Name");
+                    this.ValidateProperty("Name", value);
+                    this._Name = value;
+                    this.RaiseDataMemberChanged("Name");
+                }
+            }
+        }
+        private string _Name;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_Contacts_Town", "Id", "Town")]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::System.ServiceModel.DomainServices.Client.EntityCollection<Contact> Contacts
+        {
+            get
+            {
+                if (this._Contacts == null)
+                {
+                    this._Contacts = new global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact>(this, "Contacts", this.FilterContacts, this.AttachContacts, this.DetachContacts);
+                }
+                return this._Contacts;
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityCollection<global::LightSwitchApplication.Implementation.Contact> _Contacts;
+        private void AttachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Town1 = this;
+        }
+        private void DetachContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            entity.Town1 = null;
+        }
+        private bool FilterContacts(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Town, this.Id);
+        }
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Town.DetailsClass.IImplementation.Contacts
+        {
+            get
+            {
+                return this.Contacts;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region WorkshopPrison
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class WorkshopPrison :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.WorkshopPrison.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Workshop
+        {
+            get
+            {
+                return this._Workshop;
+            }
+            set
+            {
+                if (this._Workshop != value)
+                {
+                    this.RaiseDataMemberChanging("Workshop");
+                    this.ValidateProperty("Workshop", value);
+                    this._Workshop = value;
+                    this.RaiseDataMemberChanged("Workshop");
+                }
+            }
+        }
+        private string _Workshop;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string c_Date
+        {
+            get
+            {
+                return this._c_Date;
+            }
+            set
+            {
+                if (this._c_Date != value)
+                {
+                    this.RaiseDataMemberChanging("c_Date");
+                    this.ValidateProperty("c_Date", value);
+                    this._c_Date = value;
+                    this.RaiseDataMemberChanged("c_Date");
+                }
+            }
+        }
+        private string _c_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Notes
+        {
+            get
+            {
+                return this._Notes;
+            }
+            set
+            {
+                if (this._Notes != value)
+                {
+                    this.RaiseDataMemberChanging("Notes");
+                    this.ValidateProperty("Notes", value);
+                    this._Notes = value;
+                    this.RaiseDataMemberChanged("Notes");
+                }
+            }
+        }
+        private string _Notes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> PrisonId
+        {
+            get
+            {
+                return this._PrisonId;
+            }
+            set
+            {
+                if (this._PrisonId != value)
+                {
+                    this.RaiseDataMemberChanging("PrisonId");
+                    this.ValidateProperty("PrisonId", value);
+                    this._PrisonId = value;
+                    this.RaiseDataMemberChanged("PrisonId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _PrisonId;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_WorkshopPrisons_Prison", "PrisonId", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Prison Prison
+        {
+            get
+            {
+                if (this._Prison == null)
+                {
+                    this._Prison = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison>(this, "Prison", this.FilterPrison);
+                }
+                return this._Prison.Entity;
+            }
+            set
+            {
+                Prison previous = this.Prison;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Prison", value);
+                    if (previous != null)
+                    {
+                        this._Prison.Entity = null;
+                        previous.WorkshopPrisons.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.PrisonId = value.Id;
+                    }
+                    else
+                    {
+                        this.PrisonId = default(global::System.Nullable<int>);
+                    }
+                    this._Prison.Entity = value;
+                    if (value != null)
+                    {
+                        value.WorkshopPrisons.Add(this);
+                    }
+                    this.RaisePropertyChanged("Prison");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Prison> _Prison;
+        private bool FilterPrison(global::LightSwitchApplication.Implementation.Prison entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.PrisonId);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.WorkshopPrison.DetailsClass.IImplementation.Prison
+        {
+            get
+            {
+                return this.Prison;
+            }
+            set
+            {
+                this.Prison = (global::LightSwitchApplication.Implementation.Prison)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
+    #region WorkshopTeacher
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/PPTData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed class WorkshopTeacher :
+        global::System.ServiceModel.DomainServices.Client.Entity,
+        global::LightSwitchApplication.WorkshopTeacher.DetailsClass.IImplementation
+    {
+        public override object GetIdentity()
+        {
+            if (this.__host != null && this.__host.IsNewlyAdded)
+            {
+                return null;
+            }
+    
+            return this._Id;
+        }
+        [global::System.ComponentModel.DataAnnotations.Key()]
+        [global::System.ComponentModel.DataAnnotations.Editable(false, AllowInitialValue = true)]
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                if (this._Id != value)
+                {
+                    this.ValidateProperty("Id", value);
+                    this._Id = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        private int _Id;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Workshop
+        {
+            get
+            {
+                return this._Workshop;
+            }
+            set
+            {
+                if (this._Workshop != value)
+                {
+                    this.RaiseDataMemberChanging("Workshop");
+                    this.ValidateProperty("Workshop", value);
+                    this._Workshop = value;
+                    this.RaiseDataMemberChanged("Workshop");
+                }
+            }
+        }
+        private string _Workshop;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string c_Date
+        {
+            get
+            {
+                return this._c_Date;
+            }
+            set
+            {
+                if (this._c_Date != value)
+                {
+                    this.RaiseDataMemberChanging("c_Date");
+                    this.ValidateProperty("c_Date", value);
+                    this._c_Date = value;
+                    this.RaiseDataMemberChanged("c_Date");
+                }
+            }
+        }
+        private string _c_Date;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string Notes
+        {
+            get
+            {
+                return this._Notes;
+            }
+            set
+            {
+                if (this._Notes != value)
+                {
+                    this.RaiseDataMemberChanging("Notes");
+                    this.ValidateProperty("Notes", value);
+                    this._Notes = value;
+                    this.RaiseDataMemberChanged("Notes");
+                }
+            }
+        }
+        private string _Notes;
+        
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public global::System.Nullable<int> TeacherId
+        {
+            get
+            {
+                return this._TeacherId;
+            }
+            set
+            {
+                if (this._TeacherId != value)
+                {
+                    this.RaiseDataMemberChanging("TeacherId");
+                    this.ValidateProperty("TeacherId", value);
+                    this._TeacherId = value;
+                    this.RaiseDataMemberChanged("TeacherId");
+                }
+            }
+        }
+        private global::System.Nullable<int> _TeacherId;
+        
+        [global::System.ComponentModel.DataAnnotations.Association("FK_WorkshopTeachers_Contacts", "TeacherId", "Id", IsForeignKey = true)]
+        [global::System.Xml.Serialization.XmlIgnore()]
+        public global::LightSwitchApplication.Implementation.Contact Contact
+        {
+            get
+            {
+                if (this._Contact == null)
+                {
+                    this._Contact = new global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact>(this, "Contact", this.FilterContact);
+                }
+                return this._Contact.Entity;
+            }
+            set
+            {
+                Contact previous = this.Contact;
+                if (previous != value)
+                {
+                    this.ValidateProperty("Contact", value);
+                    if (previous != null)
+                    {
+                        this._Contact.Entity = null;
+                        previous.WorkshopTeachers.Remove(this);
+                    }
+                    if (value != null)
+                    {
+                        this.TeacherId = value.Id;
+                    }
+                    else
+                    {
+                        this.TeacherId = default(global::System.Nullable<int>);
+                    }
+                    this._Contact.Entity = value;
+                    if (value != null)
+                    {
+                        value.WorkshopTeachers.Add(this);
+                    }
+                    this.RaisePropertyChanged("Contact");
+                }
+            }
+        }
+        private global::System.ServiceModel.DomainServices.Client.EntityRef<global::LightSwitchApplication.Implementation.Contact> _Contact;
+        private bool FilterContact(global::LightSwitchApplication.Implementation.Contact entity)
+        {
+            return global::System.Object.Equals(entity.Id, this.TeacherId);
+        }
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.WorkshopTeacher.DetailsClass.IImplementation.Contact
+        {
+            get
+            {
+                return this.Contact;
+            }
+            set
+            {
+                this.Contact = (global::LightSwitchApplication.Implementation.Contact)value;
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(global::System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(e.PropertyName);
+            }
+        }
+        #endregion
+    }
+    #endregion
+    
     #region ApplicationData
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1084,6 +7516,782 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
+    #region PPTData
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public class PPTData
+        : global::Microsoft.LightSwitch.ClientGenerated.Implementation.DomainContext
+    {
+        public PPTData(global::Microsoft.LightSwitch.IDataService dataService)
+            : base(dataService, global::Microsoft.LightSwitch.ClientGenerated.Implementation.DomainContext.CreateWcfDomainClient<IPPTDataContract>(new global::System.Uri("LightSwitchApplication-Implementation-PPTDataDomainService.svc", global::System.UriKind.Relative)))
+        {
+        }
+    
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Accreditation> AccreditationEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Accreditation>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.c_Class> c_ClassEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.c_Class>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Contact> ContactEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Contact>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Corresp> CorrespEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Corresp>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Country> CountryEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Country>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Destination> DestinationEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Destination>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Gift> GiftEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Gift>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.GiftType> GiftTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.GiftType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.History> HistoryEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.History>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.InstitutionType> InstitutionTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.InstitutionType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.LetterWriter> LetterWriterEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.LetterWriter>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.LocationType> LocationTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.LocationType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.MailCode> MailCodeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.MailCode>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.NLAddressOrderType> NLAddressOrderTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.NLAddressOrderType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.PersonType> PersonTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.PersonType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Prison> PrisonEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Prison>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.PrisonSex> PrisonSexEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.PrisonSex>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.PurposeType> PurposeTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.PurposeType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.ResponseType> ResponseTypeEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.ResponseType>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.sysdiagram> sysdiagramEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.sysdiagram>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Title> TitleEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Title>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.Town> TownEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.Town>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.WorkshopPrison> WorkshopPrisonEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.WorkshopPrison>();
+            }
+        }
+        public global::System.ServiceModel.DomainServices.Client.EntitySet<global::LightSwitchApplication.Implementation.WorkshopTeacher> WorkshopTeacherEntityList
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<global::LightSwitchApplication.Implementation.WorkshopTeacher>();
+            }
+        }
+        protected override global::System.ServiceModel.DomainServices.Client.EntityContainer CreateEntityContainer()
+        {
+            return new PPTDataEntityContainer();
+        }
+    
+        internal sealed class PPTDataEntityContainer : global::System.ServiceModel.DomainServices.Client.EntityContainer
+        {
+            public PPTDataEntityContainer()
+            {
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Accreditation>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.c_Class>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Contact>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Corresp>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Country>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Destination>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Gift>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.GiftType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.History>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.InstitutionType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.LetterWriter>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.LocationType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.MailCode>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.NLAddressOrderType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.PersonType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Prison>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.PrisonSex>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.PurposeType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.ResponseType>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.sysdiagram>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Title>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.Town>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.WorkshopPrison>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+                this.CreateEntitySet<global::LightSwitchApplication.Implementation.WorkshopTeacher>(global::System.ServiceModel.DomainServices.Client.EntitySetOperations.All);
+            }
+        }
+    
+        #region Service Contract Interface
+    
+        [global::System.ServiceModel.ServiceContract]
+        public interface IPPTDataContract
+        {
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginAccreditations_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginAccreditations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Accreditations_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Accreditations_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Accreditations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginAccreditations_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Accreditation> EndAccreditations_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginClasses_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginClasses_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Classes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Classes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Classes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginClasses_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.c_Class> EndClasses_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginContacts_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginContacts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Contacts_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Contacts_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Contacts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginContacts_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Contact> EndContacts_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCorresps_Single(string frameworkOperators, global::System.Nullable<int> Corref, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCorresps_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Corref, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Corresps_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Corresps_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Corresps_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCorresps_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Corresp> EndCorresps_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCountries_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCountries_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Countries_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Countries_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Countries_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginCountries_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Country> EndCountries_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginDestinations_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginDestinations_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Destinations_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Destinations_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Destinations_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginDestinations_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Destination> EndDestinations_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGifts_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGifts_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Gifts_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Gifts_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Gifts_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGifts_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Gift> EndGifts_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGiftTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGiftTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/GiftTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/GiftTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginGiftTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.GiftType> EndGiftTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginHistories_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginHistories_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Histories_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Histories_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Histories_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginHistories_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.History> EndHistories_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginInstitutionTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginInstitutionTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/InstitutionTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginInstitutionTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.InstitutionType> EndInstitutionTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLetterWriters_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLetterWriters_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/LetterWriters_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LetterWriters_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLetterWriters_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LetterWriter> EndLetterWriters_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLocationTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLocationTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/LocationTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/LocationTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginLocationTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.LocationType> EndLocationTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginMailCodes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginMailCodes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/MailCodes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/MailCodes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/MailCodes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginMailCodes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.MailCode> EndMailCodes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginNLAddressOrderTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginNLAddressOrderTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/NLAddressOrderTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginNLAddressOrderTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.NLAddressOrderType> EndNLAddressOrderTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPersonTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPersonTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PersonTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PersonTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPersonTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PersonType> EndPersonTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Prisons_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Prisons_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Prisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisons_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Prison> EndPrisons_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisonSexes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisonSexes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PrisonSexes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PrisonSexes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPrisonSexes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PrisonSex> EndPrisonSexes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPurposeTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPurposeTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/PurposeTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/PurposeTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginPurposeTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.PurposeType> EndPurposeTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginResponseTypes_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginResponseTypes_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/ResponseTypes_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/ResponseTypes_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginResponseTypes_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.ResponseType> EndResponseTypes_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult Beginsysdiagrams_Single(string frameworkOperators, global::System.Nullable<int> diagram_id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult Beginsysdiagrams_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> diagram_id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/sysdiagrams_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/sysdiagrams_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult Beginsysdiagrams_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.sysdiagram> Endsysdiagrams_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTitles_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTitles_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Titles_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Titles_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Titles_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTitles_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Title> EndTitles_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTowns_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTowns_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/Towns_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/Towns_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/Towns_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginTowns_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.Town> EndTowns_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopPrisons_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopPrisons_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopPrisons_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopPrisons_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopPrison> EndWorkshopPrisons_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_Single", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopTeachers_Single(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_Single(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefault", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefaultResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_SingleOrDefaultDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopTeachers_SingleOrDefault(string frameworkOperators, global::System.Nullable<int> Id, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_SingleOrDefault(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_All", ReplyAction = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_AllResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/WorkshopTeachers_AllDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginWorkshopTeachers_All(string frameworkOperators, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.ServiceModel.DomainServices.Client.QueryResult<global::LightSwitchApplication.Implementation.WorkshopTeacher> EndWorkshopTeachers_All(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/SubmitChanges", ReplyAction = "http://tempuri.org/PPTDataDomainService/SubmitChangesResponse"),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/SubmitChangesDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult BeginSubmitChanges(global::System.Collections.Generic.IEnumerable<global::System.ServiceModel.DomainServices.Client.ChangeSetEntry> changeSet, global::System.AsyncCallback callback, global::System.Object asyncState);
+            global::System.Collections.Generic.IEnumerable<global::System.ServiceModel.DomainServices.Client.ChangeSetEntry> EndSubmitChanges(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformation", ReplyAction = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformationResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/__GetEntitySetCanInformationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult Begin__GetEntitySetCanInformation(string entitySetName, global::System.AsyncCallback callback, global::System.Object asyncState);
+            int End__GetEntitySetCanInformation(global::System.IAsyncResult result);
+            
+            [global::System.ServiceModel.OperationContract(AsyncPattern = true, Action = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperation", ReplyAction = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperationResponse"),
+             global::System.ServiceModel.Web.WebGet(),
+             global::System.ServiceModel.FaultContract(typeof(global::System.ServiceModel.DomainServices.Client.DomainServiceFault), Action = "http://tempuri.org/PPTDataDomainService/__CanExecuteOperationDomainServiceFault", Name = "DomainServiceFault", Namespace = "DomainServices")]
+            global::System.IAsyncResult Begin__CanExecuteOperation(string operationName, global::System.AsyncCallback callback, global::System.Object asyncState);
+            bool End__CanExecuteOperation(global::System.IAsyncResult result);
+            
+        }
+    
+        #endregion
+    
+        protected override global::Microsoft.LightSwitch.Internal.IEntityImplementation CreateEntityImplementation<T>()
+        {
+            if (typeof(T) == typeof(global::LightSwitchApplication.Accreditation))
+            {
+                return new global::LightSwitchApplication.Implementation.Accreditation();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.c_Class))
+            {
+                return new global::LightSwitchApplication.Implementation.c_Class();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Contact))
+            {
+                return new global::LightSwitchApplication.Implementation.Contact();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Corresp))
+            {
+                return new global::LightSwitchApplication.Implementation.Corresp();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Country))
+            {
+                return new global::LightSwitchApplication.Implementation.Country();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Destination))
+            {
+                return new global::LightSwitchApplication.Implementation.Destination();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Gift))
+            {
+                return new global::LightSwitchApplication.Implementation.Gift();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.GiftType))
+            {
+                return new global::LightSwitchApplication.Implementation.GiftType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.History))
+            {
+                return new global::LightSwitchApplication.Implementation.History();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.InstitutionType))
+            {
+                return new global::LightSwitchApplication.Implementation.InstitutionType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.LetterWriter))
+            {
+                return new global::LightSwitchApplication.Implementation.LetterWriter();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.LocationType))
+            {
+                return new global::LightSwitchApplication.Implementation.LocationType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.MailCode))
+            {
+                return new global::LightSwitchApplication.Implementation.MailCode();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.NLAddressOrderType))
+            {
+                return new global::LightSwitchApplication.Implementation.NLAddressOrderType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.PersonType))
+            {
+                return new global::LightSwitchApplication.Implementation.PersonType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Prison))
+            {
+                return new global::LightSwitchApplication.Implementation.Prison();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.PrisonSex))
+            {
+                return new global::LightSwitchApplication.Implementation.PrisonSex();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.PurposeType))
+            {
+                return new global::LightSwitchApplication.Implementation.PurposeType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.ResponseType))
+            {
+                return new global::LightSwitchApplication.Implementation.ResponseType();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.sysdiagram))
+            {
+                return new global::LightSwitchApplication.Implementation.sysdiagram();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Title))
+            {
+                return new global::LightSwitchApplication.Implementation.Title();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Town))
+            {
+                return new global::LightSwitchApplication.Implementation.Town();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.WorkshopPrison))
+            {
+                return new global::LightSwitchApplication.Implementation.WorkshopPrison();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.WorkshopTeacher))
+            {
+                return new global::LightSwitchApplication.Implementation.WorkshopTeacher();
+            }
+            return null;
+        }
+    }
+    #endregion
+    
     #region DataServiceImplementationFactory
     [global::System.ComponentModel.Composition.PartCreationPolicy(global::System.ComponentModel.Composition.CreationPolicy.Shared)]
     [global::System.ComponentModel.Composition.Export(typeof(global::Microsoft.LightSwitch.Internal.IDataServiceFactory))]
@@ -1099,6 +8307,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.ApplicationData();
             }
+            if (dataServiceType == typeof(global::LightSwitchApplication.PPTData))
+            {
+                return new global::LightSwitchApplication.PPTData();
+            }
             return base.CreateDataService(dataServiceType);
         }
     
@@ -1107,6 +8319,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(TDataService) == typeof(global::LightSwitchApplication.ApplicationData))
             {
                 return new global::LightSwitchApplication.Implementation.ApplicationData(dataService);
+            }
+            if (typeof(TDataService) == typeof(global::LightSwitchApplication.PPTData))
+            {
+                return new global::LightSwitchApplication.Implementation.PPTData(dataService);
             }
             return base.CreateDataServiceImplementation(dataService);
         }
@@ -1137,6 +8353,102 @@ namespace LightSwitchApplication.Implementation
             if (typeof(global::LightSwitchApplication.Prisoner) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.Prisoner);
+            }
+            if (typeof(global::LightSwitchApplication.Accreditation) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Accreditation);
+            }
+            if (typeof(global::LightSwitchApplication.c_Class) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.c_Class);
+            }
+            if (typeof(global::LightSwitchApplication.Contact) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Contact);
+            }
+            if (typeof(global::LightSwitchApplication.Corresp) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Corresp);
+            }
+            if (typeof(global::LightSwitchApplication.Country) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Country);
+            }
+            if (typeof(global::LightSwitchApplication.Destination) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Destination);
+            }
+            if (typeof(global::LightSwitchApplication.Gift) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Gift);
+            }
+            if (typeof(global::LightSwitchApplication.GiftType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.GiftType);
+            }
+            if (typeof(global::LightSwitchApplication.History) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.History);
+            }
+            if (typeof(global::LightSwitchApplication.InstitutionType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.InstitutionType);
+            }
+            if (typeof(global::LightSwitchApplication.LetterWriter) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.LetterWriter);
+            }
+            if (typeof(global::LightSwitchApplication.LocationType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.LocationType);
+            }
+            if (typeof(global::LightSwitchApplication.MailCode) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.MailCode);
+            }
+            if (typeof(global::LightSwitchApplication.NLAddressOrderType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.NLAddressOrderType);
+            }
+            if (typeof(global::LightSwitchApplication.PersonType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.PersonType);
+            }
+            if (typeof(global::LightSwitchApplication.Prison) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Prison);
+            }
+            if (typeof(global::LightSwitchApplication.PrisonSex) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.PrisonSex);
+            }
+            if (typeof(global::LightSwitchApplication.PurposeType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.PurposeType);
+            }
+            if (typeof(global::LightSwitchApplication.ResponseType) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.ResponseType);
+            }
+            if (typeof(global::LightSwitchApplication.sysdiagram) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.sysdiagram);
+            }
+            if (typeof(global::LightSwitchApplication.Title) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Title);
+            }
+            if (typeof(global::LightSwitchApplication.Town) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Town);
+            }
+            if (typeof(global::LightSwitchApplication.WorkshopPrison) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.WorkshopPrison);
+            }
+            if (typeof(global::LightSwitchApplication.WorkshopTeacher) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.WorkshopTeacher);
             }
             return null;
         }
