@@ -19,7 +19,7 @@ namespace PPT.Web.Code
         {
         }
 
-        public IList<Contact> RetrievePageOfContacts(int pageNumber, int pageSize)
+        public PageOf<Contact> RetrievePageOfContacts(int pageNumber, int pageSize)
         {
             if(pageNumber <= 0)
             {
@@ -31,8 +31,10 @@ namespace PPT.Web.Code
                 throw new ArgumentException("I need a page size that's not negative");
             }
 
+            var totalResults = session.Contacts.Count();
+
             var myContacts = session.Contacts.OrderBy(x => x.Id).Skip((pageNumber - 1) * pageSize).Take(pageSize);
-            return myContacts.ToList();
+            return new PageOf<Contact>(myContacts.ToList()) {TotalResultsCount = totalResults, PageNumber = pageNumber, PageSize = pageSize};
         }
     }
 }
