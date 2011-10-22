@@ -2152,20 +2152,22 @@
       <EntityProperty Name="Accreditation1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="c_Date"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2197,7 +2199,7 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2205,20 +2207,22 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ClassMakeup"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ClassGender"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="DoNotCount"
@@ -2230,13 +2234,15 @@
       <EntityProperty Name="DateClassStarted"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="DateClassStopped"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="DrugClass"
@@ -2276,56 +2282,65 @@
       <EntityProperty Name="Surname"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Forename"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Position"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="MailName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Salutation"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Type"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="EmailAddress"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Source"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="DOB"
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2333,7 +2348,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2346,74 +2362,86 @@
       <EntityProperty Name="ArchivePrisonName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="PNumber"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Cell"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Prevpris"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address2"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address3"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="County"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Postcode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Tel"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Fax"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="C_Date"
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2421,7 +2449,8 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2429,7 +2458,8 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2437,20 +2467,22 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Type1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ArchivePrevPris1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="XmasList"
@@ -2468,13 +2500,15 @@
       <EntityProperty Name="Wing"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Status"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="AnnualReport"
@@ -2492,7 +2526,8 @@
       <EntityProperty Name="AnnualReviewOld"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="NoFundRaisingLetter"
@@ -2535,7 +2570,8 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2549,7 +2585,8 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2562,7 +2599,8 @@
       <EntityProperty Name="BWY_Number"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="PreviousPrison"
@@ -2657,34 +2695,38 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Type"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Filing"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Destination"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Correspondant"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Corresp_Contacts"
@@ -2718,7 +2760,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Contacts_Country"
@@ -2752,7 +2795,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -2779,7 +2823,8 @@
                       PropertyType=":Date?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="0"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2799,7 +2844,7 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2807,7 +2852,7 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2838,13 +2883,15 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ShortCode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="15" />
+          <MaxLength Value="15"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -2877,7 +2924,8 @@
                       PropertyType=":DateTime?">
         <EntityProperty.Attributes>
           <DateTimeConstraint Precision="3"
-                              PreserveSeconds="True" />
+                              PreserveSeconds="True"
+                              Kind="Unspecified" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2885,7 +2933,7 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -2919,7 +2967,8 @@
       <EntityProperty Name="ShortCode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="10" />
+          <MaxLength Value="10"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -2945,13 +2994,15 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ShortCode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="15" />
+          <MaxLength Value="15"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -2977,7 +3028,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Prison_LocationType"
@@ -3007,13 +3059,15 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Code1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Contacts_MailCode"
@@ -3043,7 +3097,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Prison_NLAddressOrderType"
@@ -3073,13 +3128,15 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ShortCode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="10" />
+          <MaxLength Value="10"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Contacts_PersonType"
@@ -3109,49 +3166,57 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="MailName"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address1"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address2"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Address3"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Town"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="County"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Postcode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="MalePrisonersHeld"
@@ -3187,20 +3252,22 @@
       <EntityProperty Name="Cat"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Ptype"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="VolunteersNotes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -3208,26 +3275,29 @@
                       PropertyType=":String?">
         <EntityProperty.Attributes>
           <NotSortable />
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <AnsiConstraint />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Governor"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Telephone"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Tag"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="InclInNLAddressList"
@@ -3239,31 +3309,36 @@
       <EntityProperty Name="DesignationNewsletter"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ContactForNewsletter"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ContactPosition"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ContactPhone"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ContactFax"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Classes_Prison"
@@ -3317,7 +3392,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Prison_PrisonSex"
@@ -3347,13 +3423,15 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="ShortCode"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="10" />
+          <MaxLength Value="10"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
     </EntityType.Properties>
@@ -3379,7 +3457,8 @@
       <EntityProperty Name="Response"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Cost"
@@ -3391,7 +3470,8 @@
       <EntityProperty Name="Destination"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Postage"
@@ -3426,7 +3506,8 @@
                       PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />
-          <MaxLength Value="128" />
+          <MaxLength Value="128"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="principal_id"
@@ -3453,7 +3534,7 @@
       <EntityProperty Name="definition"
                       PropertyType=":Binary?">
         <EntityProperty.Attributes>
-          <MaxLength />
+          <MaxLength  IsFixedLength="False" />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
@@ -3480,7 +3561,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Contacts_Titles"
@@ -3510,7 +3592,8 @@
       <EntityProperty Name="Name"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_Contacts_Town"
@@ -3540,19 +3623,22 @@
       <EntityProperty Name="Workshop"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="c_Date"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_WorkshopPrisons_Prison"
@@ -3582,19 +3668,22 @@
       <EntityProperty Name="Workshop"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="c_Date"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty Name="Notes"
                       PropertyType=":String?">
         <EntityProperty.Attributes>
-          <MaxLength Value="255" />
+          <MaxLength Value="255"
+                     IsFixedLength="False" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty Association="FK_WorkshopTeachers_Contacts"
@@ -6007,18 +6096,513 @@
   </EntityContainer>
 
   
+  
+
+  <Screen Name="Classes">
+    <Screen.Attributes>
+      <SaveChangesTo DataService="PPT_2DataDataService1" />
+    </Screen.Attributes>
+    <Screen.Methods>
+      <ScreenMethod Name="Save">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Save.png" />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+      <ScreenMethod Name="Refresh">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Refresh.png" />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+      <ScreenMethod Name="Close">
+        <ScreenMethod.Attributes>
+          <DisplayMethodByDefault Display="True" />
+          <Generated />
+        </ScreenMethod.Attributes>
+      </ScreenMethod>
+    </Screen.Methods>
+    <Screen.Properties>
+      <ScreenCollectionProperty Name="Classes1"
+                                PageSize="45"
+                                PropertyType="CollectionView$c_Class">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition Name="Classes1Query"
+                                 ReturnType="c_Class*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression Member="PPT_2Data/Members[Classes_All]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression Target="Classes/Properties[Classes1]/Query" />
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+    </Screen.Properties>
+    <Screen.RootContentItem>
+      <ContentItem Kind="Screen"
+                   Name="RootContentItem">
+        <ContentItem.CommandItems>
+          <ContentItem Kind="Command"
+                       Name="Save">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression Target="Classes/Methods[Save]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
+          <ContentItem Kind="Command"
+                       Name="Refresh">
+            <ContentItem.DataSource>
+              <ScreenExpressionTree>
+                <ChainExpression>
+                  <CallExpression Target="Classes/Methods[Refresh]" />
+                </ChainExpression>
+              </ScreenExpressionTree>
+            </ContentItem.DataSource>
+          </ContentItem>
+        </ContentItem.CommandItems>
+        <ContentItem Kind="Group"
+                     Name="ScreenLayout"
+                     View="Microsoft.LightSwitch:ColumnsLayout">
+          <ContentItem Kind="Group"
+                       Name="ListColumn">
+            <ContentItem.PropertySources>
+              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Double"
+                                        Value="2" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
+            <ContentItem DataType="CollectionView$c_Class"
+                         Kind="Collection"
+                         Name="c_ClassList"
+                         View="Microsoft.LightSwitch:List">
+              <ContentItem.CommandItems>
+                <ContentItem Kind="Command"
+                             Name="Classes1_AddAndEditNew">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="AddAndEditNew" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem Kind="Command"
+                             Name="Classes1_EditSelected">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="EditSelected" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem Kind="Command"
+                             Name="Classes1_DeleteSelected">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="Classes/Properties[Classes1]" />
+                        <CallExpression Target="DeleteSelected" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem.CommandItems>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression Member="Classes/Properties[Classes1]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource Property=":RootControl/Properties[AttachedLabelPosition]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Collapsed" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Stretch" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+              <ContentItem DataType="c_Class"
+                           Kind="Details"
+                           Name="RowTemplate">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression />
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType=":Int32"
+                             Kind="Value"
+                             Name="Id">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Id]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassDetails">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassDetails]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="Notes">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Notes]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassMakeup">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="ClassGender">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[ClassGender]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":Boolean?"
+                             Kind="Value"
+                             Name="DoNotCount">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DoNotCount]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="DateClassStarted">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":String?"
+                             Kind="Value"
+                             Name="DateClassStopped">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType=":Boolean?"
+                             Kind="Value"
+                             Name="DrugClass">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[DrugClass]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem DataType="Contact"
+                             Kind="Details"
+                             Name="Contact">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Contact]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem DataType="Contact"
+                               Kind="Details"
+                               Name="RowTemplate1">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                </ContentItem>
+                <ContentItem DataType="Prison"
+                             Kind="Details"
+                             Name="Prison">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression Member="c_Class/Properties[Prison]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem DataType="Prison"
+                               Kind="Details"
+                               Name="RowTemplate2">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                </ContentItem>
+              </ContentItem>
+            </ContentItem>
+          </ContentItem>
+          <ContentItem Kind="Group"
+                       Name="DetailsColumn">
+            <ContentItem.PropertySources>
+              <ControlPropertySource Property=":ScrollableControl/Properties[IsVerticalScrollBarEnabled]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Boolean"
+                                        Value="True" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression ResultType=":Double"
+                                        Value="3" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
+            <ContentItem DataType="c_Class"
+                         Kind="Details"
+                         Name="c_ClassDetails">
+              <ContentItem.Attributes>
+                <DisplayName Value="c Class Details" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression Member="Classes/Properties[Classes1]" />
+                    <MemberExpression Member="SelectedItem" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression ResultType=":String"
+                                          Value="Top" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+              <ContentItem DataType=":Int32"
+                           Kind="Value"
+                           Name="Id1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Id]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassDetails1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassDetails]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="Notes1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Notes]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassMakeup1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="ClassGender1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[ClassGender]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":Boolean?"
+                           Kind="Value"
+                           Name="DoNotCount1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DoNotCount]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="DateClassStarted1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":String?"
+                           Kind="Value"
+                           Name="DateClassStopped1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType=":Boolean?"
+                           Kind="Value"
+                           Name="DrugClass1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[DrugClass]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType="Contact"
+                           Kind="Details"
+                           Name="Contact1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Contact]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType="Contact"
+                             Kind="Details"
+                             Name="RowTemplate3">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression />
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem>
+              <ContentItem DataType="Prison"
+                           Kind="Details"
+                           Name="Prison1">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="c_Class/Properties[Prison]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem DataType="Prison"
+                             Kind="Details"
+                             Name="RowTemplate4">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression />
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem>
+            </ContentItem>
+          </ContentItem>
+        </ContentItem>
+      </ContentItem>
+    </Screen.RootContentItem>
+  </Screen>
   <DataService DataProvider="EntityFrameworkDataProvider"
                EntityContainer="PPT_2Data"
-               Name="PPT_2DataDataService">
+               Name="PPT_2DataDataService1">
     <DataService.ConnectionProperties>
       <ConnectionProperty Name="DataProviderName"
                           Value="91510608-8809-4020-8897-fba057e22d54" />
       <ConnectionProperty Name="DataSourceName"
-                          Value="067ea0d9-ba62-43f7-9106-34930c60c528" />
+                          Value="bf8bef57-3ef1-4ec4-beeb-6581498003a6" />
       <ConnectionProperty Name="ProviderInvariantName"
                           Value="System.Data.SqlClient" />
       <ConnectionProperty Name="ConnectionStringGuid"
-                          Value="85911be6-eee4-41a8-ab6c-5e36cffac2a6" />
+                          Value="2e14b321-510b-4c20-865b-af2bee345b5d" />
       <ConnectionProperty Name="ProviderManifestToken"
                           Value="2008" />
     </DataService.ConnectionProperties>
@@ -7242,499 +7826,6 @@
     </AssociationSetMapping>
   </DataService>
 
-  <Screen Name="Classes">
-    <Screen.Attributes>
-      <SaveChangesTo DataService="PPT_2DataDataService" />
-    </Screen.Attributes>
-    <Screen.Methods>
-      <ScreenMethod Name="Save">
-        <ScreenMethod.Attributes>
-          <DisplayMethodByDefault Display="True" />
-          <Generated />
-          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Save.png" />
-        </ScreenMethod.Attributes>
-      </ScreenMethod>
-      <ScreenMethod Name="Refresh">
-        <ScreenMethod.Attributes>
-          <DisplayMethodByDefault Display="True" />
-          <Generated />
-          <ImageResource ResourceId="Microsoft.LightSwitch.BuiltInImageResources::BuiltInResources/Refresh.png" />
-        </ScreenMethod.Attributes>
-      </ScreenMethod>
-      <ScreenMethod Name="Close">
-        <ScreenMethod.Attributes>
-          <DisplayMethodByDefault Display="True" />
-          <Generated />
-        </ScreenMethod.Attributes>
-      </ScreenMethod>
-    </Screen.Methods>
-    <Screen.Properties>
-      <ScreenCollectionProperty Name="Classes1"
-                                PageSize="45"
-                                PropertyType="CollectionView$c_Class">
-        <ScreenCollectionProperty.Query>
-          <ScreenQueryDefinition Name="Classes1Query"
-                                 ReturnType="c_Class*">
-            <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
-            </ScreenQueryDefinition.FilterExpression>
-            <ScreenQueryDefinition.Source>
-              <QuerySourceExpressionTree>
-                <MemberExpression Member="PPT_2Data/Members[Classes_All]" />
-              </QuerySourceExpressionTree>
-            </ScreenQueryDefinition.Source>
-          </ScreenQueryDefinition>
-        </ScreenCollectionProperty.Query>
-        <ScreenExpressionTree>
-          <ChainExpression>
-            <CallExpression Target="Classes/Properties[Classes1]/Query" />
-          </ChainExpression>
-        </ScreenExpressionTree>
-      </ScreenCollectionProperty>
-    </Screen.Properties>
-    <Screen.RootContentItem>
-      <ContentItem Kind="Screen"
-                   Name="RootContentItem">
-        <ContentItem.CommandItems>
-          <ContentItem Kind="Command"
-                       Name="Save">
-            <ContentItem.DataSource>
-              <ScreenExpressionTree>
-                <ChainExpression>
-                  <CallExpression Target="Classes/Methods[Save]" />
-                </ChainExpression>
-              </ScreenExpressionTree>
-            </ContentItem.DataSource>
-          </ContentItem>
-          <ContentItem Kind="Command"
-                       Name="Refresh">
-            <ContentItem.DataSource>
-              <ScreenExpressionTree>
-                <ChainExpression>
-                  <CallExpression Target="Classes/Methods[Refresh]" />
-                </ChainExpression>
-              </ScreenExpressionTree>
-            </ContentItem.DataSource>
-          </ContentItem>
-        </ContentItem.CommandItems>
-        <ContentItem Kind="Group"
-                     Name="ScreenLayout"
-                     View="Microsoft.LightSwitch:ColumnsLayout">
-          <ContentItem Kind="Group"
-                       Name="ListColumn">
-            <ContentItem.PropertySources>
-              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <ConstantExpression ResultType=":Double"
-                                        Value="2" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ControlPropertySource>
-            </ContentItem.PropertySources>
-            <ContentItem DataType="CollectionView$c_Class"
-                         Kind="Collection"
-                         Name="c_ClassList"
-                         View="Microsoft.LightSwitch:List">
-              <ContentItem.CommandItems>
-                <ContentItem Kind="Command"
-                             Name="Classes1_AddAndEditNew">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="Classes/Properties[Classes1]" />
-                        <CallExpression Target="AddAndEditNew" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem Kind="Command"
-                             Name="Classes1_EditSelected">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="Classes/Properties[Classes1]" />
-                        <CallExpression Target="EditSelected" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem Kind="Command"
-                             Name="Classes1_DeleteSelected">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="Classes/Properties[Classes1]" />
-                        <CallExpression Target="DeleteSelected" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-              </ContentItem.CommandItems>
-              <ContentItem.DataSource>
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <MemberExpression Member="Classes/Properties[Classes1]" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ContentItem.DataSource>
-              <ContentItem.PropertySources>
-                <ControlPropertySource Property=":RootControl/Properties[AttachedLabelPosition]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <ConstantExpression ResultType=":String"
-                                          Value="Collapsed" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <ConstantExpression ResultType=":String"
-                                          Value="Stretch" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-              <ContentItem DataType="c_Class"
-                           Kind="Details"
-                           Name="RowTemplate">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression />
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem DataType=":Int32"
-                             Kind="Value"
-                             Name="Id">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[Id]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="ClassDetails">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[ClassDetails]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="Notes">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[Notes]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="ClassMakeup">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="ClassGender">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[ClassGender]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":Boolean?"
-                             Kind="Value"
-                             Name="DoNotCount">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[DoNotCount]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="DateClassStarted">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":String?"
-                             Kind="Value"
-                             Name="DateClassStopped">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType=":Boolean?"
-                             Kind="Value"
-                             Name="DrugClass">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[DrugClass]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem DataType="Contact"
-                             Kind="Details"
-                             Name="Contact">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[Contact]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem DataType="Contact"
-                               Kind="Details"
-                               Name="RowTemplate1">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression />
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                </ContentItem>
-                <ContentItem DataType="Prison"
-                             Kind="Details"
-                             Name="Prison">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression Member="c_Class/Properties[Prison]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem DataType="Prison"
-                               Kind="Details"
-                               Name="RowTemplate2">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression />
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                </ContentItem>
-              </ContentItem>
-            </ContentItem>
-          </ContentItem>
-          <ContentItem Kind="Group"
-                       Name="DetailsColumn">
-            <ContentItem.PropertySources>
-              <ControlPropertySource Property=":ScrollableControl/Properties[IsVerticalScrollBarEnabled]">
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <ConstantExpression ResultType=":Boolean"
-                                        Value="True" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ControlPropertySource>
-              <ControlPropertySource Property=":ColumnsLayout/Properties[WeightedColumnWidth]">
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <ConstantExpression ResultType=":Double"
-                                        Value="3" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ControlPropertySource>
-            </ContentItem.PropertySources>
-            <ContentItem DataType="c_Class"
-                         Kind="Details"
-                         Name="c_ClassDetails">
-              <ContentItem.Attributes>
-                <DisplayName Value="c Class Details" />
-              </ContentItem.Attributes>
-              <ContentItem.DataSource>
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <MemberExpression Member="Classes/Properties[Classes1]" />
-                    <MemberExpression Member="SelectedItem" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ContentItem.DataSource>
-              <ContentItem.PropertySources>
-                <ControlPropertySource Property=":RootControl/Properties[VerticalAlignment]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <ConstantExpression ResultType=":String"
-                                          Value="Top" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-              <ContentItem DataType=":Int32"
-                           Kind="Value"
-                           Name="Id1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[Id]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="ClassDetails1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[ClassDetails]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="Notes1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[Notes]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="ClassMakeup1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[ClassMakeup]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="ClassGender1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[ClassGender]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":Boolean?"
-                           Kind="Value"
-                           Name="DoNotCount1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[DoNotCount]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="DateClassStarted1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[DateClassStarted]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":String?"
-                           Kind="Value"
-                           Name="DateClassStopped1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[DateClassStopped]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType=":Boolean?"
-                           Kind="Value"
-                           Name="DrugClass1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[DrugClass]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem DataType="Contact"
-                           Kind="Details"
-                           Name="Contact1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[Contact]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem DataType="Contact"
-                             Kind="Details"
-                             Name="RowTemplate3">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression />
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-              </ContentItem>
-              <ContentItem DataType="Prison"
-                           Kind="Details"
-                           Name="Prison1">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression Member="c_Class/Properties[Prison]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem DataType="Prison"
-                             Kind="Details"
-                             Name="RowTemplate4">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression />
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-              </ContentItem>
-            </ContentItem>
-          </ContentItem>
-        </ContentItem>
-      </ContentItem>
-    </Screen.RootContentItem>
-  </Screen>
 
   
 
