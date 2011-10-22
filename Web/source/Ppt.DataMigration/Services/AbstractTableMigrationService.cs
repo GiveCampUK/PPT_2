@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using Castle.Core.Logging;
@@ -30,10 +31,40 @@ namespace Ppt.DataMigration.Services
         public OleDbConnection AccessConnection { get; set; }
         
         public SqlConnection SQLConnection { get; set; }
-
+        public string AccessTableName { get; set; }
+        public string NewTableName { get; set; }
 
 
         public abstract void MigrateTable();
-       
+
+        protected OleDbCommand GetSelectAllCommand()
+        {
+            OleDbCommand oleCmd = AccessConnection.CreateCommand();
+            oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
+
+            return oleCmd;
+        }
+
+        protected SqlDataAdapter GetSqlAdapter()
+        {
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM " + NewTableName, SQLConnection);
+            SqlCommandBuilder oOrderDetailsCmdBuilder = new SqlCommandBuilder(sqlAdapter);
+
+            return sqlAdapter;
+        }
+
+        protected DataSet GetAndFillDataSet(SqlDataAdapter adapter)
+        {
+            DataSet dts = new DataSet(NewTableName);
+            adapter.FillSchema(dts, SchemaType.Source, NewTableName);
+            adapter.Fill(dts);
+
+            return dts;
+        }
+
+        protected DataTable GetDataTable(DataSet dts)
+        {
+            return dts.Tables[NewTableName];
+        }
     }
 }
