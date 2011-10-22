@@ -107,6 +107,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AbstractTableMigrationService.cs" />
     <Compile Include="Services\DatabaseBuilderService.cs" />
+    <Compile Include="Services\ExtensionMethods.cs" />
     <Compile Include="Services\Friends\Country.cs" />
     <Compile Include="Services\IDatabaseBuilderService.cs" />
     <Compile Include="Services\IDatabaseMigrationService.cs" />
@@ -119,7 +120,6 @@
     <Compile Include="Services\Prisoner\Lookup_PostTown.cs" />
     <Compile Include="Services\Prisoner\Lookup_Prisons.cs" />
     <Compile Include="Services\Prisoner\Lookup_Response.cs" />
-    <Compile Include="Services\Prisoner\Lookup_Type.cs" />
     <EmbeddedResource Include="ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,29 +145,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\dbo.Accreditation.Table.sql" />
-    <Content Include="Scripts\dbo.Classes.Table.sql" />
-    <Content Include="Scripts\dbo.Contacts.Table.sql" />
-    <Content Include="Scripts\dbo.Corresp.Table.sql" />
-    <Content Include="Scripts\dbo.Country.Table.sql" />
-    <Content Include="Scripts\dbo.Destination.Table.sql" />
-    <Content Include="Scripts\dbo.Gifts.Table.sql" />
-    <Content Include="Scripts\dbo.GiftType.Table.sql" />
-    <Content Include="Scripts\dbo.History.Table.sql" />
-    <Content Include="Scripts\dbo.InstitutionType.Table.sql" />
-    <Content Include="Scripts\dbo.LetterWriters.Table.sql" />
-    <Content Include="Scripts\dbo.LocationType.Table.sql" />
-    <Content Include="Scripts\dbo.MailCode.Table.sql" />
-    <Content Include="Scripts\dbo.NLAddressOrderType.Table.sql" />
-    <Content Include="Scripts\dbo.PersonType.Table.sql" />
-    <Content Include="Scripts\dbo.Prison.Table.sql" />
-    <Content Include="Scripts\dbo.PrisonSex.Table.sql" />
-    <Content Include="Scripts\dbo.PurposeType.Table.sql" />
-    <Content Include="Scripts\dbo.ResponseType.Table.sql" />
-    <Content Include="Scripts\dbo.Titles.Table.sql" />
-    <Content Include="Scripts\dbo.Town.Table.sql" />
-    <Content Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
-    <Content Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Accreditation.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Classes.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Contacts.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Corresp.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Country.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Destination.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Gifts.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.GiftType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.History.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.InstitutionType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.LetterWriters.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.LocationType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.MailCode.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.NLAddressOrderType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.PersonType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Prison.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.PrisonSex.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.PurposeType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.ResponseType.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Titles.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.Town.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
+    <EmbeddedResource Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\Yoga\" />

@@ -10,9 +10,50 @@ namespace Ppt.DataMigration.Services.Prisoner
 {
     public class Lookup_PostTown : AbstractTableMigrationService
     {
+        public string AccessTableName { get; set; }
+
+        public Lookup_PostTown()
+        {
+            AccessTableName = "LOOKUP_POSTTOWN";
+            NewTableName = "Town";
+        }
+
         public override void MigrateTable()
         {
-            
+            try
+            {
+                SQLConnection.Open();
+                AccessConnection.Open();
+
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
+
+                var reader = oleCmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    var results = dt.Select("Name = '{0}'".Formatted(reader["POSTTOWN"].ToString().Replace("'", "''")));
+                    if (results.Length == 0)
+                    {
+                        var newRow = dt.NewRow();
+                        newRow["Name"] = reader["POSTTOWN"];
+                        dt.Rows.Add(newRow);
+                    }
+                }
+
+                reader.Close();
+                adapter.Update(dt);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                AccessConnection.Close();
+                SQLConnection.Close();//should we open and close for each database?
+            }
         }
     }
 }
