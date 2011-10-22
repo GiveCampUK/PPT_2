@@ -16,6 +16,7 @@ _ReSharper.*
 
 Web/source/ppt.web/App_Data/TEMP/*
 *.LDF
+*.mdf
 
 PPT.Lightswitch/PPT.Lightswitch/Bin/Debug
 PPT.Lightswitch/PPT.Lightswitch/Bin/Release
