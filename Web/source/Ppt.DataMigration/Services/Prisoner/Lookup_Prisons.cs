@@ -11,12 +11,14 @@ namespace Ppt.DataMigration.Services.Prisoner
     public class Lookup_Prisons : AbstractTableMigrationService
     {
        
-             public string AccessTableName { get; set; }
+        public string AccessTableName { get; set; }
 
-             public Lookup_Prisons()
+        public Lookup_Prisons()
         {
             AccessTableName= "Lookup_Prisons";
+            NewTableName = "Prison";
         }
+
         public override void MigrateTable()
         {
 
@@ -27,27 +29,13 @@ namespace Ppt.DataMigration.Services.Prisoner
                 
                 //turn of ID column OFF
 
-                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT Prison OFF", SQLConnection);
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
                 identOff.ExecuteScalar();
-                
-                //Get Access Data
 
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PRISON", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-
-                DataSet sqlCountry = new DataSet("Prison");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Prison");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["Prison"];
-
-
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
                 
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
@@ -91,7 +79,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                     }
                 }
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
 
 
                  //turn of ID column ON

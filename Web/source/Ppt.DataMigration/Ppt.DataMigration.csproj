@@ -122,6 +122,7 @@
     <Compile Include="Services\Prisoner\Lookup_Prisons.cs" />
     <Compile Include="Services\Prisoner\Lookup_Response.cs" />
     <Compile Include="Services\Prisoner\Lookup_Type.cs" />
+    <Compile Include="Services\Prisoner\SQLConnection.cs" />
     <Compile Include="Services\Prisoner\MigrationService.cs" />
     <EmbeddedResource Include="ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
