@@ -610,276 +610,6 @@ namespace LightSwitchApplication
         }
     }
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-    public sealed partial class CountryList
-        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>
-    {
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private CountryList() : base("LightSwitchApplication:CountryList")
-        {
-            global::LightSwitchApplication.CountryList.DetailsClass.Initialize(this);
-        }
-
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static CountryList CreateInstance()
-        {
-            return new global::LightSwitchApplication.CountryList(
-            );
-        }
-
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_Created();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_Activated();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_Saving(ref bool handled);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_Saved();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_Closing(ref bool cancel);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountryList_SaveError(global::System.Exception exception, ref bool handled);
-     
-        #region Private Properties
-        
-        /// <summary>
-        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::LightSwitchApplication.Application Application
-        {
-            get
-            {
-                return global::LightSwitchApplication.Application.Current;
-            }
-        }
-        
-        /// <summary>
-        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::LightSwitchApplication.DataWorkspace DataWorkspace
-        {
-            get
-            {
-                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
-            }
-        }
-        
-        #endregion
- 
-        partial void CountriesSet_SelectionChanged();
-
-        partial void CountriesSet_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
-
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountriesSet_Loaded(bool succeeded);
-
-        /// <summary>
-        /// Gets the CountriesSet visual collection. The collection contains all records currently shown on the respective list or grid control.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Countries> CountriesSet
-        {
-            get
-            {
-                return global::LightSwitchApplication.CountryList.DetailsClass.GetValue(this, global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties.CountriesSet);
-            }
-        }
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void CountriesSet_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
- 
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public sealed class DetailsClass
-            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.CountryList.DetailsClass.PropertySet, global::LightSwitchApplication.CountryList.DetailsClass.CommandSet, global::LightSwitchApplication.CountryList.DetailsClass.MethodSet>
-        {
-
-            static DetailsClass()
-            {
-                var initializePropertyEntry = global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties.CountriesSet;
-            }
-
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>.Entry
-                __CountryListEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>.Entry(
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeInitializeDataWorkspace,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeSavingEvent,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeSavedEvent,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeClosingEvent,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeCreated,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeActivated,
-                    global::LightSwitchApplication.CountryList.DetailsClass.__CountryList_InvokeSaveErrorEvent);
-            private static void __CountryList_InvokeInitializeDataWorkspace(global::LightSwitchApplication.CountryList s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
-            {
-                s.CountryList_InitializeDataWorkspace(saveChangesTo);
-            }
-            private static bool __CountryList_InvokeSavingEvent(global::LightSwitchApplication.CountryList s)
-            {
-                bool handled = false;
-                s.CountryList_Saving(ref handled);
-                return handled;
-            }
-            private static void __CountryList_InvokeSavedEvent(global::LightSwitchApplication.CountryList s)
-            {
-                s.CountryList_Saved();
-            }
-            private static bool __CountryList_InvokeClosingEvent(global::LightSwitchApplication.CountryList s)
-            {
-                bool cancel = false;
-                s.CountryList_Closing(ref cancel);
-                return cancel;
-            }
-            private static void __CountryList_InvokeCreated(global::LightSwitchApplication.CountryList s)
-            {
-                s.CountryList_Created();
-            }
-            private static void __CountryList_InvokeActivated(global::LightSwitchApplication.CountryList s)
-            {
-                s.CountryList_Activated();
-            }
-            private static bool __CountryList_InvokeSaveErrorEvent(global::LightSwitchApplication.CountryList s, global::System.Exception ex)
-            {
-                bool handled = false;
-                s.CountryList_SaveError(ex, ref handled);
-                return handled;
-            }
-
-            public DetailsClass() : base()
-            {
-            }
-
-            public new global::LightSwitchApplication.CountryList.DetailsClass.PropertySet Properties
-            {
-                get
-                {
-                    return base.Properties;
-                }
-            }
-
-            public new global::LightSwitchApplication.CountryList.DetailsClass.CommandSet Commands
-            {
-                get
-                {
-                    return base.Commands;
-                }
-            }
-
-            public new global::LightSwitchApplication.CountryList.DetailsClass.MethodSet Methods
-            {
-                get
-                {
-                    return base.Methods;
-                }
-            }
-
-            private global::Microsoft.LightSwitch.IDataServiceQueryable CountriesSetQuery()
-            {
-                return this.Screen.DataWorkspace.ApplicationData.CountriesSet;
-            }
-
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries>.Data _CountriesSet;
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>
-            {
-
-                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries> CountriesSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries>)base.GetItem(global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties.CountriesSet);
-                    }
-                }
-
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class CommandSet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class MethodSet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass>
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class PropertySetProperties
-            {
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries>.Entry
-                    CountriesSet = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries>.Entry(
-                        "CountriesSet",
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_Stub,
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_Validate,
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_CreateQuery,
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_SelectionChanged,
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_OnCollectionChanged,
-                        global::LightSwitchApplication.CountryList.DetailsClass.PropertySetProperties._CountriesSet_OnLoaded);
-                private static void _CountriesSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.CountryList.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountryList, global::LightSwitchApplication.CountryList.DetailsClass, global::LightSwitchApplication.Countries>.Data> c, global::LightSwitchApplication.CountryList.DetailsClass d, object sf)
-                {
-                    c(d, ref d._CountriesSet, sf);
-                }
-                private static void _CountriesSet_Validate(global::LightSwitchApplication.CountryList s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
-                {
-                    s.CountriesSet_Validate(r);
-                }
-                private static global::Microsoft.LightSwitch.IDataServiceQueryable _CountriesSet_CreateQuery(global::LightSwitchApplication.CountryList.DetailsClass d, object[] args)
-                {
-                    return d.CountriesSetQuery();
-                }
-                private static void _CountriesSet_SelectionChanged(global::LightSwitchApplication.CountryList s)
-                {
-                    s.CountriesSet_SelectionChanged();
-                }
-                private static void _CountriesSet_OnCollectionChanged(global::LightSwitchApplication.CountryList s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-                {
-                    s.CountriesSet_Changed(e);
-                }
-                private static void _CountriesSet_OnLoaded(global::LightSwitchApplication.CountryList s, bool succeeded)
-                {
-                    s.CountriesSet_Loaded(succeeded);
-                }
-
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class CommandSetProperties
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class MethodSetProperties
-            {
-            }
-        }
-    }
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
     public sealed partial class PrisonersByLastName
         : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.PrisonersByLastName, global::LightSwitchApplication.PrisonersByLastName.DetailsClass>
     {
@@ -1459,6 +1189,276 @@ namespace LightSwitchApplication
                 private static void _Classes1_OnLoaded(global::LightSwitchApplication.Classes s, bool succeeded)
                 {
                     s.Classes1_Loaded(succeeded);
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class CommandSetProperties
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class MethodSetProperties
+            {
+            }
+        }
+    }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+    public sealed partial class CountriesList
+        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private CountriesList() : base("LightSwitchApplication:CountriesList")
+        {
+            global::LightSwitchApplication.CountriesList.DetailsClass.Initialize(this);
+        }
+
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static CountriesList CreateInstance()
+        {
+            return new global::LightSwitchApplication.CountriesList(
+            );
+        }
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_Created();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_Activated();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_Saving(ref bool handled);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_Saved();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_Closing(ref bool cancel);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void CountriesList_SaveError(global::System.Exception exception, ref bool handled);
+     
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
+            }
+        }
+        
+        #endregion
+ 
+        partial void Countries_SelectionChanged();
+
+        partial void Countries_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Loaded(bool succeeded);
+
+        /// <summary>
+        /// Gets the Countries visual collection. The collection contains all records currently shown on the respective list or grid control.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Country> Countries
+        {
+            get
+            {
+                return global::LightSwitchApplication.CountriesList.DetailsClass.GetValue(this, global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties.Countries);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Countries_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass
+            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.CountriesList.DetailsClass.PropertySet, global::LightSwitchApplication.CountriesList.DetailsClass.CommandSet, global::LightSwitchApplication.CountriesList.DetailsClass.MethodSet>
+        {
+
+            static DetailsClass()
+            {
+                var initializePropertyEntry = global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties.Countries;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>.Entry
+                __CountriesListEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>.Entry(
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeInitializeDataWorkspace,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeSavingEvent,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeSavedEvent,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeClosingEvent,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeCreated,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeActivated,
+                    global::LightSwitchApplication.CountriesList.DetailsClass.__CountriesList_InvokeSaveErrorEvent);
+            private static void __CountriesList_InvokeInitializeDataWorkspace(global::LightSwitchApplication.CountriesList s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
+            {
+                s.CountriesList_InitializeDataWorkspace(saveChangesTo);
+            }
+            private static bool __CountriesList_InvokeSavingEvent(global::LightSwitchApplication.CountriesList s)
+            {
+                bool handled = false;
+                s.CountriesList_Saving(ref handled);
+                return handled;
+            }
+            private static void __CountriesList_InvokeSavedEvent(global::LightSwitchApplication.CountriesList s)
+            {
+                s.CountriesList_Saved();
+            }
+            private static bool __CountriesList_InvokeClosingEvent(global::LightSwitchApplication.CountriesList s)
+            {
+                bool cancel = false;
+                s.CountriesList_Closing(ref cancel);
+                return cancel;
+            }
+            private static void __CountriesList_InvokeCreated(global::LightSwitchApplication.CountriesList s)
+            {
+                s.CountriesList_Created();
+            }
+            private static void __CountriesList_InvokeActivated(global::LightSwitchApplication.CountriesList s)
+            {
+                s.CountriesList_Activated();
+            }
+            private static bool __CountriesList_InvokeSaveErrorEvent(global::LightSwitchApplication.CountriesList s, global::System.Exception ex)
+            {
+                bool handled = false;
+                s.CountriesList_SaveError(ex, ref handled);
+                return handled;
+            }
+
+            public DetailsClass() : base()
+            {
+            }
+
+            public new global::LightSwitchApplication.CountriesList.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+
+            public new global::LightSwitchApplication.CountriesList.DetailsClass.CommandSet Commands
+            {
+                get
+                {
+                    return base.Commands;
+                }
+            }
+
+            public new global::LightSwitchApplication.CountriesList.DetailsClass.MethodSet Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+
+            private global::Microsoft.LightSwitch.IDataServiceQueryable CountriesQuery()
+            {
+                return this.Screen.DataWorkspace.PPT_2Data.Countries;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country>.Data _Countries;
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>
+            {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country> Countries
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country>)base.GetItem(global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties.Countries);
+                    }
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class CommandSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class MethodSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class PropertySetProperties
+            {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country>.Entry
+                    Countries = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country>.Entry(
+                        "Countries",
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_Stub,
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_Validate,
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_CreateQuery,
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_SelectionChanged,
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_OnCollectionChanged,
+                        global::LightSwitchApplication.CountriesList.DetailsClass.PropertySetProperties._Countries_OnLoaded);
+                private static void _Countries_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.CountriesList.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.CountriesList, global::LightSwitchApplication.CountriesList.DetailsClass, global::LightSwitchApplication.Country>.Data> c, global::LightSwitchApplication.CountriesList.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Countries, sf);
+                }
+                private static void _Countries_Validate(global::LightSwitchApplication.CountriesList s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.Countries_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.IDataServiceQueryable _Countries_CreateQuery(global::LightSwitchApplication.CountriesList.DetailsClass d, object[] args)
+                {
+                    return d.CountriesQuery();
+                }
+                private static void _Countries_SelectionChanged(global::LightSwitchApplication.CountriesList s)
+                {
+                    s.Countries_SelectionChanged();
+                }
+                private static void _Countries_OnCollectionChanged(global::LightSwitchApplication.CountriesList s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    s.Countries_Changed(e);
+                }
+                private static void _Countries_OnLoaded(global::LightSwitchApplication.CountriesList s, bool succeeded)
+                {
+                    s.Countries_Loaded(succeeded);
                 }
 
             }

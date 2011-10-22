@@ -49,7 +49,7 @@ namespace PPT_2Data.Implementation
     public partial class PPT_2DataObjectContext : ObjectContext
     {
         #region Constructors
-
+    
         /// <summary>
         /// Initializes a new PPT_2DataObjectContext object using the connection string found in the 'PPT_2DataObjectContext' section of the application configuration file.
         /// </summary>
