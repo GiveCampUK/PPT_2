@@ -14,7 +14,8 @@ namespace Ppt.DataMigration.Services.Prisoner
 
         public Lookup_PostTown()
         {
-            AccessTableName= "LOOKUP_POSTTOWN";
+            AccessTableName = "LOOKUP_POSTTOWN";
+            NewTableName = "Town";
         }
 
         public override void MigrateTable()
@@ -24,20 +25,10 @@ namespace Ppt.DataMigration.Services.Prisoner
                 SQLConnection.Open();
                 AccessConnection.Open();
 
-                //Get Access Data
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Town", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-               
-                DataSet sqlCountry = new DataSet("Town");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Town");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["Town"];
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
@@ -52,7 +43,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 }
 
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {

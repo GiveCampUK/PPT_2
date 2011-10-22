@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using Castle.Core.Logging;
@@ -31,11 +32,41 @@ namespace Ppt.DataMigration.Services
         public OleDbConnection AccessConnection { get; set; }
         
         public SqlConnection SQLConnection { get; set; }
-
+        public string AccessTableName { get; set; }
+        public string NewTableName { get; set; }
 
 
         public abstract void MigrateTable();
 
+        protected OleDbCommand GetSelectAllCommand()
+        {
+            OleDbCommand oleCmd = AccessConnection.CreateCommand();
+            oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
+
+            return oleCmd;
+        }
+
+        protected SqlDataAdapter GetSqlAdapter()
+        {
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM " + NewTableName, SQLConnection);
+            SqlCommandBuilder oOrderDetailsCmdBuilder = new SqlCommandBuilder(sqlAdapter);
+
+            return sqlAdapter;
+        }
+
+        protected DataSet GetAndFillDataSet(SqlDataAdapter adapter)
+        {
+            DataSet dts = new DataSet(NewTableName);
+            adapter.FillSchema(dts, SchemaType.Source, NewTableName);
+            adapter.Fill(dts);
+
+            return dts;
+        }
+
+        protected DataTable GetDataTable(DataSet dts)
+        {
+            return dts.Tables[NewTableName];
+        }
 
         DataTable _towns = null;
 
@@ -58,7 +89,7 @@ namespace Ppt.DataMigration.Services
 
             var result = _towns.Select("Name = '{0}'".Formatted(townName));
             if (result.Length == 0) return DBNull.Value;
-            else return result[0]["Id"]; 
+            else return result[0]["Id"];
         }
 
         DataTable _countrys = null;
@@ -81,9 +112,9 @@ namespace Ppt.DataMigration.Services
                 _countrys = sqlCountry.Tables["Country"];
             }
 
-             var result = _countrys.Select("Name = '{0}'".Formatted(country));
-             if (result.Length == 0) return DBNull.Value;
-            else return result[0]["Id"]; 
+            var result = _countrys.Select("Name = '{0}'".Formatted(country));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
 
         }
 
@@ -109,9 +140,10 @@ namespace Ppt.DataMigration.Services
 
             var result = _prisonSex.Select("Name = '{0}'".Formatted(prisonSex));
             if (result.Length == 0) return DBNull.Value;
-            else return result[0]["Id"]; 
+            else return result[0]["Id"];
 
         }
+
 
     }
 }

@@ -11,12 +11,14 @@ namespace Ppt.DataMigration.Services.Prisoner
     public class Lookup_Destination : AbstractTableMigrationService
     {
        
-             public string AccessTableName { get; set; }
+        public string AccessTableName { get; set; }
 
         public Lookup_Destination()
         {
-            AccessTableName= "Lookup_Destination";
+            AccessTableName = "Lookup_Destination";
+            NewTableName = "Destination";
         }
+
         public override void MigrateTable()
         {
 
@@ -26,20 +28,10 @@ namespace Ppt.DataMigration.Services.Prisoner
                 AccessConnection.Open();
                 //Get Access Data
 
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM DESTINATION", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-
-                DataSet sqlCountry = new DataSet("DESTINATION");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "DESTINATION");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["DESTINATION"];
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
 
                 
@@ -55,7 +47,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                     }
                 }
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {

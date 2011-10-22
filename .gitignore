@@ -65,3 +65,12 @@ PPT.Lightswitch/PPT.Lightswitch/ServerGenerated/GeneratedArtifacts/PPT_2Data.ssd
 PPT.Lightswitch/PPT.Lightswitch/_Pvt_Extensions/Microsoft.LightSwitch.Extensions/LsPkgLastWriteTime.txt
 
 Web/source/Ppt.DataMigration.Tests/bin/*
+
+Web/ppt.core/bin/Debug/ppt.core.dll
+Web/ppt.core/bin/Debug/ppt.core.pdb
+Web/source/Ppt.DataMigration.Tests/bin/Debug/Ppt.DataMigration.exe
+Web/source/Ppt.DataMigration.Tests/bin/Debug/Ppt.DataMigration.pdb
+Web/source/Ppt.DataMigration.Tests/bin/Debug/Ppt.DataMigration.Tests.dll
+Web/source/Ppt.DataMigration.Tests/bin/Debug/Ppt.DataMigration.Tests.pdb
+Web/source/Ppt.DataMigration/bin/Debug/Ppt.DataMigration.exe
+Web/source/Ppt.DataMigration/bin/Debug/Ppt.DataMigration.pdb

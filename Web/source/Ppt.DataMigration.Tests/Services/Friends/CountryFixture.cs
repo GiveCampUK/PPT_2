@@ -15,7 +15,7 @@ namespace Ppt.DataMigration.Tests.Services.Friends
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
         Country _country;
-        
+
         [SetUp]
         public void Setup()
         {
@@ -32,6 +32,6 @@ namespace Ppt.DataMigration.Tests.Services.Friends
             _country.MigrateTable();
         }
 
-        
+
     }
 }
