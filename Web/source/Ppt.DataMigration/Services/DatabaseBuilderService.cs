@@ -119,7 +119,7 @@ namespace Ppt.DataMigration.Services
 
         private string[] GetDBScriptFileNames()
         {
-            string[] list = new string[23];
+            string[] list = new string[22];
             list[0] = "Ppt.DataMigration.Scripts.dbo.Town.Table.sql";
             list[1] = "Ppt.DataMigration.Scripts.dbo.Titles.Table.sql";
             list[2] = "Ppt.DataMigration.Scripts.dbo.PrisonSex.Table.sql";
@@ -129,20 +129,19 @@ namespace Ppt.DataMigration.Services
             list[6] = "Ppt.DataMigration.Scripts.dbo.GiftType.Table.sql";
             list[7] = "Ppt.DataMigration.Scripts.dbo.InstitutionType.Table.sql";
             list[8] = "Ppt.DataMigration.Scripts.dbo.MailCode.Table.sql";
-            list[9] = "Ppt.DataMigration.Scripts.dbo.LocationType.Table.sql";
-            list[10] = "Ppt.DataMigration.Scripts.dbo.NLAddressOrderType.Table.sql";
-            list[11] = "Ppt.DataMigration.Scripts.dbo.PersonType.Table.sql";
-            list[12] = "Ppt.DataMigration.Scripts.dbo.LetterWriters.Table.sql";
-            list[13] = "Ppt.DataMigration.Scripts.dbo.Prison.Table.sql";
-            list[14] = "Ppt.DataMigration.Scripts.dbo.Gifts.Table.sql";
-            list[15] = "Ppt.DataMigration.Scripts.dbo.Destination.Table.sql";
-            list[16] = "Ppt.DataMigration.Scripts.dbo.Contacts.Table.sql";
-            list[17] = "Ppt.DataMigration.Scripts.dbo.Accreditation.Table.sql";
-            list[18] = "Ppt.DataMigration.Scripts.dbo.Classes.Table.sql";
-            list[19] = "Ppt.DataMigration.Scripts.dbo.Corresp.Table.sql";
-            list[20] = "Ppt.DataMigration.Scripts.dbo.History.Table.sql";
-            list[21] = "Ppt.DataMigration.Scripts.dbo.WorkshopPrisons.Table.sql";
-            list[22] = "Ppt.DataMigration.Scripts.dbo.WorkshopTeachers.Table.sql";
+            list[9] = "Ppt.DataMigration.Scripts.dbo.NLAddressOrderType.Table.sql";
+            list[10] = "Ppt.DataMigration.Scripts.dbo.PersonType.Table.sql";
+            list[11] = "Ppt.DataMigration.Scripts.dbo.LetterWriters.Table.sql";
+            list[12] = "Ppt.DataMigration.Scripts.dbo.Prison.Table.sql";
+            list[13] = "Ppt.DataMigration.Scripts.dbo.Gifts.Table.sql";
+            list[14] = "Ppt.DataMigration.Scripts.dbo.Destination.Table.sql";
+            list[15] = "Ppt.DataMigration.Scripts.dbo.Contacts.Table.sql";
+            list[16] = "Ppt.DataMigration.Scripts.dbo.Accreditation.Table.sql";
+            list[17] = "Ppt.DataMigration.Scripts.dbo.Classes.Table.sql";
+            list[18] = "Ppt.DataMigration.Scripts.dbo.Corresp.Table.sql";
+            list[19] = "Ppt.DataMigration.Scripts.dbo.History.Table.sql";
+            list[20] = "Ppt.DataMigration.Scripts.dbo.WorkshopPrisons.Table.sql";
+            list[21] = "Ppt.DataMigration.Scripts.dbo.WorkshopTeachers.Table.sql";
             return list;
         }
     }

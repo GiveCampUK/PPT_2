@@ -181,7 +181,6 @@
     <EmbeddedResource Include="Scripts\dbo.History.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.InstitutionType.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.LetterWriters.Table.sql" />
-    <EmbeddedResource Include="Scripts\dbo.LocationType.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.MailCode.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.NLAddressOrderType.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.PersonType.Table.sql" />
@@ -194,9 +193,7 @@
     <EmbeddedResource Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Yoga\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Scripts\dbo.PPT.Create.sql" />
   </ItemGroup>
