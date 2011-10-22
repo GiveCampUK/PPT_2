@@ -26,9 +26,9 @@ namespace Ppt.DataMigration.Mvp
 
         }
 
-        public IDatabaseMigrationService YogaMigration { get; set; }
-        public IDatabaseMigrationService FriendsMigration { get; set; }
-        public IDatabaseMigrationService PrisonerMigration { get; set; }
+        public AbstractMigrationService YogaMigration { get; set; }
+        public AbstractMigrationService FriendsMigration { get; set; }
+        public AbstractMigrationService PrisonerMigration { get; set; }
 
         IHomeView _view;
         public HomePresenter(
@@ -37,7 +37,6 @@ namespace Ppt.DataMigration.Mvp
             _logger.Info("Home presenter created");
 
             _view = view;
-            PrisonerMigration = new Services.Prisoner.MigrationService();
 
         }
 
@@ -93,9 +92,11 @@ namespace Ppt.DataMigration.Mvp
 
                 SendMessage("Starting Yoga DB Migration. Exciting stuff");
 
-                if (!_view.YogaDatabase.IsNullOrEmpty() && this.YogaMigration != null)
+                if (!_view.YogaDatabase.IsNullOrEmpty())
                 {
-                    this.YogaMigration.Migrate(_view.YogaDatabase, connection);
+                    YogaMigration = new Services.Yoga.MigrationService(_view.YogaDatabase, connection);
+
+                    this.YogaMigration.Migrate();
                     SendMessage("Yoga migration complete. Party!!!");
                 }
                 else SendMessage("Yoga migration not setup, migration cancelled... booo");
@@ -107,9 +108,11 @@ namespace Ppt.DataMigration.Mvp
 
                 SendMessage("Starting Friends Migration. Awesome");
 
-                if (!_view.FriendsDatabase.IsNullOrEmpty() && this.FriendsMigration != null)
+                if (!_view.FriendsDatabase.IsNullOrEmpty())
                 {
-                    this.FriendsMigration.Migrate(_view.FriendsDatabase, connection);
+                    FriendsMigration = new Services.Friends.MigrationService(_view.YogaDatabase, connection);
+
+                    this.FriendsMigration.Migrate();
                     SendMessage("Friends migration complete. Order some champaign");
                 }
                 else SendMessage("Friends migration not setup, migration cancelled... shame, maybe next time");
@@ -122,9 +125,11 @@ namespace Ppt.DataMigration.Mvp
 
                 SendMessage("Starting Prisoner Migration. Sweet");
 
-                if (!_view.PrisonerDatabase.IsNullOrEmpty() && this.PrisonerMigration != null)
+                if (!_view.PrisonerDatabase.IsNullOrEmpty())
                 {
-                    this.PrisonerMigration.Migrate(_view.PrisonerDatabase, connection);
+                    PrisonerMigration = new Services.Prisoner.MigrationService(_view.PrisonerDatabase, connection);
+
+                    this.PrisonerMigration.Migrate();
                     SendMessage("Prisoner migration complete. Order some champaign");
                 }
                 else SendMessage("Prisoner migration not setup, migration cancelled... ahh well it wasn't meant to be");

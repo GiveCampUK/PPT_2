@@ -1,4 +1,5 @@
-﻿@model PPT.Web.Data.Contact
+﻿@using PPT.Web.Models
+@model PPT.Web.Data.Contact
 
 @{
     ViewBag.Title = "Edit";
@@ -14,7 +15,7 @@
     <fieldset>
         <legend>Contact</legend>
 
-        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(x => x.Id)
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Surname)
@@ -36,7 +37,7 @@
             @Html.LabelFor(model => model.Title, "Title1")
         </div>
         <div class="editor-field">
-            @Html.DropDownList("Title", String.Empty)
+            @Html.DropDownListFor(x =>x.Title, Model.Titles())
             @Html.ValidationMessageFor(model => model.Title)
         </div>
 
