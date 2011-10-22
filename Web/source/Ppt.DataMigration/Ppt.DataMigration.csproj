@@ -194,16 +194,13 @@
     <EmbeddedResource Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Services\Yoga\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Scripts\dbo.PPT.Create.sql" />
   </ItemGroup>
-=======
   <ItemGroup />
->>>>>>> a8d865fa7f7cb3d2e88bb4b94bf882b8a2748b94
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
