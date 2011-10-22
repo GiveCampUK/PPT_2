@@ -20,7 +20,7 @@ namespace Ppt.DataMigration.Tests.Services.Friends
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
-            _oleConnection = new OleDbConnection(Global.AccessConn);
+            _oleConnection = new OleDbConnection(Global.AccessConnFriends);
             _country = new Country();
             _country.SQLConnection = _sqlConnection;
             _country.AccessConnection = _oleConnection;

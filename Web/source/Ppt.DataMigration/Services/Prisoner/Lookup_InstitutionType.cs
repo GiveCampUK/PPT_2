@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Ppt.DataMigration.Services.Prisoner
 {
-    public class Lookup_Destination : AbstractTableMigrationService
+    public class Lookup_InstitutionType : AbstractTableMigrationService
     {
         public override void MigrateTable()
         {
