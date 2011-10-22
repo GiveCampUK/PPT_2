@@ -119,6 +119,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserCode\Application.cs" />
     <Compile Include="UserCode\ContactList.cs" />
+    <Compile Include="UserCode\CreateNewServiceUserContact.cs" />
+    <Compile Include="UserCode\ServiceUserDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <LightSwitchModel Include="..\Data\ApplicationDefinition.lsml">
