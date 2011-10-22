@@ -37,6 +37,8 @@ namespace Ppt.DataMigration.Mvp
             _logger.Info("Home presenter created");
 
             _view = view;
+            PrisonerMigration = new Services.Prisoner.MigrationService();
+
         }
 
         public void StartMigartion()
