@@ -38,7 +38,7 @@ namespace Ppt.DataMigration.Services.Yoga
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["ID"];
-                        newRow["TeacherId"] = reader["Teacher ID"];
+                        newRow["TeacherId"] = GetContactSql(reader["Teacher Id"] as string, "FRIEND");
                         newRow["Workshop"] = reader["Workshop"];
                         newRow["Date"] = reader["Date"];
                         newRow["Notes"] = reader["Notes"];
