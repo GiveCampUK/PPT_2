@@ -25,7 +25,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 SQLConnection.Open();
                 AccessConnection.Open();
 
-                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOff.ExecuteScalar();
 
                 var oleCmd = GetSelectAllCommand();
@@ -43,7 +43,6 @@ namespace Ppt.DataMigration.Services.Prisoner
                     {
                         var newRow = dt.NewRow();
                         newRow["CORREF"] = reader["CORREF"]; // pk
-                        newRow["OLDCORREF"] = reader["OLDCORREF"];
                         newRow["NUMBER"] = reader["NUMBER"];
                         newRow["REFNO"] = reader["REFNO"];
                         newRow["DATE1"] = reader["DATE1"];
@@ -59,7 +58,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 reader.Close();
                 adapter.Update(dt);
 
-                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
                 identOn.ExecuteScalar();
             }
             catch (Exception ex)
