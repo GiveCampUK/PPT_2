@@ -1,0 +1,32 @@
+﻿@using PPT.Web.Models
+@model ITrackPagination
+@{ const int pagesToDisplayEachWay = 10; }
+
+
+@if((Model.PageNumber - pagesToDisplayEachWay) > 1)
+{
+    @Html.ActionLink(1.ToString(), "", new {pageNumber = 1})@:&nbsp;...
+}
+
+@for(var i = 1; i <= Model.NumberOfPages; i++)
+{
+    if (i < (Model.PageNumber - pagesToDisplayEachWay) || i > (Model.PageNumber + pagesToDisplayEachWay))
+    {
+        continue;
+    }
+    
+    if (i == Model.PageNumber)
+    {
+        @i
+    }
+    else
+    {
+        @Html.ActionLink(i.ToString(), "", new {pageNumber = i})
+    }
+    @:&nbsp;
+}
+
+@if((Model.PageNumber + pagesToDisplayEachWay) < Model.NumberOfPages)
+{
+    @:... @Html.ActionLink(Model.NumberOfPages.ToString(), "", new { pageNumber = Model.NumberOfPages })
+}

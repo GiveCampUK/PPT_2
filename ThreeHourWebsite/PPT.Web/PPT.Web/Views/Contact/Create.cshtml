@@ -1,0 +1,12 @@
+﻿@using PPT.Web.Code.Domain
+@model Contact
+
+<h2>Create One!</h2>
+<p>
+@using(Html.BeginForm()){
+    
+    @Html.ValidationSummary()
+    @Html.EditorForModel()
+    <input type="submit" value="submit"/>
+}
+</p>
