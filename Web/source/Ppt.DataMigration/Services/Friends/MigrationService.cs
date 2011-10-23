@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,6 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new PostTown());
             RunImporter(new Response());
             RunImporter(new TitlePris());
-            RunImporter(new TypeImport());
             RunImporter(new MailCode());
             RunImporter(new Country());
             RunImporter(new Lookup_Gtype());
