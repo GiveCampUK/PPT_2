@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Global.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Friends\TypeFixture.cs" />
+    <Compile Include="Services\Friends\TitlePrisFixture.cs" />
     <Compile Include="Services\Friends\ResponseFixture.cs" />
     <Compile Include="Services\Friends\PostTownFixture.cs" />
     <Compile Include="Services\Friends\MailcodeFixture.cs" />

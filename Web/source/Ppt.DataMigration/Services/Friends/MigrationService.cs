@@ -21,7 +21,7 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new PostTown());
             RunImporter(new Response());
             RunImporter(new TitlePris());
-            RunImporter(new Type());
+            RunImporter(new TypeImport());
             RunImporter(new MailCode());
             RunImporter(new Lookup_Gtype());
             RunImporter(new LookupPurpose());
