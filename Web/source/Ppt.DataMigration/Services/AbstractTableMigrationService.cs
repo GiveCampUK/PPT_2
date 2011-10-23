@@ -297,10 +297,10 @@ namespace Ppt.DataMigration.Services
 
                 //SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet dts = new DataSet("Table");
-                sqlAdapter.FillSchema(dts, SchemaType.Source, "Table");
+                DataSet dts = new DataSet("GiftType");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "GiftType");
                 sqlAdapter.Fill(dts.Tables["GiftType"]);
-                _giftTypes = dts.Tables["Table"];
+                _giftTypes = dts.Tables["GiftType"];
             }
 
             var result = _giftTypes.Select("ShortCode = '{0}'".Formatted(giftType));

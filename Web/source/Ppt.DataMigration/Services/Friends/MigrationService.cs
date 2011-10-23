@@ -24,12 +24,13 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new TitlePris());
             RunImporter(new Country());
             RunImporter(new LookupPurpose());
-            RunImporter(new Gifts());
             RunImporter(new Type());
             RunImporter(new LookupLetterWriters());
             RunImporter(new Writers());
             RunImporter(new Contact()); 
             RunImporter(new Corresp());
+            RunImporter(new Gifts());
+
         }
     }
 }

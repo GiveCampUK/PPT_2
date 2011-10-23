@@ -46,6 +46,7 @@ namespace Ppt.DataMigration.Services.Friends
                         newRow["Amount"] = reader["AMOUNT"];
                         newRow["Source"] = reader["SOURCE"];
                         newRow["Purpose"] = reader["PURPOSE"];
+                        newRow["Contact"] = GetContactSql(reader["REFNO"].ToString() , "FRIEND");
                         dt.Rows.Add(newRow);
                         adapter.Update(dt);
                     }
