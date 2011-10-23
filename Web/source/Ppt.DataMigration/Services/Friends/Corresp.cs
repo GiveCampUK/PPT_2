@@ -51,7 +51,7 @@ namespace Ppt.DataMigration.Services.Friends
                             newRow["Filing"] = reader["FILING"];
                             newRow["Response"] = GetResponseTypeSql(reader.Cleaned("RESPONSE"));
                             newRow["Destination"] = reader["DESTINATION"];
-                            newRow["Correspondant"] = reader["CORRESPONDENT"];
+                            newRow["Correspondent"] = reader["CORRESPONDENT"];
                             dt.Rows.Add(newRow);
                         }
                     }

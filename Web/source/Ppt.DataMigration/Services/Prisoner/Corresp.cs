@@ -46,11 +46,11 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["NUMBER"] = reader["NUMBER"];
                         newRow["REFNO"] = reader["REFNO"];
                         newRow["DATE1"] = reader["DATE1"];
-                        newRow["TYPE"] = reader["TYPE"];
-                        newRow["FILING"] = reader["FILING"];
-                        newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
-                        newRow["DESTINATION"] = reader["DESTINATION"];
-                        newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
+                        newRow["TYPE"] = reader.Cleaned("TYPE");
+                        newRow["FILING"] = reader.Cleaned("FILING");
+                        newRow["RESPONSE"] = GetResponseTypeSql(reader.Cleaned("RESPONSE")); //fk
+                        newRow["DESTINATION"] = reader.Cleaned("DESTINATION");
+                        newRow["CORRESPONDENT"] = reader.Cleaned("CORRESPONDENT");
                         dt.Rows.Add(newRow);
                     }
                 }

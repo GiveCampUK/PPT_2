@@ -144,6 +144,9 @@
     <Compile Include="Services\Yoga\MigrationService.cs" />
     <Compile Include="Services\Yoga\WorkshopPrisons.cs" />
     <Compile Include="Services\Yoga\WorkshopTeachers.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>

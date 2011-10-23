@@ -150,6 +150,11 @@ namespace Ppt.DataMigration
                 return _progressBar;
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

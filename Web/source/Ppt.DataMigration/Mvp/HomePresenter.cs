@@ -106,7 +106,7 @@ namespace Ppt.DataMigration.Mvp
                         case 20 :
                             return "SQL Connection String Configured, Woot!!";
                         case 30:
-                            return "Starting to rebuild the databases. Were getting out the hammer and nails";
+                            return "Starting to rebuild the databases. We're getting out the hammer and nails";
                         case 40:
                             return "Database rebuilt. Time for a tea break before we get started on the next task";
                         case 45:
