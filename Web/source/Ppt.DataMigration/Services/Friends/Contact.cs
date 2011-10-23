@@ -25,6 +25,9 @@ namespace Ppt.DataMigration.Services.Friends
                 SQLConnection.Open();
                 AccessConnection.Open();
 
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
+                identOff.ExecuteScalar();
+
                 //Get Access Data
                 var oleCmd = GetSelectAllCommand();
                 var adapter = GetSqlAdapter();
@@ -100,6 +103,9 @@ namespace Ppt.DataMigration.Services.Friends
                     }
                 }
                 reader.Close();
+
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
+                identOn.ExecuteScalar();
             }
             catch (Exception ex)
             {

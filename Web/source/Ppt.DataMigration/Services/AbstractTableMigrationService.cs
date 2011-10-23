@@ -346,10 +346,32 @@ namespace Ppt.DataMigration.Services
                 DataSet dts = new DataSet("NLAddressOrderType");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "NLAddressOrderType");
                 sqlAdapter.Fill(dts);
-                _nlOrderTypes = dts.Tables["Contacts"];
+                _nlOrderTypes = dts.Tables["NLAddressOrderType"];
             }
 
             var result = _nlOrderTypes.Select("Name = '{0}'".Formatted(orderType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        private DataTable _teachers = null;
+        public object GetTeacherFromSql(string teacher)
+        {
+            if (teacher == null) return DBNull.Value;
+
+            if (_teachers == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM WorkshopTeachers", SQLConnection);
+
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
+
+                DataSet dts = new DataSet("WorkshopTeachers");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "WorkshopTeachers");
+                sqlAdapter.Fill(dts);
+                _teachers = dts.Tables["WorkshopTeachers"];
+            }
+
+            var result = _teachers.Select("TeacherId = '{0}'".Formatted(teacher));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
