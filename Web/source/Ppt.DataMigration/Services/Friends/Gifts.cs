@@ -42,7 +42,7 @@ namespace Ppt.DataMigration.Services.Friends
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["REFNO"];
                         newRow["Date"] = reader["DATE"];
-                        newRow["GiftType"] = GetResponseTypeSql(reader["GTYPE"] as string);
+                        newRow["GiftType"] = GetGiftTypeSql(reader["GTYPE"] as string);
                         newRow["Amount"] = reader["AMOUNT"];
                         newRow["Source"] = reader["SOURCE"];
                         newRow["Purpose"] = reader["PURPOSE"];
