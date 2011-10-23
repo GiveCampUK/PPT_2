@@ -15,6 +15,7 @@ namespace Ppt.DataMigration.Services.Prisoner
             AccessTableName = "LOOKUP_RESPONSE";
             NewTableName = "ResponseType";
         }
+
         public override void MigrateTable()
         {
             string currentIdentifier = string.Empty;

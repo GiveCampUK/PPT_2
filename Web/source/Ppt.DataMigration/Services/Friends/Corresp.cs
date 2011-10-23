@@ -40,13 +40,13 @@ namespace Ppt.DataMigration.Services.Friends
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Corref"] = reader["CORREF"]; // fk to get from contacts
+                        newRow["Corref"] = GetContactOldRefSql(reader["CORREF"] as string); // fk to get from contacts
                         newRow["Number"] = reader["NUMBER"];
                         newRow["Refno"] = reader["REFNO"];
                         newRow["Date1"] = reader["DATE"];
                         newRow["Type"] = reader["TYPE"];
                         newRow["Filing"] = reader["FILING"];
-                        newRow["Response"] = GetResponseTypeSql(reader["RESPONSE"] as string).ToString().Replace("'", "''");
+                        newRow["Response"] = GetResponseTypeSql(reader.Cleaned("RESPONSE"));
                         newRow["Destination"] = reader["DESTINATION"];
                         newRow["Correspondant"] = reader["CORRESPONDENT"];
                         dt.Rows.Add(newRow);

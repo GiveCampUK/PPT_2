@@ -10,9 +10,6 @@ namespace Ppt.DataMigration.Services.Prisoner
 {
     public class Lookup_Prisons : AbstractTableMigrationService
     {
-       
-        public string AccessTableName { get; set; }
-
         public Lookup_Prisons()
         {
             AccessTableName= "Lookup_Prisons";
@@ -47,37 +44,37 @@ namespace Ppt.DataMigration.Services.Prisoner
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Id"] = reader["PRISON ID"];
-                        newRow["Name"] = reader["PRISON"];
-                        newRow["MailName"] = reader["MailName"];
-                        newRow["Address1"] = reader["Add1"];
-                        newRow["Address2"] = reader["Add2"];
-                        newRow["Address3"] = reader["Add3"];
-                        newRow["Town"] = reader["Town"];
-                        newRow["County"] = reader["County"];
-                        newRow["Postcode"] = reader["Postcode"];
-                        newRow["Country"] = GetCountryFromSql(reader["Country"] as string);
-                        newRow["Sex"] = GetPrisonSexFromSql(reader["M/F"] as string);
-                        newRow["MalePrisonersHeld"] = reader["MalePrisonersHeld"].AsBool();
-                        newRow["FemalePrisonersHeld"] = reader["FemalePrisonersHeld"].AsBool();
-                        newRow["YoungOffendersHeld"] = reader["YoungOffendersHeld"].AsBool();
-                        newRow["JuvenilePrisonersHeld"] = reader["JuvenilePrisonersHeld"].AsBool();
-                        newRow["AdultPrisonersHeld"] = reader["AdultPrisonersHeld"].AsBool();
-                        newRow["Cat"] = reader["Cat"];
-                        newRow["Ptype"] = reader["Ptype"];
-                        newRow["VolunteersNotes"] = reader["Volunteers Notes"];
-                        newRow["Notes"] = reader["Notes"];
-                        newRow["Governor"] = reader["Governor"];
-                        newRow["Telephone"] = reader["Telephone"];
-                        newRow["Tag"] = reader["Tag"];
-                        newRow["NlAddressOrder"] = reader["Nl Address Order"];
-                        newRow["InclInNlAddressList"] = reader["Incl In Nl Address List"].AsBool();
-                        newRow["DesignationNewsletter"] = reader["Designation Newsletter"];
-                        newRow["Location"] = reader["Location"];
-                        newRow["ContactForNewsletter"] = reader["ContactForNewsletter"];
-                        newRow["ContactPosition"] = reader["ContactPosition"];
-                        newRow["ContactPhone"] = reader["ContactPhone"];
-                        newRow["ContactFax"] = reader["ContactFax"];
+                        newRow["Id"] = reader.Cleaned("PRISON ID");
+                        newRow["Name"] = reader.Cleaned("PRISON");
+                        newRow["MailName"] = reader.Cleaned("MailName");
+                        newRow["Address1"] = reader.Cleaned("Add1");
+                        newRow["Address2"] = reader.Cleaned("Add2");
+                        newRow["Address3"] = reader.Cleaned("Add3");
+                        newRow["Town"] = reader.Cleaned("Town");
+                        newRow["County"] = reader.Cleaned("County");
+                        newRow["Postcode"] = reader.Cleaned("Postcode");
+                        newRow["Country"] = GetCountryFromSql(reader.Cleaned("Country"));
+                        newRow["Sex"] = GetPrisonSexFromSql(reader.Cleaned("M/F"));
+                        newRow["MalePrisonersHeld"] = reader.Cleaned("MalePrisonersHeld").AsBool();
+                        newRow["FemalePrisonersHeld"] = reader.Cleaned("FemalePrisonersHeld").AsBool();
+                        newRow["YoungOffendersHeld"] = reader.Cleaned("YoungOffendersHeld").AsBool();
+                        newRow["JuvenilePrisonersHeld"] = reader.Cleaned("JuvenilePrisonersHeld").AsBool();
+                        newRow["AdultPrisonersHeld"] = reader.Cleaned("AdultPrisonersHeld").AsBool();
+                        newRow["Cat"] = reader.Cleaned("Cat");
+                        newRow["Ptype"] = reader.Cleaned("Ptype");
+                        newRow["VolunteersNotes"] = reader.Cleaned("Volunteers Notes");
+                        newRow["Notes"] = reader.Cleaned("Notes");
+                        newRow["Governor"] = reader.Cleaned("Governor");
+                        newRow["Telephone"] = reader.Cleaned("Telephone");
+                        newRow["Tag"] = reader.Cleaned("Tag");
+                        newRow["NlAddressOrder"] = reader.Cleaned("Nl Address Order");
+                        newRow["InclInNlAddressList"] = reader.Cleaned("Incl In Nl Address List").AsBool();
+                        newRow["DesignationNewsletter"] = reader.Cleaned("Designation Newsletter");
+                        newRow["Location"] = reader.Cleaned("Location");
+                        newRow["ContactForNewsletter"] = reader.Cleaned("ContactForNewsletter");
+                        newRow["ContactPosition"] = reader.Cleaned("ContactPosition");
+                        newRow["ContactPhone"] = reader.Cleaned("ContactPhone");
+                        newRow["ContactFax"] = reader.Cleaned("ContactFax");
                         dt.Rows.Add(newRow);
                     }
                 }

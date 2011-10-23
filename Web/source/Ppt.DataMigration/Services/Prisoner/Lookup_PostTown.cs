@@ -10,11 +10,9 @@ namespace Ppt.DataMigration.Services.Prisoner
 {
     public class Lookup_PostTown : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Lookup_PostTown()
         {
-            AccessTableName = "LOOKUP_POSTTOWN";
+            AccessTableName = "[LOOKUP_POSTTOWN]";
             NewTableName = "Town";
         }
 

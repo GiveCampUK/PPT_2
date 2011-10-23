@@ -25,14 +25,10 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new Lookup_Gtype());
             RunImporter(new LookupPurpose());
             RunImporter(new Gifts());
-            RunImporter(new Corresp());
             RunImporter(new LookupLetterWriters());
             RunImporter(new Writers());
-
-
-            RunImporter(new Contact());
-
-
+            RunImporter(new Contact()); 
+            RunImporter(new Corresp());
         }
     }
 }
