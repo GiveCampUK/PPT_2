@@ -21,7 +21,7 @@ namespace Ppt.DataMigration.Tests.Services.Yoga
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
-            _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
+            _oleConnection = new OleDbConnection(Global.AccessConnYoga);
             _service = new WorkshopPrisons();
             _service.SQLConnection = _sqlConnection;
             _service.AccessConnection = _oleConnection;

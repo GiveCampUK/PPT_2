@@ -12,7 +12,7 @@ namespace Ppt.DataMigration.Services.Friends
     {
         public Lookup_Gtype()
         {
-            AccessTableName = "Lookup Gtype";
+            AccessTableName = "[Lookup Gtype]";
             NewTableName = "GiftType";
         }
 
