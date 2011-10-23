@@ -18,7 +18,7 @@ namespace Ppt.DataMigration.Tests
         {
             get
             {
-                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\PPT\Client Documents and MDBs\PPT Friends (no data)_Phoenix.mdb";
+                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\kxm\Desktop\scrambled databases\Phoenix.mdb";
             }
         }
 
@@ -26,7 +26,15 @@ namespace Ppt.DataMigration.Tests
         {
             get
             {
-                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\PPT\Client Documents and MDBs\PPT Prisoners, structure only.mdb";
+                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\kxm\Desktop\scrambled databases\Prisoners.mdb";
+            }
+        }
+
+        public static string AccessConnYoga
+        {
+            get
+            {
+                return @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\kxm\Desktop\scrambled databases\Yoga.mdb";
             }
         }
     }
