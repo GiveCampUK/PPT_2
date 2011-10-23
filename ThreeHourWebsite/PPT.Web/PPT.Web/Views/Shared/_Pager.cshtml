@@ -1,0 +1,14 @@
+﻿@using PPT.Web.Models
+@model ITrackPagination
+@for(var i = 1; i <= Model.NumberOfPages; i++)
+{
+    if (i == Model.PageNumber)
+    {
+        @:@i
+    }
+    else
+    {
+        @:@Html.ActionLink(i.ToString(), "", new {pageNumber = i})
+    }
+    @: &nbsp;
+}

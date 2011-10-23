@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PPT.Web.Models
 {
-    public class PageOf<T> : List<T>
+    public class PageOf<T> : List<T>, ITrackPagination
     {
         public int TotalResults { get; set; }
         public int PageSize { get; set; }
