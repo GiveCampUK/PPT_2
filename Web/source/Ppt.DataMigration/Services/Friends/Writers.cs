@@ -34,7 +34,7 @@ namespace Ppt.DataMigration.Services.Friends
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    currentIdentifier = reader["id"].ToString();
+                    currentIdentifier = reader["Writer"].ToString();
 
                     var results = dt.Select("Initials = '{0}'".Formatted(reader["Writer"]));
                     if (results.Length == 0)
