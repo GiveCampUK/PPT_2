@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Linq.Expressions;
 using System.Web.Mvc;
 using NHibernate;
 using PPT.Web.Code.DataAccess.Queries;
 using PPT.Web.Code.Domain;
-using PPT.Web.Models;
 
 namespace PPT.Web.Controllers
 {
