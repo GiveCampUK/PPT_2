@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -30,7 +30,7 @@ namespace Ppt.DataMigration.Services
         /// I am not sure please update.
         /// </summary>
         public OleDbConnection AccessConnection { get; set; }
-        
+
         public SqlConnection SQLConnection { get; set; }
         public string AccessTableName { get; set; }
         public string NewTableName { get; set; }
@@ -144,12 +144,13 @@ namespace Ppt.DataMigration.Services
 
         }
 
-        private DataTable _title = null;
-        public object GetTitleFromSql(string title)
+        DataTable _titles = null;
+
+        public object GetTitleSql(string title)
         {
             if (title == null) return DBNull.Value;
 
-            if (_title == null)
+            if (_titles == null)
             {
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Titles", SQLConnection);
@@ -157,23 +158,25 @@ namespace Ppt.DataMigration.Services
                 SqlCommandBuilder oOrderDetailsCmdBuilder = new
                 SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("Titles");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Titles");
-                sqlAdapter.Fill(sqlCountry);
-                _title = sqlCountry.Tables["Titles"];
+                DataSet sqlTitles = new DataSet("Titles");
+                sqlAdapter.FillSchema(sqlTitles, SchemaType.Source, "Titles");
+                sqlAdapter.Fill(sqlTitles);
+                _titles = sqlTitles.Tables["Titles"];
             }
 
-            var result = _title.Select("Name = '{0}'".Formatted(title));
+            var result = _titles.Select("Name = '{0}'".Formatted(title));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
+
         }
 
-        private DataTable _mailCode = null;
-        public object GetMailCodeFromSql(string mailCode)
+        DataTable _mailCodes = null;
+
+        public object GetMailCodeSql(string mailCode)
         {
             if (mailCode == null) return DBNull.Value;
 
-            if (_mailCode == null)
+            if (_mailCodes == null)
             {
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM MailCode", SQLConnection);
@@ -181,37 +184,112 @@ namespace Ppt.DataMigration.Services
                 SqlCommandBuilder oOrderDetailsCmdBuilder = new
                 SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("MailCode");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "MailCode");
-                sqlAdapter.Fill(sqlCountry);
-                _mailCode = sqlCountry.Tables["MailCode"];
+                DataSet sqlMailCodes = new DataSet("MailCode");
+                sqlAdapter.FillSchema(sqlMailCodes, SchemaType.Source, "MailCode");
+                sqlAdapter.Fill(sqlMailCodes);
+                _titles = sqlMailCodes.Tables["MailCode"];
             }
 
-            var result = _mailCode.Select("Name = '{0}'".Formatted(mailCode));
+            var result = _titles.Select("Name = '{0}'".Formatted(mailCode));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+
+        }
+
+        DataTable _prisons = null;
+
+        public object GetPrisonSql(string prison)
+        {
+            if (prison == null) return DBNull.Value;
+
+            if (_prisons == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Prison", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlPrisons = new DataSet("Prison");
+                sqlAdapter.FillSchema(sqlPrisons, SchemaType.Source, "Prison");
+                sqlAdapter.Fill(sqlPrisons);
+                _titles = sqlPrisons.Tables["Prison"];
+            }
+
+            var result = _titles.Select("Name = '{0}'".Formatted(prison));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
 
-        private DataTable _responseType = null;
-        public object GetResponseTypeFromSql(string response)
-        {
-            if (response == null) return DBNull.Value;
+        DataTable _personTypes = null;
 
-            if (_responseType == null)
+        public object GetPersonTypeSql(string personType)
+        {
+            if (personType == null) return DBNull.Value;
+
+            if (_personTypes == null)
             {
 
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PersonType", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlPersonTypes = new DataSet("PersonType");
+                sqlAdapter.FillSchema(sqlPersonTypes, SchemaType.Source, "PersonType");
+                sqlAdapter.Fill(sqlPersonTypes);
+                _titles = sqlPersonTypes.Tables["PersonType"];
+            }
+
+            var result = _titles.Select("ShortCode = '{0}'".Formatted(personType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        DataTable _contacts = null;
+
+        public object GetContactSql(string oldRefNo, string sourceDb)
+        {
+            if (oldRefNo == null) return DBNull.Value;
+
+            if (_contacts == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Contacts", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlContacts = new DataSet("Contacts");
+                sqlAdapter.FillSchema(sqlContacts, SchemaType.Source, "Contacts");
+                sqlAdapter.Fill(sqlContacts);
+                _titles = sqlContacts.Tables["Contacts"];
+            }
+
+            var result = _titles.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        DataTable _responseTypes = null;
+
+        public object GetResponseTypeSql(string responseType)
+        {
+            if (responseType == null) return DBNull.Value;
+
+            if (_responseTypes == null)
+            {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM ResponseType", SQLConnection);
 
                 SqlCommandBuilder oOrderDetailsCmdBuilder = new
                 SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("ResponseType");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "ResponseType");
-                sqlAdapter.Fill(sqlCountry);
-                _responseType = sqlCountry.Tables["ResponseType"];
+                DataSet sqlResponseTypes = new DataSet("ResponseType");
+                sqlAdapter.FillSchema(sqlResponseTypes, SchemaType.Source, "ResponseType");
+                sqlAdapter.Fill(sqlResponseTypes);
+                _titles = sqlResponseTypes.Tables["ResponseType"];
             }
 
-            var result = _responseType.Select("Response = '{0}'".Formatted(response));
+            var result = _titles.Select("Response = '{0}'".Formatted(responseType));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }

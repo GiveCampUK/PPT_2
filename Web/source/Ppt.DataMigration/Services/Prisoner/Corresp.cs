@@ -45,7 +45,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["DATE1"] = reader["DATE1"];
                         newRow["TYPE"] = reader["TYPE"];
                         newRow["FILING"] = reader["FILING"];
-                        newRow["RESPONSE"] = GetResponseTypeFromSql(reader["RESPONSE"] as string); //fk
+                        newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
                         newRow["DESTINATION"] = reader["DESTINATION"];
                         newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
                         dt.Rows.Add(newRow);

@@ -41,7 +41,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["Id"] = reader["REFNO"]; // primary key, int
                         newRow["Surname"] = reader["SURNAME"];
                         newRow["Forename"] = reader["FORENAME"];
-                        newRow["Title"] = GetTitleFromSql(reader["TITLE"] as string); // foreign key, int
+                        newRow["Title"] = GetTitleSql(reader["TITLE"] as string); // foreign key, int
                         newRow["Position"] = reader["POSITION"];
                         newRow["MailName"] = reader["MAILNAME"];
                         newRow["Salutation"] = reader["SALUTATION"];
@@ -49,7 +49,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                         //newRow["EmailAddress"] = reader["EmailAddress"];
                         newRow["Source"] = reader["SOURCE"];
                         newRow["DOB"] = reader["DOB"];
-                        newRow["MailCode"] = GetMailCodeFromSql(reader["MAILCODE"] as string); // foreign key
+                        newRow["MailCode"] =  GetMailCodeSql(reader["MAILCODE"] as string); // foreign key
                         newRow["Lost"] = reader["LOST"]; //datetime
                         newRow["Deceased"] = reader["DECEASED"].AsBool(); //bit
                         newRow["ArchivePrisonName"] = reader["PREVPRIS1"];

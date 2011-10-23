@@ -18,7 +18,6 @@ namespace Ppt.DataMigration.Services.Friends
         {
             RunImporter(new Country());
             RunImporter(new Destination());
-            RunImporter(new LookupType());
             RunImporter(new PostTown());
             RunImporter(new Response());
             RunImporter(new TitlePris());
@@ -26,11 +25,9 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new MailCode());
             RunImporter(new Lookup_Gtype());
             RunImporter(new LookupPurpose());
-            RunImporter(new LookupType());
             RunImporter(new Gifts());
             RunImporter(new Corresp());
             RunImporter(new LookupLetterWriters());
-            RunImporter(new SentOut());
             RunImporter(new Writers());
 
 

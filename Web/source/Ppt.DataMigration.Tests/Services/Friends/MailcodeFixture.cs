@@ -6,18 +6,18 @@ using Ppt.DataMigration.Services.Friends;
 namespace Ppt.DataMigration.Tests.Services.Friends
 {
     [TestFixture]
-    public class SentOutFixture
+    public class MailCodeFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        SentOut _service;
+        MailCode _service;
 
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
             _oleConnection = new OleDbConnection(Global.AccessConnFriends);
-            _service = new SentOut();
+            _service = new MailCode();
             _service.SQLConnection = _sqlConnection;
             _service.AccessConnection = _oleConnection;
         }

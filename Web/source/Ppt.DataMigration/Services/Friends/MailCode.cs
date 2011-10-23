@@ -41,6 +41,7 @@ namespace Ppt.DataMigration.Services.Friends
                     {
                         var newRow = dt.NewRow();
                         newRow["Name"] = reader["Code"];
+                        newRow["Code1"] = reader["Code1"];
                         dt.Rows.Add(newRow);
                     }
                 }
