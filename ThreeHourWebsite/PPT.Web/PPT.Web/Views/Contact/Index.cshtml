@@ -3,14 +3,16 @@
 @model PageOf<Contact>
 
 <h2>Contacts</h2>
-<ul>
+<table style="width: 80%">
 @foreach (var contact in Model){
     @: 
-    <li style="width: 80%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
+    <tr>
+    <td style="width: 100%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
         @Html.ActionLink(contact.Forename + " " + contact.Surname, "Details", new { id = contact.Id })
-    </li>
+    </td>
+    </tr>
 }
-</ul>
+</table>
 
 @Html.Partial("_Pager", Model)
 
