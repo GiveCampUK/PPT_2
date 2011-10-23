@@ -3,17 +3,19 @@
 @model PageOf<Contact>
 
 <h2>Contacts</h2>
-
-Total: @Model.TotalResults<br/>
-Page Number: @Model.PageNumber<br/>
-Page Size: @Model.PageSize<br/>
 <ul>
 @foreach (var contact in Model){
     @: 
-    <li>
+    <li style="width: 80%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
         @Html.ActionLink(contact.Forename + " " + contact.Surname, "Details", new { id = contact.Id })
     </li>
 }
 </ul>
 
 @Html.Partial("_Pager", Model)
+
+<div>
+Total: @Model.TotalResults<br/>
+Page Number: @Model.PageNumber<br/>
+Page Size: @Model.PageSize<br/>
+</div>
