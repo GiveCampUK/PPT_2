@@ -1,0 +1,30 @@
+﻿@using PPT.Web.Code.Domain
+@using PPT.Web.Models
+@model PageOf<Contact>
+
+<h2>Contacts</h2>
+
+@Html.Partial("_Pager", Model)
+
+<table style="width: 80%">
+@foreach (var contact in Model){
+    @: 
+    <tr style="width: 100%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
+    <td>@Html.ActionLink(contact.Surname + ", " +contact.Forename, "Details", new { id = contact.Id })</td>
+    <td>@contact.EmailAddress</td>
+    </tr>
+}
+</table>
+
+@Html.Partial("_Pager", Model)
+
+<div>
+Total: @Model.TotalResults<br/>
+Page Number: @Model.PageNumber<br/>
+Page Size: @Model.PageSize<br/>
+</div>
+
+<div>
+@Html.ActionLink("Show Invalid Names", "", new { filterInvalidNames = false })<br/>
+@Html.ActionLink("Hide Invalid Names", "", new { filterInvalidNames = true })
+</div>
