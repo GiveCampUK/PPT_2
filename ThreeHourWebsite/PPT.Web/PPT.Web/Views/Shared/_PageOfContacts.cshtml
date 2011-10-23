@@ -1,0 +1,13 @@
+﻿@using PPT.Web.Code.Domain
+@using PPT.Web.Models
+@model PageOf<Contact>
+<table style="width: 80%">
+@foreach (var contact in Model)
+{
+    @: 
+    <tr style="width: 100%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
+    <td>@Html.ActionLink(contact.Surname + ", " + contact.Forename, "Details", new { id = contact.Id })</td>
+    <td>@contact.EmailAddress</td>
+    </tr>
+}
+</table>

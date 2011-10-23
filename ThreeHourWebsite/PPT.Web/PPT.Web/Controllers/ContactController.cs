@@ -22,6 +22,13 @@ namespace PPT.Web.Controllers
             return View(results);
         }
 
+        public ActionResult Search(string terms)
+        {
+            var query = new SearchByName(_session);
+            var page = query.Execute(terms);
+            return View(page);
+        }
+
         public ActionResult Details(int id)
         {
             return View(_session.Load<Contact>(id));

@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
     <Compile Include="Code\DataAccess\Mapping\ContactMap.cs" />
+    <Compile Include="Code\DataAccess\Queries\SearchByName.cs" />
     <Compile Include="Code\DataAccess\Queries\RetrievePageOfContacts.cs" />
     <Compile Include="Code\DataAccess\SessionProvider.cs" />
     <Compile Include="Code\Domain\Contact.cs" />
@@ -196,6 +197,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Pager.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_PageOfContacts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Contact\Search.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
