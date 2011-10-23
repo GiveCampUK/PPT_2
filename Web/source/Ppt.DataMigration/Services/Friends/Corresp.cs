@@ -40,7 +40,8 @@ namespace Ppt.DataMigration.Services.Friends
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Corref"] = reader["CORREF"];
+                        newRow["Corref"] = reader["CORREF"]; // fk to get from contacts
+                        newRow["Number"] = reader["NUMBER"];
                         newRow["Refno"] = reader["REFNO"];
                         newRow["Date1"] = reader["DATE"];
                         newRow["Type"] = reader["TYPE"];
