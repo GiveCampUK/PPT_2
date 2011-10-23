@@ -20,3 +20,8 @@ Total: @Model.TotalResults<br/>
 Page Number: @Model.PageNumber<br/>
 Page Size: @Model.PageSize<br/>
 </div>
+
+<div>
+@Html.ActionLink("Show Invalid Names", "", new { filterInvalidNames = false })<br/>
+@Html.ActionLink("Hide Invalid Names", "", new { filterInvalidNames = true })
+</div>
