@@ -12,8 +12,8 @@ namespace Ppt.DataMigration.Services.Prisoner
     {
         public Lookup_Letter_Writers()
         {
-            AccessTableName = "";
-            NewTableName = "";
+            AccessTableName = "LOOKUP_LETTER WRITERS";
+            NewTableName = "LetterWriters";
         }
 
         public override void MigrateTable()

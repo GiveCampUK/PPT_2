@@ -11,7 +11,7 @@ using Ppt.DataMigration.Services.Prisoner;
 namespace Ppt.DataMigration.Tests.Services.Prisoner
 {
     [TestFixture]
-    public class Lookup_PrisonFixture
+    public class Lookup_PrisonsFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;

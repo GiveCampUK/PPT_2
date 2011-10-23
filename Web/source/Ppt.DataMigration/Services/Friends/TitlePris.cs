@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class TitlePris : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public TitlePris()
         {
             AccessTableName = "TitlePris";

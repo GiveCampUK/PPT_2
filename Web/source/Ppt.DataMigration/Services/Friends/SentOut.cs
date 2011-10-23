@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class SentOut : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public SentOut()
         {
             AccessTableName = "SentOut";

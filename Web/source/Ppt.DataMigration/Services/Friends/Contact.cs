@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Contact : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Contact()
         {
             AccessTableName= "CONTACT";

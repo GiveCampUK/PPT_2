@@ -5,23 +5,24 @@ using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
 using System.Data.OleDb;
-using Ppt.DataMigration.Services.Friends;
+using Ppt.DataMigration.Services.Yoga;
 
-namespace Ppt.DataMigration.Tests.Services.Friends
+
+namespace Ppt.DataMigration.Tests.Services.Yoga
 {
     [TestFixture]
-    public class CountryFixture
+    public class ClassesFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Country _service;
+        Classes _service;
 
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
-            _oleConnection = new OleDbConnection(Global.AccessConnFriends);
-            _service = new Country();
+            _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
+            _service = new Classes();
             _service.SQLConnection = _sqlConnection;
             _service.AccessConnection = _oleConnection;
         }

@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class LookupLetterWriters : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public LookupLetterWriters()
         {
             AccessTableName = "Lookup Letter Writers";

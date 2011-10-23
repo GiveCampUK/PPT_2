@@ -14,7 +14,8 @@ namespace Ppt.DataMigration.Services.Prisoner
         public Lookup_Type()
         {
             AccessTableName = "Lookup_Type";
-        
+            NewTableName = "PersonType";
+
         }
         public override void MigrateTable()
         {

@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Corresp : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Corresp()
         {
             AccessTableName= "CORRESP";

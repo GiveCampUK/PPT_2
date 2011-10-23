@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class LookupPurpose : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public LookupPurpose()
         {
             AccessTableName = "Lookup Purpose";
