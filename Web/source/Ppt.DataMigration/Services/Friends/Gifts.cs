@@ -39,7 +39,7 @@ namespace Ppt.DataMigration.Services.Friends
                     var results = dt.Select("Id = '{0}'".Formatted(reader["REFNO"]));
                     if (results.Length == 0)
                     {
-                        var newRow = dt.NewRow();
+                        var newRow = dt.NewRow();   
                         newRow["Id"] = reader["REFNO"];
                         newRow["Date"] = reader["DATE"];
                         newRow["GiftType"] = GetGiftTypeSql(reader["GTYPE"] as string);
