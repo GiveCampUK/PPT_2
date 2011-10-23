@@ -25,7 +25,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 SQLConnection.Open();
                 AccessConnection.Open();
 
-                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOff.ExecuteScalar();
 
                 var oleCmd = GetSelectAllCommand();
@@ -41,29 +41,24 @@ namespace Ppt.DataMigration.Services.Prisoner
                     var results = dt.Select("CORREF = '{0}'".Formatted(reader["CORREF"]));
                     if (results.Length == 0)
                     {
-                        var corref = GetContactOldRefSql(reader["CORREF"] as string); // fk to get from contacts
-                        if (corref != null)
-                        {
-                            var newRow = dt.NewRow();
-                            newRow["CORREF"] = corref;
-                            newRow["OLDCORREF"] = reader["OLDCORREF"];
-                            newRow["NUMBER"] = reader["NUMBER"];
-                            newRow["REFNO"] = reader["REFNO"];
-                            newRow["DATE1"] = reader["DATE1"];
-                            newRow["TYPE"] = reader["TYPE"];
-                            newRow["FILING"] = reader["FILING"];
-                            newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
-                            newRow["DESTINATION"] = reader["DESTINATION"];
-                            newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
-                            dt.Rows.Add(newRow);
-                        }
+                        var newRow = dt.NewRow();
+                        newRow["CORREF"] = reader["CORREF"]; // pk
+                        newRow["NUMBER"] = reader["NUMBER"];
+                        newRow["REFNO"] = reader["REFNO"];
+                        newRow["DATE1"] = reader["DATE1"];
+                        newRow["TYPE"] = reader["TYPE"];
+                        newRow["FILING"] = reader["FILING"];
+                        newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
+                        newRow["DESTINATION"] = reader["DESTINATION"];
+                        newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
+                        dt.Rows.Add(newRow);
                     }
                 }
 
                 reader.Close();
                 adapter.Update(dt);
 
-                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
                 identOn.ExecuteScalar();
             }
             catch (Exception ex)

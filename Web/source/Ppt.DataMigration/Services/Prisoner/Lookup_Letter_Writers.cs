@@ -41,7 +41,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                     {
                         var newRow = dt.NewRow();
                         newRow["Name"] = reader["Name"];
-                        newRow["Initials"] = reader["Intials"];
+                        newRow["Initials"] = reader["Initials"];
                         dt.Rows.Add(newRow);
                     }
                 }

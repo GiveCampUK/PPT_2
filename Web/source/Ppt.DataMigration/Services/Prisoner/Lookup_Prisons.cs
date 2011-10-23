@@ -40,7 +40,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 {
                     currentIdentifier = reader["Prison"].ToString();
 
-                    var results = dt.Select("Name = '{0}'".Formatted(reader["Prison"]));
+                    var results = dt.Select("Name = '{0}'".Formatted(reader.Cleaned("Prison")));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
@@ -67,7 +67,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["Governor"] = reader.Cleaned("Governor");
                         newRow["Telephone"] = reader.Cleaned("Telephone");
                         newRow["Tag"] = reader.Cleaned("Tag");
-                        newRow["NlAddressOrder"] = reader.Cleaned("Nl Address Order");
+                        newRow["NlAddressOrder"] = reader["Nl Address Order"];
                         newRow["InclInNlAddressList"] = reader.Cleaned("Incl In Nl Address List").AsBool();
                         newRow["DesignationNewsletter"] = reader.Cleaned("Designation Newsletter");
                         newRow["Location"] = reader.Cleaned("Location");
