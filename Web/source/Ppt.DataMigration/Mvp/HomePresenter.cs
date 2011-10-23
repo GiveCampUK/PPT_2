@@ -188,11 +188,18 @@ namespace Ppt.DataMigration.Mvp
             {
                 DatabaseBuilderService dbBuilder = new DatabaseBuilderService();
                 dbBuilder.Build(connection, _view.SqlServerDatabase);
+                connection.Close();
+
             }
             catch (Exception ex)
             {
                 throw new ApplicationException("Failed to build database schema", ex);
             }
+
+
+            connection.ConnectionString = "Server={0};database={1};User ID={2};Password={3};Trusted_Connection=False;".Formatted(
+                    _view.SqlServerName, _view.SqlServerDatabase, _view.SqlServerUsername, _view.SqlServerPassword);
+
 
             tempWorker.ReportProgress( 40);
 
