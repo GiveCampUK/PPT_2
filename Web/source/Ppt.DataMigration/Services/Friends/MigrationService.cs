@@ -16,13 +16,13 @@ namespace Ppt.DataMigration.Services.Friends
 
         public override void Migrate()
         {
+            RunImporter(new Lookup_Gtype());
+            RunImporter(new MailCode());
             RunImporter(new Destination());
             RunImporter(new PostTown());
             RunImporter(new Response());
             RunImporter(new TitlePris());
-            RunImporter(new MailCode());
             RunImporter(new Country());
-            RunImporter(new Lookup_Gtype());
             RunImporter(new LookupPurpose());
             RunImporter(new Gifts());
             RunImporter(new Type());
