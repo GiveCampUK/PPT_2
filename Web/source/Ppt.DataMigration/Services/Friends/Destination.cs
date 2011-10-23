@@ -10,63 +10,52 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Destination : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Destination()
         {
             AccessTableName = "DESTINATION";
+            NewTableName = "Destination";
         }
 
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
                 AccessConnection.Open();
+
                 //Get Access Data
-
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM COUNTRY", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-
-                DataSet sqlCountry = new DataSet("Country");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "COUNTRY");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["COUNTRY"];
-
-
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    var results = dt.Select("Name = '{0}'".Formatted(reader["COUNTRY"]));
+                    currentIdentifier = reader["Destination"].ToString();
+
+                    var results = dt.Select("Name = '{0}'".Formatted(reader["Destination"]));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Name"] = reader["COUNTRY"];
+                        newRow["Name"] = reader["Destination"];
                         dt.Rows.Add(newRow);
                     }
                 }
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {
                 AccessConnection.Close();
                 SQLConnection.Close();//should we open and close for each database?
             }
-
-
         }
     }
 }

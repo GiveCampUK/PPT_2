@@ -269,5 +269,29 @@ namespace Ppt.DataMigration.Services
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
+
+        DataTable _responseTypes = null;
+
+        public object GetResponseTypeSql(string responseType)
+        {
+            if (responseType == null) return DBNull.Value;
+
+            if (_responseTypes == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM ResponseType", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlResponseTypes = new DataSet("ResponseType");
+                sqlAdapter.FillSchema(sqlResponseTypes, SchemaType.Source, "ResponseType");
+                sqlAdapter.Fill(sqlResponseTypes);
+                _titles = sqlResponseTypes.Tables["ResponseType"];
+            }
+
+            var result = _titles.Select("Response = '{0}'".Formatted(responseType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }
