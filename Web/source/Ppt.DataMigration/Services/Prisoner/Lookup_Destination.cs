@@ -11,14 +11,15 @@ namespace Ppt.DataMigration.Services.Prisoner
     public class Lookup_Destination : AbstractTableMigrationService
     {
        
-             public string AccessTableName { get; set; }
-
         public Lookup_Destination()
         {
-            AccessTableName= "Lookup_Destination";
+            AccessTableName = "Lookup_Destination";
+            NewTableName = "Destination";
         }
+
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
 
             try
             {
@@ -26,26 +27,18 @@ namespace Ppt.DataMigration.Services.Prisoner
                 AccessConnection.Open();
                 //Get Access Data
 
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM DESTINATION", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-
-                DataSet sqlCountry = new DataSet("DESTINATION");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "DESTINATION");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["DESTINATION"];
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
 
                 
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    currentIdentifier = reader["DESTINATION"].ToString();
+
                     var results = dt.Select("Name = '{0}'".Formatted(reader["DESTINATION"]));
                     if (results.Length == 0)
                     {
@@ -55,11 +48,11 @@ namespace Ppt.DataMigration.Services.Prisoner
                     }
                 }
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {

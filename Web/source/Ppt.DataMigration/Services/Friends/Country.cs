@@ -10,36 +10,24 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Country : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Country()
         {
-            AccessTableName= "COUNTRY";
+            AccessTableName = "COUNTRY";
+            NewTableName = "Country";
         }
+
         public override void MigrateTable()
         {
-
-
             try
             {
                 SQLConnection.Open();
                 AccessConnection.Open();
                 //Get Access Data
 
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM COUNTRY", SQLConnection);
-
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
-
-                DataSet sqlCountry = new DataSet("Country");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "COUNTRY");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["COUNTRY"];
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
 
                 
@@ -55,7 +43,7 @@ namespace Ppt.DataMigration.Services.Friends
                     }
                 }
                 reader.Close();
-                sqlAdapter.Update(dt);
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {
@@ -66,8 +54,6 @@ namespace Ppt.DataMigration.Services.Friends
                 AccessConnection.Close();
                 SQLConnection.Close();//should we open and close for each database?
             }
-
-
         }
     }
 }
