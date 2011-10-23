@@ -56,5 +56,6 @@ namespace Ppt.DataMigration.Services.Friends
                 AccessConnection.Close();
                 SQLConnection.Close();//should we open and close for each database?
             }
+        }
     }
 }
