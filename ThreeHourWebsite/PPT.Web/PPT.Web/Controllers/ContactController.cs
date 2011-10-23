@@ -32,7 +32,8 @@ namespace PPT.Web.Controllers
                                   .RowCount();
 
             var results = resultsQuery.OrderBy(x => x.Surname).Asc
-                                      .OrderBy(x => x.Forename).Asc.Skip((pageNumber - 1)*pageSize)
+                                      .OrderBy(x => x.Forename).Asc
+                                      .Skip((pageNumber - 1)*pageSize)
                                       .Take(pageSize)
                                       .List();
 
