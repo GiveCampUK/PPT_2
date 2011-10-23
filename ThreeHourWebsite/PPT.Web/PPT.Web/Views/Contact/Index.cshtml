@@ -6,10 +6,9 @@
 <table style="width: 80%">
 @foreach (var contact in Model){
     @: 
-    <tr>
-    <td style="width: 100%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
-        @Html.ActionLink(contact.Forename + " " + contact.Surname, "Details", new { id = contact.Id })
-    </td>
+    <tr style="width: 100%; background-color: lightblue; padding: 5px; border-bottom: 1px dotted black;">
+    <td>@Html.ActionLink(contact.Surname + ", " +contact.Forename, "Details", new { id = contact.Id })</td>
+    <td>@contact.EmailAddress</td>
     </tr>
 }
 </table>

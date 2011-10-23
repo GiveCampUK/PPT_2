@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using System.Web.Mvc;
 using NHibernate;
 using PPT.Web.Code.Domain;
@@ -15,17 +16,34 @@ namespace PPT.Web.Controllers
             _session = session;
         }
 
-        public ActionResult Index(int pageNumber = 1, int pageSize = 25)
+        public ActionResult Index(int pageNumber = 1, int pageSize = 25, bool filterInvalidNames = true)
         {
-            var count =   _session.QueryOver<Contact>().RowCount();
-            var results = _session.QueryOver<Contact>()
-                                .Skip((pageNumber - 1)*pageSize)
-                                .Take(pageSize)
-                                .List();
+            var countQuery = _session.QueryOver<Contact>();
+            var resultsQuery = _session.QueryOver<Contact>();
+
+            if (filterInvalidNames)
+            {
+                countQuery = ApplyInvalidNameFilter(countQuery);
+                resultsQuery = ApplyInvalidNameFilter(resultsQuery);
+            } 
+
+            var count = countQuery.OrderBy(x => x.Surname).Asc
+                                  .OrderBy(x => x.Forename).Asc
+                                  .RowCount();
+
+            var results = resultsQuery.OrderBy(x => x.Surname).Asc
+                                      .OrderBy(x => x.Forename).Asc.Skip((pageNumber - 1)*pageSize)
+                                      .Take(pageSize)
+                                      .List();
 
             var aPageOfData = new PageOf<Contact>(results, pageSize, pageNumber){TotalResults = count};
 
             return View(aPageOfData);
+        }
+
+        private static IQueryOver<Contact, Contact> ApplyInvalidNameFilter(IQueryOver<Contact, Contact> q1)
+        {
+            return q1.Where(x => x.Surname != null && x.Forename != null);
         }
 
         public ActionResult Details(int id)
