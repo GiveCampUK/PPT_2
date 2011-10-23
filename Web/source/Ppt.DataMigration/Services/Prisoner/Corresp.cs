@@ -52,12 +52,12 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["DESTINATION"] = reader["DESTINATION"];
                         newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
 
                 reader.Close();
-                adapter.Update(dt);
-
+                
                 SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
                 identOn.ExecuteScalar();
             }

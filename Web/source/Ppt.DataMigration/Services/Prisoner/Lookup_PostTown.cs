@@ -41,11 +41,10 @@ namespace Ppt.DataMigration.Services.Prisoner
                         var newRow = dt.NewRow();
                         newRow["Name"] = reader["POSTTOWN"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
-
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {

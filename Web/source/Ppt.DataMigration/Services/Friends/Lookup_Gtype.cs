@@ -43,10 +43,10 @@ namespace Ppt.DataMigration.Services.Friends
                         newRow["ShortCode"] = reader["Field1"];
                         newRow["Name"] = reader["Field2"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {

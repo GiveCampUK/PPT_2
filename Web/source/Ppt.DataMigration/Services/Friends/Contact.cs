@@ -96,10 +96,10 @@ namespace Ppt.DataMigration.Services.Friends
                         newRow["PersonType"] = GetPersonTypeSql(reader.Cleaned("TYPE"));
                         newRow["PreviousPrison"] = GetPrisonSql(reader.Cleaned("PREVPRIS"));
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {
