@@ -11,26 +11,26 @@ using Ppt.DataMigration.Services.Prisoner;
 namespace Ppt.DataMigration.Tests.Services.Prisoner
 {
     [TestFixture]
-    public class ContactFixture
+    public class Lookup_InstitutionTypeFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Contact _contact;
+        Lookup_InstitutionType _institution;
 
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
             _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
-            _contact = new Contact();
-            _contact.SQLConnection = _sqlConnection;
-            _contact.AccessConnection = _oleConnection;
+            _institution = new Lookup_InstitutionType();
+            _institution.SQLConnection = _sqlConnection;
+            _institution.AccessConnection = _oleConnection;
         }
 
         [Test]
         public void Migrate()
         {
-            _contact.MigrateTable();
+            _institution.MigrateTable();
         }
 
 

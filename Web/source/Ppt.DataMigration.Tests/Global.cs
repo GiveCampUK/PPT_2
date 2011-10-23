@@ -11,7 +11,7 @@ namespace Ppt.DataMigration.Tests
         {
             get
             {
-                return @"Server=.\sqlexpress;Database=PPT2;User ID=ppt;Password=password;Trusted_Connection=False;";
+                return @"Server=.\sqlexpress;Database=PPT;User ID=ppt;Password=password;Trusted_Connection=False;";
             }
         }
         public static string AccessConnFriends

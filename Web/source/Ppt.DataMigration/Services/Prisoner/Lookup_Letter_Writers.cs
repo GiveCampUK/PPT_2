@@ -10,6 +10,12 @@ namespace Ppt.DataMigration.Services.Prisoner
 {
     public class Lookup_Letter_Writers : AbstractTableMigrationService
     {
+        public Lookup_Letter_Writers()
+        {
+            AccessTableName = "";
+            NewTableName = "";
+        }
+
         public override void MigrateTable()
         {
             

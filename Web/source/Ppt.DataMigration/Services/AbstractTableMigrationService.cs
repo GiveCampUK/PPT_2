@@ -160,10 +160,10 @@ namespace Ppt.DataMigration.Services
                 DataSet sqlCountry = new DataSet("Titles");
                 sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Titles");
                 sqlAdapter.Fill(sqlCountry);
-                _prisonSex = sqlCountry.Tables["Titles"];
+                _title = sqlCountry.Tables["Titles"];
             }
 
-            var result = _prisonSex.Select("Name = '{0}'".Formatted(title));
+            var result = _title.Select("Name = '{0}'".Formatted(title));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
@@ -184,10 +184,34 @@ namespace Ppt.DataMigration.Services
                 DataSet sqlCountry = new DataSet("MailCode");
                 sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "MailCode");
                 sqlAdapter.Fill(sqlCountry);
-                _prisonSex = sqlCountry.Tables["MailCode"];
+                _mailCode = sqlCountry.Tables["MailCode"];
             }
 
-            var result = _prisonSex.Select("Name = '{0}'".Formatted(mailCode));
+            var result = _mailCode.Select("Name = '{0}'".Formatted(mailCode));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        private DataTable _responseType = null;
+        public object GetResponseTypeFromSql(string response)
+        {
+            if (response == null) return DBNull.Value;
+
+            if (_responseType == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM ResponseType", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlCountry = new DataSet("ResponseType");
+                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "ResponseType");
+                sqlAdapter.Fill(sqlCountry);
+                _responseType = sqlCountry.Tables["ResponseType"];
+            }
+
+            var result = _responseType.Select("Response = '{0}'".Formatted(response));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }

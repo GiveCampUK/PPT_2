@@ -12,8 +12,8 @@ namespace Ppt.DataMigration.Services.Prisoner
     {
         public Contact()
         {
-            AccessTableName = "Lookup_Destination";
-            NewTableName = "Destination";
+            AccessTableName = "CONTACT";
+            NewTableName = "Contacts";
         }
 
         public override void MigrateTable()
@@ -101,7 +101,7 @@ namespace Ppt.DataMigration.Services.Prisoner
                 reader.Close();
                 adapter.Update(dt);
 
-                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT Prison ON", SQLConnection);
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOn.ExecuteScalar();
             }
             catch (Exception ex)

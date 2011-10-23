@@ -55,6 +55,8 @@
     <Compile Include="Global.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Prisoner\ContactFixture.cs" />
+    <Compile Include="Services\Prisoner\Lookup_InstitutionTypeFixture.cs" />
+    <Compile Include="Services\Prisoner\CorrespFixture.cs" />
     <Compile Include="Services\Prisoner\Lookup_PostTownFixture.cs" />
     <Compile Include="Services\Friends\CountryFixture.cs" />
     <Compile Include="Services\Prisoner\Lookup_PrisonFixture.cs" />
