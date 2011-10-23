@@ -22,7 +22,7 @@ namespace Ppt.DataMigration.Services.Yoga
                 SQLConnection.Open();
                 AccessConnection.Open();
 
-                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOff.ExecuteScalar();
 
                 //Get Access Data
@@ -41,7 +41,7 @@ namespace Ppt.DataMigration.Services.Yoga
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["ID"];
-                        newRow["TeacherId"] = GetTeacherFromSql(reader.Cleaned("Teacher ID"));
+                        newRow["TeacherId"] = GetContactSql(reader["Teacher ID"].ToString(), "FRIEND");
                         newRow["Date"] = reader["Date"];
                         newRow["History"] = reader["History"];
                         dt.Rows.Add(newRow);
@@ -49,7 +49,7 @@ namespace Ppt.DataMigration.Services.Yoga
                     }
                 }
                 reader.Close();
-                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
                 identOn.ExecuteScalar();
             }
             catch (Exception ex)
