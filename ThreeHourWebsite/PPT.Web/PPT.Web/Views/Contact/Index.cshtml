@@ -3,6 +3,9 @@
 @model PageOf<Contact>
 
 <h2>Contacts</h2>
+
+@Html.Partial("_Pager", Model)
+
 <table style="width: 80%">
 @foreach (var contact in Model){
     @: 
