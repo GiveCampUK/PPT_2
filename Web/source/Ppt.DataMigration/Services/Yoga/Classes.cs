@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
@@ -22,6 +23,9 @@ namespace Ppt.DataMigration.Services.Yoga
                 SQLConnection.Open();
                 AccessConnection.Open();
 
+                SqlCommand identOff = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " OFF", SQLConnection);
+                identOff.ExecuteScalar();
+
                 //Get Access Data
                 var oleCmd = GetSelectAllCommand();
                 var adapter = GetSqlAdapter();
@@ -38,8 +42,8 @@ namespace Ppt.DataMigration.Services.Yoga
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["Id"];
-                        newRow["TeacherId"] = reader["Teacher ID"];
-                        newRow["PrisonId"] = reader["Prison ID"];
+                        newRow["TeacherId"] = GetTeacherFromSql(reader.Cleaned("Teacher ID"));
+                        newRow["PrisonId"] = GetPrisonSql(reader.Cleaned("Prison ID"));
                         newRow["ClassDetails"] = reader["Class details"];
                         newRow["Notes"] = reader["Notes"];
                         newRow["ClassMakeup"] = reader["Class makeup"];
@@ -53,6 +57,8 @@ namespace Ppt.DataMigration.Services.Yoga
                     }
                 }
                 reader.Close();
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " On", SQLConnection);
+                identOn.ExecuteScalar();
             }
             catch (Exception ex)
             {
