@@ -39,17 +39,17 @@ namespace Ppt.DataMigration.Services.Prisoner
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["REFNO"]; // primary key, int
-                        newRow["Surname"] = reader["SURNAME"];
-                        newRow["Forename"] = reader["FORENAME"];
-                        newRow["Title"] = GetTitleSql(reader["TITLE"] as string); // foreign key, int
-                        newRow["Position"] = reader["POSITION"];
-                        newRow["MailName"] = reader["MAILNAME"];
-                        newRow["Salutation"] = reader["SALUTATION"];
+                        newRow["Surname"] = reader["SURNAME"].ToString().Replace("'", "''");
+                        newRow["Forename"] = reader["FORENAME"].ToString().Replace("'", "''");
+                        newRow["Title"] = GetTitleSql(reader["TITLE"] as string).ToString().Replace("'", "''"); // foreign key, int
+                        newRow["Position"] = reader["POSITION"].ToString().Replace("'", "''");
+                        newRow["MailName"] = reader["MAILNAME"].ToString().Replace("'", "''");
+                        newRow["Salutation"] = reader["SALUTATION"].ToString().Replace("'", "''");
                         newRow["Type"] = reader["TYPE"];
                         //newRow["EmailAddress"] = reader["EmailAddress"];
                         newRow["Source"] = reader["SOURCE"];
                         newRow["DOB"] = reader["DOB"];
-                        newRow["MailCode"] =  GetMailCodeSql(reader["MAILCODE"] as string); // foreign key
+                        newRow["MailCode"] = GetMailCodeSql(reader["MAILCODE"] as string).ToString().Replace("'", "''"); // foreign key
                         newRow["Lost"] = reader["LOST"]; //datetime
                         newRow["Deceased"] = reader["DECEASED"].AsBool(); //bit
                         newRow["ArchivePrisonName"] = reader["PREVPRIS1"];

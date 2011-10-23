@@ -26,30 +26,26 @@ namespace Ppt.DataMigration.Services.Prisoner
                 AccessConnection.Open();
                 //Get Access Data
 
-                OleDbCommand oleCmd = AccessConnection.CreateCommand();
-                oleCmd.CommandText = "SELECT * FROM " + AccessTableName;
-
-                //get current records in SQL
-                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM COUNTRY", SQLConnection);
-
-                DataSet sqlCountry = new DataSet("Country");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "COUNTRY");
-                sqlAdapter.Fill(sqlCountry);
-                DataTable dt = sqlCountry.Tables["COUNTRY"];
+                var oleCmd = GetSelectAllCommand();
+                var adapter = GetSqlAdapter();
+                var dataSet = GetAndFillDataSet(adapter);
+                var dt = GetDataTable(dataSet);
 
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    var results = dt.Select("Name = '{0}'".Formatted(reader["COUNTRY"]));
+                    var results = dt.Select("ShortCode = '{0}'".Formatted(reader["CODE"]));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
-                        newRow["Name"] = reader["COUNTRY"];
+                        newRow["ShortCode"] = reader["CODE"];
+                        newRow["Name"] = reader["DESC"];
                         dt.Rows.Add(newRow);
                     }
                 }
+
                 reader.Close();
-                dt.AcceptChanges();
+                adapter.Update(dt);
             }
             catch (Exception ex)
             {

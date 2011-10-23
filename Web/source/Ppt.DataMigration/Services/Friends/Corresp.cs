@@ -45,7 +45,7 @@ namespace Ppt.DataMigration.Services.Friends
                         newRow["Date1"] = reader["DATE"];
                         newRow["Type"] = reader["TYPE"];
                         newRow["Filing"] = reader["FILING"];
-                        newRow["Response"] = GetResponseTypeSql(reader["RESPONSE"] as string);
+                        newRow["Response"] = GetResponseTypeSql(reader["RESPONSE"] as string).ToString().Replace("'", "''");
                         newRow["Destination"] = reader["DESTINATION"];
                         newRow["Correspondant"] = reader["CORRESPONDENT"];
                         dt.Rows.Add(newRow);
