@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
     <Compile Include="Code\DataAccess\Mapping\ContactMap.cs" />
+    <Compile Include="Code\DataAccess\Queries\RetrievePageOfContacts.cs" />
     <Compile Include="Code\DataAccess\SessionProvider.cs" />
     <Compile Include="Code\Domain\Contact.cs" />
     <Compile Include="Controllers\AccountController.cs" />
