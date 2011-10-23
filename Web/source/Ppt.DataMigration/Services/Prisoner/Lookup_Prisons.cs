@@ -76,11 +76,10 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["ContactPhone"] = reader.Cleaned("ContactPhone");
                         newRow["ContactFax"] = reader.Cleaned("ContactFax");
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
-
 
                  //turn of ID column ON
 

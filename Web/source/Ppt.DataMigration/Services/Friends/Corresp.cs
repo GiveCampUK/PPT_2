@@ -53,11 +53,11 @@ namespace Ppt.DataMigration.Services.Friends
                             newRow["Destination"] = reader["DESTINATION"];
                             newRow["Correspondent"] = reader["CORRESPONDENT"];
                             dt.Rows.Add(newRow);
+                            adapter.Update(dt);
                         }
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {

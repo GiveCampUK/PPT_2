@@ -42,10 +42,10 @@ namespace Ppt.DataMigration.Services.Friends
                         var newRow = dt.NewRow();
                         newRow["Name"] = reader["Destination"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {

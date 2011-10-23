@@ -99,12 +99,12 @@ namespace Ppt.DataMigration.Services.Prisoner
 
 
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
 
                 reader.Close();
-                adapter.Update(dt);
-
+                
                 SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOn.ExecuteScalar();
             }
