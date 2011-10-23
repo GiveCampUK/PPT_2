@@ -25,6 +25,7 @@ namespace Ppt.DataMigration.Services.Friends
             RunImporter(new Lookup_Gtype());
             RunImporter(new LookupPurpose());
             RunImporter(new Gifts());
+            RunImporter(new Type());
             RunImporter(new LookupLetterWriters());
             RunImporter(new Writers());
             RunImporter(new Contact()); 
