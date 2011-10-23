@@ -72,9 +72,10 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(384, 20);
+            this.label2.Size = new System.Drawing.Size(396, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "The Total Awesome PPT Access Migration Tool";
+            this.label2.Text = "The Totally Awesome PPT Access Migration Tool";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
             // 

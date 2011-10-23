@@ -103,7 +103,10 @@ namespace Ppt.DataMigration
                     _progressBar.ShowDialog();
                     break;
                 case HomeActions.HideProgressBar:
-                    _progressBar.Hide();
+                        _progressBar.Hide();
+                    break;
+                case HomeActions.ImportComplete:
+                    MessageBox.Show("Import complete!!\n\r\n\rThis import was brought to you by the sleepy volunteers at GiveCampUK!!");
                     break;
                 default:
                     MessageBox.Show("HomeAction not handled");
@@ -116,8 +119,9 @@ namespace Ppt.DataMigration
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Please correct the following errors:");
+            sb.AppendLine("");
             foreach (var error in Errors)
-                sb.AppendLine("\t"+error);
+                sb.AppendLine(error);
             MessageBox.Show(sb.ToString());
         }
 
@@ -148,6 +152,11 @@ namespace Ppt.DataMigration
             {
                 return _progressBar;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

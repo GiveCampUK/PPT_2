@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\PPT\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-10-22" time="19:44:06">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5446" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="AST-LAPTOP3" user="jpd" user-domain="EDU2000" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\PPT\Web\source\Ppt.DataMigration.Tests\bin\Debug\Ppt.DataMigration.Tests.dll" executed="True" result="Success" success="True" time="5.054" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Ppt" executed="True" result="Success" success="True" time="5.049" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="DataMigration" executed="True" result="Success" success="True" time="5.049" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="5.049" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Services" executed="True" result="Success" success="True" time="5.048" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="Prisoner" executed="True" result="Success" success="True" time="5.048" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="Lookup_PostTownFixture" executed="True" result="Success" success="True" time="5.046" asserts="0">
+                            <results>
+                              <test-case name="Ppt.DataMigration.Tests.Services.Prisoner.Lookup_PostTownFixture.Migrate" executed="True" result="Success" success="True" time="5.035" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

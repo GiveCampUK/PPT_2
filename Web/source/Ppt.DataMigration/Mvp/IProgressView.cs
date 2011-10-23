@@ -9,6 +9,7 @@ namespace Ppt.DataMigration.Mvp
     {
          int PercentComplete { get; set; }
          string Message { get; set; }
+         void Terminate();
 
     }
 }
