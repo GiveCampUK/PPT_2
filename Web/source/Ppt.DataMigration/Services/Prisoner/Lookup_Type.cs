@@ -41,11 +41,11 @@ namespace Ppt.DataMigration.Services.Prisoner
                         newRow["ShortCode"] = reader["CODE"];
                         newRow["Name"] = reader["DESC"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
 
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {

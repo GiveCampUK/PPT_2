@@ -38,15 +38,15 @@ namespace Ppt.DataMigration.Services.Yoga
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["Id"];
-                        newRow["TeacherId"] = reader["Teacher Id"];
+                        newRow["TeacherId"] = GetContactSql(reader["Teacher Id"] as string, "FRIEND");
                         newRow["Accreditation"] = reader["Accreditation"];
                         newRow["Date"] = reader["Date"];
                         newRow["Notes"] = reader["Notes"];
                         dt.Rows.Add(newRow);
+                        adapter.Update(dt);
                     }
                 }
                 reader.Close();
-                adapter.Update(dt);
             }
             catch (Exception ex)
             {
