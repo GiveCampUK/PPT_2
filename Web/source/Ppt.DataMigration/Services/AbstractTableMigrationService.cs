@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -295,12 +295,12 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM GiftType", SQLConnection);
 
-                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
+                //SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet dts = new DataSet("GiftType");
-                sqlAdapter.FillSchema(dts, SchemaType.Source, "GiftType");
+                DataSet dts = new DataSet("Table");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Table");
                 sqlAdapter.Fill(dts.Tables["GiftType"]);
-                _giftTypes = dts.Tables["GiftType"];
+                _giftTypes = dts.Tables["Table"];
             }
 
             var result = _giftTypes.Select("ShortCode = '{0}'".Formatted(giftType));
