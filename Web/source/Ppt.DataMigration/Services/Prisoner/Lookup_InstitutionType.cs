@@ -18,6 +18,8 @@ namespace Ppt.DataMigration.Services.Prisoner
 
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
@@ -32,6 +34,8 @@ namespace Ppt.DataMigration.Services.Prisoner
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    currentIdentifier = reader["InstitutionTypeId"].ToString();
+
                     var results = dt.Select("ShortCode = '{0}'".Formatted(reader["InstitutionTypeId"]));
                     if (results.Length == 0)
                     {
@@ -46,7 +50,7 @@ namespace Ppt.DataMigration.Services.Prisoner
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {
