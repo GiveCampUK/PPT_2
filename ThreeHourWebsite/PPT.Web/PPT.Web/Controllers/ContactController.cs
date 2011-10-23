@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using NHibernate;
 using PPT.Web.Code.Domain;
+using PPT.Web.Models;
 
 namespace PPT.Web.Controllers
 {
@@ -16,12 +17,16 @@ namespace PPT.Web.Controllers
 
         public ActionResult Index(int pageNumber = 1, int pageSize = 25)
         {
-            var page = _session.QueryOver<Contact>()
+            var count = _session.QueryOver<Contact>().RowCount();
+            var results = _session.QueryOver<Contact>()
                                 .Skip((pageNumber - 1)*pageSize)
                                 .Take(pageSize)
                                 .List();
 
-            return View(page);
+
+            var aPageOfData = new PageOf<Contact>(results, pageSize, pageNumber){TotalResults = count};
+
+            return View(aPageOfData);
         }
 
         //

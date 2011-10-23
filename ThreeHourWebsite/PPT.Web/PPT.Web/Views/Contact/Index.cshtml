@@ -1,8 +1,12 @@
 ﻿@using PPT.Web.Code.Domain
-@model IList<Contact>
+@using PPT.Web.Models
+@model PageOf<Contact>
 
 <h2>Contacts</h2>
 
+Total: @Model.TotalResults<br/>
+Page Number: @Model.PageNumber<br/>
+Page Size: @Model.PageSize<br/>
 <ul>
 @foreach (var contact in Model){
     @: 
