@@ -1,0 +1,13 @@
+﻿@using PPT.Web.Code.Domain
+@model IList<Contact>
+
+<h2>Contacts</h2>
+
+<ul>
+@foreach (var contact in Model){
+    @: 
+    <li>
+        @Html.ActionLink(contact.Forename + " " + contact.Surname, "Details", new { id = contact.Id })
+    </li>
+}
+</ul>
