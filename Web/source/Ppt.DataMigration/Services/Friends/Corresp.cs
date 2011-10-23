@@ -40,7 +40,7 @@ namespace Ppt.DataMigration.Services.Friends
                     if (results.Length == 0)
                     {
                         var corref = GetContactOldRefSql(reader["CORREF"] as string); // fk to get from contacts
-                        if (corref != null)
+                        if (!corref.ToString().IsNullOrEmpty())
                         {
                             var newRow = dt.NewRow();
                             newRow["Corref"] = corref;
@@ -55,6 +55,10 @@ namespace Ppt.DataMigration.Services.Friends
                             dt.Rows.Add(newRow);
                             adapter.Update(dt);
                         }
+                        else
+                        {
+                            this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, currentIdentifier, "CORREF was null"));
+                        } // End Else
                     }
                 }
                 reader.Close();
