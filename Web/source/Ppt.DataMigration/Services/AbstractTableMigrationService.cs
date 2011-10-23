@@ -293,5 +293,29 @@ namespace Ppt.DataMigration.Services
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
+
+        DataTable _giftTypes = null;
+
+        public object GetGiftTypeSql(string giftType)
+        {
+            if (giftType == null) return DBNull.Value;
+
+            if (_giftTypes == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM GiftType", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlGiftTypes = new DataSet("GiftType");
+                sqlAdapter.FillSchema(sqlGiftTypes, SchemaType.Source, "GiftType");
+                sqlAdapter.Fill(sqlGiftTypes);
+                _titles = sqlGiftTypes.Tables["GiftType"];
+            }
+
+            var result = _giftTypes.Select("ShortCode = '{0}'".Formatted(giftType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }

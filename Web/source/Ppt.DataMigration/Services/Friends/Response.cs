@@ -18,6 +18,8 @@ namespace Ppt.DataMigration.Services.Friends
 
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
@@ -32,6 +34,8 @@ namespace Ppt.DataMigration.Services.Friends
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    currentIdentifier = reader["Field1"].ToString();
+
                     var results = dt.Select("Response = '{0}'".Formatted(reader["Field1"].ToString().Replace("'", "''")));
                     if (results.Length == 0)
                     {
@@ -46,7 +50,7 @@ namespace Ppt.DataMigration.Services.Friends
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, "", ex.Message));
             }
             finally
             {

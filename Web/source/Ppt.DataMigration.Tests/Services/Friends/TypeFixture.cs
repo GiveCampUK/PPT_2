@@ -1,4 +1,4 @@
-﻿using System.Data.OleDb;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using NUnit.Framework;
 using Ppt.DataMigration.Services.Friends;
