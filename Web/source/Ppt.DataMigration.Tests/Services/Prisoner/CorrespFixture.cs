@@ -7,31 +7,30 @@ using System.Data.SqlClient;
 using System.Data.OleDb;
 using Ppt.DataMigration.Services.Prisoner;
 
+
 namespace Ppt.DataMigration.Tests.Services.Prisoner
 {
     [TestFixture]
-    public class Lookup_DestinationFixture
+    public class CorrespFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Lookup_Destination _destination;
-        
+        Corresp _corresp;
+
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
             _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
-            _destination = new Lookup_Destination();
-            _destination.SQLConnection = _sqlConnection;
-            _destination.AccessConnection = _oleConnection;
+            _corresp = new Corresp();
+            _corresp.SQLConnection = _sqlConnection;
+            _corresp.AccessConnection = _oleConnection;
         }
 
         [Test]
         public void Migrate()
         {
-            _destination.MigrateTable();
+            _corresp.MigrateTable();
         }
-
-        
     }
 }

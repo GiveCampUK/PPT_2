@@ -10,7 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Response : AbstractTableMigrationService
     {
-
         public Response()
         {
             AccessTableName = "Response";
@@ -51,7 +50,7 @@ namespace Ppt.DataMigration.Services.Friends
             }
             catch (Exception ex)
             {
-                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, "", ex.Message));
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, "", ex.Message));
             }
             finally
             {

@@ -10,13 +10,12 @@ namespace Ppt.DataMigration.Services.Prisoner
 {
     public class Lookup_Type : AbstractTableMigrationService
     {
-
-        public string AccessTableName { get; set; }
-
+        
         public Lookup_Type()
         {
             AccessTableName = "Lookup_Type";
-        
+            NewTableName = "PersonType";
+
         }
         public override void MigrateTable()
         {

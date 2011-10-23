@@ -10,8 +10,6 @@ namespace Ppt.DataMigration.Services.Friends
 {
     public class Corresp : AbstractTableMigrationService
     {
-        public string AccessTableName { get; set; }
-
         public Corresp()
         {
             AccessTableName = "CORRESP";
@@ -58,7 +56,7 @@ namespace Ppt.DataMigration.Services.Friends
             }
             catch (Exception ex)
             {
-                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.DataSource, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {

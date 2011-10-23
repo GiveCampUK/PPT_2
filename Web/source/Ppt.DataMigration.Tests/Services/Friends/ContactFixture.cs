@@ -1,28 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
+﻿using System.Data.OleDb;
 using System.Data.SqlClient;
-using System.Data.OleDb;
-using Ppt.DataMigration.Services.Prisoner;
+using NUnit.Framework;
+using Ppt.DataMigration.Services.Friends;
 
-
-namespace Ppt.DataMigration.Tests.Services.Prisoner
+namespace Ppt.DataMigration.Tests.Services.Friends
 {
     [TestFixture]
-    public class Lookup_ResponseFixture
+    public class ContactFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Lookup_Response _service;
+        Contact _service;
 
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
-            _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
-            _service = new Lookup_Response();
+            _oleConnection = new OleDbConnection(Global.AccessConnFriends);
+            _service = new Contact();
             _service.SQLConnection = _sqlConnection;
             _service.AccessConnection = _oleConnection;
         }
@@ -32,7 +27,5 @@ namespace Ppt.DataMigration.Tests.Services.Prisoner
         {
             _service.MigrateTable();
         }
-
-
     }
 }

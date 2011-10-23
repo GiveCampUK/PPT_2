@@ -14,22 +14,22 @@ namespace Ppt.DataMigration.Tests.Services.Friends
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Country _country;
+        Country _service;
 
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
             _oleConnection = new OleDbConnection(Global.AccessConnFriends);
-            _country = new Country();
-            _country.SQLConnection = _sqlConnection;
-            _country.AccessConnection = _oleConnection;
+            _service = new Country();
+            _service.SQLConnection = _sqlConnection;
+            _service.AccessConnection = _oleConnection;
         }
 
         [Test]
         public void Migrate()
         {
-            _country.MigrateTable();
+            _service.MigrateTable();
         }
 
 

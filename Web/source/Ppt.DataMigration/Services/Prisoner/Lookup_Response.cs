@@ -12,11 +12,9 @@ namespace Ppt.DataMigration.Services.Prisoner
     {
         public Lookup_Response()
         {
-            AccessTableName = "Lookup_Response";
+            AccessTableName = "LOOKUP_RESPONSE";
             NewTableName = "ResponseType";
-
         }
-
         public override void MigrateTable()
         {
             try

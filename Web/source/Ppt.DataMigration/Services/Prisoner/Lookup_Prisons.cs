@@ -84,7 +84,7 @@ namespace Ppt.DataMigration.Services.Prisoner
 
                  //turn of ID column ON
 
-                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT Prison ON", SQLConnection);
+                SqlCommand identOn = new SqlCommand("SET IDENTITY_INSERT " + NewTableName + " ON", SQLConnection);
                 identOn.ExecuteScalar();
             }
             catch (Exception ex)

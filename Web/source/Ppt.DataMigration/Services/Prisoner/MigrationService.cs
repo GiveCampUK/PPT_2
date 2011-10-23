@@ -31,6 +31,8 @@ namespace Ppt.DataMigration.Services.Prisoner
             RunImporter(new Lookup_Prisons());
 
             RunImporter(new Lookup_Letter_Writers());
+
+            RunImporter(new Corresp());
             
         }
 

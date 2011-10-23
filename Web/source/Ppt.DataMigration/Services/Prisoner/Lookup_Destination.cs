@@ -11,8 +11,6 @@ namespace Ppt.DataMigration.Services.Prisoner
     public class Lookup_Destination : AbstractTableMigrationService
     {
        
-        public string AccessTableName { get; set; }
-
         public Lookup_Destination()
         {
             AccessTableName = "Lookup_Destination";

@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -30,7 +30,7 @@ namespace Ppt.DataMigration.Services
         /// I am not sure please update.
         /// </summary>
         public OleDbConnection AccessConnection { get; set; }
-        
+
         public SqlConnection SQLConnection { get; set; }
         public string AccessTableName { get; set; }
         public string NewTableName { get; set; }

@@ -5,31 +5,32 @@ using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
 using System.Data.OleDb;
+using Ppt.DataMigration.Services.Friends;
 using Ppt.DataMigration.Services.Prisoner;
 
 namespace Ppt.DataMigration.Tests.Services.Prisoner
 {
     [TestFixture]
-    public class Lookup_DestinationFixture
+    public class Lookup_PrisonsFixture
     {
         SqlConnection _sqlConnection;
         OleDbConnection _oleConnection;
-        Lookup_Destination _destination;
+        Lookup_Prisons _prisons;
         
         [SetUp]
         public void Setup()
         {
             _sqlConnection = new SqlConnection(Global.SqlConn);
             _oleConnection = new OleDbConnection(Global.AccessConnPrisoners);
-            _destination = new Lookup_Destination();
-            _destination.SQLConnection = _sqlConnection;
-            _destination.AccessConnection = _oleConnection;
+            _prisons = new Lookup_Prisons();
+            _prisons.SQLConnection = _sqlConnection;
+            _prisons.AccessConnection = _oleConnection;
         }
 
         [Test]
         public void Migrate()
         {
-            _destination.MigrateTable();
+            _prisons.MigrateTable();
         }
 
         
