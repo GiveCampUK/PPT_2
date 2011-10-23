@@ -9,7 +9,7 @@ namespace Ppt.DataMigration.Services.Yoga
     {
         public WorkshopTeachers()
         {
-            AccessTableName = "Workshop Teachers";
+            AccessTableName = "[Workshop Teachers]";
             NewTableName = "WorkshopTeachers";
         }
 

@@ -144,6 +144,130 @@ namespace Ppt.DataMigration.Services
 
         }
 
+        DataTable _titles = null;
 
+        public object GetTitleSql(string title)
+        {
+            if (title == null) return DBNull.Value;
+
+            if (_titles == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Titles", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlTitles = new DataSet("Titles");
+                sqlAdapter.FillSchema(sqlTitles, SchemaType.Source, "Titles");
+                sqlAdapter.Fill(sqlTitles);
+                _titles = sqlTitles.Tables["Titles"];
+            }
+
+            var result = _titles.Select("Name = '{0}'".Formatted(title));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+
+        }
+
+        DataTable _mailCodes = null;
+
+        public object GetMailCodeSql(string mailCode)
+        {
+            if (mailCode == null) return DBNull.Value;
+
+            if (_mailCodes == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM MailCode", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlMailCodes = new DataSet("MailCode");
+                sqlAdapter.FillSchema(sqlMailCodes, SchemaType.Source, "MailCode");
+                sqlAdapter.Fill(sqlMailCodes);
+                _titles = sqlMailCodes.Tables["MailCode"];
+            }
+
+            var result = _titles.Select("Name = '{0}'".Formatted(mailCode));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+
+        }
+
+        DataTable _prisons = null;
+
+        public object GetPrisonSql(string prison)
+        {
+            if (prison == null) return DBNull.Value;
+
+            if (_prisons == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Prison", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlPrisons = new DataSet("Prison");
+                sqlAdapter.FillSchema(sqlPrisons, SchemaType.Source, "Prison");
+                sqlAdapter.Fill(sqlPrisons);
+                _titles = sqlPrisons.Tables["Prison"];
+            }
+
+            var result = _titles.Select("Name = '{0}'".Formatted(prison));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        DataTable _personTypes = null;
+
+        public object GetPersonTypeSql(string personType)
+        {
+            if (personType == null) return DBNull.Value;
+
+            if (_personTypes == null)
+            {
+
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PersonType", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlPersonTypes = new DataSet("PersonType");
+                sqlAdapter.FillSchema(sqlPersonTypes, SchemaType.Source, "PersonType");
+                sqlAdapter.Fill(sqlPersonTypes);
+                _titles = sqlPersonTypes.Tables["PersonType"];
+            }
+
+            var result = _titles.Select("ShortCode = '{0}'".Formatted(personType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
+
+        DataTable _contacts = null;
+
+        public object GetContactSql(string oldRefNo, string sourceDb)
+        {
+            if (oldRefNo == null) return DBNull.Value;
+
+            if (_contacts == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Contacts", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlContacts = new DataSet("Contacts");
+                sqlAdapter.FillSchema(sqlContacts, SchemaType.Source, "Contacts");
+                sqlAdapter.Fill(sqlContacts);
+                _titles = sqlContacts.Tables["Contacts"];
+            }
+
+            var result = _titles.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }
