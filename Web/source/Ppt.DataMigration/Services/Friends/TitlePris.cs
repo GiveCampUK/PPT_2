@@ -36,7 +36,7 @@ namespace Ppt.DataMigration.Services.Friends
                 {
                     currentIdentifier = reader["TITLE"].ToString();
 
-                    var results = dt.Select("TITLE = '{0}'".Formatted(reader.Cleaned("TITLE")));
+                    var results = dt.Select("Name = '{0}'".Formatted(reader.Cleaned("TITLE")));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();

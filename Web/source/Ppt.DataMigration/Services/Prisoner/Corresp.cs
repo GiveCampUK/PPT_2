@@ -41,18 +41,22 @@ namespace Ppt.DataMigration.Services.Prisoner
                     var results = dt.Select("CORREF = '{0}'".Formatted(reader["CORREF"]));
                     if (results.Length == 0)
                     {
-                        var newRow = dt.NewRow();
-                        newRow["CORREF"] = reader["CORREF"]; // pk
-                        newRow["OLDCORREF"] = reader["OLDCORREF"];
-                        newRow["NUMBER"] = reader["NUMBER"];
-                        newRow["REFNO"] = reader["REFNO"];
-                        newRow["DATE1"] = reader["DATE1"];
-                        newRow["TYPE"] = reader["TYPE"];
-                        newRow["FILING"] = reader["FILING"];
-                        newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
-                        newRow["DESTINATION"] = reader["DESTINATION"];
-                        newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
-                        dt.Rows.Add(newRow);
+                        var corref = GetContactOldRefSql(reader["CORREF"] as string); // fk to get from contacts
+                        if (corref != null)
+                        {
+                            var newRow = dt.NewRow();
+                            newRow["CORREF"] = corref;
+                            newRow["OLDCORREF"] = reader["OLDCORREF"];
+                            newRow["NUMBER"] = reader["NUMBER"];
+                            newRow["REFNO"] = reader["REFNO"];
+                            newRow["DATE1"] = reader["DATE1"];
+                            newRow["TYPE"] = reader["TYPE"];
+                            newRow["FILING"] = reader["FILING"];
+                            newRow["RESPONSE"] = GetResponseTypeSql(reader["RESPONSE"] as string); //fk
+                            newRow["DESTINATION"] = reader["DESTINATION"];
+                            newRow["CORRESPONDENT"] = reader["CORRESPONDENT"];
+                            dt.Rows.Add(newRow);
+                        }
                     }
                 }
 
