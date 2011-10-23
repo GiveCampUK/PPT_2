@@ -12,8 +12,12 @@ namespace Ppt.DataMigration.Services
 {
     public class DatabaseBuilderService : IDatabaseBuilderService
     {
-        public void Build(SqlConnection sqlConn)
+        string _databaseName;
+
+        public void Build(SqlConnection sqlConn, string databaseName)
         {
+            _databaseName = databaseName;
+
             try
             {
                 sqlConn.Open();
@@ -48,7 +52,7 @@ namespace Ppt.DataMigration.Services
 
         private void RunScript(SqlConnection connection, string sql)
         {
-            sql = String.Format("USE [{0}]\n", connection.Database) + sql;
+            sql = String.Format("USE [{0}]\n", _databaseName) + sql;
 
             Regex regex = new Regex("^GO", RegexOptions.IgnoreCase | RegexOptions.Multiline);
             string[] lines = regex.Split(sql);
@@ -85,10 +89,10 @@ namespace Ppt.DataMigration.Services
 
         private void RunBuildScript(SqlConnection connection, string sql)
         {
-            sql = sql.Replace("#DATABASE_NAME#", connection.Database);
+            sql = sql.Replace("#DATABASE_NAME#", _databaseName);
 
             // This switches context back to the PPT DB after the Drop and re-Create
-            sql = sql + String.Format("USE [{0}]\r\nGO\r\n", connection.Database);
+            sql = sql + String.Format("USE [{0}]\r\nGO\r\n", _databaseName);
 
             Regex regex = new Regex("^GO", RegexOptions.IgnoreCase | RegexOptions.Multiline);
             string[] lines = regex.Split(sql);

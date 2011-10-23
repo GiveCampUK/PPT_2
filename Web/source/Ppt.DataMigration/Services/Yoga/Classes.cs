@@ -15,6 +15,8 @@ namespace Ppt.DataMigration.Services.Yoga
 
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
@@ -29,11 +31,23 @@ namespace Ppt.DataMigration.Services.Yoga
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    currentIdentifier = reader["id"].ToString();
+
                     var results = dt.Select("ID = '{0}'".Formatted(reader["Id"]));
                     if (results.Length == 0)
                     {
                         var newRow = dt.NewRow();
                         newRow["Id"] = reader["Id"];
+                        newRow["TeacherId"] = reader["Teacher ID"];
+                        newRow["PrisonId"] = reader["Prison ID"];
+                        newRow["ClassDetails"] = reader["Class details"];
+                        newRow["Notes"] = reader["Notes"];
+                        newRow["ClassMakeup"] = reader["Class makeup"];
+                        newRow["ClassGender"] = reader["Class gender"];
+                        newRow["DoNotCount"] = reader["Do not count"].AsBool();
+                        newRow["DateClassStarted"] = reader["Date class started"];
+                        newRow["DateClassStopped"] = reader["Date class stopped"];
+                        newRow["DrugClass"] = reader["Drug Class"].AsBool();
                         dt.Rows.Add(newRow);
                     }
                 }
@@ -42,7 +56,7 @@ namespace Ppt.DataMigration.Services.Yoga
             }
             catch (Exception ex)
             {
-                throw ex;
+                this.Logger.Error(DataImportErrorFormatter.FormatErrorMessage(this.AccessConnection.Database, this.AccessTableName, this.NewTableName, currentIdentifier, ex.Message));
             }
             finally
             {

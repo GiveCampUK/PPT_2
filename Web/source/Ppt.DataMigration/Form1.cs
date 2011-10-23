@@ -116,8 +116,9 @@ namespace Ppt.DataMigration
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Please correct the following errors:");
+            sb.AppendLine("");
             foreach (var error in Errors)
-                sb.AppendLine("\t"+error);
+                sb.AppendLine(error);
             MessageBox.Show(sb.ToString());
         }
 

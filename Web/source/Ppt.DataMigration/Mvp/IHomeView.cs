@@ -27,7 +27,8 @@ namespace Ppt.DataMigration.Mvp
     {
         DisplayErrors,
         DisplayProgressBar,
-        HideProgressBar
+        HideProgressBar,
+        ImportComplete
 
     }
 }

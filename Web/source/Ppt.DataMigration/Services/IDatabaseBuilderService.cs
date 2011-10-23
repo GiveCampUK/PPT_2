@@ -8,6 +8,6 @@ namespace Ppt.DataMigration.Services
 {
     public interface IDatabaseBuilderService
     {
-        void Build(SqlConnection sqlConn);
+        void Build(SqlConnection sqlConn, string database);
     }
 }

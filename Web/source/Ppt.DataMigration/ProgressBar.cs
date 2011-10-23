@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Ppt.DataMigration.Mvp;
+using System.Threading;
 
 namespace Ppt.DataMigration
 {
@@ -82,5 +83,9 @@ namespace Ppt.DataMigration
         }
         delegate void SetTextCallback(string text);
         delegate void SetIntCallback(int text);
+
+        public void Terminate(){
+            this.Hide();
+        }
     }
 }

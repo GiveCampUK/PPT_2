@@ -6,7 +6,7 @@ using System.Data.OleDb;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Ppt.DataMigration.Services.Prisoner
+namespace Ppt.DataMigration.Services.Friends
 {
     public class PostTown : AbstractTableMigrationService
     {
