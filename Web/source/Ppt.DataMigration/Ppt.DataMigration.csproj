@@ -116,13 +116,11 @@
     <Compile Include="Services\Friends\Gifts.cs" />
     <Compile Include="Services\Friends\LookupLetterWriters.cs" />
     <Compile Include="Services\Friends\LookupPurpose.cs" />
-    <Compile Include="Services\Friends\LookupType.cs" />
     <Compile Include="Services\Friends\Lookup_Gtype.cs" />
     <Compile Include="Services\Friends\MailCode.cs" />
     <Compile Include="Services\Friends\MigrationService.cs" />
     <Compile Include="Services\Friends\PostTown.cs" />
     <Compile Include="Services\Friends\Response.cs" />
-    <Compile Include="Services\Friends\SentOut.cs" />
     <Compile Include="Services\Friends\TitlePris.cs" />
     <Compile Include="Services\Friends\Type.cs" />
     <Compile Include="Services\Friends\Writers.cs" />

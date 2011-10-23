@@ -54,6 +54,11 @@
   <ItemGroup>
     <Compile Include="Global.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Friends\ResponseFixture.cs" />
+    <Compile Include="Services\Friends\PostTownFixture.cs" />
+    <Compile Include="Services\Friends\MailcodeFixture.cs" />
+    <Compile Include="Services\Friends\LookupPurposeFixture.cs" />
+    <Compile Include="Services\Prisoner\Lookup_ResponseFixture.cs" />
     <Compile Include="Services\Prisoner\Lookup_PostTownFixture.cs" />
     <Compile Include="Services\Friends\CountryFixture.cs" />
     <Compile Include="Services\Prisoner\Lookup_PrisonFixture.cs" />
