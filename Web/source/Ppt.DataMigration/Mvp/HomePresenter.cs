@@ -205,30 +205,6 @@ namespace Ppt.DataMigration.Mvp
 
             #endregion
 
-            #region YOGA
-
-            tempWorker.ReportProgress( 45);
-
-            try
-            {
-                if (!_view.YogaDatabase.IsNullOrEmpty())
-                {
-                    YogaMigration = new Services.Yoga.MigrationService(_view.YogaDatabase, connection);
-                    YogaMigration.Logger = this.Logger;
-                    this.YogaMigration.Migrate();
-                    tempWorker.ReportProgress( 50);
-                }
-                else tempWorker.ReportProgress(55);
-
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Failed to complete Yoga import", ex);
-            }
-
-
-            #endregion
-            
             #region Friends
 
          tempWorker.ReportProgress( 60);
@@ -274,6 +250,30 @@ namespace Ppt.DataMigration.Mvp
 
             #endregion
 
+
+            #region YOGA
+
+            tempWorker.ReportProgress(45);
+
+            try
+            {
+                if (!_view.YogaDatabase.IsNullOrEmpty())
+                {
+                    YogaMigration = new Services.Yoga.MigrationService(_view.YogaDatabase, connection);
+                    YogaMigration.Logger = this.Logger;
+                    this.YogaMigration.Migrate();
+                    tempWorker.ReportProgress(50);
+                }
+                else tempWorker.ReportProgress(55);
+
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Failed to complete Yoga import", ex);
+            }
+
+
+            #endregion
 
            tempWorker.ReportProgress( 99);
 
