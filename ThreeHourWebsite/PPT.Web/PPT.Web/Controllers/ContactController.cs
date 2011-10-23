@@ -17,36 +17,26 @@ namespace PPT.Web.Controllers
 
         public ActionResult Index(int pageNumber = 1, int pageSize = 25)
         {
-            var count = _session.QueryOver<Contact>().RowCount();
+            var count =   _session.QueryOver<Contact>().RowCount();
             var results = _session.QueryOver<Contact>()
                                 .Skip((pageNumber - 1)*pageSize)
                                 .Take(pageSize)
                                 .List();
-
 
             var aPageOfData = new PageOf<Contact>(results, pageSize, pageNumber){TotalResults = count};
 
             return View(aPageOfData);
         }
 
-        //
-        // GET: /Contact/Details/5
-
         public ActionResult Details(int id)
         {
             return View(_session.Load<Contact>(id));
         }
 
-        //
-        // GET: /Contact/Create
-
         public ActionResult Create()
         {
             return View();
         } 
-
-        //
-        // POST: /Contact/Create
 
         [HttpPost]
         public ActionResult Create(Contact contact)
@@ -68,23 +58,21 @@ namespace PPT.Web.Controllers
             }
         }
         
-        //
-        // GET: /Contact/Edit/5
- 
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        //
-        // POST: /Contact/Edit/5
-
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Contact contact)
         {
             try
             {
-                // TODO: Add update logic here
+                using (var tx = _session.BeginTransaction())
+                {
+                    _session.SaveOrUpdate(contact);
+                    tx.Commit();
+                }
  
                 return RedirectToAction("Index");
             }
@@ -94,24 +82,22 @@ namespace PPT.Web.Controllers
             }
         }
 
-        //
-        // GET: /Contact/Delete/5
- 
         public ActionResult Delete(int id)
         {
             return View();
         }
-
-        //
-        // POST: /Contact/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
- 
+                using (var tx = _session.BeginTransaction())
+                {
+                    var item = _session.Get<Contact>(id);
+                    _session.Delete(item);
+                    tx.Commit();
+                }
                 return RedirectToAction("Index");
             }
             catch

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace PPT.Web.Models
 {
@@ -7,6 +8,11 @@ namespace PPT.Web.Models
         public int TotalResults { get; set; }
         public int PageSize { get; set; }
         public int PageNumber { get; set; }
+
+        public int NumberOfPages
+        {
+            get { return TotalResults/PageSize; }
+        }
 
         public PageOf()
         {

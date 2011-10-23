@@ -15,3 +15,8 @@ Page Size: @Model.PageSize<br/>
     </li>
 }
 </ul>
+
+@for(int i = 1; i <= Model.NumberOfPages; i++)
+{
+    @: @i &nbsp;
+}
