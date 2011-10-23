@@ -19,6 +19,8 @@ namespace Ppt.DataMigration.Services.Friends
 
         public override void MigrateTable()
         {
+            string currentIdentifier = string.Empty;
+
             try
             {
                 SQLConnection.Open();
@@ -33,7 +35,7 @@ namespace Ppt.DataMigration.Services.Friends
                 var reader = oleCmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    
+                    currentIdentifier = reader["Field1"].ToString();
 
                     var results = dt.Select("ShortCode = '{0}'".Formatted(reader["Field1"]));
                     if (results.Length == 0)

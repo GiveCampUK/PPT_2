@@ -41,6 +41,7 @@ namespace Ppt.DataMigration.Services.Friends
                     {
                         var newRow = dt.NewRow();
                         newRow["ShortCode"] = reader["Field1"];
+                        newRow["Name"] = reader["Field2"];
                         dt.Rows.Add(newRow);
                     }
                 }
