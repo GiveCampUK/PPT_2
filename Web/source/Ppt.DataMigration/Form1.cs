@@ -105,6 +105,9 @@ namespace Ppt.DataMigration
                 case HomeActions.HideProgressBar:
                         _progressBar.Hide();
                     break;
+                case HomeActions.ImportComplete:
+                    MessageBox.Show("Import complete!!\n\r\n\rThis import was brought to you by the sleepy volunteers at GiveCampUK!!");
+                    break;
                 default:
                     MessageBox.Show("HomeAction not handled");
                     break;
@@ -149,6 +152,11 @@ namespace Ppt.DataMigration
             {
                 return _progressBar;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
