@@ -262,10 +262,10 @@ namespace Ppt.DataMigration.Services
                 DataSet sqlContacts = new DataSet("Contacts");
                 sqlAdapter.FillSchema(sqlContacts, SchemaType.Source, "Contacts");
                 sqlAdapter.Fill(sqlContacts);
-                _titles = sqlContacts.Tables["Contacts"];
+                _contacts = sqlContacts.Tables["Contacts"];
             }
 
-            var result = _titles.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
+            var result = _contacts.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
