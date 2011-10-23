@@ -245,5 +245,29 @@ namespace Ppt.DataMigration.Services
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
+
+        DataTable _contacts = null;
+
+        public object GetContactSql(string oldRefNo, string sourceDb)
+        {
+            if (oldRefNo == null) return DBNull.Value;
+
+            if (_contacts == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Contacts", SQLConnection);
+
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new
+                SqlCommandBuilder(sqlAdapter);
+
+                DataSet sqlContacts = new DataSet("Contacts");
+                sqlAdapter.FillSchema(sqlContacts, SchemaType.Source, "Contacts");
+                sqlAdapter.Fill(sqlContacts);
+                _titles = sqlContacts.Tables["Contacts"];
+            }
+
+            var result = _titles.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }
