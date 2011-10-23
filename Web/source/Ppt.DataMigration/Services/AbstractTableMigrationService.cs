@@ -82,7 +82,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Town");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Town");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Town"]);
                 _towns = dts.Tables["Town"];
             }
 
@@ -106,7 +106,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Country");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Country");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Country"]);
                 _countrys = dts.Tables["Country"];
             }
 
@@ -131,7 +131,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("PrisonSex");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "PrisonSex");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["PrisonSex"]);
                 _prisonSex = dts.Tables["PrisonSex"];
             }
 
@@ -156,7 +156,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Titles");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Titles");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Titles"]);
                 _titles = dts.Tables["Titles"];
             }
 
@@ -181,7 +181,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("MailCode");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "MailCode");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["MailCode"]);
                 _mailCodes = dts.Tables["MailCode"];
             }
 
@@ -206,7 +206,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Prison");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Prison");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Prison"]);
                 _prisons = dts.Tables["Prison"];
             }
 
@@ -230,7 +230,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("PersonType");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "PersonType");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["PersonType"]);
                 _personTypes = dts.Tables["PersonType"];
             }
 
@@ -253,7 +253,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Contacts");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Contacts");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Contacts"]);
                 _contacts = dts.Tables["Contacts"];
             }
 
@@ -276,7 +276,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("ResponseType");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "ResponseType");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["ResponseType"]);
                 _responseTypes = dts.Tables["ResponseType"];
             }
 
@@ -299,7 +299,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("GiftType");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "GiftType");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["GiftType"]);
                 _giftTypes = dts.Tables["GiftType"];
             }
 
@@ -322,7 +322,7 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("Contacts");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "Contacts");
-                sqlAdapter.Fill(dts);
+                sqlAdapter.Fill(dts.Tables["Contacts"]);
                 _contactOldRefs = dts.Tables["Contacts"];
             }
 
@@ -345,8 +345,8 @@ namespace Ppt.DataMigration.Services
 
                 DataSet dts = new DataSet("NLAddressOrderType");
                 sqlAdapter.FillSchema(dts, SchemaType.Source, "NLAddressOrderType");
-                sqlAdapter.Fill(dts);
-                _nlOrderTypes = dts.Tables["Contacts"];
+                sqlAdapter.Fill(dts.Tables["NLAddressOrderType"]);
+                _nlOrderTypes = dts.Tables["NLAddressOrderType"];
             }
 
             var result = _nlOrderTypes.Select("Name = '{0}'".Formatted(orderType));
