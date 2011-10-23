@@ -78,13 +78,12 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Town", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("Town");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Town");
-                sqlAdapter.Fill(sqlCountry);
-                _towns = sqlCountry.Tables["Town"];
+                DataSet dts = new DataSet("Town");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Town");
+                sqlAdapter.Fill(dts);
+                _towns = dts.Tables["Town"];
             }
 
             var result = _towns.Select("Name = '{0}'".Formatted(townName));
@@ -103,13 +102,12 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Country", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("Country");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "Country");
-                sqlAdapter.Fill(sqlCountry);
-                _countrys = sqlCountry.Tables["Country"];
+                DataSet dts = new DataSet("Country");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Country");
+                sqlAdapter.Fill(dts);
+                _countrys = dts.Tables["Country"];
             }
 
             var result = _countrys.Select("Name = '{0}'".Formatted(country));
@@ -129,13 +127,12 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PrisonSex", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlCountry = new DataSet("PrisonSex");
-                sqlAdapter.FillSchema(sqlCountry, SchemaType.Source, "PrisonSex");
-                sqlAdapter.Fill(sqlCountry);
-                _prisonSex = sqlCountry.Tables["PrisonSex"];
+                DataSet dts = new DataSet("PrisonSex");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "PrisonSex");
+                sqlAdapter.Fill(dts);
+                _prisonSex = dts.Tables["PrisonSex"];
             }
 
             var result = _prisonSex.Select("Name = '{0}'".Formatted(prisonSex));
@@ -155,13 +152,12 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Titles", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlTitles = new DataSet("Titles");
-                sqlAdapter.FillSchema(sqlTitles, SchemaType.Source, "Titles");
-                sqlAdapter.Fill(sqlTitles);
-                _titles = sqlTitles.Tables["Titles"];
+                DataSet dts = new DataSet("Titles");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Titles");
+                sqlAdapter.Fill(dts);
+                _titles = dts.Tables["Titles"];
             }
 
             var result = _titles.Select("Name = '{0}'".Formatted(title));
@@ -181,16 +177,15 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM MailCode", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder oOrderDetailsCmdBuilder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlMailCodes = new DataSet("MailCode");
-                sqlAdapter.FillSchema(sqlMailCodes, SchemaType.Source, "MailCode");
-                sqlAdapter.Fill(sqlMailCodes);
-                _titles = sqlMailCodes.Tables["MailCode"];
+                DataSet dts = new DataSet("MailCode");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "MailCode");
+                sqlAdapter.Fill(dts);
+                _mailCodes = dts.Tables["MailCode"];
             }
 
-            var result = _titles.Select("Name = '{0}'".Formatted(mailCode));
+            var result = _mailCodes.Select("Name = '{0}'".Formatted(mailCode));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
 
@@ -207,16 +202,15 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Prison", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlPrisons = new DataSet("Prison");
-                sqlAdapter.FillSchema(sqlPrisons, SchemaType.Source, "Prison");
-                sqlAdapter.Fill(sqlPrisons);
-                _titles = sqlPrisons.Tables["Prison"];
+                DataSet dts = new DataSet("Prison");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Prison");
+                sqlAdapter.Fill(dts);
+                _prisons = dts.Tables["Prison"];
             }
 
-            var result = _titles.Select("Name = '{0}'".Formatted(prison));
+            var result = _prisons.Select("Name = '{0}'".Formatted(prison));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
@@ -232,16 +226,15 @@ namespace Ppt.DataMigration.Services
 
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM PersonType", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlPersonTypes = new DataSet("PersonType");
-                sqlAdapter.FillSchema(sqlPersonTypes, SchemaType.Source, "PersonType");
-                sqlAdapter.Fill(sqlPersonTypes);
-                _titles = sqlPersonTypes.Tables["PersonType"];
+                DataSet dts = new DataSet("PersonType");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "PersonType");
+                sqlAdapter.Fill(dts);
+                _personTypes = dts.Tables["PersonType"];
             }
 
-            var result = _titles.Select("ShortCode = '{0}'".Formatted(personType));
+            var result = _personTypes.Select("ShortCode = '{0}'".Formatted(personType));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
@@ -256,16 +249,15 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Contacts", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlContacts = new DataSet("Contacts");
-                sqlAdapter.FillSchema(sqlContacts, SchemaType.Source, "Contacts");
-                sqlAdapter.Fill(sqlContacts);
-                _titles = sqlContacts.Tables["Contacts"];
+                DataSet dts = new DataSet("Contacts");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Contacts");
+                sqlAdapter.Fill(dts);
+                _contacts = dts.Tables["Contacts"];
             }
 
-            var result = _titles.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
+            var result = _contacts.Select("OldRefNo = '{0}' AND OldDb = '{1}'".Formatted(oldRefNo, sourceDb));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
@@ -280,16 +272,15 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM ResponseType", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlResponseTypes = new DataSet("ResponseType");
-                sqlAdapter.FillSchema(sqlResponseTypes, SchemaType.Source, "ResponseType");
-                sqlAdapter.Fill(sqlResponseTypes);
-                _titles = sqlResponseTypes.Tables["ResponseType"];
+                DataSet dts = new DataSet("ResponseType");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "ResponseType");
+                sqlAdapter.Fill(dts);
+                _responseTypes = dts.Tables["ResponseType"];
             }
 
-            var result = _titles.Select("Response = '{0}'".Formatted(responseType));
+            var result = _responseTypes.Select("Response = '{0}'".Formatted(responseType));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
@@ -304,13 +295,12 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM GiftType", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new
-                SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlGiftTypes = new DataSet("GiftType");
-                sqlAdapter.FillSchema(sqlGiftTypes, SchemaType.Source, "GiftType");
-                sqlAdapter.Fill(sqlGiftTypes);
-                _titles = sqlGiftTypes.Tables["GiftType"];
+                DataSet dts = new DataSet("GiftType");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "GiftType");
+                sqlAdapter.Fill(dts);
+                _giftTypes = dts.Tables["GiftType"];
             }
 
             var result = _giftTypes.Select("ShortCode = '{0}'".Formatted(giftType));
@@ -328,18 +318,40 @@ namespace Ppt.DataMigration.Services
             {
                 SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM Contacts", SQLConnection);
 
-                SqlCommandBuilder oOrderDetailsCmdBuilder = new SqlCommandBuilder(sqlAdapter);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
 
-                DataSet sqlGiftTypes = new DataSet("Contacts");
-                sqlAdapter.FillSchema(sqlGiftTypes, SchemaType.Source, "Contacts");
-                sqlAdapter.Fill(sqlGiftTypes);
-                _titles = sqlGiftTypes.Tables["Contacts"];
+                DataSet dts = new DataSet("Contacts");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "Contacts");
+                sqlAdapter.Fill(dts);
+                _contactOldRefs = dts.Tables["Contacts"];
             }
 
-            var result = _giftTypes.Select("OldRefNo = '{0}'".Formatted(corresp));
+            var result = _contactOldRefs.Select("OldRefNo = '{0}'".Formatted(corresp));
             if (result.Length == 0) return DBNull.Value;
             else return result[0]["Id"];
         }
 
+        private DataTable _nlOrderTypes = null;
+        
+        public object GetNLOrderTypes(string orderType)
+        {
+            if (orderType == null) return DBNull.Value;
+
+            if (_nlOrderTypes == null)
+            {
+                SqlDataAdapter sqlAdapter = new SqlDataAdapter("SELECT * FROM NLAddressOrderType", SQLConnection);
+
+                SqlCommandBuilder builder = new SqlCommandBuilder(sqlAdapter);
+
+                DataSet dts = new DataSet("NLAddressOrderType");
+                sqlAdapter.FillSchema(dts, SchemaType.Source, "NLAddressOrderType");
+                sqlAdapter.Fill(dts);
+                _nlOrderTypes = dts.Tables["Contacts"];
+            }
+
+            var result = _nlOrderTypes.Select("Name = '{0}'".Formatted(orderType));
+            if (result.Length == 0) return DBNull.Value;
+            else return result[0]["Id"];
+        }
     }
 }

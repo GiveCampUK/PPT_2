@@ -194,7 +194,6 @@
     <EmbeddedResource Include="Scripts\dbo.WorkshopPrisons.Table.sql" />
     <EmbeddedResource Include="Scripts\dbo.WorkshopTeachers.Table.sql" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Scripts\dbo.PPT.Create.sql" />
   </ItemGroup>
